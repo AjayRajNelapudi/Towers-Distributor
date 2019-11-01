@@ -3,7 +3,6 @@ from settlements import Settlements
 from cellsites import CellSites
 from visuals import Visuals
 
-
 class DataFlow:
     def __init__(self):
         pass

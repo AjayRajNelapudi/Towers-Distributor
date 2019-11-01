@@ -1,5 +1,5 @@
+import numpy as np
 import matplotlib
-
 
 class Visuals:
     def __init__(self):
