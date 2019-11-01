@@ -1,4 +1,6 @@
-import numpy
+from math import radians, degrees, sin, cos, asin, acos, sqrt
+import numpy as np
+from scipy.spatial.distance import cdist
 from sklearn.cluster import KMeans
 
 class CellSites:
@@ -6,19 +8,54 @@ class CellSites:
     CellSites considers each cluster from the Settlements class and performs K-Means clustering
     to identify the appropriate location for each cell site
     '''
-    def __init__(self):
-        pass
+    settlements = np.array([])
 
-    def cluster_settlement(self):
-        '''
-        Performs K-Means clustering on the given datapoints of geo-coordinates
-        :return: K centroids
-        '''
-        pass
+    def __init__(self, settlements):
+        self.settlements = settlements
 
-    def identify_cell_site_count(self):
+    def optimise_and_cluster(self, geo_coordinates):
         '''
-        Iterates and finds value of K where the mean squared distance is less than 0.8 km
-        :return: k value
+        Finds optimal value of K and clusters the geo-coordianates
+        :param geo_coordinates: datapoints of each settlement cluster
+        :return: cluster centroids for cell sites
         '''
-        pass
+        K = 1
+        distortion = 100
+
+        while distortion > 80:
+            cell_sites = KMeans(n_clusters=K)
+            cell_sites.fit(geo_coordinates)
+            distortion = sum(np.min(cdist(geo_coordinates, cell_sites.cluster_centers_, 'euclidean'), axis=1)) / geo_coordinates.shape[0]
+            K += 1
+
+        return cell_sites.cluster_centers_
+
+    def distribute_cellsites(self):
+        '''
+        Optimises and distributes the cell sites
+        :return: cell site distributed locations
+        '''
+
+        cellsite_locations = np.array([[None, None]])
+        for settlement in self.settlements.values():
+            cellsites_for_cluster = self.optimise_and_cluster(settlement)
+            cellsite_locations = np.concatenate((cellsite_locations, cellsites_for_cluster), axis=0)
+
+        return cellsite_locations[1:]
+
+
+if __name__ == "__main__":
+    import random as rd
+
+    dataset = {}
+    for i in range(10):
+        datapoints = []
+        for j in range(50):
+            datapoints.append((rd.randrange(1000), rd.randrange(1000)))
+
+        dataset[i] = np.array(datapoints)
+
+    cell_sites = CellSites(dataset)
+    locations = cell_sites.distribute_cellsites()
+    for loc in locations:
+        print(loc)
