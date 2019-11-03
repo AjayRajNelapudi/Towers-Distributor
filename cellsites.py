@@ -19,10 +19,11 @@ class CellSites:
         :param geo_coordinates: datapoints of each settlement cluster
         :return: cluster centroids for cell sites
         '''
-        K = 1
-        distortion = 100
+        K = int(len(geo_coordinates) ** (1./3.))
+        distortion = 1
+        permissible_distortion = 0.008 # Change permissible_distortion to vary no of towers
 
-        while distortion > 80:
+        while distortion > permissible_distortion:
             cell_sites = KMeans(n_clusters=K)
             cell_sites.fit(geo_coordinates)
             distortion = sum(np.min(cdist(geo_coordinates, cell_sites.cluster_centers_, 'euclidean'), axis=1)) / geo_coordinates.shape[0]

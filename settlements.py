@@ -7,7 +7,7 @@ class Settlements:
     Settlements class performs DBSCAN clustering on the entire dataset of geo-coordinates
     to identify different clusters of human settlements such as cities, towns and villages
     '''
-    max_distance = 0.8 # km
+    max_distance = 0.008 # km
     min_samples = 250
     geo_cordinates = np.array([])
 
@@ -42,16 +42,19 @@ class Settlements:
         settlements = DBSCAN(
                         eps=self.max_distance,
                         min_samples=self.min_samples,
-                        metric=self.great_circle_distance
+                        # metric=self.great_circle_distance
         )
         settlements.fit(geo_coordinates)
 
         clusters = dict()
         for cluster, datapoint in zip(settlements.labels_, geo_coordinates):
             if cluster in clusters:
-                clusters[cluster] = np.append(clusters[cluster], [datapoint])
+                clusters[cluster].append(datapoint)
             else:
-                clusters[cluster] = np.array([datapoint])
+                clusters[cluster] = [datapoint]
+
+        for cluster in clusters:
+            clusters[cluster] = np.array(clusters[cluster])
 
         return clusters
 

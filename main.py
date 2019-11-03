@@ -20,11 +20,11 @@ class Controller:
         self.cellsites = cellsite_clustering.distribute_cellsites(self.settlements)
 
     def save_cellsites(self):
-        with open("cellsites.csv") as cellsites_file:
+        with open("cellsites.csv", "w") as cellsites_file:
             cellsite_writer = csv.writer(cellsites_file)
 
             for cellsite in self.cellsites:
-                cellsite_writer.write(list(cellsite))
+                cellsite_writer.writerow(list(cellsite))
 
     def display_visuals(self):
         visuals = Visuals()
