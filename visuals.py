@@ -5,21 +5,17 @@ class Visuals:
     '''
     Displays the map, users and the cell sites predicted
     '''
-    def __init__(self, users, towers):
-        self.users = users
-        self.towers = towers
-
-    def display_towers(self):
+    def display_towers(self, users, towers):
         '''
         Displays the users and cell sites
         :return: None
         '''
-        users_X = np.array([user[0] for user in self.users])
-        users_Y = np.array([user[1] for user in self.users])
+        users_X = np.array([user[0] for user in users])
+        users_Y = np.array([user[1] for user in users])
         plt.scatter(users_X, users_Y, c='blue', marker='.')
 
-        towers_X = np.array([tower[0] for tower in self.towers])
-        towers_Y = np.array([tower[1] for tower in self.towers])
+        towers_X = np.array([tower[0] for tower in towers])
+        towers_Y = np.array([tower[1] for tower in towers])
         plt.scatter(towers_X, towers_Y, c='red', marker='^')
 
         plt.show()
@@ -38,7 +34,7 @@ if __name__ == "__main__":
     Y = np.random.rand(20)
     towers = np.array([[x, y] for x, y in zip(X, Y)])
 
-    visuals = Visuals(users, towers)
-    visuals.display_towers()
+    visuals = Visuals()
+    visuals.display_towers(users, towers)
 
 # gmplot
