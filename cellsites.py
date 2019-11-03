@@ -10,8 +10,8 @@ class CellSites:
     '''
     settlements = np.array([])
 
-    def __init__(self, settlements):
-        self.settlements = settlements
+    def __init__(self):
+        pass
 
     def optimise_and_cluster(self, geo_coordinates):
         '''
@@ -30,14 +30,14 @@ class CellSites:
 
         return cell_sites.cluster_centers_
 
-    def distribute_cellsites(self):
+    def distribute_cellsites(self, settlements):
         '''
         Optimises and distributes the cell sites
         :return: cell site distributed locations
         '''
 
         cellsite_locations = np.array([[None, None]])
-        for settlement in self.settlements.values():
+        for settlement in settlements.values():
             cellsites_for_cluster = self.optimise_and_cluster(settlement)
             cellsite_locations = np.concatenate((cellsite_locations, cellsites_for_cluster), axis=0)
 
@@ -55,7 +55,7 @@ if __name__ == "__main__":
 
         dataset[i] = np.array(datapoints)
 
-    cell_sites = CellSites(dataset)
-    locations = cell_sites.distribute_cellsites()
+    cell_sites = CellSites()
+    locations = cell_sites.distribute_cellsites(dataset)
     for loc in locations:
         print(loc)

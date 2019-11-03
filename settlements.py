@@ -11,8 +11,8 @@ class Settlements:
     min_samples = 250
     geo_cordinates = np.array([])
 
-    def __init__(self, geo_coordinates):
-        self.geo_coordinates = geo_coordinates
+    def __init__(self):
+        pass
 
     def great_circle_distance(self, pt1, pt2):
         '''
@@ -33,9 +33,10 @@ class Settlements:
         param = float("{0:.6f}".format(param))
         return earth_radius * acos(param)
 
-    def cluster_all_settlements(self):
+    def cluster_settlements(self, geo_coordinates):
         '''
         Performs DBSCAN clustering on self.geo_coordinates
+        :param geo_coordinates: geo-coordinates of all customers' locations.
         :return: dict of clusters: datapoints
         '''
         settlements = DBSCAN(
@@ -43,10 +44,10 @@ class Settlements:
                         min_samples=self.min_samples,
                         metric=self.great_circle_distance
         )
-        settlements.fit(self.geo_coordinates)
+        settlements.fit(geo_coordinates)
 
         clusters = dict()
-        for cluster, datapoint in zip(settlements.labels_, self.geo_coordinates):
+        for cluster, datapoint in zip(settlements.labels_, geo_coordinates):
             if cluster in clusters:
                 clusters[cluster] = np.append(clusters[cluster], [datapoint])
             else:
@@ -63,8 +64,6 @@ if __name__ == "__main__":
     for i in range(1000):
         datapoints.append([rd.uniform(17, 19), rd.uniform(82, 84)])
 
-    settlements = Settlements(
-        np.array(datapoints)
-    )
-    clusters = settlements.cluster_all_settlements()
+    settlements = Settlements()
+    clusters = settlements.cluster_settlements(np.array(datapoints))
     print(clusters)

@@ -2,11 +2,18 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 class Visuals:
+    '''
+    Displays the map, users and the cell sites predicted
+    '''
     def __init__(self, users, towers):
         self.users = users
         self.towers = towers
 
     def display_towers(self):
+        '''
+        Displays the users and cell sites
+        :return: None
+        '''
         users_X = np.array([user[0] for user in self.users])
         users_Y = np.array([user[1] for user in self.users])
         plt.scatter(users_X, users_Y, c='blue', marker='.')
@@ -33,3 +40,5 @@ if __name__ == "__main__":
 
     visuals = Visuals(users, towers)
     visuals.display_towers()
+
+# gmplot
