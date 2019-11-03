@@ -1,4 +1,5 @@
 import csv
+import itertools
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -13,8 +14,9 @@ def generate_dataset(hotspots):
     users_distance = (-200, 200)
     dataset = []
     for hotspot in hotspots:
-        customer_per_hotspot = np.random.randint(10, 50)
-        for customer in range(customer_per_hotspot):
+        # customer_per_hotspot = np.random.randint(10, 50)
+        customer_per_hotspot = itertools.cycle([10, 50, 1000])
+        for customer in range(next(customer_per_hotspot)):
             x = hotspot[0] + (0.0001 * np.random.randint(*users_distance))
             y = hotspot[1] + (0.0001 * np.random.randint(*users_distance))
             dataset.append([x, y])
