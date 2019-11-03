@@ -12,7 +12,7 @@ class Visuals:
         '''
         users_X = np.array([user[0] for user in users])
         users_Y = np.array([user[1] for user in users])
-        plt.scatter(users_X, users_Y, c='blue', marker='.')
+        plt.scatter(users_X, users_Y, c='lightblue', marker='.')
 
         towers_X = np.array([tower[0] for tower in towers])
         towers_Y = np.array([tower[1] for tower in towers])

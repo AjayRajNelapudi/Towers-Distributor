@@ -1,4 +1,3 @@
-from addressmapper import AddressMapper
 from settlements import Settlements
 from cellsites import CellSites
 from visuals import Visuals
