@@ -1,4 +1,4 @@
-from math import radians, degrees, sin, cos, asin, acos, sqrt
+from math import radians, sin, cos, acos
 import numpy as np
 from sklearn.cluster import DBSCAN
 
