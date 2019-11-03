@@ -5,6 +5,9 @@ class Visuals:
     '''
     Displays the map, users and the cell sites predicted
     '''
+    def __init__(self):
+        pass
+
     def display_towers(self, users, towers):
         '''
         Displays the users and cell sites
