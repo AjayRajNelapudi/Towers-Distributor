@@ -13,7 +13,7 @@ def generate_dataset(hotspots):
     users_distance = (-200, 200)
     dataset = []
     for hotspot in hotspots:
-        customer_per_hotspot = np.random.randint(100, 200)
+        customer_per_hotspot = np.random.randint(10, 50)
         for customer in range(customer_per_hotspot):
             x = hotspot[0] + (0.0001 * np.random.randint(*users_distance))
             y = hotspot[1] + (0.0001 * np.random.randint(*users_distance))
@@ -38,3 +38,5 @@ if __name__ == "__main__":
     dataset = generate_dataset(hotspots)
     write_dataset(dataset, "dataset.csv")
     visualise_dataset(dataset)
+
+    print("Total Datapoints", len(dataset))
