@@ -34,15 +34,15 @@ class CellSites:
     def distribute_cellsites(self, settlements):
         '''
         Optimises and distributes the cell sites
-        :return: cell site distributed locations
+        :return: dict of label: cellsites
         '''
 
-        cellsite_locations = np.array([[None, None]])
-        for settlement in settlements.values():
+        cellsite_locations = dict()
+        for label, settlement in settlements.items():
             cellsites_for_cluster = self.optimise_and_cluster(settlement)
-            cellsite_locations = np.concatenate((cellsite_locations, cellsites_for_cluster), axis=0)
+            cellsite_locations[label] = np.array(cellsites_for_cluster)
 
-        return cellsite_locations[1:]
+        return cellsite_locations
 
 
 if __name__ == "__main__":
