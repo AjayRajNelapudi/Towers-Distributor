@@ -7,12 +7,11 @@ class Settlements:
     Settlements class performs DBSCAN clustering on the entire dataset of geo-coordinates
     to identify different clusters of human settlements such as cities, towns and villages
     '''
-    max_distance = 0.008
-    min_samples = 50
     geo_cordinates = np.array([])
 
-    def __init__(self):
-        pass
+    def __init__(self, max_distance, min_samples):
+        self.max_distance = max_distance
+        self.min_samples = min_samples
 
     def great_circle_distance(self, pt1, pt2):
         '''

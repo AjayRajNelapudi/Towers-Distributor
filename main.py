@@ -11,12 +11,14 @@ class Controller:
             self.dataset = np.array([list(map(float, datapoint)) for datapoint in dataset_reader])
 
     def perform_settlement_clustering(self):
-        settlement_clustering = Settlements()
+        settlement_clustering = Settlements(max_distance=0.012, min_samples=50)
         self.settlements = settlement_clustering.cluster_settlements(self.dataset)
+        return self.settlements
 
     def perform_cellsite_clustering(self):
         cellsite_clustering = CellSites()
         self.cellsites = cellsite_clustering.distribute_cellsites(self.settlements)
+        return self.cellsites
 
     def save_cellsites(self):
         with open("cellsites.csv", "w") as cellsites_file:
@@ -32,7 +34,13 @@ class Controller:
 
 if __name__ == "__main__":
     controller = Controller("dataset.csv")
-    controller.perform_settlement_clustering()
-    controller.perform_cellsite_clustering()
+
+    settlements = controller.perform_settlement_clustering()
+    print("Settlements:", settlements.keys())
+
+    cellsites = controller.perform_cellsite_clustering()
+    print("Cellsites count:", len(cellsites))
+
     controller.save_cellsites()
     controller.display_visuals()
+
