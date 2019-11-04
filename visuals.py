@@ -20,6 +20,7 @@ class Visuals:
         towers_X = np.array([tower[0] for tower in towers])
         towers_Y = np.array([tower[1] for tower in towers])
         plt.scatter(towers_X, towers_Y, c='red', marker='^')
+        # plt.scatter(towers_X, towers_Y, s=800, facecolors='none', edgecolors='r')
 
         plt.show()
 
