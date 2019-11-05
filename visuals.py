@@ -40,7 +40,7 @@ class Visuals:
 
             plt.plot(
                 base_station[0], base_station[1],
-                c=color, marker='p', markersize=10, markeredgecolor='red'
+                c=color, marker='p', markersize=10, markeredgecolor='blue'
             )
 
             # cellsites_X, cellsites_Y = zip(*cell_sites)
