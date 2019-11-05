@@ -20,7 +20,7 @@ class Optimizer:
         towers_distribution = dict()
         for key in self.users.keys():
             if key < 0:
-                base_station = self.find_closest_basestation(self.base_stations[key])
+                base_station = self.find_closest_basestation_mean(self.base_stations[key])
             else:
                 base_station = self.base_stations[key]
 
@@ -51,12 +51,11 @@ class Optimizer:
                 
         return towers_distribution
 
-    def find_closest_basestation(self, base_station):
-        all_basestations = list(map(list, self.base_stations.values()))
-        all_basestations.remove(list(base_station))
+    def find_closest_basestation_mean(self, base_station):
+        all_basestations = np.array([base_station for label, base_station in self.base_stations.items() if label >= 0])
 
         closest_basestation = min(
-            np.array(all_basestations),
+            all_basestations,
             key=lambda each_basestation: np.linalg.norm(each_basestation - base_station)
         )
 

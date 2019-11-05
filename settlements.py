@@ -1,6 +1,8 @@
-from math import radians, sin, cos, acos
 import numpy as np
-from sklearn.cluster import DBSCAN
+from sklearn.cluster import SpectralClustering
+from scipy.sparse import csgraph
+from numpy import linalg as LA
+from scipy.spatial.distance import squareform, pdist
 
 class Settlements:
     '''
@@ -9,42 +11,84 @@ class Settlements:
     '''
     geo_cordinates = np.array([])
 
-    def __init__(self, max_distance, min_samples, sub_maxdistance, sub_minsamples):
-        self.max_distance = max_distance
-        self.min_samples = min_samples
-        self.sub_maxdistance = sub_maxdistance
-        self.sub_minsamples = sub_minsamples
+    def __init__(self):
+        pass
 
-    def great_circle_distance(self, pt1, pt2):
+    def getAffinityMatrix(self, coordinates, k=7):
+        """
+        Calculate affinity matrix based on input coordinates matrix and the numeber
+        of nearest neighbours.
+
+        Apply local scaling based on the k nearest neighbour
+            References:
+        https://papers.nips.cc/paper/2619-self-tuning-spectral-clustering.pdf
+        """
+        # calculate euclidian distance matrix
+        dists = squareform(pdist(coordinates))
+
+        # for each row, sort the distances ascendingly and take the index of the
+        # k-th position (nearest neighbour)
+        knn_distances = np.sort(dists, axis=0)[k]
+        knn_distances = knn_distances[np.newaxis].T
+
+        # calculate sigma_i * sigma_j
+        local_scale = knn_distances.dot(knn_distances.T)
+
+        affinity_matrix = dists * dists
+        affinity_matrix = -affinity_matrix / local_scale
+        # divide square distance matrix by local scale
+        affinity_matrix[np.where(np.isnan(affinity_matrix))] = 0.0
+        # apply exponential
+        affinity_matrix = np.exp(affinity_matrix)
+        np.fill_diagonal(affinity_matrix, 0)
+
+        return affinity_matrix
+
+    def eigenDecomposition(self, A, topK=5):
+        """
+        :param A: Affinity matrix
+        :param plot: plots the sorted eigen values for visual inspection
+        :return A tuple containing:
+        - the optimal number of clusters by eigengap heuristic
+        - all eigen values
+        - all eigen vectors
+
+        This method performs the eigen decomposition on a given affinity matrix,
+        following the steps recommended in the paper:
+        1. Construct the normalized affinity matrix: L = D−1/2ADˆ −1/2.
+        2. Find the eigenvalues and their associated eigen vectors
+        3. Identify the maximum gap which corresponds to the number of clusters
+        by eigengap heuristic
+
+        References:
+        https://papers.nips.cc/paper/2619-self-tuning-spectral-clustering.pdf
+        http://www.kyb.mpg.de/fileadmin/user_upload/files/publications/attachments/Luxburg07_tutorial_4488%5b0%5d.pdf
+        """
+        L = csgraph.laplacian(A, normed=True)
+        n_components = A.shape[0]
+
+        # LM parameter : Eigenvalues with largest magnitude (eigs, eigsh), that is, largest eigenvalues in
+        # the euclidean norm of complex numbers.
+        #     eigenvalues, eigenvectors = eigsh(L, k=n_components, which="LM", sigma=1.0, maxiter=5000)
+        eigenvalues, eigenvectors = LA.eig(L)
+
+        # Identify the optimal number of clusters as the index corresponding
+        # to the larger gap between eigen values
+        index_largest_gap = np.argsort(np.diff(eigenvalues))[::-1][:topK]
+        nb_clusters = index_largest_gap + 1
+
+        return nb_clusters, eigenvalues, eigenvectors
+
+    def cluster_settlements(self, geo_coordinates):
         '''
-        Computes the great circle distance between pt1 an pt2
-
-        "Not my code, don't ask me"
-
-        :param pt1: (latitude1, longitude1)
-        :param pt2: (latitude2, longitude2)
-        :return: great circle distance
-        '''
-        earth_radius = 6371
-        lat1, lon1, lat2, lon2 = pt1[0], pt1[1], pt2[0], pt2[1]
-
-        lon1, lat1, lon2, lat2 = map(radians, [lon1, lat1, lon2, lat2])
-        # print(lat1, lat2, lon1 - lon2, sin(lat1) * sin(lat2) + cos(lat1) * cos(lat2) * cos(lon1 - lon2))
-        param = sin(lat1) * sin(lat2) + cos(lat1) * cos(lat2) * cos(lon1 - lon2)
-        param = float("{0:.6f}".format(param))
-        return earth_radius * acos(param)
-
-    def cluster_settlements(self, geo_coordinates, allow_recursion=True):
-        '''
-        Performs DBSCAN clustering on self.geo_coordinates
+        Performs Spectral clustering on geo_coordinates
         :param geo_coordinates: geo-coordinates of all customers' locations.
         :return: dict of clusters: datapoints
         '''
-        settlements = DBSCAN(
-                        eps=self.max_distance,
-                        min_samples=self.min_samples,
-                        # metric=self.great_circle_distance
-        )
+        affinity_matrix = self.getAffinityMatrix(geo_coordinates, k=50)
+        K = len(self.eigenDecomposition(affinity_matrix, topK=50)[0])
+
+        settlements = SpectralClustering(n_clusters=K, assign_labels='discretize', random_state=0)
         settlements.fit(geo_coordinates)
 
         clusters = dict()
@@ -53,18 +97,6 @@ class Settlements:
                 clusters[cluster] = np.concatenate((clusters[cluster], [datapoint]), axis=0)
             else:
                 clusters[cluster] = np.array([datapoint])
-
-        if -1 in clusters and allow_recursion:
-            self.max_distance = self.sub_maxdistance
-            self.min_samples = self.sub_minsamples
-            sub_clusters = self.cluster_settlements(clusters[-1], allow_recursion=False)
-
-            sub_key = -1
-            clusters.pop(-1)
-
-            for label, sub_cluster in sub_clusters.items():
-                clusters[sub_key] = sub_cluster
-                sub_key -= 1
 
         return clusters
 

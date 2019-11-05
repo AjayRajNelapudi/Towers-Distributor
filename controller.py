@@ -1,4 +1,3 @@
-from optimizer import Optimizer
 from settlements import Settlements
 from cellsites import CellSites
 from visuals import Visuals
@@ -12,10 +11,7 @@ class Controller:
             self.dataset = np.array([list(map(float, datapoint)) for datapoint in dataset_reader])
 
     def perform_settlement_clustering(self):
-        settlement_clustering = Settlements(
-            max_distance=0.012, min_samples=50,
-            sub_maxdistance=0.011, sub_minsamples=20
-        ) # tune max_distance around 0.012 and sub_maxdistance around 0.011
+        settlement_clustering = Settlements()
         self.settlements = settlement_clustering.cluster_settlements(self.dataset)
         return self.settlements
 
@@ -25,9 +21,15 @@ class Controller:
         self.base_stations = cellsite_clustering.locate_base_stations()
         return self.cell_sites, self.base_stations
 
-    def optimize(self):
-        ubc_optimizer = Optimizer(self.settlements, self.base_stations, self.cell_sites)
-        self.towers_distribution = ubc_optimizer.optimize()
+    def format(self):
+        self.towers_distribution = dict()
+        for key in self.settlements.keys():
+            self.towers_distribution[self.base_stations[key].tostring()] = {
+                'cell_sites': self.cell_sites[key],
+                'base_station': self.base_stations[key],
+                'users': self.settlements[key]
+            }
+        return self.towers_distribution
 
     def save_basestations_and_cellsites(self):
         with open("basestations.csv", "w") as basestation_file:
@@ -57,7 +59,7 @@ if __name__ == "__main__":
     cellsites, base_stations = controller.perform_cellsite_clustering()
     print("Cellsites count:", sum(map(len, cellsites.values())))
 
-    controller.optimize()
+    controller.format()
 
     controller.save_basestations_and_cellsites()
     controller.display_visuals()
