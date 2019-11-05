@@ -59,15 +59,12 @@ class Settlements:
             self.min_samples = self.sub_minsamples
             sub_clusters = self.cluster_settlements(clusters[-1], allow_recursion=False)
 
-            sub_key = len(clusters) - 1
+            sub_key = -1
             clusters.pop(-1)
 
             for label, sub_cluster in sub_clusters.items():
-                if label == -1:
-                    clusters[-1] = sub_cluster
-                else:
-                    clusters[sub_key] = sub_cluster
-                    sub_key += 1
+                clusters[sub_key] = sub_cluster
+                sub_key -= 1
 
         return clusters
 

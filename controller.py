@@ -1,3 +1,4 @@
+from optimizer import Optimizer
 from settlements import Settlements
 from cellsites import CellSites
 from visuals import Visuals
@@ -20,9 +21,13 @@ class Controller:
 
     def perform_cellsite_clustering(self):
         cellsite_clustering = CellSites()
-        self.cellsites = cellsite_clustering.distribute_cellsites(self.settlements)
+        self.cell_sites = cellsite_clustering.distribute_cellsites(self.settlements)
         self.base_stations = cellsite_clustering.locate_base_stations()
-        return self.cellsites, self.base_stations
+        return self.cell_sites, self.base_stations
+
+    def optimize(self):
+        ubc_optimizer = Optimizer(self.settlements, self.base_stations, self.cell_sites)
+        self.towers_distribution = ubc_optimizer.optimize()
 
     def save_basestations_and_cellsites(self):
         with open("basestations.csv", "w") as basestation_file:
@@ -34,17 +39,13 @@ class Controller:
         with open("cellsites.csv", "w") as cellsites_file:
             cellsite_writer = csv.writer(cellsites_file)
 
-            for settlement in self.cellsites.values():
+            for settlement in self.cell_sites.values():
                 for cellsite in settlement:
                     cellsite_writer.writerow(list(cellsite))
 
     def display_visuals(self):
         visuals = Visuals()
-        visuals.display_towers(
-            self.settlements,
-            self.base_stations,
-            self.cellsites
-        )
+        visuals.display_towers(self.towers_distribution)
 
 
 if __name__ == "__main__":
@@ -55,6 +56,8 @@ if __name__ == "__main__":
 
     cellsites, base_stations = controller.perform_cellsite_clustering()
     print("Cellsites count:", sum(map(len, cellsites.values())))
+
+    controller.optimize()
 
     controller.save_basestations_and_cellsites()
     controller.display_visuals()

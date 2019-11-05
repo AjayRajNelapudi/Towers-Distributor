@@ -9,7 +9,7 @@ class Visuals:
     def __init__(self):
         pass
 
-    def display_towers(self, users_regions, basestation_regions, cellsites_regions):
+    def display_towers(self, towers_distribution):
         '''
         Displays the users and cell sites
         :return: None
@@ -29,10 +29,10 @@ class Visuals:
         ])
 
         # users, basestations, cellsites
-        UBC = zip(
-            users_regions.values(), basestation_regions.values(), cellsites_regions.values()
-        )
-        for users, base_station, cell_sites in UBC:
+        for UBC in towers_distribution.values():
+            users = UBC['users']
+            base_station = UBC['base_station']
+            cell_sites = UBC['cell_sites']
             color = next(colors)
 
             users_X, users_Y = zip(*users)
@@ -43,8 +43,6 @@ class Visuals:
                 c=color, marker='p', markersize=10, markeredgecolor='blue'
             )
 
-            # cellsites_X, cellsites_Y = zip(*cell_sites)
-            # plt.scatter(cellsites_X, cellsites_Y, c=color, marker='^', markeredgecolor='red')
 
             for cellsites_X, cellsites_Y in cell_sites:
                 plt.plot(
