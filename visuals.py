@@ -1,3 +1,4 @@
+import itertools
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -8,26 +9,49 @@ class Visuals:
     def __init__(self):
         pass
 
-    def display_towers(self, users, base_stations, towers):
+    def display_towers(self, users_regions, basestation_regions, cellsites_regions):
         '''
         Displays the users and cell sites
         :return: None
         '''
-        users_X = np.array([user[0] for user in users])
-        users_Y = np.array([user[1] for user in users])
-        plt.scatter(users_X, users_Y, c='lightgreen', marker='.', label='users')
+        colors = itertools.cycle([
+            '#CDBD7E',
+            '#A4D47A',
+            '#7AD4C9',
+            '#7C9289',
+            '#F196E0',
+            '#C1F196',
+            '#7AB3D4',
+            '#7A84D4',
+            '#947AD4',
+            '#CC7AD4',
+            '#D47A98',
+        ])
 
-        base_stations_X = np.array([base_station[0] for base_station in base_stations])
-        base_stations_Y = np.array([base_station[1] for base_station in base_stations])
-        plt.scatter(base_stations_X, base_stations_Y, c='blue', marker='p', label='base stations')
+        # users, basestations, cellsites
+        UBC = zip(
+            users_regions.values(), basestation_regions.values(), cellsites_regions.values()
+        )
+        for users, base_station, cell_sites in UBC:
+            color = next(colors)
 
-        for settlement in towers:
-            towers_X = np.array([tower[0] for tower in settlement])
-            towers_Y = np.array([tower[1] for tower in settlement])
-            plt.scatter(towers_X, towers_Y, c='red', marker='^', label='cell sites')
-        # plt.scatter(towers_X, towers_Y, s=800, facecolors='none', edgecolors='r')
+            users_X, users_Y = zip(*users)
+            plt.scatter(users_X, users_Y, c=color, marker='.')
 
-        # plt.legend()
+            plt.plot(
+                base_station[0], base_station[1],
+                c=color, marker='p', markersize=10, markeredgecolor='red'
+            )
+
+            # cellsites_X, cellsites_Y = zip(*cell_sites)
+            # plt.scatter(cellsites_X, cellsites_Y, c=color, marker='^', markeredgecolor='red')
+
+            for cellsites_X, cellsites_Y in cell_sites:
+                plt.plot(
+                    cellsites_X, cellsites_Y,
+                    c=color, marker='^', markersize=10, markeredgecolor='red'
+                )
+
         plt.show()
 
     def get_map(self):

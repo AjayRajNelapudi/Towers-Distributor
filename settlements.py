@@ -9,9 +9,11 @@ class Settlements:
     '''
     geo_cordinates = np.array([])
 
-    def __init__(self, max_distance, min_samples):
+    def __init__(self, max_distance, min_samples, sub_maxdistance, sub_minsamples):
         self.max_distance = max_distance
         self.min_samples = min_samples
+        self.sub_maxdistance = sub_maxdistance
+        self.sub_minsamples = sub_minsamples
 
     def great_circle_distance(self, pt1, pt2):
         '''
@@ -32,7 +34,7 @@ class Settlements:
         param = float("{0:.6f}".format(param))
         return earth_radius * acos(param)
 
-    def cluster_settlements(self, geo_coordinates):
+    def cluster_settlements(self, geo_coordinates, allow_recursion=True):
         '''
         Performs DBSCAN clustering on self.geo_coordinates
         :param geo_coordinates: geo-coordinates of all customers' locations.
@@ -48,12 +50,24 @@ class Settlements:
         clusters = dict()
         for cluster, datapoint in zip(settlements.labels_, geo_coordinates):
             if cluster in clusters:
-                clusters[cluster].append(datapoint)
+                clusters[cluster] = np.concatenate((clusters[cluster], [datapoint]), axis=0)
             else:
-                clusters[cluster] = [datapoint]
+                clusters[cluster] = np.array([datapoint])
 
-        for cluster in clusters:
-            clusters[cluster] = np.array(clusters[cluster])
+        if -1 in clusters and allow_recursion:
+            self.max_distance = self.sub_maxdistance
+            self.min_samples = self.sub_minsamples
+            sub_clusters = self.cluster_settlements(clusters[-1], allow_recursion=False)
+
+            sub_key = len(clusters) - 1
+            clusters.pop(-1)
+
+            for label, sub_cluster in sub_clusters.items():
+                if label == -1:
+                    clusters[-1] = sub_cluster
+                else:
+                    clusters[sub_key] = sub_cluster
+                    sub_key += 1
 
         return clusters
 

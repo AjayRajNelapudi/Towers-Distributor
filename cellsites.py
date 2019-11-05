@@ -2,6 +2,7 @@ from math import radians, degrees, sin, cos, asin, acos, sqrt
 import numpy as np
 from scipy.spatial.distance import cdist
 from sklearn.cluster import KMeans
+import statistics
 
 class CellSites:
     '''
@@ -37,13 +38,24 @@ class CellSites:
         :return: dict of label: cellsites
         '''
 
-        cellsite_locations = dict()
+        self.cellsite_locations = dict()
         for label, settlement in settlements.items():
             cellsites_for_cluster = self.optimise_and_cluster(settlement)
-            cellsite_locations[label] = np.array(cellsites_for_cluster)
+            self.cellsite_locations[label] = np.array(cellsites_for_cluster)
 
-        return cellsite_locations
+        return self.cellsite_locations
 
+    def locate_base_stations(self):
+        self.base_stations = dict()
+        for label, cellsites in self.cellsite_locations.items():
+            base_station_location = [
+                statistics.mean([cellsite[0] for cellsite in cellsites]),
+                statistics.mean([cellsite[1] for cellsite in cellsites])
+            ]
+
+            self.base_stations[label] = np.array(base_station_location)
+
+        return self.base_stations
 
 if __name__ == "__main__":
     import random as rd
