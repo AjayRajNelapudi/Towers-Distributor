@@ -4,7 +4,6 @@
     <list default="true" id="062748fc-d9df-4d31-b598-a9c5f5cb7fe3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basestations.csv" afterPath="$PROJECT_DIR$/basestations.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cellsites.csv" afterPath="$PROJECT_DIR$/cellsites.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/visuals.py" afterPath="$PROJECT_DIR$/visuals.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -77,7 +76,7 @@
       <file leaf-file-name="visuals.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/visuals.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
+            <state relative-caret-position="313">
               <caret line="42" column="73" lean-forward="false" selection-start-line="42" selection-start-column="73" selection-end-line="42" selection-end-column="73" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
@@ -686,7 +685,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/visuals.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
+        <state relative-caret-position="313">
           <caret line="42" column="73" lean-forward="false" selection-start-line="42" selection-start-column="73" selection-end-line="42" selection-end-column="73" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
