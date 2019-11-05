@@ -13,13 +13,13 @@ class Controller:
     def perform_settlement_clustering(self):
         settlement_clustering = Settlements()
         self.settlements = settlement_clustering.cluster_settlements(self.dataset)
+        self.base_stations = settlement_clustering.locate_base_stations()
         return self.settlements
 
     def perform_cellsite_clustering(self):
         cellsite_clustering = CellSites()
         self.cell_sites = cellsite_clustering.distribute_cellsites(self.settlements)
-        self.base_stations = cellsite_clustering.locate_base_stations()
-        return self.cell_sites, self.base_stations
+        return self.cell_sites
 
     def format(self):
         self.towers_distribution = dict()
@@ -54,9 +54,9 @@ if __name__ == "__main__":
     controller = Controller("dataset.csv")
 
     settlements = controller.perform_settlement_clustering()
-    print("Settlements:", settlements.keys())
+    print("Base Stations Count:", len(settlements.keys()))
 
-    cellsites, base_stations = controller.perform_cellsite_clustering()
+    cellsites = controller.perform_cellsite_clustering()
     print("Cellsites count:", sum(map(len, cellsites.values())))
 
     controller.format()

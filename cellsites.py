@@ -45,18 +45,6 @@ class CellSites:
 
         return self.cellsite_locations
 
-    def locate_base_stations(self):
-        self.base_stations = dict()
-        for label, cellsites in self.cellsite_locations.items():
-            base_station_location = [
-                statistics.mean([cellsite[0] for cellsite in cellsites]),
-                statistics.mean([cellsite[1] for cellsite in cellsites])
-            ]
-
-            self.base_stations[label] = np.array(base_station_location)
-
-        return self.base_stations
-
 if __name__ == "__main__":
     import random as rd
 

@@ -1,4 +1,5 @@
 import numpy as np
+import statistics
 from sklearn.cluster import SpectralClustering
 from scipy.sparse import csgraph
 from numpy import linalg as LA
@@ -14,7 +15,7 @@ class Settlements:
     def __init__(self):
         pass
 
-    def getAffinityMatrix(self, coordinates, k=7):
+    def get_affinity_matrix(self, coordinates, k=7):
         """
         Calculate affinity matrix based on input coordinates matrix and the numeber
         of nearest neighbours.
@@ -44,7 +45,7 @@ class Settlements:
 
         return affinity_matrix
 
-    def eigenDecomposition(self, A, topK=5):
+    def eigen_decomposition(self, A, topK=5):
         """
         :param A: Affinity matrix
         :param plot: plots the sorted eigen values for visual inspection
@@ -85,8 +86,8 @@ class Settlements:
         :param geo_coordinates: geo-coordinates of all customers' locations.
         :return: dict of clusters: datapoints
         '''
-        affinity_matrix = self.getAffinityMatrix(geo_coordinates, k=50)
-        K = len(self.eigenDecomposition(affinity_matrix, topK=50)[0])
+        affinity_matrix = self.get_affinity_matrix(geo_coordinates, k=20)
+        K = len(self.eigen_decomposition(affinity_matrix, topK=7)[0])
 
         settlements = SpectralClustering(n_clusters=K, assign_labels='discretize', random_state=0)
         settlements.fit(geo_coordinates)
@@ -98,7 +99,20 @@ class Settlements:
             else:
                 clusters[cluster] = np.array([datapoint])
 
+        self.clusters = clusters
         return clusters
+
+    def locate_base_stations(self):
+        self.base_stations = dict()
+        for label, users in self.clusters.items():
+            base_station_location = [
+                statistics.mean([user[0] for user in users]),
+                statistics.mean([user[1] for user in users])
+            ]
+
+            self.base_stations[label] = np.array(base_station_location)
+
+        return self.base_stations
 
 
 if __name__ == "__main__":
