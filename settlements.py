@@ -86,8 +86,10 @@ class Settlements:
         :param geo_coordinates: geo-coordinates of all customers' locations.
         :return: dict of clusters: datapoints
         '''
-        affinity_matrix = self.get_affinity_matrix(geo_coordinates, k=20)
-        K = len(self.eigen_decomposition(affinity_matrix, topK=7)[0])
+        affinity_matrix = self.get_affinity_matrix(geo_coordinates, k=100)
+        nb_clusters, eigenvalues, eigenvectors = self.eigen_decomposition(affinity_matrix, topK=50)
+        nb_clusters = np.sort(nb_clusters)
+        K = nb_clusters[len(nb_clusters) // 8]
 
         settlements = SpectralClustering(n_clusters=K, assign_labels='discretize', random_state=0)
         settlements.fit(geo_coordinates)

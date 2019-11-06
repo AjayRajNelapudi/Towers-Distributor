@@ -1,7 +1,9 @@
+from optimizer import Optimizer
 from settlements import Settlements
 from cellsites import CellSites
 from visuals import Visuals
 import csv
+import json
 import numpy as np
 
 class Controller:
@@ -14,52 +16,67 @@ class Controller:
         settlement_clustering = Settlements()
         self.settlements = settlement_clustering.cluster_settlements(self.dataset)
         self.base_stations = settlement_clustering.locate_base_stations()
-        return self.settlements
 
     def perform_cellsite_clustering(self):
         cellsite_clustering = CellSites()
         self.cell_sites = cellsite_clustering.distribute_cellsites(self.settlements)
-        return self.cell_sites
 
     def format(self):
-        self.towers_distribution = dict()
+        self.tower_distribution = dict()
         for key in self.settlements.keys():
-            self.towers_distribution[self.base_stations[key].tostring()] = {
+            self.tower_distribution[self.base_stations[key].tostring()] = {
                 'cell_sites': self.cell_sites[key],
                 'base_station': self.base_stations[key],
                 'users': self.settlements[key]
             }
-        return self.towers_distribution
 
-    def save_basestations_and_cellsites(self):
-        with open("basestations.csv", "w") as basestation_file:
-            basestation_writer = csv.writer(basestation_file)
+    def optimize(self):
+        ubc_optimizer = Optimizer(self.tower_distribution)
+        ubc_optimizer.optimize()
 
-            for base_station in self.base_stations.values():
-                basestation_writer.writerow(list(base_station))
+    # def save_basestations_and_cellsites(self):
+    #     with open("basestations.csv", "w") as basestation_file:
+    #         basestation_writer = csv.writer(basestation_file)
+    #
+    #         for base_station in self.base_stations.values():
+    #             basestation_writer.writerow(list(base_station))
+    #
+    #     with open("cellsites.csv", "w") as cellsites_file:
+    #         cellsite_writer = csv.writer(cellsites_file)
+    #
+    #         for settlement in self.cell_sites.values():
+    #             for cellsite in settlement:
+    #                 cellsite_writer.writerow(list(cellsite))
 
-        with open("cellsites.csv", "w") as cellsites_file:
-            cellsite_writer = csv.writer(cellsites_file)
+    def save_tower_distribution(self):
+        tower_distribution = dict()
+        keys = list(self.tower_distribution.keys())
+        for key in keys:
+            base_station = self.tower_distribution[key]
 
-            for settlement in self.cell_sites.values():
-                for cellsite in settlement:
-                    cellsite_writer.writerow(list(cellsite))
+            base_station['users'] = str(base_station['users'])
+            base_station['base_station'] = str(base_station['base_station'])
+            base_station['cell_sites'] = str(base_station['cell_sites'])
+
+            tower_distribution[str(key)] = base_station
+
+        tower_distribution = json.dumps(tower_distribution)
+        with open("tower_distribution.json", "w") as tower_distribution_file:
+            tower_distribution_file.write(tower_distribution)
 
     def display_visuals(self):
         visuals = Visuals()
-        visuals.display_towers(self.towers_distribution)
+        visuals.display_towers(self.tower_distribution)
 
 
 if __name__ == "__main__":
     controller = Controller("dataset.csv")
 
-    settlements = controller.perform_settlement_clustering()
-    print("Base Stations Count:", len(settlements.keys()))
-
-    cellsites = controller.perform_cellsite_clustering()
-    print("Cellsites count:", sum(map(len, cellsites.values())))
+    controller.perform_settlement_clustering()
+    controller.perform_cellsite_clustering()
 
     controller.format()
+    controller.optimize()
 
-    controller.save_basestations_and_cellsites()
+    controller.save_tower_distribution()
     controller.display_visuals()
