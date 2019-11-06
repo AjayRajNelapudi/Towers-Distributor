@@ -5,9 +5,13 @@ class Optimizer:
     This class optimizes the no of towers by merging stations with less than 25 towers
     '''
     def __init__(self, tower_distribution):
+        import os
+        if os.name == "nt":
+            raise OSError("Windows does not support optimization.\nPlease use Linux or MacOS")
         self.tower_distribution = tower_distribution
 
     def optimize(self):
+        print("Running Optimization Metric...")
         while min([len(base_station['users']) for base_station in self.tower_distribution.values()]) < 25:
             self.optimization_metric()
 

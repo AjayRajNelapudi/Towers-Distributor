@@ -25,11 +25,15 @@ class CellSites:
         permissible_distortion = 0.008 # Change permissible_distortion to vary no of towers
 
         while distortion > permissible_distortion:
+            print("Performing K-Means Clustering...")
             cell_sites = KMeans(n_clusters=K)
             cell_sites.fit(geo_coordinates)
             distortion = sum(np.min(cdist(geo_coordinates, cell_sites.cluster_centers_, 'euclidean'), axis=1)) / geo_coordinates.shape[0]
+            print("K =", K)
+            print("Distortion =", distortion)
             K += 1
 
+        print("Optimal K=", K)
         return cell_sites.cluster_centers_
 
     def distribute_cellsites(self, settlements):
@@ -37,7 +41,7 @@ class CellSites:
         Optimises and distributes the cell sites
         :return: dict of label: cellsites
         '''
-
+        print("Performing L2 Clustering...")
         self.cellsite_locations = dict()
         for label, settlement in settlements.items():
             cellsites_for_cluster = self.optimise_and_cluster(settlement)
