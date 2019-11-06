@@ -8,9 +8,6 @@ class Optimizer:
         self.tower_distribution = tower_distribution
 
     def optimize(self):
-        import os
-        if os.name == "nt": # windows
-            raise OSError("Windows is not supported for optimisation.\nPlese switch to Linux or MacOS")
         while min([len(base_station['users']) for base_station in self.tower_distribution.values()]) < 25:
             self.optimization_metric()
 
