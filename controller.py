@@ -52,7 +52,7 @@ class Controller:
         tower_distribution = dict()
         keys = list(self.tower_distribution.keys())
         for key in keys:
-            base_station = self.tower_distribution[key]
+            base_station = self.tower_distribution[key].copy()
 
             base_station['users'] = str(base_station['users'])
             base_station['base_station'] = str(base_station['base_station'])
