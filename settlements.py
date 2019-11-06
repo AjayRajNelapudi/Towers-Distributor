@@ -96,7 +96,7 @@ class Settlements:
         K = nb_clusters[len(nb_clusters) // 8]
 
         print("Performing Spectral Clustering...")
-        settlements = SpectralClustering(n_clusters=K, assign_labels='discretize', random_state=0)
+        settlements = SpectralClustering(n_clusters=nb_clusters, assign_labels='discretize', random_state=0)
         settlements.fit(geo_coordinates)
 
         clusters = dict()
