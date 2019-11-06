@@ -1,5 +1,4 @@
 import numpy as np
-import statistics
 from sklearn.cluster import SpectralClustering
 from scipy.sparse import csgraph
 from numpy import linalg as LA
@@ -108,8 +107,8 @@ class Settlements:
         self.base_stations = dict()
         for label, users in self.clusters.items():
             base_station_location = [
-                statistics.mean([user[0] for user in users]),
-                statistics.mean([user[1] for user in users])
+                np.mean([user[0] for user in users]),
+                np.mean([user[1] for user in users])
             ]
 
             self.base_stations[label] = np.array(base_station_location)
