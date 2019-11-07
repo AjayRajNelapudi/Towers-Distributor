@@ -81,4 +81,4 @@ if __name__ == "__main__":
     controller.save_tower_distribution()
     controller.display_visuals()
 
-    print("Tower Distribution Serialized to tower_distribution.json")
+    print("Tower Distribution serialized to tower_distribution.json")
