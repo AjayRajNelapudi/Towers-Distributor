@@ -45,6 +45,7 @@ class Visuals:
                     c=color, marker="^", markersize=10, markeredgecolor="black"
                 )
 
+        plt.savefig("tower-distribution.png")
         plt.show()
 
     # def display_towers(self, towers_distribution):
