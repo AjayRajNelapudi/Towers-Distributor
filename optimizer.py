@@ -36,6 +36,17 @@ class Optimizer:
 
         return nearest_base_station[0] # key is at 0th index
 
+    def has_cell_sites_within_range(self, current_cell_site, exisiting_cell_sites, close_range):
+        '''
+        checks if the current cell site is within range of other cell sites
+        :param current_cell_site: the cellsite for the current iteration
+        :param exisiting_cell_sites: all the exisiting cell sites
+        :param close_range: the distance between current cell site to all cell sites
+        :return: True if cell sites found else false
+        '''
+        is_within_range = lambda exisiting_cell_site: np.linalg.norm(exisiting_cell_site - current_cell_site) < close_range
+        return np.any(is_within_range(exisiting_cell_sites))
+
     def base_station_optimization(self):
         '''
         Clubs clusters with less than 25 users
@@ -61,9 +72,15 @@ class Optimizer:
             nearest_base_station['users'] = np.concatenate(
                 (nearest_base_station['users'], current_base_station['users']), axis=0
             )
-            nearest_base_station['cell_sites'] = np.concatenate(
-                (nearest_base_station['cell_sites'], current_base_station['cell_sites']), axis=0
-            )
+
+            for cell_site in current_base_station['cell_sites']:
+                if self.has_cell_sites_within_range(cell_site, nearest_base_station['cell_sites'], 0.005):
+                    continue
+
+                nearest_base_station['cell_sites'] = np.concatenate(
+                    (nearest_base_station['cell_sites'], [cell_site]), axis=0
+                )
+
             nearest_base_station['base_station'] = np.array([
                 np.mean([
                     nearest_base_station['base_station'][0],
