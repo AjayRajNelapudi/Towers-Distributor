@@ -95,9 +95,3 @@ class Optimizer:
             new_key = nearest_base_station['base_station'].tostring()
             self.tower_distribution[new_key] = nearest_base_station
 
-    def cell_site_optimization(self):
-        '''
-        Finds mean of cell sites that are very close after base station optimization
-        :return: None
-        '''
-        pass
