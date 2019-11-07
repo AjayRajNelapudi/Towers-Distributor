@@ -33,7 +33,7 @@ class CellSites:
             print("Distortion =", distortion)
             K += 1
 
-        print("Optimal K=", K)
+        print("Optimal K =", K)
         return cell_sites.cluster_centers_
 
     def distribute_cellsites(self, settlements):

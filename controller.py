@@ -31,8 +31,8 @@ class Controller:
             }
 
     def optimize(self):
-        ubc_optimizer = Optimizer(self.tower_distribution)
-        ubc_optimizer.optimize()
+        ubc_optimizer = Optimizer(self.tower_distribution.copy())
+        self.tower_distribution = ubc_optimizer.optimize()
 
     # def save_basestations_and_cellsites(self):
     #     with open("basestations.csv", "w") as basestation_file:

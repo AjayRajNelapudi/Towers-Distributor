@@ -8,11 +8,39 @@ class Optimizer:
         self.tower_distribution = tower_distribution
 
     def optimize(self):
+        '''
+        This is the exposed API for optimization
+        :return: optimized tower_distribution
+        '''
         print("Running Optimization Metric...")
-        while min([len(base_station['users']) for base_station in self.tower_distribution.values()]) < 25:
-            self.optimization_metric()
+        mini_clusters_present = lambda min_users: min([len(base_station['users'])
+                                                       for base_station in self.tower_distribution.values()
+                                                       ]) < min_users
+        while mini_clusters_present(25):
+            self.base_station_optimization()
 
-    def optimization_metric(self):
+        return self.tower_distribution
+
+    def find_nearest_base_station_key(self, base_station):
+        current_key = base_station.tostring()
+        all_base_stations = [
+            (key, value['base_station'])
+            for key, value in self.tower_distribution.items()
+                if key != current_key
+        ]
+
+        nearest_base_station = min(
+            all_base_stations,
+            key = lambda each_base_station: np.linalg.norm(each_base_station[1] - base_station)
+        )
+
+        return nearest_base_station[0] # key is at 0th index
+
+    def base_station_optimization(self):
+        '''
+        Clubs clusters with less than 25 users
+        :return: None
+        '''
         keys = list(self.tower_distribution.keys())
         for key in keys:
             if key not in self.tower_distribution:
@@ -50,17 +78,9 @@ class Optimizer:
             new_key = nearest_base_station['base_station'].tostring()
             self.tower_distribution[new_key] = nearest_base_station
 
-    def find_nearest_base_station_key(self, base_station):
-        current_key = base_station.tostring()
-        all_base_stations = [
-            (key, value['base_station'])
-            for key, value in self.tower_distribution.items()
-                if key != current_key
-        ]
-
-        nearest_base_station = min(
-            all_base_stations,
-            key = lambda each_base_station: np.linalg.norm(each_base_station[1] - base_station)
-        )
-
-        return nearest_base_station[0] # key is at 0th index
+    def cell_site_optimization(self):
+        '''
+        Finds mean of cell sites that are very close after base station optimization
+        :return: None
+        '''
+        pass
