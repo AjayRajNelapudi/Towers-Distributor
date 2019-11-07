@@ -10,7 +10,7 @@ The pentagons represent the base stations<br>
 The triangles represent the cell sites<br>
 <br>
 
-<b>Steps Followed<b><br>
+<b>Steps Followed</b><br>
 1. Build affinity matrix.<br>
 2. Compute Eigen decompostiion for finding optimal no of clusters.<br>
 3. Apply spectral clustering.<br>
