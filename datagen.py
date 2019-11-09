@@ -15,7 +15,7 @@ def generate_dataset(hotspots):
     dataset = []
     for hotspot in hotspots:
         # customer_per_hotspot = np.random.randint(10, 50)
-        customer_per_hotspot = itertools.cycle([6, 10, 3, 500, 100])
+        customer_per_hotspot = itertools.cycle([2, 5, 3, 2, 1000])
         for customer in range(next(customer_per_hotspot)):
             x = hotspot[0] + (0.0001 * np.random.randint(*users_distance))
             y = hotspot[1] + (0.0001 * np.random.randint(*users_distance))

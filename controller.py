@@ -1,10 +1,11 @@
+import os
+import csv
+import json
+import numpy as np
 from optimizer import Optimizer
 from settlements import Settlements
 from cellsites import CellSites
 from visuals import Visuals
-import csv
-import json
-import numpy as np
 
 class Controller:
     def __init__(self, dataset_filepath):
@@ -65,8 +66,10 @@ class Controller:
             tower_distribution_file.write(tower_distribution)
 
     def display_visuals(self):
-        visuals = Visuals()
-        visuals.display_towers(self.tower_distribution)
+        visuals = Visuals(self.tower_distribution)
+        visuals.display_distribution()
+        visuals.make_map("map.html")
+        os.system("open map.html")
 
 
 if __name__ == "__main__":
@@ -82,3 +85,4 @@ if __name__ == "__main__":
     controller.display_visuals()
 
     print("Tower Distribution serialized to tower_distribution.json")
+    print("Open map.html to visualize on map")
