@@ -73,7 +73,7 @@ class Visuals:
         :param save_path: Path to save the map
         :return: None
         '''
-        map = folium.Map(location=[17.777612, 83.250768], titles='OpenStreetMap')
+        map = folium.Map(location=[17.777612, 83.250768], titles='OpenStreetMap', zoom_start=11)
         for UBC in self.tower_distribution.values():
             users = UBC['users']
             base_station = UBC['base_station']
@@ -99,7 +99,7 @@ class Visuals:
                     positions=(base_station, cell_site),
                     colors=[0],
                     colormap=[color, 'black'],
-                    weight=6
+                    weight=4
                 )
                 map.add_child(backhaul_line)
 
