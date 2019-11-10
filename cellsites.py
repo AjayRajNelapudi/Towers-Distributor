@@ -1,8 +1,6 @@
-from math import radians, degrees, sin, cos, asin, acos, sqrt
 import numpy as np
 from scipy.spatial.distance import cdist
 from sklearn.cluster import KMeans
-import statistics
 
 class CellSites:
     '''
@@ -22,7 +20,7 @@ class CellSites:
         '''
         K = int(len(geo_coordinates) ** (1./3.))
         distortion = 1
-        permissible_distortion = 0.008 # Change permissible_distortion to vary no of towers
+        permissible_distortion = 0.0064 # Change permissible_distortion to vary no of towers
 
         while distortion > permissible_distortion:
             print("Performing K-Means Clustering...")
