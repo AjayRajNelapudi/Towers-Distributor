@@ -80,6 +80,16 @@ class Visuals:
             cell_sites = UBC['cell_sites']
             color = next(self.colors)
 
+            for user in users:
+                user_marker = folium.Circle(
+                    location=user,
+                    radius=0.25,
+                    color=color,
+                    fill=True,
+                    fill_color=color
+                )
+                map.add_child(user_marker)
+
             base_station_marker = folium.Circle(
                 location=base_station,
                 radius=1,
@@ -98,8 +108,8 @@ class Visuals:
                 backhaul_line = folium.ColorLine(
                     positions=(base_station, cell_site),
                     colors=[0],
-                    colormap=[color, 'black'],
-                    weight=4
+                    colormap=['black', 'black'],
+                    weight=2
                 )
                 map.add_child(backhaul_line)
 
