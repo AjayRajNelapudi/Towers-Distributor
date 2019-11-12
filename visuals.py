@@ -73,7 +73,11 @@ class Visuals:
         :param save_path: Path to save the map
         :return: None
         '''
-        map = folium.Map(location=[17.777612, 83.250768], titles='OpenStreetMap', zoom_start=11)
+        map = folium.Map(
+            location=[17.777612, 83.250768],
+            titles='OpenStreetMap',
+            zoom_start=11
+        )
         for UBC in self.tower_distribution.values():
             users = UBC['users']
             base_station = UBC['base_station']
