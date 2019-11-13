@@ -1,4 +1,5 @@
 import folium
+import logging
 import itertools
 import numpy as np
 import matplotlib.pyplot as plt
@@ -19,6 +20,7 @@ class Visuals:
 
     def __init__(self, tower_distribution):
         self.tower_distribution = tower_distribution
+        self.logger = logging.getLogger("visualizer")
 
     def display_distribution(self):
         '''

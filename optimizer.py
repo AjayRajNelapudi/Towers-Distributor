@@ -1,3 +1,4 @@
+import logging
 import numpy as np
 
 class Optimizer:
@@ -6,13 +7,14 @@ class Optimizer:
     '''
     def __init__(self, tower_distribution):
         self.tower_distribution = tower_distribution
+        self.logger = logging.getLogger("optimizer")
 
     def optimize(self):
         '''
         This is the exposed API for optimization
         :return: optimized tower_distribution
         '''
-        print("Running Optimization Metric...")
+        self.logger.debug("Running Optimization Metric...")
         mini_clusters_present = lambda min_users: min([len(base_station['users'])
                                                        for base_station in self.tower_distribution.values()
                                                        ]) < min_users

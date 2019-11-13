@@ -1,3 +1,4 @@
+import logging
 import numpy as np
 from scipy.spatial.distance import cdist
 from sklearn.cluster import KMeans
@@ -10,7 +11,7 @@ class CellSites:
     settlements = np.array([])
 
     def __init__(self):
-        pass
+        self.logger = logging.getLogger("cellsites")
 
     def optimise_and_cluster(self, geo_coordinates):
         '''
@@ -23,15 +24,15 @@ class CellSites:
         permissible_distortion = 0.0064 # Change permissible_distortion to vary no of towers
 
         while distortion > permissible_distortion:
-            print("Performing K-Means Clustering...")
+            self.logger.debug("Performing K-Means Clustering...")
             cell_sites = KMeans(n_clusters=K)
             cell_sites.fit(geo_coordinates)
             distortion = sum(np.min(cdist(geo_coordinates, cell_sites.cluster_centers_, 'euclidean'), axis=1)) / geo_coordinates.shape[0]
-            print("K =", K)
-            print("Distortion =", distortion)
+            self.logger.debug("K =" + str(K))
+            self.logger.debug("Distortion =" + str(distortion))
             K += 1
 
-        print("Optimal K =", K)
+        self.logger.debug("Optimal K =" + str(K))
         return cell_sites.cluster_centers_
 
     def distribute_cellsites(self, settlements):
@@ -39,26 +40,10 @@ class CellSites:
         Optimises and distributes the cell sites
         :return: dict of label: cellsites
         '''
-        print("Performing L2 Clustering...")
+        self.logger.debug("Performing L2 Clustering...")
         self.cellsite_locations = dict()
         for label, settlement in settlements.items():
             cellsites_for_cluster = self.optimise_and_cluster(settlement)
             self.cellsite_locations[label] = np.array(cellsites_for_cluster)
 
         return self.cellsite_locations
-
-if __name__ == "__main__":
-    import random as rd
-
-    dataset = {}
-    for i in range(10):
-        datapoints = []
-        for j in range(50):
-            datapoints.append((rd.randrange(1000), rd.randrange(1000)))
-
-        dataset[i] = np.array(datapoints)
-
-    cell_sites = CellSites()
-    locations = cell_sites.distribute_cellsites(dataset)
-    for loc in locations:
-        print(loc)

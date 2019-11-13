@@ -1,3 +1,4 @@
+import logging
 import numpy as np
 from sklearn.cluster import SpectralClustering
 from scipy.sparse import csgraph
@@ -12,7 +13,7 @@ class Settlements:
     geo_cordinates = np.array([])
 
     def __init__(self):
-        pass
+        self.logger = logging.getLogger("settlements")
 
     def get_affinity_matrix(self, coordinates, k=7):
         """
@@ -85,17 +86,17 @@ class Settlements:
         :param geo_coordinates: geo-coordinates of all customers' locations.
         :return: dict of clusters: datapoints
         '''
-        print("Performing L1 Clustering...")
+        self.logger.debug("Performing L1 Clustering...")
 
-        print("Building Affinity Matrix...")
+        self.logger.debug("Building Affinity Matrix...")
         affinity_matrix = self.get_affinity_matrix(geo_coordinates, k=100)
 
-        print("Computing Eigen Decomposition...")
+        self.logger.debug("Computing Eigen Decomposition...")
         nb_clusters, eigenvalues, eigenvectors = self.eigen_decomposition(affinity_matrix, topK=50)
         nb_clusters = np.sort(nb_clusters)
         K = nb_clusters[len(nb_clusters) // 8]
 
-        print("Performing Spectral Clustering...")
+        self.logger.debug("Performing Spectral Clustering...")
         settlements = SpectralClustering(n_clusters=K, assign_labels='discretize', random_state=0)
         settlements.fit(geo_coordinates)
 
@@ -120,16 +121,3 @@ class Settlements:
             self.base_stations[label] = np.array(base_station_location)
 
         return self.base_stations
-
-
-if __name__ == "__main__":
-    import random as rd
-
-    datapoints = []
-
-    for i in range(1000):
-        datapoints.append([rd.uniform(17, 19), rd.uniform(82, 84)])
-
-    settlements = Settlements()
-    clusters = settlements.cluster_settlements(np.array(datapoints))
-    print(clusters)

@@ -1,17 +1,20 @@
 import os
 import csv
 import json
+import logging
 import numpy as np
-from optimizer import Optimizer
 from settlements import Settlements
 from cellsites import CellSites
-from visuals import Visuals
+from optimizer import Optimizer
+from visualizer import Visuals
 
-class Controller:
-    def __init__(self, dataset_filepath):
+class TowersDistributor:
+    def __init__(self, dataset_filepath, output_file):
         with open(dataset_filepath) as dataset_file:
             dataset_reader = csv.reader(dataset_file)
             self.dataset = np.array([list(map(float, datapoint)) for datapoint in dataset_reader])
+        self.output_file = output_file
+        self.logger = logging.getLogger("towersdistributor")
 
     def perform_settlement_clustering(self):
         settlement_clustering = Settlements()
@@ -21,6 +24,7 @@ class Controller:
     def perform_cellsite_clustering(self):
         cellsite_clustering = CellSites()
         self.cell_sites = cellsite_clustering.distribute_cellsites(self.settlements)
+        # raise SystemExit("60 % execution done") # My college measures code written as % of unknown total code
 
     def format(self):
         self.tower_distribution = dict()
@@ -35,20 +39,6 @@ class Controller:
         ubc_optimizer = Optimizer(self.tower_distribution.copy())
         self.tower_distribution = ubc_optimizer.optimize()
 
-    # def save_basestations_and_cellsites(self):
-    #     with open("basestations.csv", "w") as basestation_file:
-    #         basestation_writer = csv.writer(basestation_file)
-    #
-    #         for base_station in self.base_stations.values():
-    #             basestation_writer.writerow(list(base_station))
-    #
-    #     with open("cellsites.csv", "w") as cellsites_file:
-    #         cellsite_writer = csv.writer(cellsites_file)
-    #
-    #         for settlement in self.cell_sites.values():
-    #             for cellsite in settlement:
-    #                 cellsite_writer.writerow(list(cellsite))
-
     def save_tower_distribution(self):
         tower_distribution = dict()
         keys = list(self.tower_distribution.keys())
@@ -62,27 +52,27 @@ class Controller:
             tower_distribution[str(key)] = base_station
 
         tower_distribution = json.dumps(tower_distribution)
-        with open("tower_distribution.json", "w") as tower_distribution_file:
+        with open(self.output_file, "w") as tower_distribution_file:
             tower_distribution_file.write(tower_distribution)
 
     def display_visuals(self):
         visuals = Visuals(self.tower_distribution)
-        visuals.display_distribution()
+        # visuals.display_distribution()
         visuals.make_map("map.html")
         os.system("open map.html")
 
 
 if __name__ == "__main__":
-    controller = Controller("dataset.csv")
+    distributor = TowersDistributor("dataset.csv", "tower-distribution.json")
 
-    controller.perform_settlement_clustering()
-    controller.perform_cellsite_clustering()
+    distributor.perform_settlement_clustering()
+    distributor.perform_cellsite_clustering()
 
-    controller.format()
-    controller.optimize()
+    distributor.format()
+    distributor.optimize()
 
-    controller.save_tower_distribution()
-    controller.display_visuals()
+    distributor.save_tower_distribution()
+    distributor.display_visuals()
 
     print("Tower Distribution serialized to tower_distribution.json")
     print("Open map.html to visualize on map")
