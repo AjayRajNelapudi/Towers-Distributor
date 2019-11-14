@@ -24,6 +24,7 @@ class Settlements:
             References:
         https://papers.nips.cc/paper/2619-self-tuning-spectral-clustering.pdf
         """
+        self.logger.debug("Building affinity matrix")
         # calculate euclidian distance matrix
         dists = squareform(pdist(coordinates))
 
@@ -43,6 +44,7 @@ class Settlements:
         affinity_matrix = np.exp(affinity_matrix)
         np.fill_diagonal(affinity_matrix, 0)
 
+        self.logger.debug("Affinity matrix built")
         return affinity_matrix
 
     def eigen_decomposition(self, A, topK=5):
@@ -65,6 +67,8 @@ class Settlements:
         https://papers.nips.cc/paper/2619-self-tuning-spectral-clustering.pdf
         http://www.kyb.mpg.de/fileadmin/user_upload/files/publications/attachments/Luxburg07_tutorial_4488%5b0%5d.pdf
         """
+        self.logger.debug("Computing Eigen decompostion")
+
         L = csgraph.laplacian(A, normed=True)
         n_components = A.shape[0]
 
@@ -78,6 +82,7 @@ class Settlements:
         index_largest_gap = np.argsort(np.diff(eigenvalues))[::-1][:topK]
         nb_clusters = index_largest_gap + 1
 
+        self.logger.debug("Eigen decomposition applied")
         return nb_clusters, eigenvalues, eigenvectors
 
     def cluster_settlements(self, geo_coordinates):
@@ -86,17 +91,15 @@ class Settlements:
         :param geo_coordinates: geo-coordinates of all customers' locations.
         :return: dict of clusters: datapoints
         '''
-        self.logger.debug("Performing L1 Clustering...")
+        self.logger.debug("Clustering settlements")
 
-        self.logger.debug("Building Affinity Matrix...")
         affinity_matrix = self.get_affinity_matrix(geo_coordinates, k=100)
 
-        self.logger.debug("Computing Eigen Decomposition...")
         nb_clusters, eigenvalues, eigenvectors = self.eigen_decomposition(affinity_matrix, topK=50)
         nb_clusters = np.sort(nb_clusters)
-        K = nb_clusters[len(nb_clusters) // 8]
+        selection_index = len(nb_clusters) // 8
+        K = nb_clusters[selection_index]
 
-        self.logger.debug("Performing Spectral Clustering...")
         settlements = SpectralClustering(n_clusters=K, assign_labels='discretize', random_state=0)
         settlements.fit(geo_coordinates)
 
@@ -108,6 +111,8 @@ class Settlements:
                 clusters[cluster] = np.array([datapoint])
 
         self.clusters = clusters
+        self.logger.debug("Settlement clustering done")
+
         return clusters
 
     def locate_base_stations(self):

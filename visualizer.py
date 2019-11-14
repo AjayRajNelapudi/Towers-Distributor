@@ -75,11 +75,14 @@ class Visuals:
         :param save_path: Path to save the map
         :return: None
         '''
+        self.logger.debug("Making map with UBC distribution")
         map = folium.Map(
             location=[17.777612, 83.250768],
             titles='OpenStreetMap',
             zoom_start=11
         )
+
+        self.logger.debug("Scattering UBC over map")
         for UBC in self.tower_distribution.values():
             users = UBC['users']
             base_station = UBC['base_station']
@@ -120,3 +123,4 @@ class Visuals:
                 map.add_child(backhaul_line)
 
         map.save(save_path)
+        self.logger.debug("Map created with UBC scattered")

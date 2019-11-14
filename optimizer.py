@@ -14,13 +14,14 @@ class Optimizer:
         This is the exposed API for optimization
         :return: optimized tower_distribution
         '''
-        self.logger.debug("Running Optimization Metric...")
-        mini_clusters_present = lambda min_users: min([len(base_station['users'])
+        self.logger.debug("Removing micro clusters")
+        micro_clusters_present = lambda min_users: min([len(base_station['users'])
                                                        for base_station in self.tower_distribution.values()
                                                        ]) < min_users
-        while mini_clusters_present(25):
+        while micro_clusters_present(25):
             self.base_station_optimization()
 
+        self.logger.debug("Micro clusters removed")
         return self.tower_distribution
 
     def find_nearest_base_station_key(self, base_station):
@@ -54,6 +55,7 @@ class Optimizer:
         Clubs clusters with less than 25 users
         :return: None
         '''
+        self.logger.debug("Applying custom optimization")
         keys = list(self.tower_distribution.keys())
         for key in keys:
             if key not in self.tower_distribution:
@@ -96,4 +98,6 @@ class Optimizer:
 
             new_key = nearest_base_station['base_station'].tostring()
             self.tower_distribution[new_key] = nearest_base_station
+
+            self.logger.debug("Custom optimization applied")
 
