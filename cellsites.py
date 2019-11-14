@@ -28,7 +28,7 @@ class CellSites:
         while distortion > permissible_distortion:
             self.logger.debug("Applying K-Means Clustering")
             cell_sites = KMeans(n_clusters=K)
-            self.logger.debug("K-Meanc clustering applied")
+            self.logger.debug("K-Means clustering applied")
             cell_sites.fit(geo_coordinates)
             distortion = sum(np.min(cdist(geo_coordinates, cell_sites.cluster_centers_, 'euclidean'), axis=1)) / geo_coordinates.shape[0]
             self.logger.debug("K = " + str(K))
