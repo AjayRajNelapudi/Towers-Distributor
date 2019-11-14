@@ -77,13 +77,13 @@ class TowersDistributor:
         }
     }
 
-    def __init__(self, dataset_filepath, output_JSON_file, output_map_file):
+    def __init__(self, dataset_filepath, output_JSON_file, output_html_map_file):
         logging.config.dictConfig(self.LOGGING)
         with open(dataset_filepath) as dataset_file:
             dataset_reader = csv.reader(dataset_file)
             self.dataset = np.array([list(map(float, datapoint)) for datapoint in dataset_reader])
         self.output_JSON_file = output_JSON_file
-        self.output_map_file = output_map_file
+        self.output_html_map_file = output_html_map_file
         self.logger = logging.getLogger("towersdistributor")
         self.logger.debug("Towers Distributor Initialized")
 
@@ -141,11 +141,11 @@ class TowersDistributor:
         self.logger.debug("Creating Visuals")
         visuals = Visuals(self.tower_distribution)
         # visuals.display_distribution()
-        visuals.make_map(self.output_map_file)
+        visuals.make_map(self.output_html_map_file)
         self.logger.debug("Visuals created")
 
         self.logger.debug("Calling default browser to open map")
-        os.system("open " + self.output_map_file)
+        os.system("open " + self.output_html_map_file)
 
 
 if __name__ == "__main__":

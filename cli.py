@@ -4,9 +4,9 @@ from towersdistributor import TowersDistributor
 @click.command()
 @click.argument("dataset", nargs=1, required=True)
 @click.argument("output_json_file", nargs=1, required=True)
-@click.argument("output_map_file", nargs=1, required=True)
-def distribute_towers(dataset, output_json_file, output_map_file):
-    distributor = TowersDistributor(dataset, output_json_file, output_map_file)
+@click.argument("output_html_map_file", nargs=1, required=True)
+def distribute_towers(dataset, output_json_file, output_html_map_file):
+    distributor = TowersDistributor(dataset, output_json_file, output_html_map_file)
 
     distributor.perform_settlement_clustering()
     distributor.perform_cellsite_clustering()
