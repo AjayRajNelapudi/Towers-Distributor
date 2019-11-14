@@ -2,3 +2,11 @@
 2019-11-14 10:01:30,515 DEBUG optimizer Applying custom optimization
 2019-11-14 10:01:30,516 DEBUG optimizer Custom optimization applied
 2019-11-14 10:01:30,516 DEBUG optimizer Micro clusters removed
+2019-11-14 10:04:29,995 DEBUG optimizer Removing micro clusters
+2019-11-14 10:04:29,995 DEBUG optimizer Applying custom optimization
+2019-11-14 10:04:29,995 DEBUG optimizer Custom optimization applied
+2019-11-14 10:04:29,995 DEBUG optimizer Micro clusters removed
+2019-11-14 10:06:59,712 DEBUG optimizer Removing micro clusters
+2019-11-14 10:06:59,713 DEBUG optimizer Applying custom optimization
+2019-11-14 10:06:59,713 DEBUG optimizer Custom optimization applied
+2019-11-14 10:06:59,713 DEBUG optimizer Micro clusters removed
