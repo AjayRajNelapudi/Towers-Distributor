@@ -78,7 +78,7 @@ class Visuals:
         self.logger.debug("Making map with UBC distribution")
         map = folium.Map(
             location=[17.777612, 83.250768],
-            titles='OpenStreetMap',
+            titles="OpenStreetMap",
             zoom_start=11
         )
 
@@ -95,18 +95,10 @@ class Visuals:
                     radius=0.25,
                     color=color,
                     fill=True,
-                    fill_color=color
+                    fill_color=color,
+                    tooltip="user"
                 )
                 map.add_child(user_marker)
-
-            base_station_marker = folium.Circle(
-                location=base_station,
-                radius=1,
-                color=color,
-                fill=True,
-                fill_color=color
-            )
-            map.add_child(base_station_marker)
 
             for cell_site in cell_sites:
                 cell_site_marker = folium.Marker(
@@ -114,13 +106,33 @@ class Visuals:
                 )
                 map.add_child(cell_site_marker)
 
+                cell_site_circle = folium.Circle(
+                    location=cell_site,
+                    radius=800,
+                    color=color,
+                    fill=True,
+                    tooltip="Cellsite"
+                )
+                map.add_child(cell_site_circle)
+
                 backhaul_line = folium.ColorLine(
                     positions=(base_station, cell_site),
                     colors=[0],
-                    colormap=['black', 'black'],
-                    weight=2
+                    colormap=[color, 'black'],
+                    weight=2,
+                    tooltip="Backhaul"
                 )
                 map.add_child(backhaul_line)
+
+            base_station_circle = folium.Circle(
+                location=base_station,
+                radius=50,
+                color=color,
+                fill=True,
+                fill_color="black",
+                tooltip="Base Station"
+            )
+            map.add_child(base_station_circle)
 
         map.save(save_path)
         self.logger.debug("Map created with UBC scattered")

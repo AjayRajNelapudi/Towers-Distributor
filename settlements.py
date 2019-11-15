@@ -118,11 +118,11 @@ class Settlements:
     def locate_base_stations(self):
         self.base_stations = dict()
         for label, users in self.clusters.items():
-            base_station_location = [
+            base_station_location = np.array([
                 np.mean([user[0] for user in users]),
                 np.mean([user[1] for user in users])
-            ]
+            ])
 
-            self.base_stations[label] = np.array(base_station_location)
+            self.base_stations[label] = base_station_location
 
         return self.base_stations
