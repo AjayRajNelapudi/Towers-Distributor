@@ -136,3 +136,123 @@
 2019-11-15 20:11:17,137 DEBUG settlements Computing Eigen decompostion
 2019-11-15 20:11:18,413 DEBUG settlements Eigen decomposition applied
 2019-11-15 20:11:20,583 DEBUG settlements Settlement clustering done
+2019-11-16 09:24:34,646 DEBUG settlements Clustering settlements
+2019-11-16 09:24:34,646 DEBUG settlements Building affinity matrix
+2019-11-16 09:24:34,773 DEBUG settlements Affinity matrix built
+2019-11-16 09:24:34,777 DEBUG settlements Computing Eigen decompostion
+2019-11-16 09:24:36,061 DEBUG settlements Eigen decomposition applied
+2019-11-16 09:24:38,496 DEBUG settlements Settlement clustering done
+2019-11-16 09:26:10,573 DEBUG settlements Clustering settlements
+2019-11-16 09:26:10,573 DEBUG settlements Building affinity matrix
+2019-11-16 09:26:10,684 DEBUG settlements Affinity matrix built
+2019-11-16 09:26:10,688 DEBUG settlements Computing Eigen decompostion
+2019-11-16 09:26:12,055 DEBUG settlements Eigen decomposition applied
+2019-11-16 09:26:14,343 DEBUG settlements Settlement clustering done
+2019-11-16 09:29:06,735 DEBUG settlements Clustering settlements
+2019-11-16 09:29:06,735 DEBUG settlements Building affinity matrix
+2019-11-16 09:29:06,849 DEBUG settlements Affinity matrix built
+2019-11-16 09:29:06,852 DEBUG settlements Computing Eigen decompostion
+2019-11-16 09:29:08,157 DEBUG settlements Eigen decomposition applied
+2019-11-16 09:29:10,638 DEBUG settlements Settlement clustering done
+2019-11-16 09:29:43,047 DEBUG settlements Clustering settlements
+2019-11-16 09:29:43,047 DEBUG settlements Building affinity matrix
+2019-11-16 09:29:43,155 DEBUG settlements Affinity matrix built
+2019-11-16 09:29:43,158 DEBUG settlements Computing Eigen decompostion
+2019-11-16 09:29:44,484 DEBUG settlements Eigen decomposition applied
+2019-11-16 09:29:47,010 DEBUG settlements Settlement clustering done
+2019-11-16 09:33:36,391 DEBUG settlements Clustering settlements
+2019-11-16 09:33:36,391 DEBUG settlements Building affinity matrix
+2019-11-16 09:33:36,501 DEBUG settlements Affinity matrix built
+2019-11-16 09:33:36,504 DEBUG settlements Computing Eigen decompostion
+2019-11-16 09:33:37,823 DEBUG settlements Eigen decomposition applied
+2019-11-16 09:33:40,391 DEBUG settlements Settlement clustering done
+2019-11-16 09:35:09,342 DEBUG settlements Clustering settlements
+2019-11-16 09:35:09,343 DEBUG settlements Building affinity matrix
+2019-11-16 09:35:09,449 DEBUG settlements Affinity matrix built
+2019-11-16 09:35:09,452 DEBUG settlements Computing Eigen decompostion
+2019-11-16 09:35:10,796 DEBUG settlements Eigen decomposition applied
+2019-11-16 09:35:13,310 DEBUG settlements Settlement clustering done
+2019-11-16 09:37:56,308 DEBUG settlements Clustering settlements
+2019-11-16 09:37:56,308 DEBUG settlements Building affinity matrix
+2019-11-16 09:37:56,436 DEBUG settlements Affinity matrix built
+2019-11-16 09:37:56,439 DEBUG settlements Computing Eigen decompostion
+2019-11-16 09:37:57,728 DEBUG settlements Eigen decomposition applied
+2019-11-16 09:38:00,211 DEBUG settlements Settlement clustering done
+2019-11-16 09:38:38,926 DEBUG settlements Clustering settlements
+2019-11-16 09:38:38,926 DEBUG settlements Building affinity matrix
+2019-11-16 09:38:39,039 DEBUG settlements Affinity matrix built
+2019-11-16 09:38:39,043 DEBUG settlements Computing Eigen decompostion
+2019-11-16 09:38:40,317 DEBUG settlements Eigen decomposition applied
+2019-11-16 09:38:42,872 DEBUG settlements Settlement clustering done
+2019-11-16 09:41:53,136 DEBUG settlements Clustering settlements
+2019-11-16 09:41:53,136 DEBUG settlements Building affinity matrix
+2019-11-16 09:41:53,254 DEBUG settlements Affinity matrix built
+2019-11-16 09:41:53,257 DEBUG settlements Computing Eigen decompostion
+2019-11-16 09:41:54,722 DEBUG settlements Eigen decomposition applied
+2019-11-16 09:41:57,225 DEBUG settlements Settlement clustering done
+2019-11-16 09:42:33,347 DEBUG settlements Clustering settlements
+2019-11-16 09:42:33,348 DEBUG settlements Building affinity matrix
+2019-11-16 09:42:33,488 DEBUG settlements Affinity matrix built
+2019-11-16 09:42:33,491 DEBUG settlements Computing Eigen decompostion
+2019-11-16 09:42:35,111 DEBUG settlements Eigen decomposition applied
+2019-11-16 09:42:37,799 DEBUG settlements Settlement clustering done
+2019-11-16 09:44:09,731 DEBUG settlements Clustering settlements
+2019-11-16 09:44:09,731 DEBUG settlements Building affinity matrix
+2019-11-16 09:44:09,843 DEBUG settlements Affinity matrix built
+2019-11-16 09:44:09,847 DEBUG settlements Computing Eigen decompostion
+2019-11-16 09:44:11,155 DEBUG settlements Eigen decomposition applied
+2019-11-16 09:44:13,702 DEBUG settlements Settlement clustering done
+2019-11-16 09:49:50,695 DEBUG settlements Clustering settlements
+2019-11-16 09:49:50,695 DEBUG settlements Building affinity matrix
+2019-11-16 09:49:50,815 DEBUG settlements Affinity matrix built
+2019-11-16 09:49:50,818 DEBUG settlements Computing Eigen decompostion
+2019-11-16 09:49:52,099 DEBUG settlements Eigen decomposition applied
+2019-11-16 09:49:54,531 DEBUG settlements Settlement clustering done
+2019-11-16 10:05:47,583 DEBUG settlements Clustering settlements
+2019-11-16 10:05:47,583 DEBUG settlements Building affinity matrix
+2019-11-16 10:05:47,696 DEBUG settlements Affinity matrix built
+2019-11-16 10:05:47,699 DEBUG settlements Computing Eigen decompostion
+2019-11-16 10:05:49,034 DEBUG settlements Eigen decomposition applied
+2019-11-16 10:05:51,656 DEBUG settlements Settlement clustering done
+2019-11-16 10:06:27,930 DEBUG settlements Clustering settlements
+2019-11-16 10:06:27,930 DEBUG settlements Building affinity matrix
+2019-11-16 10:06:28,049 DEBUG settlements Affinity matrix built
+2019-11-16 10:06:28,052 DEBUG settlements Computing Eigen decompostion
+2019-11-16 10:06:29,360 DEBUG settlements Eigen decomposition applied
+2019-11-16 10:06:31,904 DEBUG settlements Settlement clustering done
+2019-11-16 10:12:34,314 DEBUG settlements Clustering settlements
+2019-11-16 10:12:34,314 DEBUG settlements Building affinity matrix
+2019-11-16 10:12:34,444 DEBUG settlements Affinity matrix built
+2019-11-16 10:12:34,447 DEBUG settlements Computing Eigen decompostion
+2019-11-16 10:12:35,714 DEBUG settlements Eigen decomposition applied
+2019-11-16 10:12:38,325 DEBUG settlements Settlement clustering done
+2019-11-16 10:21:01,197 DEBUG settlements Clustering settlements
+2019-11-16 10:21:01,197 DEBUG settlements Building affinity matrix
+2019-11-16 10:21:01,340 DEBUG settlements Affinity matrix built
+2019-11-16 10:21:01,343 DEBUG settlements Computing Eigen decompostion
+2019-11-16 10:21:03,330 DEBUG settlements Eigen decomposition applied
+2019-11-16 10:21:06,358 DEBUG settlements Settlement clustering done
+2019-11-16 11:59:07,432 DEBUG settlements Clustering settlements
+2019-11-16 11:59:07,432 DEBUG settlements Building affinity matrix
+2019-11-16 11:59:07,553 DEBUG settlements Affinity matrix built
+2019-11-16 11:59:07,557 DEBUG settlements Computing Eigen decompostion
+2019-11-16 11:59:08,848 DEBUG settlements Eigen decomposition applied
+2019-11-16 11:59:11,176 DEBUG settlements Settlement clustering done
+2019-11-16 12:01:25,393 DEBUG settlements Clustering settlements
+2019-11-16 12:01:25,393 DEBUG settlements Building affinity matrix
+2019-11-16 12:01:25,498 DEBUG settlements Affinity matrix built
+2019-11-16 12:01:25,502 DEBUG settlements Computing Eigen decompostion
+2019-11-16 12:01:26,848 DEBUG settlements Eigen decomposition applied
+2019-11-16 12:01:29,235 DEBUG settlements Settlement clustering done
+2019-11-16 12:03:30,853 DEBUG settlements Clustering settlements
+2019-11-16 12:03:30,853 DEBUG settlements Building affinity matrix
+2019-11-16 12:03:30,969 DEBUG settlements Affinity matrix built
+2019-11-16 12:03:30,972 DEBUG settlements Computing Eigen decompostion
+2019-11-16 12:03:32,333 DEBUG settlements Eigen decomposition applied
+2019-11-16 12:03:34,815 DEBUG settlements Settlement clustering done
+2019-11-16 12:05:04,998 DEBUG settlements Clustering settlements
+2019-11-16 12:05:04,998 DEBUG settlements Building affinity matrix
+2019-11-16 12:05:05,120 DEBUG settlements Affinity matrix built
+2019-11-16 12:05:05,123 DEBUG settlements Computing Eigen decompostion
+2019-11-16 12:05:06,459 DEBUG settlements Eigen decomposition applied
+2019-11-16 12:05:08,850 DEBUG settlements Settlement clustering done

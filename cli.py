@@ -14,8 +14,10 @@ def distribute_towers(dataset, output_json_file, output_html_map_file):
     distributor.format()
     distributor.optimize()
 
-    distributor.save_tower_distribution()
+    distributor.serialize_and_save()
     distributor.display_visuals()
+
+    distributor.evaluate()
 
 if __name__ == "__main__":
     distribute_towers()

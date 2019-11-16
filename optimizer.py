@@ -25,7 +25,7 @@ class Optimizer:
         return self.tower_distribution
 
     def find_nearest_base_station_key(self, base_station):
-        current_key = base_station.tostring()
+        current_key = str(base_station)
         all_base_stations = [
             (key, value['base_station'])
             for key, value in self.tower_distribution.items()
@@ -74,7 +74,8 @@ class Optimizer:
 
 
             nearest_base_station['users'] = np.concatenate(
-                (nearest_base_station['users'], current_base_station['users']), axis=0
+                (nearest_base_station['users'], current_base_station['users']),
+                axis=0
             )
 
             for cell_site in current_base_station['cell_sites']:
@@ -96,7 +97,7 @@ class Optimizer:
                 ])
             ])
 
-            new_key = nearest_base_station['base_station'].tostring()
+            new_key = str(nearest_base_station['base_station'])
             self.tower_distribution[new_key] = nearest_base_station
 
             self.logger.debug("Custom optimization applied")
