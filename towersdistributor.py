@@ -159,9 +159,12 @@ class TowersDistributor:
     def evaluate(self):
         self.logger.debug("Evaluating model")
         accuracy_evaluator = Evaluator(self.output_JSON_file)
-        evaluation = accuracy_evaluator.evaluate()
+        users, cell_site_count, accuracy = accuracy_evaluator.evaluate()
         self.logger.debug("Model evaluated")
-        print("Accuracy =", evaluation)
+
+        print("Users =", users)
+        print("Cellsites =", cell_site_count)
+        print("Accuracy =", accuracy)
 
 
 if __name__ == "__main__":

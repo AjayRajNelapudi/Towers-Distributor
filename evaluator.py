@@ -64,9 +64,12 @@ class Evaluator:
             within_range_count += 1
 
         acccuracy = within_range_count / len(users)
+
+        self.logger.debug("Users = " + str(len(users)))
+        self.logger.debug("Cell Sites = " + str(len(cell_sites)))
         self.logger.debug("Accuracy = " + str(acccuracy))
 
-        return acccuracy
+        return len(users), len(cell_sites), acccuracy
 
 if __name__ == "__main__":
     evaluator = Evaluator("tower-distribution.json")

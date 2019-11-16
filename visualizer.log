@@ -91,3 +91,6 @@
 2019-11-16 12:05:14,624 DEBUG visualizer Making map with UBC distribution
 2019-11-16 12:05:14,629 DEBUG visualizer Scattering UBC over map
 2019-11-16 12:05:17,056 DEBUG visualizer Map created with UBC scattered
+2019-11-16 12:11:35,739 DEBUG visualizer Making map with UBC distribution
+2019-11-16 12:11:35,743 DEBUG visualizer Scattering UBC over map
+2019-11-16 12:11:38,097 DEBUG visualizer Map created with UBC scattered
