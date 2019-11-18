@@ -1,7 +1,7 @@
 # Towers-Distributor
 Distributes 5G cell sites and base stations using Spectral clustering, K-Means clustering and custom optimization techniques.
 
-[a Output Map](https://towersdistributor.000webhostapp.com/)
+[Output Map](https://towersdistributor.000webhostapp.com/)
 
 <br>
 Each color represents a cluster with a single base station<br>
