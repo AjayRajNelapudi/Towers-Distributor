@@ -3,6 +3,9 @@ Distributes 5G cell sites and base stations using Spectral clustering, K-Means c
 
 ![Output plotted using matplotlib](https://github.com/AjayRajNelapudi/Towers-Distributor/blob/master/tower-distribution.png)
 
+The actual output is hosted at
+[a link](https://towersdistributor.000webhostapp.com/)
+
 <br>
 Each color represents a cluster with a single base station<br>
 The dots represent the users<br>
