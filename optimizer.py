@@ -19,7 +19,9 @@ class Optimizer:
                                                        for base_station in self.tower_distribution.values()
                                                        ]) < min_users
         while micro_clusters_present(25):
-            self.base_station_optimization()
+            self.club_base_stations()
+
+        self.relocate_base_stations()
 
         self.logger.debug("Micro clusters removed")
         return self.tower_distribution
@@ -27,8 +29,8 @@ class Optimizer:
     def find_nearest_base_station_key(self, base_station):
         current_key = str(base_station)
         all_base_stations = [
-            (key, value['base_station'])
-            for key, value in self.tower_distribution.items()
+            (key, ubc['base_station'])
+            for key, ubc in self.tower_distribution.items()
                 if key != current_key
         ]
 
@@ -50,7 +52,7 @@ class Optimizer:
         is_within_range = lambda exisiting_cell_site: np.linalg.norm(exisiting_cell_site - current_cell_site) < close_range
         return np.any(is_within_range(exisiting_cell_sites))
 
-    def base_station_optimization(self):
+    def club_base_stations(self):
         '''
         Clubs clusters with less than 25 users
         :return: None
@@ -102,3 +104,14 @@ class Optimizer:
 
             self.logger.debug("Custom optimization applied")
 
+    def relocate_base_stations(self):
+        UBCs = list(self.tower_distribution.values())
+        for UBC in UBCs:
+            key = str(UBC['base_station'])
+            UBC['base_station'] = min(
+                UBC['cell_sites'],
+                key=lambda cell_site: np.linalg.norm(UBC['base_station'] - cell_site)
+            )
+            new_key = str(UBC['base_station'])
+            self.tower_distribution[new_key] = UBC
+            self.tower_distribution.pop(key)

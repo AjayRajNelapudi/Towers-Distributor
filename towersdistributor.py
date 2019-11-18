@@ -101,7 +101,7 @@ class TowersDistributor:
         self.logger.debug("Performing Level 1 clustering")
         settlement_clustering = Settlements()
         self.settlements = settlement_clustering.cluster_settlements(self.dataset)
-        self.base_stations = settlement_clustering.locate_base_stations()
+        self.base_stations = settlement_clustering.locate_base_stations_proximity()
         self.logger.debug("Level 1 clustering done")
 
     def perform_cellsite_clustering(self):

@@ -97,7 +97,7 @@ class Settlements:
 
         nb_clusters, eigenvalues, eigenvectors = self.eigen_decomposition(affinity_matrix, topK=50)
         nb_clusters = np.sort(nb_clusters)
-        selection_index = len(nb_clusters) // 8
+        selection_index = len(nb_clusters) // 4
         K = nb_clusters[selection_index]
 
         settlements = SpectralClustering(n_clusters=K, assign_labels='discretize', random_state=0)
@@ -115,7 +115,7 @@ class Settlements:
 
         return clusters
 
-    def locate_base_stations(self):
+    def locate_base_stations_proximity(self):
         self.base_stations = dict()
         for label, users in self.clusters.items():
             base_station_location = np.array([
