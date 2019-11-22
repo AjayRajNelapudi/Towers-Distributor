@@ -79,7 +79,7 @@ class Regions:
 
         # Identify the optimal number of clusters as the index corresponding
         # to the larger gap between eigen values
-        index_largest_gap = np.argsort(np.diff(eigenvalues))[::-1][:topK]
+        index_largest_gap = np.argmax(np.diff(eigenvalues))
         nb_clusters = index_largest_gap + 1
 
         self.logger.debug("Eigen decomposition applied")
@@ -96,9 +96,7 @@ class Regions:
         affinity_matrix = self.get_affinity_matrix(geo_coordinates, k=100)
 
         nb_clusters, eigenvalues, eigenvectors = self.eigen_decomposition(affinity_matrix, topK=50)
-        nb_clusters = np.sort(nb_clusters)
-        selection_index = len(nb_clusters) // 4
-        K = nb_clusters[selection_index]
+        K = nb_clusters * 1 # Adjustment factor
 
         settlements = SpectralClustering(n_clusters=K, assign_labels='discretize', random_state=0)
         settlements.fit(geo_coordinates)

@@ -4,3 +4,119 @@
 2019-11-22 10:32:12,382 DEBUG regions Computing Eigen decompostion
 2019-11-22 10:32:13,659 DEBUG regions Eigen decomposition applied
 2019-11-22 10:32:15,709 DEBUG regions Settlement clustering done
+2019-11-22 10:34:59,709 DEBUG regions Clustering settlements
+2019-11-22 10:34:59,709 DEBUG regions Building affinity matrix
+2019-11-22 10:34:59,816 DEBUG regions Affinity matrix built
+2019-11-22 10:34:59,821 DEBUG regions Computing Eigen decompostion
+2019-11-22 10:36:50,835 DEBUG regions Clustering settlements
+2019-11-22 10:36:50,835 DEBUG regions Building affinity matrix
+2019-11-22 10:36:50,932 DEBUG regions Affinity matrix built
+2019-11-22 10:36:50,935 DEBUG regions Computing Eigen decompostion
+2019-11-22 10:37:23,410 DEBUG regions Clustering settlements
+2019-11-22 10:37:23,410 DEBUG regions Building affinity matrix
+2019-11-22 10:37:23,513 DEBUG regions Affinity matrix built
+2019-11-22 10:37:23,516 DEBUG regions Computing Eigen decompostion
+2019-11-22 10:37:24,926 DEBUG regions Eigen decomposition applied
+2019-11-22 10:37:25,140 DEBUG regions Settlement clustering done
+2019-11-22 10:40:58,979 DEBUG regions Clustering settlements
+2019-11-22 10:40:58,979 DEBUG regions Building affinity matrix
+2019-11-22 10:40:59,090 DEBUG regions Affinity matrix built
+2019-11-22 10:40:59,093 DEBUG regions Computing Eigen decompostion
+2019-11-22 10:41:00,374 DEBUG regions Eigen decomposition applied
+2019-11-22 10:41:00,580 DEBUG regions Settlement clustering done
+2019-11-22 10:42:06,577 DEBUG regions Clustering settlements
+2019-11-22 10:42:06,577 DEBUG regions Building affinity matrix
+2019-11-22 10:42:06,676 DEBUG regions Affinity matrix built
+2019-11-22 10:42:06,679 DEBUG regions Computing Eigen decompostion
+2019-11-22 10:42:07,963 DEBUG regions Eigen decomposition applied
+2019-11-22 10:42:08,171 DEBUG regions Settlement clustering done
+2019-11-22 10:42:32,916 DEBUG regions Clustering settlements
+2019-11-22 10:42:32,916 DEBUG regions Building affinity matrix
+2019-11-22 10:42:33,026 DEBUG regions Affinity matrix built
+2019-11-22 10:42:33,029 DEBUG regions Computing Eigen decompostion
+2019-11-22 10:42:34,298 DEBUG regions Eigen decomposition applied
+2019-11-22 10:42:34,506 DEBUG regions Settlement clustering done
+2019-11-22 10:46:38,185 DEBUG regions Clustering settlements
+2019-11-22 10:46:38,185 DEBUG regions Building affinity matrix
+2019-11-22 10:46:38,284 DEBUG regions Affinity matrix built
+2019-11-22 10:46:38,287 DEBUG regions Computing Eigen decompostion
+2019-11-22 10:46:39,567 DEBUG regions Eigen decomposition applied
+2019-11-22 10:46:42,132 DEBUG regions Settlement clustering done
+2019-11-22 10:47:20,840 DEBUG regions Clustering settlements
+2019-11-22 10:47:20,840 DEBUG regions Building affinity matrix
+2019-11-22 10:47:20,937 DEBUG regions Affinity matrix built
+2019-11-22 10:47:20,940 DEBUG regions Computing Eigen decompostion
+2019-11-22 10:47:22,239 DEBUG regions Eigen decomposition applied
+2019-11-22 10:47:25,853 DEBUG regions Settlement clustering done
+2019-11-22 10:48:47,250 DEBUG regions Clustering settlements
+2019-11-22 10:48:47,250 DEBUG regions Building affinity matrix
+2019-11-22 10:48:47,349 DEBUG regions Affinity matrix built
+2019-11-22 10:48:47,352 DEBUG regions Computing Eigen decompostion
+2019-11-22 10:48:48,690 DEBUG regions Eigen decomposition applied
+2019-11-22 10:48:48,902 DEBUG regions Settlement clustering done
+2019-11-22 11:49:09,279 DEBUG regions Clustering settlements
+2019-11-22 11:49:09,279 DEBUG regions Building affinity matrix
+2019-11-22 11:49:09,395 DEBUG regions Affinity matrix built
+2019-11-22 11:49:09,398 DEBUG regions Computing Eigen decompostion
+2019-11-22 11:49:10,700 DEBUG regions Eigen decomposition applied
+2019-11-22 11:49:10,910 DEBUG regions Settlement clustering done
+2019-11-22 19:52:13,369 DEBUG regions Clustering settlements
+2019-11-22 19:52:13,371 DEBUG regions Building affinity matrix
+2019-11-22 19:52:13,487 DEBUG regions Affinity matrix built
+2019-11-22 19:52:13,489 DEBUG regions Computing Eigen decompostion
+2019-11-22 19:52:14,941 DEBUG regions Eigen decomposition applied
+2019-11-22 19:52:15,192 DEBUG regions Settlement clustering done
+2019-11-22 19:53:33,491 DEBUG regions Clustering settlements
+2019-11-22 19:53:33,492 DEBUG regions Building affinity matrix
+2019-11-22 19:53:33,689 DEBUG regions Affinity matrix built
+2019-11-22 19:53:33,692 DEBUG regions Computing Eigen decompostion
+2019-11-22 19:53:35,185 DEBUG regions Eigen decomposition applied
+2019-11-22 19:53:35,813 DEBUG regions Settlement clustering done
+2019-11-22 20:00:40,129 DEBUG regions Clustering settlements
+2019-11-22 20:00:40,129 DEBUG regions Building affinity matrix
+2019-11-22 20:00:40,241 DEBUG regions Affinity matrix built
+2019-11-22 20:00:40,245 DEBUG regions Computing Eigen decompostion
+2019-11-22 20:00:41,524 DEBUG regions Eigen decomposition applied
+2019-11-22 20:00:43,585 DEBUG regions Settlement clustering done
+2019-11-22 20:01:28,590 DEBUG regions Clustering settlements
+2019-11-22 20:01:28,590 DEBUG regions Building affinity matrix
+2019-11-22 20:01:28,699 DEBUG regions Affinity matrix built
+2019-11-22 20:01:28,702 DEBUG regions Computing Eigen decompostion
+2019-11-22 20:01:30,019 DEBUG regions Eigen decomposition applied
+2019-11-22 20:01:33,432 DEBUG regions Settlement clustering done
+2019-11-22 20:02:49,495 DEBUG regions Clustering settlements
+2019-11-22 20:02:49,495 DEBUG regions Building affinity matrix
+2019-11-22 20:02:49,605 DEBUG regions Affinity matrix built
+2019-11-22 20:02:49,608 DEBUG regions Computing Eigen decompostion
+2019-11-22 20:02:51,771 DEBUG regions Eigen decomposition applied
+2019-11-22 20:02:52,038 DEBUG regions Settlement clustering done
+2019-11-22 20:05:18,922 DEBUG regions Clustering settlements
+2019-11-22 20:05:18,922 DEBUG regions Building affinity matrix
+2019-11-22 20:05:19,028 DEBUG regions Affinity matrix built
+2019-11-22 20:05:19,032 DEBUG regions Computing Eigen decompostion
+2019-11-22 20:05:20,302 DEBUG regions Eigen decomposition applied
+2019-11-22 20:05:23,448 DEBUG regions Settlement clustering done
+2019-11-22 20:06:04,090 DEBUG regions Clustering settlements
+2019-11-22 20:06:04,090 DEBUG regions Building affinity matrix
+2019-11-22 20:06:04,189 DEBUG regions Affinity matrix built
+2019-11-22 20:06:04,192 DEBUG regions Computing Eigen decompostion
+2019-11-22 20:06:05,470 DEBUG regions Eigen decomposition applied
+2019-11-22 20:06:07,629 DEBUG regions Settlement clustering done
+2019-11-22 20:06:36,074 DEBUG regions Clustering settlements
+2019-11-22 20:06:36,074 DEBUG regions Building affinity matrix
+2019-11-22 20:06:36,177 DEBUG regions Affinity matrix built
+2019-11-22 20:06:36,181 DEBUG regions Computing Eigen decompostion
+2019-11-22 20:06:37,474 DEBUG regions Eigen decomposition applied
+2019-11-22 20:06:40,725 DEBUG regions Settlement clustering done
+2019-11-22 20:17:52,685 DEBUG regions Clustering settlements
+2019-11-22 20:17:52,685 DEBUG regions Building affinity matrix
+2019-11-22 20:17:52,787 DEBUG regions Affinity matrix built
+2019-11-22 20:17:52,790 DEBUG regions Computing Eigen decompostion
+2019-11-22 20:17:54,068 DEBUG regions Eigen decomposition applied
+2019-11-22 20:17:54,284 DEBUG regions Settlement clustering done
+2019-11-22 20:40:27,615 DEBUG regions Clustering settlements
+2019-11-22 20:40:27,615 DEBUG regions Building affinity matrix
+2019-11-22 20:40:27,764 DEBUG regions Affinity matrix built
+2019-11-22 20:40:27,769 DEBUG regions Computing Eigen decompostion
+2019-11-22 20:40:29,535 DEBUG regions Eigen decomposition applied
+2019-11-22 20:40:30,071 DEBUG regions Settlement clustering done

@@ -149,7 +149,7 @@ class TowersDistributor:
     def display_visuals(self):
         self.logger.debug("Creating Visuals")
         visuals = Visuals(self.tower_distribution)
-        # visuals.display_distribution()
+        visuals.display_distribution()
         visuals.make_map(self.output_html_map_file)
         self.logger.debug("Visuals created")
 
