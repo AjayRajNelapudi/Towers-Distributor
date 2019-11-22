@@ -5,7 +5,7 @@ from scipy.sparse import csgraph
 from numpy import linalg as LA
 from scipy.spatial.distance import squareform, pdist
 
-class Settlements:
+class Regions:
     '''
     Settlements class performs DBSCAN clustering on the entire dataset of geo-coordinates
     to identify different clusters of human settlements such as cities, towns and villages
@@ -13,7 +13,7 @@ class Settlements:
     geo_cordinates = np.array([])
 
     def __init__(self):
-        self.logger = logging.getLogger("settlements")
+        self.logger = logging.getLogger("regions")
 
     def get_affinity_matrix(self, coordinates, k=7):
         """
@@ -85,7 +85,7 @@ class Settlements:
         self.logger.debug("Eigen decomposition applied")
         return nb_clusters, eigenvalues, eigenvectors
 
-    def cluster_settlements(self, geo_coordinates):
+    def detect_regions(self, geo_coordinates):
         '''
         Performs Spectral clustering on geo_coordinates
         :param geo_coordinates: geo-coordinates of all customers' locations.
@@ -103,26 +103,26 @@ class Settlements:
         settlements = SpectralClustering(n_clusters=K, assign_labels='discretize', random_state=0)
         settlements.fit(geo_coordinates)
 
-        clusters = dict()
-        for cluster, datapoint in zip(settlements.labels_, geo_coordinates):
-            if cluster in clusters:
-                clusters[cluster] = np.concatenate((clusters[cluster], [datapoint]), axis=0)
+        regions = dict()
+        for region, datapoint in zip(settlements.labels_, geo_coordinates):
+            if region in regions:
+                regions[region] = np.concatenate((regions[region], [datapoint]), axis=0)
             else:
-                clusters[cluster] = np.array([datapoint])
+                regions[region] = np.array([datapoint])
 
-        self.clusters = clusters
+        self.regions = regions
         self.logger.debug("Settlement clustering done")
 
-        return clusters
+        return regions
 
     def locate_base_stations_proximity(self):
         self.base_stations = dict()
-        for label, users in self.clusters.items():
+        for region, users in self.regions.items():
             base_station_location = np.array([
                 np.mean([user[0] for user in users]),
                 np.mean([user[1] for user in users])
             ])
 
-            self.base_stations[label] = base_station_location
+            self.base_stations[region] = base_station_location
 
         return self.base_stations

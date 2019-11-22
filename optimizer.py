@@ -29,8 +29,8 @@ class Optimizer:
     def find_nearest_base_station_key(self, base_station):
         current_key = str(base_station)
         all_base_stations = [
-            (key, ubc['base_station'])
-            for key, ubc in self.tower_distribution.items()
+            (key, region['base_station'])
+            for key, region in self.tower_distribution.items()
                 if key != current_key
         ]
 
@@ -105,13 +105,13 @@ class Optimizer:
             self.logger.debug("Custom optimization applied")
 
     def relocate_base_stations(self):
-        UBCs = list(self.tower_distribution.values())
-        for UBC in UBCs:
-            key = str(UBC['base_station'])
-            UBC['base_station'] = min(
-                UBC['cell_sites'],
-                key=lambda cell_site: np.linalg.norm(UBC['base_station'] - cell_site)
+        regions = list(self.tower_distribution.values())
+        for region in regions:
+            key = str(region['base_station'])
+            region['base_station'] = min(
+                region['cell_sites'],
+                key=lambda cell_site: np.linalg.norm(region['base_station'] - cell_site)
             )
-            new_key = str(UBC['base_station'])
-            self.tower_distribution[new_key] = UBC
+            new_key = str(region['base_station'])
+            self.tower_distribution[new_key] = region
             self.tower_distribution.pop(key)

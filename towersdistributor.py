@@ -4,7 +4,7 @@ import json
 import logging
 import logging.config
 import numpy as np
-from settlements import Settlements
+from regions import Regions
 from cellsites import CellSites
 from optimizer import Optimizer
 from visualizer import Visuals
@@ -33,10 +33,10 @@ class TowersDistributor:
                 "formatter": "default",
                 "filename": "towersdistributor.log"
             },
-            "settlements": {
+            "regions": {
                 "class": "logging.FileHandler",
                 "formatter": "default",
-                "filename": "settlements.log"
+                "filename": "regions.log"
             },
             "cellsites": {
                 "class": "logging.FileHandler",
@@ -64,8 +64,8 @@ class TowersDistributor:
                 "handlers": ["towersdistributor", "main"],
                 "level": "DEBUG",
             },
-            "settlements": {
-                "handlers": ["settlements", "main"],
+            "regions": {
+                "handlers": ["regions", "main"],
                 "level": "DEBUG",
             },
             "cellsites": {
@@ -99,28 +99,28 @@ class TowersDistributor:
 
     def perform_settlement_clustering(self):
         self.logger.debug("Performing Level 1 clustering")
-        settlement_clustering = Settlements()
-        self.settlements = settlement_clustering.cluster_settlements(self.dataset)
+        settlement_clustering = Regions()
+        self.regions = settlement_clustering.detect_regions(self.dataset)
         self.base_stations = settlement_clustering.locate_base_stations_proximity()
         self.logger.debug("Level 1 clustering done")
 
     def perform_cellsite_clustering(self):
         self.logger.debug("Performing Level 2 clustering")
         cellsite_clustering = CellSites()
-        self.cell_sites = cellsite_clustering.distribute_cellsites(self.settlements)
+        self.cell_sites = cellsite_clustering.distribute_cellsites(self.regions)
         # raise SystemExit("60 % execution done") # My college measures code written as % of unknown total code
         self.logger.debug("Level 2 clustering done")
 
     def format(self):
         self.logger.debug("Formatting to dictionary")
         self.tower_distribution = dict()
-        for key in self.settlements.keys():
+        for key in self.regions.keys():
             self.tower_distribution[str(self.base_stations[key])] = {
                 'cell_sites': self.cell_sites[key],
                 'base_station': self.base_stations[key],
-                'users': self.settlements[key]
+                'users': self.regions[key]
             }
-        self.logger.debug("UBC dictionary formatted")
+        self.logger.debug("Regions dictionary formatted")
 
     def optimize(self):
         self.logger.debug("Performing UBC optimization")

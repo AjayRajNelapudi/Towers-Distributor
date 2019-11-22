@@ -1,0 +1,6 @@
+2019-11-22 10:32:12,282 DEBUG regions Clustering settlements
+2019-11-22 10:32:12,282 DEBUG regions Building affinity matrix
+2019-11-22 10:32:12,379 DEBUG regions Affinity matrix built
+2019-11-22 10:32:12,382 DEBUG regions Computing Eigen decompostion
+2019-11-22 10:32:13,659 DEBUG regions Eigen decomposition applied
+2019-11-22 10:32:15,709 DEBUG regions Settlement clustering done

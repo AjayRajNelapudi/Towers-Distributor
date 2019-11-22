@@ -83,10 +83,10 @@ class Visuals:
         )
 
         self.logger.debug("Scattering UBC over map")
-        for UBC in self.tower_distribution.values():
-            users = UBC['users']
-            base_station = UBC['base_station']
-            cell_sites = UBC['cell_sites']
+        for region in self.tower_distribution.values():
+            users = region['users']
+            base_station = region['base_station']
+            cell_sites = region['cell_sites']
             color = next(self.colors)
 
             for user in users:

@@ -38,15 +38,15 @@ class CellSites:
         self.logger.debug("Optimal K = " + str(K))
         return cell_sites.cluster_centers_
 
-    def distribute_cellsites(self, settlements):
+    def distribute_cellsites(self, regions):
         '''
         Optimises and distributes the cell sites
         :return: dict of label: cellsites
         '''
         self.logger.debug("Distributing cellsites")
         self.cellsite_locations = dict()
-        for label, settlement in settlements.items():
-            cellsites_for_cluster = self.optimise_and_cluster(settlement)
+        for label, region in regions.items():
+            cellsites_for_cluster = self.optimise_and_cluster(region)
             self.cellsite_locations[label] = np.array(cellsites_for_cluster)
         self.logger.debug("Cellsite distribution done")
 
