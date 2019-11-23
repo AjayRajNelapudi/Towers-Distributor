@@ -7177,3 +7177,2219 @@
 2019-11-22 20:40:42,486 DEBUG evaluator Cell Sites = 101
 2019-11-22 20:40:42,486 DEBUG evaluator Accuracy = 0.7435643564356436
 2019-11-22 20:40:42,486 DEBUG towersdistributor Model evaluated
+2019-11-23 18:44:49,924 DEBUG towersdistributor Towers Distributor Initialized
+2019-11-23 18:44:49,925 DEBUG towersdistributor Performing Level 1 clustering
+2019-11-23 18:44:49,925 DEBUG regions Clustering settlements
+2019-11-23 18:44:49,926 DEBUG regions Building affinity matrix
+2019-11-23 18:46:36,861 DEBUG regions Affinity matrix built
+2019-11-23 18:46:37,472 DEBUG regions Computing Eigen decompostion
+2019-11-23 18:57:58,958 DEBUG towersdistributor Towers Distributor Initialized
+2019-11-23 18:57:58,958 DEBUG towersdistributor Performing Level 1 clustering
+2019-11-23 18:57:58,958 DEBUG regions Clustering settlements
+2019-11-23 18:57:58,958 DEBUG regions Building affinity matrix
+2019-11-23 18:58:02,600 DEBUG regions Affinity matrix built
+2019-11-23 18:58:02,664 DEBUG regions Computing Eigen decompostion
+2019-11-23 18:59:55,630 DEBUG regions Eigen decomposition applied
+2019-11-23 19:06:19,346 DEBUG regions Settlement clustering done
+2019-11-23 19:06:19,438 DEBUG towersdistributor Level 1 clustering done
+2019-11-23 19:06:19,438 DEBUG towersdistributor Performing Level 2 clustering
+2019-11-23 19:06:19,438 DEBUG cellsites Distributing cellsites
+2019-11-23 19:06:19,439 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:19,439 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:19,439 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:19,535 DEBUG cellsites K = 10
+2019-11-23 19:06:19,536 DEBUG cellsites Distortion = 0.008495969068560275
+2019-11-23 19:06:19,536 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:19,537 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:19,622 DEBUG cellsites K = 11
+2019-11-23 19:06:19,622 DEBUG cellsites Distortion = 0.007941508713186458
+2019-11-23 19:06:19,622 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:19,622 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:19,748 DEBUG cellsites K = 12
+2019-11-23 19:06:19,749 DEBUG cellsites Distortion = 0.007567101335762054
+2019-11-23 19:06:19,749 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:19,749 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:19,863 DEBUG cellsites K = 13
+2019-11-23 19:06:19,864 DEBUG cellsites Distortion = 0.00728668943245464
+2019-11-23 19:06:19,864 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:19,864 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:19,986 DEBUG cellsites K = 14
+2019-11-23 19:06:19,986 DEBUG cellsites Distortion = 0.006983969930076961
+2019-11-23 19:06:19,986 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:19,986 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:20,120 DEBUG cellsites K = 15
+2019-11-23 19:06:20,121 DEBUG cellsites Distortion = 0.006736569626899672
+2019-11-23 19:06:20,121 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:20,121 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:20,284 DEBUG cellsites K = 16
+2019-11-23 19:06:20,285 DEBUG cellsites Distortion = 0.006539922747010496
+2019-11-23 19:06:20,285 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:20,285 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:20,419 DEBUG cellsites K = 17
+2019-11-23 19:06:20,419 DEBUG cellsites Distortion = 0.006328902967826701
+2019-11-23 19:06:20,419 DEBUG cellsites Optimal K = 18
+2019-11-23 19:06:20,419 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:20,419 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:20,419 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:20,542 DEBUG cellsites K = 10
+2019-11-23 19:06:20,542 DEBUG cellsites Distortion = 0.007966099426037867
+2019-11-23 19:06:20,542 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:20,542 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:20,700 DEBUG cellsites K = 11
+2019-11-23 19:06:20,700 DEBUG cellsites Distortion = 0.007653974731244597
+2019-11-23 19:06:20,700 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:20,700 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:20,855 DEBUG cellsites K = 12
+2019-11-23 19:06:20,855 DEBUG cellsites Distortion = 0.007255694276025099
+2019-11-23 19:06:20,855 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:20,856 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:21,011 DEBUG cellsites K = 13
+2019-11-23 19:06:21,011 DEBUG cellsites Distortion = 0.00698755638782714
+2019-11-23 19:06:21,011 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:21,012 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:21,276 DEBUG cellsites K = 14
+2019-11-23 19:06:21,276 DEBUG cellsites Distortion = 0.0067310942086768145
+2019-11-23 19:06:21,276 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:21,276 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:21,447 DEBUG cellsites K = 15
+2019-11-23 19:06:21,447 DEBUG cellsites Distortion = 0.006491123417856781
+2019-11-23 19:06:21,447 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:21,447 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:21,596 DEBUG cellsites K = 16
+2019-11-23 19:06:21,596 DEBUG cellsites Distortion = 0.006332183070281784
+2019-11-23 19:06:21,596 DEBUG cellsites Optimal K = 17
+2019-11-23 19:06:21,596 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:21,596 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:21,596 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:21,603 DEBUG cellsites K = 1
+2019-11-23 19:06:21,603 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:21,603 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:21,603 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:21,603 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:21,603 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:21,608 DEBUG cellsites K = 1
+2019-11-23 19:06:21,608 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:21,608 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:21,608 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:21,608 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:21,608 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:21,612 DEBUG cellsites K = 1
+2019-11-23 19:06:21,613 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:21,613 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:21,613 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:21,613 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:21,613 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:21,617 DEBUG cellsites K = 1
+2019-11-23 19:06:21,617 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:21,618 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:21,618 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:21,618 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:21,618 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:21,624 DEBUG cellsites K = 1
+2019-11-23 19:06:21,624 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:21,625 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:21,625 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:21,625 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:21,625 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:21,630 DEBUG cellsites K = 1
+2019-11-23 19:06:21,630 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:21,630 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:21,630 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:21,631 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:21,631 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:21,635 DEBUG cellsites K = 1
+2019-11-23 19:06:21,635 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:21,636 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:21,636 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:21,636 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:21,636 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:21,641 DEBUG cellsites K = 1
+2019-11-23 19:06:21,642 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:21,642 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:21,642 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:21,642 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:21,642 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:21,648 DEBUG cellsites K = 1
+2019-11-23 19:06:21,648 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:21,648 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:21,648 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:21,648 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:21,648 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:21,653 DEBUG cellsites K = 1
+2019-11-23 19:06:21,653 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:21,653 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:21,653 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:21,653 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:21,653 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:21,659 DEBUG cellsites K = 1
+2019-11-23 19:06:21,660 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:21,660 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:21,660 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:21,660 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:21,660 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:21,665 DEBUG cellsites K = 1
+2019-11-23 19:06:21,665 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:21,665 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:21,665 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:21,665 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:21,665 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:21,781 DEBUG cellsites K = 10
+2019-11-23 19:06:21,781 DEBUG cellsites Distortion = 0.010639998955781261
+2019-11-23 19:06:21,781 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:21,782 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:21,904 DEBUG cellsites K = 11
+2019-11-23 19:06:21,904 DEBUG cellsites Distortion = 0.010331469512413283
+2019-11-23 19:06:21,905 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:21,905 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:22,022 DEBUG cellsites K = 12
+2019-11-23 19:06:22,022 DEBUG cellsites Distortion = 0.00977434274599785
+2019-11-23 19:06:22,023 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:22,023 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:22,144 DEBUG cellsites K = 13
+2019-11-23 19:06:22,144 DEBUG cellsites Distortion = 0.00935030547926962
+2019-11-23 19:06:22,145 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:22,145 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:22,271 DEBUG cellsites K = 14
+2019-11-23 19:06:22,271 DEBUG cellsites Distortion = 0.008972856780396258
+2019-11-23 19:06:22,271 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:22,271 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:22,406 DEBUG cellsites K = 15
+2019-11-23 19:06:22,406 DEBUG cellsites Distortion = 0.008567321786620582
+2019-11-23 19:06:22,407 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:22,407 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:22,570 DEBUG cellsites K = 16
+2019-11-23 19:06:22,571 DEBUG cellsites Distortion = 0.008273517554509112
+2019-11-23 19:06:22,571 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:22,571 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:22,722 DEBUG cellsites K = 17
+2019-11-23 19:06:22,722 DEBUG cellsites Distortion = 0.008064372612703988
+2019-11-23 19:06:22,722 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:22,722 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:22,878 DEBUG cellsites K = 18
+2019-11-23 19:06:22,878 DEBUG cellsites Distortion = 0.00783969383195147
+2019-11-23 19:06:22,878 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:22,878 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:23,030 DEBUG cellsites K = 19
+2019-11-23 19:06:23,030 DEBUG cellsites Distortion = 0.007609344488408996
+2019-11-23 19:06:23,030 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:23,030 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:23,205 DEBUG cellsites K = 20
+2019-11-23 19:06:23,205 DEBUG cellsites Distortion = 0.007478791195383974
+2019-11-23 19:06:23,205 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:23,206 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:23,356 DEBUG cellsites K = 21
+2019-11-23 19:06:23,356 DEBUG cellsites Distortion = 0.007258167506129609
+2019-11-23 19:06:23,356 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:23,356 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:23,509 DEBUG cellsites K = 22
+2019-11-23 19:06:23,509 DEBUG cellsites Distortion = 0.007112755217260514
+2019-11-23 19:06:23,509 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:23,509 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:23,658 DEBUG cellsites K = 23
+2019-11-23 19:06:23,658 DEBUG cellsites Distortion = 0.0069589040355558405
+2019-11-23 19:06:23,658 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:23,658 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:23,857 DEBUG cellsites K = 24
+2019-11-23 19:06:23,858 DEBUG cellsites Distortion = 0.006785344777695733
+2019-11-23 19:06:23,858 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:23,858 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:24,048 DEBUG cellsites K = 25
+2019-11-23 19:06:24,048 DEBUG cellsites Distortion = 0.006645668225850517
+2019-11-23 19:06:24,048 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:24,049 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:24,238 DEBUG cellsites K = 26
+2019-11-23 19:06:24,238 DEBUG cellsites Distortion = 0.006470406987589954
+2019-11-23 19:06:24,238 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:24,238 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:24,429 DEBUG cellsites K = 27
+2019-11-23 19:06:24,429 DEBUG cellsites Distortion = 0.0063131392729865975
+2019-11-23 19:06:24,429 DEBUG cellsites Optimal K = 28
+2019-11-23 19:06:24,430 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:24,430 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:24,430 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:24,503 DEBUG cellsites K = 8
+2019-11-23 19:06:24,504 DEBUG cellsites Distortion = 0.012389905660760144
+2019-11-23 19:06:24,504 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:24,504 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:24,594 DEBUG cellsites K = 9
+2019-11-23 19:06:24,595 DEBUG cellsites Distortion = 0.01158730153468773
+2019-11-23 19:06:24,595 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:24,595 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:24,678 DEBUG cellsites K = 10
+2019-11-23 19:06:24,678 DEBUG cellsites Distortion = 0.010878080916621354
+2019-11-23 19:06:24,678 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:24,678 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:24,764 DEBUG cellsites K = 11
+2019-11-23 19:06:24,764 DEBUG cellsites Distortion = 0.010239859650649889
+2019-11-23 19:06:24,764 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:24,765 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:24,847 DEBUG cellsites K = 12
+2019-11-23 19:06:24,847 DEBUG cellsites Distortion = 0.009927413079075229
+2019-11-23 19:06:24,848 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:24,848 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:24,933 DEBUG cellsites K = 13
+2019-11-23 19:06:24,934 DEBUG cellsites Distortion = 0.009520349922141302
+2019-11-23 19:06:24,934 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:24,934 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:25,029 DEBUG cellsites K = 14
+2019-11-23 19:06:25,029 DEBUG cellsites Distortion = 0.009174876478276486
+2019-11-23 19:06:25,029 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:25,029 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:25,127 DEBUG cellsites K = 15
+2019-11-23 19:06:25,128 DEBUG cellsites Distortion = 0.008751157277371118
+2019-11-23 19:06:25,128 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:25,128 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:25,232 DEBUG cellsites K = 16
+2019-11-23 19:06:25,232 DEBUG cellsites Distortion = 0.008593514891050173
+2019-11-23 19:06:25,232 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:25,232 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:25,334 DEBUG cellsites K = 17
+2019-11-23 19:06:25,334 DEBUG cellsites Distortion = 0.008234637280104451
+2019-11-23 19:06:25,334 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:25,334 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:25,448 DEBUG cellsites K = 18
+2019-11-23 19:06:25,448 DEBUG cellsites Distortion = 0.008036221136218326
+2019-11-23 19:06:25,448 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:25,448 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:25,554 DEBUG cellsites K = 19
+2019-11-23 19:06:25,554 DEBUG cellsites Distortion = 0.00791199136501293
+2019-11-23 19:06:25,554 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:25,554 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:25,673 DEBUG cellsites K = 20
+2019-11-23 19:06:25,673 DEBUG cellsites Distortion = 0.007545036423010402
+2019-11-23 19:06:25,673 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:25,673 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:25,803 DEBUG cellsites K = 21
+2019-11-23 19:06:25,804 DEBUG cellsites Distortion = 0.007308964346097665
+2019-11-23 19:06:25,804 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:25,804 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:25,927 DEBUG cellsites K = 22
+2019-11-23 19:06:25,927 DEBUG cellsites Distortion = 0.007166633153639295
+2019-11-23 19:06:25,927 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:25,927 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:26,046 DEBUG cellsites K = 23
+2019-11-23 19:06:26,046 DEBUG cellsites Distortion = 0.006932352053663623
+2019-11-23 19:06:26,046 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:26,046 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:26,179 DEBUG cellsites K = 24
+2019-11-23 19:06:26,180 DEBUG cellsites Distortion = 0.006833221276748407
+2019-11-23 19:06:26,180 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:26,180 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:26,330 DEBUG cellsites K = 25
+2019-11-23 19:06:26,330 DEBUG cellsites Distortion = 0.006563171769081043
+2019-11-23 19:06:26,331 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:26,331 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:26,471 DEBUG cellsites K = 26
+2019-11-23 19:06:26,471 DEBUG cellsites Distortion = 0.006403919852730806
+2019-11-23 19:06:26,471 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:26,471 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:26,609 DEBUG cellsites K = 27
+2019-11-23 19:06:26,609 DEBUG cellsites Distortion = 0.006306797617671274
+2019-11-23 19:06:26,609 DEBUG cellsites Optimal K = 28
+2019-11-23 19:06:26,609 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:26,609 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:26,609 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:26,648 DEBUG cellsites K = 5
+2019-11-23 19:06:26,648 DEBUG cellsites Distortion = 0.014771310143987446
+2019-11-23 19:06:26,648 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:26,648 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:26,682 DEBUG cellsites K = 6
+2019-11-23 19:06:26,682 DEBUG cellsites Distortion = 0.013300734662556464
+2019-11-23 19:06:26,682 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:26,682 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:26,721 DEBUG cellsites K = 7
+2019-11-23 19:06:26,721 DEBUG cellsites Distortion = 0.011983067829537945
+2019-11-23 19:06:26,721 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:26,721 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:26,757 DEBUG cellsites K = 8
+2019-11-23 19:06:26,757 DEBUG cellsites Distortion = 0.011393528209118254
+2019-11-23 19:06:26,757 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:26,757 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:26,799 DEBUG cellsites K = 9
+2019-11-23 19:06:26,799 DEBUG cellsites Distortion = 0.010573258437746124
+2019-11-23 19:06:26,800 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:26,800 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:26,856 DEBUG cellsites K = 10
+2019-11-23 19:06:26,856 DEBUG cellsites Distortion = 0.01003413670625876
+2019-11-23 19:06:26,857 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:26,857 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:26,905 DEBUG cellsites K = 11
+2019-11-23 19:06:26,905 DEBUG cellsites Distortion = 0.008900464192742546
+2019-11-23 19:06:26,906 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:26,906 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:26,955 DEBUG cellsites K = 12
+2019-11-23 19:06:26,955 DEBUG cellsites Distortion = 0.00850594724963361
+2019-11-23 19:06:26,955 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:26,955 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,012 DEBUG cellsites K = 13
+2019-11-23 19:06:27,013 DEBUG cellsites Distortion = 0.008020668055266224
+2019-11-23 19:06:27,013 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,013 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,067 DEBUG cellsites K = 14
+2019-11-23 19:06:27,067 DEBUG cellsites Distortion = 0.007926559975696792
+2019-11-23 19:06:27,067 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,067 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,126 DEBUG cellsites K = 15
+2019-11-23 19:06:27,126 DEBUG cellsites Distortion = 0.007383420954038107
+2019-11-23 19:06:27,126 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,126 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,185 DEBUG cellsites K = 16
+2019-11-23 19:06:27,185 DEBUG cellsites Distortion = 0.007070477100157784
+2019-11-23 19:06:27,185 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,185 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,247 DEBUG cellsites K = 17
+2019-11-23 19:06:27,247 DEBUG cellsites Distortion = 0.007028760272322427
+2019-11-23 19:06:27,247 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,247 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,311 DEBUG cellsites K = 18
+2019-11-23 19:06:27,311 DEBUG cellsites Distortion = 0.0065049170160075675
+2019-11-23 19:06:27,312 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,312 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,380 DEBUG cellsites K = 19
+2019-11-23 19:06:27,380 DEBUG cellsites Distortion = 0.006360759866207529
+2019-11-23 19:06:27,381 DEBUG cellsites Optimal K = 20
+2019-11-23 19:06:27,381 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:27,381 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,381 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,386 DEBUG cellsites K = 1
+2019-11-23 19:06:27,386 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:27,386 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:27,386 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:27,386 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,386 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,410 DEBUG cellsites K = 3
+2019-11-23 19:06:27,410 DEBUG cellsites Distortion = 0.007047306549588124
+2019-11-23 19:06:27,410 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,410 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,431 DEBUG cellsites K = 4
+2019-11-23 19:06:27,432 DEBUG cellsites Distortion = 0.005001662136280349
+2019-11-23 19:06:27,432 DEBUG cellsites Optimal K = 5
+2019-11-23 19:06:27,432 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:27,432 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,432 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,436 DEBUG cellsites K = 1
+2019-11-23 19:06:27,436 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:27,436 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:27,437 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:27,437 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,437 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,442 DEBUG cellsites K = 1
+2019-11-23 19:06:27,442 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:27,442 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:27,443 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:27,443 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,443 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,448 DEBUG cellsites K = 1
+2019-11-23 19:06:27,448 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:27,448 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:27,448 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:27,448 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,448 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,453 DEBUG cellsites K = 1
+2019-11-23 19:06:27,453 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:27,453 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:27,453 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:27,454 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,454 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,459 DEBUG cellsites K = 1
+2019-11-23 19:06:27,459 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:27,459 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:27,460 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:27,460 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,460 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,465 DEBUG cellsites K = 1
+2019-11-23 19:06:27,465 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:27,465 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:27,466 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:27,466 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,466 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,471 DEBUG cellsites K = 1
+2019-11-23 19:06:27,471 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:27,471 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:27,471 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:27,471 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,471 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,476 DEBUG cellsites K = 1
+2019-11-23 19:06:27,477 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:27,477 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:27,477 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:27,477 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,477 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,481 DEBUG cellsites K = 1
+2019-11-23 19:06:27,481 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:27,481 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:27,481 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:27,481 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,482 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,486 DEBUG cellsites K = 1
+2019-11-23 19:06:27,486 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:27,486 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:27,486 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:27,486 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,486 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,493 DEBUG cellsites K = 1
+2019-11-23 19:06:27,493 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:27,493 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:27,493 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:27,493 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,493 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,498 DEBUG cellsites K = 1
+2019-11-23 19:06:27,498 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:27,498 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:27,499 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:27,499 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,499 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,507 DEBUG cellsites K = 1
+2019-11-23 19:06:27,508 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:27,508 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:27,508 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:27,508 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,508 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,513 DEBUG cellsites K = 1
+2019-11-23 19:06:27,513 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:27,513 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:27,514 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:27,514 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,514 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,518 DEBUG cellsites K = 1
+2019-11-23 19:06:27,518 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:27,518 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:27,518 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:27,518 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,518 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,523 DEBUG cellsites K = 1
+2019-11-23 19:06:27,523 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:27,523 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:27,523 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:27,523 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,523 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,527 DEBUG cellsites K = 1
+2019-11-23 19:06:27,528 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:27,528 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:27,528 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:27,528 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,528 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,532 DEBUG cellsites K = 1
+2019-11-23 19:06:27,532 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:27,532 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:27,532 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:27,532 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,532 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,537 DEBUG cellsites K = 1
+2019-11-23 19:06:27,537 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:27,537 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:27,537 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:27,537 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,537 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,542 DEBUG cellsites K = 1
+2019-11-23 19:06:27,542 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:27,542 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:27,542 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:27,542 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,542 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,546 DEBUG cellsites K = 1
+2019-11-23 19:06:27,547 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:27,547 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:27,547 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:27,547 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,547 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,551 DEBUG cellsites K = 1
+2019-11-23 19:06:27,551 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:27,551 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:27,551 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:27,551 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,552 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,556 DEBUG cellsites K = 1
+2019-11-23 19:06:27,556 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:27,556 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:27,556 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:27,556 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,556 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,560 DEBUG cellsites K = 1
+2019-11-23 19:06:27,561 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:27,561 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:27,561 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:27,561 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,561 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,565 DEBUG cellsites K = 1
+2019-11-23 19:06:27,565 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:27,565 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:27,565 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:27,566 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,566 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,570 DEBUG cellsites K = 1
+2019-11-23 19:06:27,570 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:27,570 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:27,570 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:27,570 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,570 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,574 DEBUG cellsites K = 1
+2019-11-23 19:06:27,575 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:27,575 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:27,575 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:27,575 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,575 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,657 DEBUG cellsites K = 9
+2019-11-23 19:06:27,657 DEBUG cellsites Distortion = 0.01140444801843705
+2019-11-23 19:06:27,657 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,657 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,748 DEBUG cellsites K = 10
+2019-11-23 19:06:27,748 DEBUG cellsites Distortion = 0.010806355636969132
+2019-11-23 19:06:27,748 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,748 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,841 DEBUG cellsites K = 11
+2019-11-23 19:06:27,841 DEBUG cellsites Distortion = 0.010272157745925874
+2019-11-23 19:06:27,841 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,841 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:27,934 DEBUG cellsites K = 12
+2019-11-23 19:06:27,934 DEBUG cellsites Distortion = 0.00997726946692337
+2019-11-23 19:06:27,934 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:27,934 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:28,063 DEBUG cellsites K = 13
+2019-11-23 19:06:28,064 DEBUG cellsites Distortion = 0.009558841484224421
+2019-11-23 19:06:28,064 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:28,064 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:28,201 DEBUG cellsites K = 14
+2019-11-23 19:06:28,201 DEBUG cellsites Distortion = 0.00923994734433971
+2019-11-23 19:06:28,202 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:28,202 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:28,336 DEBUG cellsites K = 15
+2019-11-23 19:06:28,337 DEBUG cellsites Distortion = 0.008850208332123377
+2019-11-23 19:06:28,337 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:28,337 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:28,442 DEBUG cellsites K = 16
+2019-11-23 19:06:28,442 DEBUG cellsites Distortion = 0.008606965796722365
+2019-11-23 19:06:28,443 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:28,443 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:28,566 DEBUG cellsites K = 17
+2019-11-23 19:06:28,566 DEBUG cellsites Distortion = 0.008402526379773375
+2019-11-23 19:06:28,566 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:28,566 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:28,699 DEBUG cellsites K = 18
+2019-11-23 19:06:28,699 DEBUG cellsites Distortion = 0.008196849437172865
+2019-11-23 19:06:28,699 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:28,699 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:28,816 DEBUG cellsites K = 19
+2019-11-23 19:06:28,816 DEBUG cellsites Distortion = 0.007950733043159693
+2019-11-23 19:06:28,816 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:28,816 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:28,951 DEBUG cellsites K = 20
+2019-11-23 19:06:28,951 DEBUG cellsites Distortion = 0.007734281103627743
+2019-11-23 19:06:28,951 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:28,952 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:29,089 DEBUG cellsites K = 21
+2019-11-23 19:06:29,089 DEBUG cellsites Distortion = 0.007400912918685574
+2019-11-23 19:06:29,089 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:29,090 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:29,227 DEBUG cellsites K = 22
+2019-11-23 19:06:29,227 DEBUG cellsites Distortion = 0.0072571757864517816
+2019-11-23 19:06:29,228 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:29,228 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:29,381 DEBUG cellsites K = 23
+2019-11-23 19:06:29,382 DEBUG cellsites Distortion = 0.007203676075726199
+2019-11-23 19:06:29,382 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:29,382 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:29,536 DEBUG cellsites K = 24
+2019-11-23 19:06:29,536 DEBUG cellsites Distortion = 0.006910183912174134
+2019-11-23 19:06:29,536 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:29,536 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:29,686 DEBUG cellsites K = 25
+2019-11-23 19:06:29,686 DEBUG cellsites Distortion = 0.0067692523749026895
+2019-11-23 19:06:29,686 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:29,687 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:29,867 DEBUG cellsites K = 26
+2019-11-23 19:06:29,867 DEBUG cellsites Distortion = 0.00673030278709794
+2019-11-23 19:06:29,867 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:29,867 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,038 DEBUG cellsites K = 27
+2019-11-23 19:06:30,038 DEBUG cellsites Distortion = 0.006517979479023326
+2019-11-23 19:06:30,038 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,038 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,211 DEBUG cellsites K = 28
+2019-11-23 19:06:30,211 DEBUG cellsites Distortion = 0.006411224920053082
+2019-11-23 19:06:30,211 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,211 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,387 DEBUG cellsites K = 29
+2019-11-23 19:06:30,388 DEBUG cellsites Distortion = 0.006278161892199209
+2019-11-23 19:06:30,388 DEBUG cellsites Optimal K = 30
+2019-11-23 19:06:30,388 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,388 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,388 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,392 DEBUG cellsites K = 1
+2019-11-23 19:06:30,392 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,392 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,392 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,392 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,393 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,397 DEBUG cellsites K = 1
+2019-11-23 19:06:30,397 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,397 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,397 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,397 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,397 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,401 DEBUG cellsites K = 1
+2019-11-23 19:06:30,402 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,402 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,402 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,402 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,402 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,406 DEBUG cellsites K = 1
+2019-11-23 19:06:30,407 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,407 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,407 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,407 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,407 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,411 DEBUG cellsites K = 1
+2019-11-23 19:06:30,411 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,411 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,411 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,412 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,412 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,416 DEBUG cellsites K = 1
+2019-11-23 19:06:30,416 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,416 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,416 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,416 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,416 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,420 DEBUG cellsites K = 1
+2019-11-23 19:06:30,421 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,421 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,421 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,421 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,421 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,425 DEBUG cellsites K = 1
+2019-11-23 19:06:30,425 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,425 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,425 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,426 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,426 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,430 DEBUG cellsites K = 1
+2019-11-23 19:06:30,430 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,430 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,430 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,430 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,430 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,434 DEBUG cellsites K = 1
+2019-11-23 19:06:30,435 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,435 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,435 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,435 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,435 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,439 DEBUG cellsites K = 1
+2019-11-23 19:06:30,439 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,439 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,439 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,439 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,439 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,444 DEBUG cellsites K = 1
+2019-11-23 19:06:30,444 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,444 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,444 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,444 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,444 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,449 DEBUG cellsites K = 1
+2019-11-23 19:06:30,449 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,449 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,449 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,449 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,449 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,453 DEBUG cellsites K = 1
+2019-11-23 19:06:30,453 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,454 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,454 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,454 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,454 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,462 DEBUG cellsites K = 1
+2019-11-23 19:06:30,462 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,463 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,463 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,463 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,463 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,469 DEBUG cellsites K = 1
+2019-11-23 19:06:30,469 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,469 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,469 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,469 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,469 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,474 DEBUG cellsites K = 1
+2019-11-23 19:06:30,474 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,474 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,474 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,474 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,474 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,478 DEBUG cellsites K = 1
+2019-11-23 19:06:30,478 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,479 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,479 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,479 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,479 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,483 DEBUG cellsites K = 1
+2019-11-23 19:06:30,483 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,483 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,483 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,483 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,483 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,488 DEBUG cellsites K = 1
+2019-11-23 19:06:30,488 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,488 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,488 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,489 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,489 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,493 DEBUG cellsites K = 1
+2019-11-23 19:06:30,493 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,493 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,494 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,494 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,494 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,498 DEBUG cellsites K = 1
+2019-11-23 19:06:30,498 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,498 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,498 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,498 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,498 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,503 DEBUG cellsites K = 1
+2019-11-23 19:06:30,503 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,503 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,503 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,503 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,503 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,508 DEBUG cellsites K = 1
+2019-11-23 19:06:30,508 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,508 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,508 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,508 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,508 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,512 DEBUG cellsites K = 1
+2019-11-23 19:06:30,512 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,513 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,513 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,513 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,513 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,517 DEBUG cellsites K = 1
+2019-11-23 19:06:30,517 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,517 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,517 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,517 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,517 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,523 DEBUG cellsites K = 1
+2019-11-23 19:06:30,523 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,523 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,523 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,523 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,523 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,528 DEBUG cellsites K = 1
+2019-11-23 19:06:30,528 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,528 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,528 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,528 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,528 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,533 DEBUG cellsites K = 1
+2019-11-23 19:06:30,533 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,533 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,533 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,533 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,533 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,537 DEBUG cellsites K = 1
+2019-11-23 19:06:30,537 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,537 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,537 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,538 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,538 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,542 DEBUG cellsites K = 1
+2019-11-23 19:06:30,542 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,542 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,542 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,542 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,542 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,546 DEBUG cellsites K = 1
+2019-11-23 19:06:30,546 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,547 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,547 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,547 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,547 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,551 DEBUG cellsites K = 1
+2019-11-23 19:06:30,551 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,551 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,551 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,551 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,551 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,556 DEBUG cellsites K = 1
+2019-11-23 19:06:30,556 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,556 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,556 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,556 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,556 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,560 DEBUG cellsites K = 1
+2019-11-23 19:06:30,560 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,560 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,561 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,561 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,561 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,565 DEBUG cellsites K = 1
+2019-11-23 19:06:30,565 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,565 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,565 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,565 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,565 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,570 DEBUG cellsites K = 1
+2019-11-23 19:06:30,570 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,570 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,570 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,570 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,570 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,575 DEBUG cellsites K = 1
+2019-11-23 19:06:30,575 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,575 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,575 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,575 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,575 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,579 DEBUG cellsites K = 1
+2019-11-23 19:06:30,579 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,579 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,580 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,580 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,580 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,584 DEBUG cellsites K = 1
+2019-11-23 19:06:30,584 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,584 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,584 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,584 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,584 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,588 DEBUG cellsites K = 1
+2019-11-23 19:06:30,589 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,589 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,589 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,589 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,589 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,593 DEBUG cellsites K = 1
+2019-11-23 19:06:30,593 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,593 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,593 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,593 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,594 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,598 DEBUG cellsites K = 1
+2019-11-23 19:06:30,598 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,598 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,598 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,598 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,598 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,602 DEBUG cellsites K = 1
+2019-11-23 19:06:30,602 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,603 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,603 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,603 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,603 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,607 DEBUG cellsites K = 1
+2019-11-23 19:06:30,607 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,608 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,608 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,608 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,608 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,612 DEBUG cellsites K = 1
+2019-11-23 19:06:30,612 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,613 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,613 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,613 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,613 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,617 DEBUG cellsites K = 1
+2019-11-23 19:06:30,617 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,617 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,617 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,617 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,618 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,622 DEBUG cellsites K = 1
+2019-11-23 19:06:30,622 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,622 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,622 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,622 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,622 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,626 DEBUG cellsites K = 1
+2019-11-23 19:06:30,626 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,627 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,627 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,627 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,627 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,632 DEBUG cellsites K = 1
+2019-11-23 19:06:30,632 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,632 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,633 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,633 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,633 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,638 DEBUG cellsites K = 1
+2019-11-23 19:06:30,638 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,638 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,638 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,638 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,638 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,643 DEBUG cellsites K = 1
+2019-11-23 19:06:30,643 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,643 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,643 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,643 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,643 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,648 DEBUG cellsites K = 1
+2019-11-23 19:06:30,649 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,649 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,649 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,649 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,649 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,655 DEBUG cellsites K = 1
+2019-11-23 19:06:30,655 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,655 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,655 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,655 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,655 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,661 DEBUG cellsites K = 1
+2019-11-23 19:06:30,661 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,661 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,661 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,661 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,661 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,666 DEBUG cellsites K = 1
+2019-11-23 19:06:30,666 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,666 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,666 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,667 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,667 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,671 DEBUG cellsites K = 1
+2019-11-23 19:06:30,671 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,671 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,671 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,671 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,671 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,676 DEBUG cellsites K = 1
+2019-11-23 19:06:30,676 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,676 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,676 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,676 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,676 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,680 DEBUG cellsites K = 1
+2019-11-23 19:06:30,680 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,681 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,681 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,681 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,681 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,687 DEBUG cellsites K = 1
+2019-11-23 19:06:30,687 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,687 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,687 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,687 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,687 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,692 DEBUG cellsites K = 1
+2019-11-23 19:06:30,692 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,692 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,692 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,692 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,692 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,696 DEBUG cellsites K = 1
+2019-11-23 19:06:30,697 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,697 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,697 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,697 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,697 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,701 DEBUG cellsites K = 1
+2019-11-23 19:06:30,701 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,701 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,701 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,702 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,702 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,706 DEBUG cellsites K = 1
+2019-11-23 19:06:30,706 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,706 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,706 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,707 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,707 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,711 DEBUG cellsites K = 1
+2019-11-23 19:06:30,711 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,711 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,711 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,711 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,711 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,716 DEBUG cellsites K = 1
+2019-11-23 19:06:30,716 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,716 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,716 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,716 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,716 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,720 DEBUG cellsites K = 1
+2019-11-23 19:06:30,720 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,720 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,720 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,721 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,721 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,725 DEBUG cellsites K = 1
+2019-11-23 19:06:30,725 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,725 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,725 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,725 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,725 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,729 DEBUG cellsites K = 1
+2019-11-23 19:06:30,730 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,730 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,730 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,730 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,730 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,734 DEBUG cellsites K = 1
+2019-11-23 19:06:30,734 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,734 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,734 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,734 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,735 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,739 DEBUG cellsites K = 1
+2019-11-23 19:06:30,739 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,739 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,739 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,739 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,739 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,743 DEBUG cellsites K = 1
+2019-11-23 19:06:30,744 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,744 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,744 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,744 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,744 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,749 DEBUG cellsites K = 1
+2019-11-23 19:06:30,749 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,749 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,749 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,749 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,749 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,753 DEBUG cellsites K = 1
+2019-11-23 19:06:30,753 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,753 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,754 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,754 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,754 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,758 DEBUG cellsites K = 1
+2019-11-23 19:06:30,758 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,758 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,758 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,758 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,758 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,763 DEBUG cellsites K = 1
+2019-11-23 19:06:30,763 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,763 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,763 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,763 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,763 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,767 DEBUG cellsites K = 1
+2019-11-23 19:06:30,767 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,767 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,767 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,768 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,768 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,772 DEBUG cellsites K = 1
+2019-11-23 19:06:30,772 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,772 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,772 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,772 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,772 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,776 DEBUG cellsites K = 1
+2019-11-23 19:06:30,777 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,777 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,777 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,777 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,777 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,781 DEBUG cellsites K = 1
+2019-11-23 19:06:30,781 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,781 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,781 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,781 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,782 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,786 DEBUG cellsites K = 1
+2019-11-23 19:06:30,786 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,786 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,786 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,786 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,786 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,791 DEBUG cellsites K = 1
+2019-11-23 19:06:30,791 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,791 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,791 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,791 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,791 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,795 DEBUG cellsites K = 1
+2019-11-23 19:06:30,796 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,796 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,796 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,796 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,796 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,800 DEBUG cellsites K = 1
+2019-11-23 19:06:30,800 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,800 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,800 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,800 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,801 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,805 DEBUG cellsites K = 1
+2019-11-23 19:06:30,805 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,805 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,805 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,805 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,805 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,810 DEBUG cellsites K = 1
+2019-11-23 19:06:30,810 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,810 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,810 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,810 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,810 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,814 DEBUG cellsites K = 1
+2019-11-23 19:06:30,814 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,814 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,815 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,815 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,815 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,819 DEBUG cellsites K = 1
+2019-11-23 19:06:30,819 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,819 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,819 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,819 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,819 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,824 DEBUG cellsites K = 1
+2019-11-23 19:06:30,824 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,824 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,824 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,824 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,824 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,828 DEBUG cellsites K = 1
+2019-11-23 19:06:30,829 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,829 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,829 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,829 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,829 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,833 DEBUG cellsites K = 1
+2019-11-23 19:06:30,833 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,833 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,833 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,833 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,834 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,838 DEBUG cellsites K = 1
+2019-11-23 19:06:30,838 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,838 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,838 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,838 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,838 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,842 DEBUG cellsites K = 1
+2019-11-23 19:06:30,843 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,843 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,843 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,843 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,843 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,847 DEBUG cellsites K = 1
+2019-11-23 19:06:30,847 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,847 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,847 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,847 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,848 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,852 DEBUG cellsites K = 1
+2019-11-23 19:06:30,852 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,852 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,852 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,852 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,852 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,856 DEBUG cellsites K = 1
+2019-11-23 19:06:30,856 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,857 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,857 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,857 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,857 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,861 DEBUG cellsites K = 1
+2019-11-23 19:06:30,861 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,861 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,861 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,861 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,861 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,866 DEBUG cellsites K = 1
+2019-11-23 19:06:30,866 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,866 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,866 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,866 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,866 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,871 DEBUG cellsites K = 1
+2019-11-23 19:06:30,871 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,871 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,871 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,871 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,871 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,875 DEBUG cellsites K = 1
+2019-11-23 19:06:30,875 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,875 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,876 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,876 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,876 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,880 DEBUG cellsites K = 1
+2019-11-23 19:06:30,880 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,880 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,880 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,880 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,880 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,885 DEBUG cellsites K = 1
+2019-11-23 19:06:30,885 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,885 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,885 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,885 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,885 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,889 DEBUG cellsites K = 1
+2019-11-23 19:06:30,889 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,889 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,890 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,890 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,890 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,894 DEBUG cellsites K = 1
+2019-11-23 19:06:30,894 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,894 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,894 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,894 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,895 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,899 DEBUG cellsites K = 1
+2019-11-23 19:06:30,899 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,899 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,899 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,899 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,899 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,903 DEBUG cellsites K = 1
+2019-11-23 19:06:30,904 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,904 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,904 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,904 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,904 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,908 DEBUG cellsites K = 1
+2019-11-23 19:06:30,908 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,908 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,908 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,908 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,909 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,913 DEBUG cellsites K = 1
+2019-11-23 19:06:30,913 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,913 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,913 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,914 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,914 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,918 DEBUG cellsites K = 1
+2019-11-23 19:06:30,918 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,918 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,918 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,918 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,918 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,923 DEBUG cellsites K = 1
+2019-11-23 19:06:30,923 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,923 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,923 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,923 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,923 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,927 DEBUG cellsites K = 1
+2019-11-23 19:06:30,927 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,927 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,927 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,928 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,928 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,932 DEBUG cellsites K = 1
+2019-11-23 19:06:30,932 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,932 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,932 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,932 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,932 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,937 DEBUG cellsites K = 1
+2019-11-23 19:06:30,937 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,937 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,937 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,937 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,937 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,941 DEBUG cellsites K = 1
+2019-11-23 19:06:30,941 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,941 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,941 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,942 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,942 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,946 DEBUG cellsites K = 1
+2019-11-23 19:06:30,946 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,946 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,946 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,946 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,946 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,951 DEBUG cellsites K = 1
+2019-11-23 19:06:30,951 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,951 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,951 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,951 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,951 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,956 DEBUG cellsites K = 1
+2019-11-23 19:06:30,956 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,956 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,956 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,956 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,956 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,960 DEBUG cellsites K = 1
+2019-11-23 19:06:30,960 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,960 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,961 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,961 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,961 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,965 DEBUG cellsites K = 1
+2019-11-23 19:06:30,965 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,965 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,966 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,966 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,966 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,970 DEBUG cellsites K = 1
+2019-11-23 19:06:30,970 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,970 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,970 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,970 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,970 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,975 DEBUG cellsites K = 1
+2019-11-23 19:06:30,975 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,975 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,975 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,975 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,975 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,979 DEBUG cellsites K = 1
+2019-11-23 19:06:30,979 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,979 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,980 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,980 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,980 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,984 DEBUG cellsites K = 1
+2019-11-23 19:06:30,984 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,984 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,984 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,984 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,984 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,989 DEBUG cellsites K = 1
+2019-11-23 19:06:30,989 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,989 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,989 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,989 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,989 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,994 DEBUG cellsites K = 1
+2019-11-23 19:06:30,994 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,994 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,994 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,994 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,994 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:30,998 DEBUG cellsites K = 1
+2019-11-23 19:06:30,998 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:30,999 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:30,999 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:30,999 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:30,999 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,003 DEBUG cellsites K = 1
+2019-11-23 19:06:31,003 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,003 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,003 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,003 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,003 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,008 DEBUG cellsites K = 1
+2019-11-23 19:06:31,008 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,008 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,008 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,008 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,008 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,012 DEBUG cellsites K = 1
+2019-11-23 19:06:31,012 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,012 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,013 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,013 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,013 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,017 DEBUG cellsites K = 1
+2019-11-23 19:06:31,017 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,017 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,017 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,017 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,017 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,022 DEBUG cellsites K = 1
+2019-11-23 19:06:31,022 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,022 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,022 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,022 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,022 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,026 DEBUG cellsites K = 1
+2019-11-23 19:06:31,026 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,026 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,027 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,027 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,027 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,031 DEBUG cellsites K = 1
+2019-11-23 19:06:31,031 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,031 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,031 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,031 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,031 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,036 DEBUG cellsites K = 1
+2019-11-23 19:06:31,036 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,036 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,036 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,036 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,036 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,041 DEBUG cellsites K = 1
+2019-11-23 19:06:31,041 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,041 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,041 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,041 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,041 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,045 DEBUG cellsites K = 1
+2019-11-23 19:06:31,046 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,046 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,046 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,046 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,046 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,050 DEBUG cellsites K = 1
+2019-11-23 19:06:31,051 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,051 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,051 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,051 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,051 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,055 DEBUG cellsites K = 1
+2019-11-23 19:06:31,056 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,056 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,056 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,056 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,056 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,060 DEBUG cellsites K = 1
+2019-11-23 19:06:31,060 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,060 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,061 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,061 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,061 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,065 DEBUG cellsites K = 1
+2019-11-23 19:06:31,065 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,065 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,065 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,065 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,065 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,070 DEBUG cellsites K = 1
+2019-11-23 19:06:31,070 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,070 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,070 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,070 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,070 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,075 DEBUG cellsites K = 1
+2019-11-23 19:06:31,075 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,075 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,075 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,075 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,075 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,079 DEBUG cellsites K = 1
+2019-11-23 19:06:31,079 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,079 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,080 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,080 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,080 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,084 DEBUG cellsites K = 1
+2019-11-23 19:06:31,084 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,084 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,084 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,084 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,084 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,089 DEBUG cellsites K = 1
+2019-11-23 19:06:31,089 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,089 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,089 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,089 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,089 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,094 DEBUG cellsites K = 1
+2019-11-23 19:06:31,094 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,094 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,094 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,094 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,094 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,098 DEBUG cellsites K = 1
+2019-11-23 19:06:31,099 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,099 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,099 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,099 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,099 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,103 DEBUG cellsites K = 1
+2019-11-23 19:06:31,103 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,103 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,103 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,103 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,104 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,108 DEBUG cellsites K = 1
+2019-11-23 19:06:31,108 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,108 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,108 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,108 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,108 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,112 DEBUG cellsites K = 1
+2019-11-23 19:06:31,113 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,113 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,113 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,113 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,113 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,117 DEBUG cellsites K = 1
+2019-11-23 19:06:31,118 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,118 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,118 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,118 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,118 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,122 DEBUG cellsites K = 1
+2019-11-23 19:06:31,122 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,122 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,122 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,123 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,123 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,127 DEBUG cellsites K = 1
+2019-11-23 19:06:31,127 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,127 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,127 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,127 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,127 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,132 DEBUG cellsites K = 1
+2019-11-23 19:06:31,132 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,132 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,132 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,132 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,132 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,138 DEBUG cellsites K = 1
+2019-11-23 19:06:31,138 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,138 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,138 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,138 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,138 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,143 DEBUG cellsites K = 1
+2019-11-23 19:06:31,143 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,144 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,144 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,144 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,144 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,149 DEBUG cellsites K = 1
+2019-11-23 19:06:31,149 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,149 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,150 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,150 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,150 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,155 DEBUG cellsites K = 1
+2019-11-23 19:06:31,155 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,155 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,155 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,156 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,156 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,161 DEBUG cellsites K = 1
+2019-11-23 19:06:31,161 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,161 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,162 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,162 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,162 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,167 DEBUG cellsites K = 1
+2019-11-23 19:06:31,167 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,167 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,167 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,168 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,168 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,173 DEBUG cellsites K = 1
+2019-11-23 19:06:31,173 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,173 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,173 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,173 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,173 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,177 DEBUG cellsites K = 1
+2019-11-23 19:06:31,177 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,177 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,178 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,178 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,178 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,182 DEBUG cellsites K = 1
+2019-11-23 19:06:31,182 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,182 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,183 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,183 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,183 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,189 DEBUG cellsites K = 1
+2019-11-23 19:06:31,189 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,189 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,189 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,189 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,189 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,194 DEBUG cellsites K = 1
+2019-11-23 19:06:31,194 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,194 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,194 DEBUG cellsites Performing gradient descent
+2019-11-23 19:06:31,194 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:06:31,194 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:06:31,199 DEBUG cellsites K = 1
+2019-11-23 19:06:31,199 DEBUG cellsites Distortion = 0.0
+2019-11-23 19:06:31,199 DEBUG cellsites Optimal K = 2
+2019-11-23 19:06:31,199 DEBUG cellsites Cellsite distribution done
+2019-11-23 19:06:31,199 DEBUG towersdistributor Level 2 clustering done
+2019-11-23 19:06:31,200 DEBUG towersdistributor Formatting to dictionary
+2019-11-23 19:06:31,226 DEBUG towersdistributor Regions dictionary formatted
+2019-11-23 19:06:31,226 DEBUG towersdistributor Performing UBC optimization
+2019-11-23 19:06:31,226 DEBUG optimizer Removing micro clusters
+2019-11-23 19:06:31,227 DEBUG optimizer Applying custom optimization
+2019-11-23 19:06:31,230 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,233 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,235 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,238 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,240 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,243 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,246 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,249 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,251 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,254 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,256 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,259 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,261 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,263 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,265 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,268 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,271 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,273 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,275 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,277 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,279 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,282 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,284 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,286 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,288 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,290 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,291 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,293 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,295 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,297 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,299 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,301 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,303 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,305 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,307 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,310 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,312 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,314 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,317 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,319 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,321 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,324 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,326 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,328 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,330 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,333 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,335 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,337 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,339 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,341 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,343 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,345 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,347 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,348 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,350 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,354 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,355 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,357 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,359 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,361 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,363 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,365 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,368 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,372 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,375 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,377 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,379 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,380 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,382 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,384 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,385 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,387 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,388 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,390 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,392 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,394 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,396 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,398 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,400 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,402 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,404 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,405 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,407 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,409 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,411 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,413 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,414 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,416 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,418 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,420 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,422 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,423 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,425 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,427 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,428 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,429 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,431 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,432 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,435 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,437 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,439 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,440 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,441 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,444 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,446 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,449 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,451 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,454 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,456 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,458 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,460 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,462 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,463 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,464 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,465 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,466 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,467 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,469 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,470 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,471 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,472 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,473 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,474 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,476 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,477 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,478 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,480 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,481 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,483 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,485 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,486 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,487 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,488 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,490 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,491 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,492 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,493 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,494 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,495 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,497 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,498 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,499 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,500 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,502 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,503 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,504 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,505 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,506 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,508 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,509 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,510 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,511 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,512 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,513 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,514 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,515 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,516 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,517 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,519 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,520 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,521 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,522 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,522 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,523 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,524 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,525 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,526 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,526 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,527 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,528 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,529 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,529 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,530 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,531 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,532 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,532 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,533 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,534 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,535 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,535 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,536 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,537 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,537 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,538 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,538 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,539 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,540 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,540 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,541 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,541 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,542 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,542 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,543 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,543 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,544 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,544 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,545 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,545 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,546 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,546 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,547 DEBUG optimizer Custom optimization applied
+2019-11-23 19:06:31,551 DEBUG optimizer Micro clusters removed
+2019-11-23 19:06:31,552 DEBUG towersdistributor UBC optimization done
+2019-11-23 19:06:31,552 DEBUG towersdistributor Saving UBC dict to JSON
+2019-11-23 19:06:31,565 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-11-23 19:06:31,566 DEBUG towersdistributor Creating Visuals
+2019-11-23 19:06:48,803 DEBUG visualizer Making map with UBC distribution
+2019-11-23 19:06:48,817 DEBUG visualizer Scattering UBC over map
+2019-11-23 19:06:57,465 DEBUG visualizer Map created with UBC scattered
+2019-11-23 19:06:57,465 DEBUG towersdistributor Visuals created
+2019-11-23 19:06:57,465 DEBUG towersdistributor Calling default browser to open map
+2019-11-23 19:06:57,524 DEBUG towersdistributor Evaluating model
+2019-11-23 19:06:58,093 DEBUG evaluator Users = 243
+2019-11-23 19:06:58,094 DEBUG evaluator Cell Sites = 148
+2019-11-23 19:06:58,094 DEBUG evaluator Accuracy = 0.7489711934156379
+2019-11-23 19:06:58,094 DEBUG towersdistributor Model evaluated
+2019-11-23 19:11:04,604 DEBUG towersdistributor Towers Distributor Initialized
+2019-11-23 19:11:04,604 DEBUG towersdistributor Performing Level 1 clustering
+2019-11-23 19:11:04,604 DEBUG regions Clustering settlements
+2019-11-23 19:11:04,604 DEBUG regions Building affinity matrix
+2019-11-23 19:11:04,712 DEBUG regions Affinity matrix built
+2019-11-23 19:11:04,715 DEBUG regions Computing Eigen decompostion
+2019-11-23 19:11:06,046 DEBUG regions Eigen decomposition applied
+2019-11-23 19:11:06,252 DEBUG regions Settlement clustering done
+2019-11-23 19:11:06,258 DEBUG towersdistributor Level 1 clustering done
+2019-11-23 19:11:06,258 DEBUG towersdistributor Performing Level 2 clustering
+2019-11-23 19:11:06,258 DEBUG cellsites Distributing cellsites
+2019-11-23 19:11:06,258 DEBUG cellsites Performing gradient descent
+2019-11-23 19:11:06,258 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:06,258 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:06,321 DEBUG cellsites K = 6
+2019-11-23 19:11:06,321 DEBUG cellsites Distortion = 0.013269995963892639
+2019-11-23 19:11:06,321 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:06,321 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:06,379 DEBUG cellsites K = 7
+2019-11-23 19:11:06,379 DEBUG cellsites Distortion = 0.012246922492082228
+2019-11-23 19:11:06,379 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:06,379 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:06,439 DEBUG cellsites K = 8
+2019-11-23 19:11:06,439 DEBUG cellsites Distortion = 0.011336389454028088
+2019-11-23 19:11:06,439 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:06,440 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:06,502 DEBUG cellsites K = 9
+2019-11-23 19:11:06,502 DEBUG cellsites Distortion = 0.010487173987402482
+2019-11-23 19:11:06,502 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:06,502 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:06,557 DEBUG cellsites K = 10
+2019-11-23 19:11:06,557 DEBUG cellsites Distortion = 0.010100372196577301
+2019-11-23 19:11:06,557 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:06,557 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:06,623 DEBUG cellsites K = 11
+2019-11-23 19:11:06,623 DEBUG cellsites Distortion = 0.009540814158053747
+2019-11-23 19:11:06,623 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:06,623 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:06,698 DEBUG cellsites K = 12
+2019-11-23 19:11:06,698 DEBUG cellsites Distortion = 0.009022200401270958
+2019-11-23 19:11:06,698 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:06,699 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:06,783 DEBUG cellsites K = 13
+2019-11-23 19:11:06,783 DEBUG cellsites Distortion = 0.008473303217537557
+2019-11-23 19:11:06,783 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:06,783 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:06,914 DEBUG cellsites K = 14
+2019-11-23 19:11:06,914 DEBUG cellsites Distortion = 0.008312026983343367
+2019-11-23 19:11:06,915 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:06,915 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:07,024 DEBUG cellsites K = 15
+2019-11-23 19:11:07,024 DEBUG cellsites Distortion = 0.00778930555143477
+2019-11-23 19:11:07,024 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:07,025 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:07,110 DEBUG cellsites K = 16
+2019-11-23 19:11:07,111 DEBUG cellsites Distortion = 0.007411928526483916
+2019-11-23 19:11:07,111 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:07,112 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:07,208 DEBUG cellsites K = 17
+2019-11-23 19:11:07,209 DEBUG cellsites Distortion = 0.007195177355914673
+2019-11-23 19:11:07,209 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:07,209 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:07,313 DEBUG cellsites K = 18
+2019-11-23 19:11:07,313 DEBUG cellsites Distortion = 0.006958553879236682
+2019-11-23 19:11:07,313 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:07,313 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:07,426 DEBUG cellsites K = 19
+2019-11-23 19:11:07,427 DEBUG cellsites Distortion = 0.0068063101469679225
+2019-11-23 19:11:07,427 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:07,427 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:07,525 DEBUG cellsites K = 20
+2019-11-23 19:11:07,525 DEBUG cellsites Distortion = 0.006487027985660144
+2019-11-23 19:11:07,525 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:07,525 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:07,626 DEBUG cellsites K = 21
+2019-11-23 19:11:07,626 DEBUG cellsites Distortion = 0.006348326053896003
+2019-11-23 19:11:07,626 DEBUG cellsites Optimal K = 22
+2019-11-23 19:11:07,626 DEBUG cellsites Performing gradient descent
+2019-11-23 19:11:07,626 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:07,626 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:07,656 DEBUG cellsites K = 5
+2019-11-23 19:11:07,656 DEBUG cellsites Distortion = 0.016917189644645975
+2019-11-23 19:11:07,656 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:07,656 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:07,690 DEBUG cellsites K = 6
+2019-11-23 19:11:07,690 DEBUG cellsites Distortion = 0.015114264835304815
+2019-11-23 19:11:07,691 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:07,691 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:07,731 DEBUG cellsites K = 7
+2019-11-23 19:11:07,731 DEBUG cellsites Distortion = 0.013937560206222641
+2019-11-23 19:11:07,731 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:07,731 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:07,773 DEBUG cellsites K = 8
+2019-11-23 19:11:07,774 DEBUG cellsites Distortion = 0.011984828791401413
+2019-11-23 19:11:07,774 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:07,774 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:07,820 DEBUG cellsites K = 9
+2019-11-23 19:11:07,820 DEBUG cellsites Distortion = 0.010983278778608406
+2019-11-23 19:11:07,820 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:07,820 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:07,866 DEBUG cellsites K = 10
+2019-11-23 19:11:07,866 DEBUG cellsites Distortion = 0.010358713682892996
+2019-11-23 19:11:07,867 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:07,867 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:07,924 DEBUG cellsites K = 11
+2019-11-23 19:11:07,924 DEBUG cellsites Distortion = 0.009858528188687288
+2019-11-23 19:11:07,925 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:07,925 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:07,987 DEBUG cellsites K = 12
+2019-11-23 19:11:07,988 DEBUG cellsites Distortion = 0.009313901795866603
+2019-11-23 19:11:07,988 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:07,988 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:08,037 DEBUG cellsites K = 13
+2019-11-23 19:11:08,038 DEBUG cellsites Distortion = 0.008800548499176069
+2019-11-23 19:11:08,038 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:08,038 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:08,093 DEBUG cellsites K = 14
+2019-11-23 19:11:08,093 DEBUG cellsites Distortion = 0.008300232268189682
+2019-11-23 19:11:08,093 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:08,094 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:08,153 DEBUG cellsites K = 15
+2019-11-23 19:11:08,153 DEBUG cellsites Distortion = 0.008019884219794254
+2019-11-23 19:11:08,153 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:08,153 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:08,213 DEBUG cellsites K = 16
+2019-11-23 19:11:08,213 DEBUG cellsites Distortion = 0.007557264670495429
+2019-11-23 19:11:08,213 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:08,213 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:08,290 DEBUG cellsites K = 17
+2019-11-23 19:11:08,290 DEBUG cellsites Distortion = 0.007083709885387466
+2019-11-23 19:11:08,290 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:08,290 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:08,361 DEBUG cellsites K = 18
+2019-11-23 19:11:08,361 DEBUG cellsites Distortion = 0.006800250658919961
+2019-11-23 19:11:08,361 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:08,361 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:08,439 DEBUG cellsites K = 19
+2019-11-23 19:11:08,439 DEBUG cellsites Distortion = 0.006664767734069095
+2019-11-23 19:11:08,439 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:08,439 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:08,517 DEBUG cellsites K = 20
+2019-11-23 19:11:08,518 DEBUG cellsites Distortion = 0.00654824537625471
+2019-11-23 19:11:08,518 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:08,518 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:08,591 DEBUG cellsites K = 21
+2019-11-23 19:11:08,591 DEBUG cellsites Distortion = 0.0061002113664289275
+2019-11-23 19:11:08,591 DEBUG cellsites Optimal K = 22
+2019-11-23 19:11:08,592 DEBUG cellsites Performing gradient descent
+2019-11-23 19:11:08,592 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:08,592 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:08,630 DEBUG cellsites K = 5
+2019-11-23 19:11:08,630 DEBUG cellsites Distortion = 0.01629576325972801
+2019-11-23 19:11:08,630 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:08,630 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:08,683 DEBUG cellsites K = 6
+2019-11-23 19:11:08,683 DEBUG cellsites Distortion = 0.014596738810852258
+2019-11-23 19:11:08,683 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:08,683 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:08,725 DEBUG cellsites K = 7
+2019-11-23 19:11:08,725 DEBUG cellsites Distortion = 0.013666768525361533
+2019-11-23 19:11:08,725 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:08,725 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:08,769 DEBUG cellsites K = 8
+2019-11-23 19:11:08,769 DEBUG cellsites Distortion = 0.01281303342926489
+2019-11-23 19:11:08,769 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:08,769 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:08,813 DEBUG cellsites K = 9
+2019-11-23 19:11:08,813 DEBUG cellsites Distortion = 0.012012655593256703
+2019-11-23 19:11:08,813 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:08,813 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:08,864 DEBUG cellsites K = 10
+2019-11-23 19:11:08,864 DEBUG cellsites Distortion = 0.01133795398350773
+2019-11-23 19:11:08,864 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:08,864 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:08,947 DEBUG cellsites K = 11
+2019-11-23 19:11:08,948 DEBUG cellsites Distortion = 0.01050298990900584
+2019-11-23 19:11:08,948 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:08,948 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:09,007 DEBUG cellsites K = 12
+2019-11-23 19:11:09,007 DEBUG cellsites Distortion = 0.009721413258266254
+2019-11-23 19:11:09,007 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:09,007 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:09,065 DEBUG cellsites K = 13
+2019-11-23 19:11:09,065 DEBUG cellsites Distortion = 0.009320496722638821
+2019-11-23 19:11:09,065 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:09,065 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:09,126 DEBUG cellsites K = 14
+2019-11-23 19:11:09,126 DEBUG cellsites Distortion = 0.009087287326031618
+2019-11-23 19:11:09,126 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:09,126 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:09,190 DEBUG cellsites K = 15
+2019-11-23 19:11:09,190 DEBUG cellsites Distortion = 0.00855816930002353
+2019-11-23 19:11:09,190 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:09,190 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:09,253 DEBUG cellsites K = 16
+2019-11-23 19:11:09,254 DEBUG cellsites Distortion = 0.008011917068335052
+2019-11-23 19:11:09,254 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:09,254 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:09,327 DEBUG cellsites K = 17
+2019-11-23 19:11:09,327 DEBUG cellsites Distortion = 0.007729466793060254
+2019-11-23 19:11:09,327 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:09,327 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:09,398 DEBUG cellsites K = 18
+2019-11-23 19:11:09,399 DEBUG cellsites Distortion = 0.0074473343260320225
+2019-11-23 19:11:09,399 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:09,399 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:09,502 DEBUG cellsites K = 19
+2019-11-23 19:11:09,502 DEBUG cellsites Distortion = 0.007178617468579534
+2019-11-23 19:11:09,502 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:09,502 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:09,576 DEBUG cellsites K = 20
+2019-11-23 19:11:09,576 DEBUG cellsites Distortion = 0.007095354631462372
+2019-11-23 19:11:09,576 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:09,576 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:09,657 DEBUG cellsites K = 21
+2019-11-23 19:11:09,657 DEBUG cellsites Distortion = 0.0068353794676423866
+2019-11-23 19:11:09,658 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:09,658 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:09,752 DEBUG cellsites K = 22
+2019-11-23 19:11:09,753 DEBUG cellsites Distortion = 0.006717858362175457
+2019-11-23 19:11:09,753 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:09,753 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:09,846 DEBUG cellsites K = 23
+2019-11-23 19:11:09,846 DEBUG cellsites Distortion = 0.006441406355117401
+2019-11-23 19:11:09,846 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:09,846 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:09,942 DEBUG cellsites K = 24
+2019-11-23 19:11:09,942 DEBUG cellsites Distortion = 0.006229080829751676
+2019-11-23 19:11:09,943 DEBUG cellsites Optimal K = 25
+2019-11-23 19:11:09,943 DEBUG cellsites Performing gradient descent
+2019-11-23 19:11:09,943 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:09,943 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:09,994 DEBUG cellsites K = 6
+2019-11-23 19:11:09,995 DEBUG cellsites Distortion = 0.010594441229278974
+2019-11-23 19:11:09,995 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:09,995 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:10,042 DEBUG cellsites K = 7
+2019-11-23 19:11:10,042 DEBUG cellsites Distortion = 0.00983110221009101
+2019-11-23 19:11:10,042 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:10,042 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:10,090 DEBUG cellsites K = 8
+2019-11-23 19:11:10,090 DEBUG cellsites Distortion = 0.00904202099237443
+2019-11-23 19:11:10,090 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:10,090 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:10,147 DEBUG cellsites K = 9
+2019-11-23 19:11:10,148 DEBUG cellsites Distortion = 0.008585615392384558
+2019-11-23 19:11:10,148 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:10,148 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:10,203 DEBUG cellsites K = 10
+2019-11-23 19:11:10,203 DEBUG cellsites Distortion = 0.007888955222447865
+2019-11-23 19:11:10,203 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:10,203 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:10,257 DEBUG cellsites K = 11
+2019-11-23 19:11:10,257 DEBUG cellsites Distortion = 0.0072990019773188945
+2019-11-23 19:11:10,257 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:10,257 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:10,323 DEBUG cellsites K = 12
+2019-11-23 19:11:10,323 DEBUG cellsites Distortion = 0.007010854658454306
+2019-11-23 19:11:10,323 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:10,323 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:10,386 DEBUG cellsites K = 13
+2019-11-23 19:11:10,386 DEBUG cellsites Distortion = 0.006624640389740574
+2019-11-23 19:11:10,387 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:10,387 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:10,455 DEBUG cellsites K = 14
+2019-11-23 19:11:10,455 DEBUG cellsites Distortion = 0.006253202181115609
+2019-11-23 19:11:10,455 DEBUG cellsites Optimal K = 15
+2019-11-23 19:11:10,455 DEBUG cellsites Performing gradient descent
+2019-11-23 19:11:10,455 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:10,456 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:10,499 DEBUG cellsites K = 5
+2019-11-23 19:11:10,500 DEBUG cellsites Distortion = 0.016465957285868495
+2019-11-23 19:11:10,500 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:10,500 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:10,538 DEBUG cellsites K = 6
+2019-11-23 19:11:10,538 DEBUG cellsites Distortion = 0.014260023087386685
+2019-11-23 19:11:10,538 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:10,538 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:10,582 DEBUG cellsites K = 7
+2019-11-23 19:11:10,582 DEBUG cellsites Distortion = 0.013237409274820835
+2019-11-23 19:11:10,582 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:10,582 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:10,619 DEBUG cellsites K = 8
+2019-11-23 19:11:10,620 DEBUG cellsites Distortion = 0.012037583521311079
+2019-11-23 19:11:10,620 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:10,620 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:10,663 DEBUG cellsites K = 9
+2019-11-23 19:11:10,664 DEBUG cellsites Distortion = 0.011374688109458322
+2019-11-23 19:11:10,664 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:10,664 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:10,712 DEBUG cellsites K = 10
+2019-11-23 19:11:10,712 DEBUG cellsites Distortion = 0.010575410369161872
+2019-11-23 19:11:10,712 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:10,712 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:10,766 DEBUG cellsites K = 11
+2019-11-23 19:11:10,766 DEBUG cellsites Distortion = 0.010022955179209784
+2019-11-23 19:11:10,766 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:10,767 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:10,821 DEBUG cellsites K = 12
+2019-11-23 19:11:10,821 DEBUG cellsites Distortion = 0.009469046440049773
+2019-11-23 19:11:10,821 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:10,821 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:10,884 DEBUG cellsites K = 13
+2019-11-23 19:11:10,884 DEBUG cellsites Distortion = 0.008967302250336987
+2019-11-23 19:11:10,884 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:10,884 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:10,964 DEBUG cellsites K = 14
+2019-11-23 19:11:10,964 DEBUG cellsites Distortion = 0.008634155107022241
+2019-11-23 19:11:10,964 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:10,964 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:11,034 DEBUG cellsites K = 15
+2019-11-23 19:11:11,034 DEBUG cellsites Distortion = 0.008226923476010057
+2019-11-23 19:11:11,035 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:11,035 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:11,112 DEBUG cellsites K = 16
+2019-11-23 19:11:11,112 DEBUG cellsites Distortion = 0.007775665400997492
+2019-11-23 19:11:11,112 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:11,112 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:11,191 DEBUG cellsites K = 17
+2019-11-23 19:11:11,192 DEBUG cellsites Distortion = 0.007554347839323083
+2019-11-23 19:11:11,192 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:11,192 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:11,269 DEBUG cellsites K = 18
+2019-11-23 19:11:11,269 DEBUG cellsites Distortion = 0.007299209166353456
+2019-11-23 19:11:11,269 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:11,269 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:11,359 DEBUG cellsites K = 19
+2019-11-23 19:11:11,360 DEBUG cellsites Distortion = 0.007037304102970742
+2019-11-23 19:11:11,360 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:11,360 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:11,454 DEBUG cellsites K = 20
+2019-11-23 19:11:11,454 DEBUG cellsites Distortion = 0.0068036926275757284
+2019-11-23 19:11:11,454 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:11,454 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:11,544 DEBUG cellsites K = 21
+2019-11-23 19:11:11,545 DEBUG cellsites Distortion = 0.006471203420870559
+2019-11-23 19:11:11,545 DEBUG cellsites Applying K-Means Clustering
+2019-11-23 19:11:11,545 DEBUG cellsites K-Means clustering applied
+2019-11-23 19:11:11,631 DEBUG cellsites K = 22
+2019-11-23 19:11:11,631 DEBUG cellsites Distortion = 0.00625677802451675
+2019-11-23 19:11:11,631 DEBUG cellsites Optimal K = 23
+2019-11-23 19:11:11,631 DEBUG cellsites Cellsite distribution done
+2019-11-23 19:11:11,631 DEBUG towersdistributor Level 2 clustering done
+2019-11-23 19:11:11,631 DEBUG towersdistributor Formatting to dictionary
+2019-11-23 19:11:11,632 DEBUG towersdistributor Regions dictionary formatted
+2019-11-23 19:11:11,632 DEBUG towersdistributor Performing UBC optimization
+2019-11-23 19:11:11,632 DEBUG optimizer Removing micro clusters
+2019-11-23 19:11:11,635 DEBUG optimizer Micro clusters removed
+2019-11-23 19:11:11,635 DEBUG towersdistributor UBC optimization done
+2019-11-23 19:11:11,635 DEBUG towersdistributor Saving UBC dict to JSON
+2019-11-23 19:11:11,667 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-11-23 19:11:11,667 DEBUG towersdistributor Creating Visuals
+2019-11-23 19:11:16,188 DEBUG visualizer Making map with UBC distribution
+2019-11-23 19:11:16,195 DEBUG visualizer Scattering UBC over map
+2019-11-23 19:11:18,102 DEBUG visualizer Map created with UBC scattered
+2019-11-23 19:11:18,102 DEBUG towersdistributor Visuals created
+2019-11-23 19:11:18,103 DEBUG towersdistributor Calling default browser to open map
+2019-11-23 19:11:18,159 DEBUG towersdistributor Evaluating model
+2019-11-23 19:11:20,351 DEBUG evaluator Users = 1010
+2019-11-23 19:11:20,351 DEBUG evaluator Cell Sites = 102
+2019-11-23 19:11:20,351 DEBUG evaluator Accuracy = 0.7405940594059406
+2019-11-23 19:11:20,352 DEBUG towersdistributor Model evaluated

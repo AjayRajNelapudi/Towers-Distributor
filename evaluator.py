@@ -10,7 +10,7 @@ class Evaluator:
             tower_distribution = json.load(file)
 
         self.tower_distribution = dict()
-        for key, ubc in tower_distribution.items():
+        for key, region in tower_distribution.items():
 
             users = np.array(
                 [
@@ -19,7 +19,7 @@ class Evaluator:
                         dtype=np.float,
                         sep=" "
                     )
-                    for user in ubc['users'].split("\n")
+                    for user in region['users'].split("\n")
                 ]
             )
 
@@ -30,7 +30,7 @@ class Evaluator:
                         dtype=np.float,
                         sep=" "
                     )
-                    for user in ubc['cell_sites'].split("\n")
+                    for user in region['cell_sites'].split("\n")
                 ]
             )
 
@@ -43,10 +43,10 @@ class Evaluator:
 
     def get_users_and_cell_sites(self):
         users = np.array(
-            [user for ubc in self.tower_distribution.values() for user in ubc['users']]
+            [user for region in self.tower_distribution.values() for user in region['users']]
         )
         cell_sites = np.array(
-            [cell_site for ubc in self.tower_distribution.values() for cell_site in ubc['cell_sites']]
+            [cell_site for region in self.tower_distribution.values() for cell_site in region['cell_sites']]
         )
 
         return users, cell_sites
