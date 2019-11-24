@@ -8,7 +8,9 @@ from regions import Regions
 from cellsites import CellSites
 from optimizer import Optimizer
 from visualizer import Visuals
+from datahandler import *
 from evaluator import Evaluator
+
 
 class TowersDistributor:
     '''
@@ -128,27 +130,16 @@ class TowersDistributor:
         self.logger.debug("Regions dictionary formatted")
 
     def optimize(self):
-        self.logger.debug("Performing UBC optimization")
-        ubc_optimizer = Optimizer(self.tower_distribution.copy())
-        self.tower_distribution = ubc_optimizer.optimize()
+        self.logger.debug("Performing Region optimization")
+        region = Optimizer(self.tower_distribution.copy())
+        self.tower_distribution = region.optimize()
         self.logger.debug("UBC optimization done")
 
     def serialize_and_save(self):
         self.logger.debug("Saving UBC dict to JSON")
-        tower_distribution = dict()
-        for key in self.tower_distribution.keys():
-            base_station = self.tower_distribution[key].copy()
-
-            base_station['users'] = str(base_station['users'])
-            base_station['base_station'] = str(base_station['base_station'])
-            base_station['cell_sites'] = str(base_station['cell_sites'])
-
-            tower_distribution[key] = base_station
-
-        tower_distribution = json.dumps(tower_distribution)
-        with open(self.output_JSON_file, "w") as tower_distribution_file:
-            tower_distribution_file.write(tower_distribution)
-
+        serializer = Serializer(self.tower_distribution)
+        serializer.serialize()
+        serializer.save(self.output_JSON_file)
         self.logger.debug("UBC dictionary saved to JSON")
 
     def display_visuals(self):
@@ -167,10 +158,6 @@ class TowersDistributor:
         # accuracy_evaluator.tower_distribution = self.tower_distribution
         users, cell_site_count, accuracy = accuracy_evaluator.evaluate()
         self.logger.debug("Model evaluated")
-
-        print("Users =", users)
-        print("Cellsites =", cell_site_count)
-        print("Accuracy =", accuracy)
 
 
 if __name__ == "__main__":
