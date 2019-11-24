@@ -23,7 +23,7 @@ class CellSites:
 
         K = int(len(geo_coordinates) ** (1./3.))
         distortion = 1
-        permissible_distortion = 0.0064 # Change permissible_distortion to vary no of towers
+        permissible_distortion = 0.0047 # Change permissible_distortion to vary no of towers
 
         while distortion > permissible_distortion:
             self.logger.debug("Applying K-Means Clustering")
