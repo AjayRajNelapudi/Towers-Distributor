@@ -57,31 +57,36 @@ class TowersDistributor:
                 "class": "logging.FileHandler",
                 "formatter": "default",
                 "filename": "evaluator.log"
+            },
+            "console": {
+                "class": "logging.StreamHandler",
+                "formatter": "default",
+                "stream": "ext://sys.stdout"
             }
         },
         "loggers": {
             "towersdistributor": {
-                "handlers": ["towersdistributor", "main"],
+                "handlers": ["towersdistributor", "main", "console"],
                 "level": "DEBUG",
             },
             "regions": {
-                "handlers": ["regions", "main"],
+                "handlers": ["regions", "main", "console"],
                 "level": "DEBUG",
             },
             "cellsites": {
-                "handlers": ["cellsites", "main"],
+                "handlers": ["cellsites", "main", "console"],
                 "level": "DEBUG",
             },
             "optimizer": {
-                "handlers": ["optimizer", "main"],
+                "handlers": ["optimizer", "main", "console"],
                 "level": "DEBUG",
             },
             "visualizer": {
-                "handlers": ["visualizer", "main"],
+                "handlers": ["visualizer", "main", "console"],
                 "level": "DEBUG",
             },
             "evaluator": {
-                "handlers": ["evaluator", "main"],
+                "handlers": ["evaluator", "main", "console"],
                 "level": "DEBUG",
             }
         }
@@ -149,7 +154,7 @@ class TowersDistributor:
     def display_visuals(self):
         self.logger.debug("Creating Visuals")
         visuals = Visuals(self.tower_distribution)
-        visuals.display_distribution()
+        # visuals.display_distribution()
         visuals.make_map(self.output_html_map_file)
         self.logger.debug("Visuals created")
 
@@ -158,7 +163,8 @@ class TowersDistributor:
 
     def evaluate(self):
         self.logger.debug("Evaluating model")
-        accuracy_evaluator = Evaluator(self.output_JSON_file)
+        accuracy_evaluator = Evaluator(self.tower_distribution) # self.output_JSON_file
+        # accuracy_evaluator.tower_distribution = self.tower_distribution
         users, cell_site_count, accuracy = accuracy_evaluator.evaluate()
         self.logger.debug("Model evaluated")
 

@@ -72,6 +72,7 @@ class Optimizer:
             )
             nearest_base_station = self.tower_distribution[nearest_key]
             self.tower_distribution.pop(key)
+            # self.tower_distribution.pop(nearest_key)
 
 
             nearest_base_station['users'] = np.concatenate(
@@ -84,8 +85,11 @@ class Optimizer:
                     continue
 
                 nearest_base_station['cell_sites'] = np.concatenate(
-                    (nearest_base_station['cell_sites'], [cell_site]), axis=0
+                    (nearest_base_station['cell_sites'], [cell_site]),
+                    axis=0
                 )
+
+            # self.tower_distribution[nearest_key] = nearest_base_station
 
             self.logger.debug("Custom optimization applied")
 

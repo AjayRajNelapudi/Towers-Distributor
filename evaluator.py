@@ -5,41 +5,44 @@ import numpy as np
 class Evaluator:
     cell_site_range = 0.008
 
-    def __init__(self, filename):
-        with open(filename) as file:
-            tower_distribution = json.load(file)
-
-        self.tower_distribution = dict()
-        for key, region in tower_distribution.items():
-
-            users = np.array(
-                [
-                    np.fromstring(
-                        user.replace("[", "").replace("]", ""),
-                        dtype=np.float,
-                        sep=" "
-                    )
-                    for user in region['users'].split("\n")
-                ]
-            )
-
-            cell_sites = np.array(
-                [
-                    np.fromstring(
-                        user.replace("[", "").replace("]", ""),
-                        dtype=np.float,
-                        sep=" "
-                    )
-                    for user in region['cell_sites'].split("\n")
-                ]
-            )
-
-            self.tower_distribution[key] = {
-                'users': users,
-                'cell_sites': cell_sites,
-            }
-
+    def __init__(self, tower_distribution):
+        self.tower_distribution = tower_distribution
         self.logger = logging.getLogger("evaluator")
+        # if filename is None:
+        #     return
+        #
+        # with open(filename) as file:
+        #     tower_distribution = json.load(file)
+        #
+        # self.tower_distribution = dict()
+        # for key, region in tower_distribution.items():
+        #
+        #     users = np.array(
+        #         [
+        #             np.fromstring(
+        #                 user.replace("[", "").replace("]", ""),
+        #                 dtype=np.float,
+        #                 sep=" "
+        #             )
+        #             for user in region['users'].split("\n")
+        #         ]
+        #     )
+        #
+        #     cell_sites = np.array(
+        #         [
+        #             np.fromstring(
+        #                 user.replace("[", "").replace("]", ""),
+        #                 dtype=np.float,
+        #                 sep=" "
+        #             )
+        #             for user in region['cell_sites'].split("\n")
+        #         ]
+        #     )
+        #
+        #     self.tower_distribution[key] = {
+        #         'users': users,
+        #         'cell_sites': cell_sites,
+        #     }
 
     def get_users_and_cell_sites(self):
         users = np.array(
@@ -72,6 +75,6 @@ class Evaluator:
         return len(users), len(cell_sites), acccuracy
 
 if __name__ == "__main__":
-    evaluator = Evaluator("tower-distribution.json")
+    evaluator = Evaluator("custom-td.json")
     acccuracy = evaluator.evaluate()
     print(acccuracy)
