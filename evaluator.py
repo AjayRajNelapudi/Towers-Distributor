@@ -1,48 +1,13 @@
-import json
 import logging
 import numpy as np
+from scipy.spatial.distance import cdist
 
 class Evaluator:
-    cell_site_range = 0.008
+    cell_site_range = 0.08
 
     def __init__(self, tower_distribution):
         self.tower_distribution = tower_distribution
         self.logger = logging.getLogger("evaluator")
-        # if filename is None:
-        #     return
-        #
-        # with open(filename) as file:
-        #     tower_distribution = json.load(file)
-        #
-        # self.tower_distribution = dict()
-        # for key, region in tower_distribution.items():
-        #
-        #     users = np.array(
-        #         [
-        #             np.fromstring(
-        #                 user.replace("[", "").replace("]", ""),
-        #                 dtype=np.float,
-        #                 sep=" "
-        #             )
-        #             for user in region['users'].split("\n")
-        #         ]
-        #     )
-        #
-        #     cell_sites = np.array(
-        #         [
-        #             np.fromstring(
-        #                 user.replace("[", "").replace("]", ""),
-        #                 dtype=np.float,
-        #                 sep=" "
-        #             )
-        #             for user in region['cell_sites'].split("\n")
-        #         ]
-        #     )
-        #
-        #     self.tower_distribution[key] = {
-        #         'users': users,
-        #         'cell_sites': cell_sites,
-        #     }
 
     def get_users_and_cell_sites(self):
         users = np.array(
@@ -57,16 +22,11 @@ class Evaluator:
 
     def evaluate(self):
         users, cell_sites = self.get_users_and_cell_sites()
+        is_within_range = lambda distance: distance < self.cell_site_range
+        closest_cell_site_distances = np.min(cdist(users, cell_sites, 'euclidean'), axis=1)
+        users_within_range = sum(map(is_within_range, closest_cell_site_distances))
 
-        within_range_count = 0
-        for user in users:
-            min_tower_distance = min([np.linalg.norm(user - cell_site) for cell_site in cell_sites])
-            if min_tower_distance > self.cell_site_range:
-                continue
-
-            within_range_count += 1
-
-        acccuracy = within_range_count / len(users)
+        acccuracy = users_within_range / len(users)
 
         self.logger.debug("Users = " + str(len(users)))
         self.logger.debug("Cell Sites = " + str(len(cell_sites)))
