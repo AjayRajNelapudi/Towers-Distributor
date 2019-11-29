@@ -11,7 +11,6 @@ from visualizer import Visuals
 from datahandler import *
 from evaluator import Evaluator
 
-
 class TowersDistributor:
     '''
     Towers Distributor acts as the controller for all the functions of the project
@@ -161,7 +160,7 @@ class TowersDistributor:
 
 
 if __name__ == "__main__":
-    distributor = TowersDistributor("dataset.csv", "tower-distribution.json", "tower-distribution.html")
+    distributor = TowersDistributor("datasets/dataset.csv", "outputs/td.json", "maps/td.html")
 
     distributor.perform_settlement_clustering()
     distributor.perform_cellsite_clustering()
@@ -173,6 +172,3 @@ if __name__ == "__main__":
     distributor.display_visuals()
 
     distributor.evaluate()
-
-    print("Tower Distribution serialized to tower_distribution.json")
-    print("Open map.html to visualize on map")

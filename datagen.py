@@ -10,13 +10,13 @@ def read_hotspots(hotspots_filepath):
 
     return hotspots
 
-def generate_dataset(hotspots):
+def generate_dataset(hotspots, required_size=1000):
     users_distance = (-200, 200)
     dataset = []
     for hotspot in hotspots:
-        customer_per_hotspot = np.random.randint(1, 20)
+        user_per_hotspot = required_size // len(hotspots)
         # customer_per_hotspot = itertools.cycle([2, 5, 3, 2, 1000])
-        for customer in range(customer_per_hotspot):
+        for user in range(user_per_hotspot):
             x = hotspot[0] + (0.0001 * np.random.randint(*users_distance))
             y = hotspot[1] + (0.0001 * np.random.randint(*users_distance))
             dataset.append([x, y])
@@ -36,9 +36,11 @@ def visualise_dataset(dataset):
     plt.show()
 
 if __name__ == "__main__":
-    hotspots = read_hotspots("hotspots.csv")
-    dataset = generate_dataset(hotspots)
-    write_dataset(dataset, "custom-dataset.csv")
-    visualise_dataset(dataset)
-
-    print("Total Datapoints", len(dataset))
+    metadata = [
+        1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000, 5500
+    ]
+    for size in metadata:
+        hotspots = read_hotspots("hotspots.csv")
+        dataset = generate_dataset(hotspots, required_size=size)
+        write_dataset(dataset, "datasets/dataset%s.csv" % size)
+        # visualise_dataset(dataset)

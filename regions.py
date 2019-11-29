@@ -97,6 +97,7 @@ class Regions:
 
         nb_clusters, eigenvalues, eigenvectors = self.eigen_decomposition(affinity_matrix, topK=50)
         K = nb_clusters * 1 # Adjustment factor
+        self.logger.debug("Optimal K for Region Clustering " + str(K))
 
         settlements = SpectralClustering(n_clusters=K, assign_labels='discretize', random_state=0)
         settlements.fit(geo_coordinates)

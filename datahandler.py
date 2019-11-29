@@ -36,7 +36,7 @@ class Deserializer:
             base_station = np.fromstring(
                 region['base_station'].replace("[", "").replace("]", ""),
                 dtype=np.float,
-                sep=","
+                sep=" "
             )
 
             users = np.array(
@@ -44,7 +44,7 @@ class Deserializer:
                     np.fromstring(
                         user.replace("[", "").replace("]", ""),
                         dtype=np.float,
-                        sep=","
+                        sep=" "
                     )
                     for user in region['users'].split(",")
                 ]
@@ -55,7 +55,7 @@ class Deserializer:
                     np.fromstring(
                         cell_site.replace("[", "").replace("]", ""),
                         dtype=np.float,
-                        sep=","
+                        sep=" "
                     )
                     for cell_site in region['cell_sites'].split(",")
                 ]
@@ -67,7 +67,7 @@ class Deserializer:
                 'cell_sites': cell_sites
             }
 
-            return self.tower_distribution
+        return self.tower_distribution
 
     def restore(self, filename):
         with open(filename) as output_file:
@@ -78,4 +78,4 @@ if __name__ == "__main__":
     deserializer.restore("tower-distribution.json")
     structure = deserializer.deserialize()
 
-    serializer = Serializer(structure)
+    print(structure)

@@ -103,6 +103,7 @@ class Visuals:
             for cell_site in cell_sites:
                 cell_site_marker = folium.Marker(
                     location=cell_site,
+                    icon=folium.Icon(icon="tower", color="cadetblue")
                 )
                 map.add_child(cell_site_marker)
 
@@ -118,21 +119,39 @@ class Visuals:
                 backhaul_line = folium.ColorLine(
                     positions=(base_station, cell_site),
                     colors=[0],
-                    colormap=[color, 'black'],
+                    colormap=[color, "black"],
                     weight=2,
                     tooltip="Backhaul"
                 )
                 map.add_child(backhaul_line)
 
-            base_station_circle = folium.Circle(
+            # base_station_circle = folium.Circle(
+            #     location=base_station,
+            #     radius=100,
+            #     color='black',
+            #     fill=True,
+            #     fill_color="black",
+            #     tooltip="Base Station"
+            # )
+            # map.add_child(base_station_circle)
+
+            base_station_marker = folium.Marker(
                 location=base_station,
-                radius=50,
-                color=color,
-                fill=True,
-                fill_color="black",
-                tooltip="Base Station"
+                icon=folium.Icon(icon="home", color="black")
             )
-            map.add_child(base_station_circle)
+            map.add_child(base_station_marker)
 
         map.save(save_path)
         self.logger.debug("Map created with UBC scattered")
+
+if __name__ == "__main__":
+    import os
+    from datahandler import *
+
+    deserializer = Deserializer()
+    deserializer.restore("tower-distribution.json")
+    tower_distribution = deserializer.deserialize()
+
+    visuals = Visuals(tower_distribution)
+    visuals.make_map("tower-distribution.html")
+    os.system("open tower-distribution.html")
