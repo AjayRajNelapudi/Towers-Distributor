@@ -4,18 +4,26 @@ from towersdistributor import TowersDistributor
 @click.command()
 @click.argument("dataset", nargs=1, required=True)
 @click.argument("output_json_file", nargs=1, required=True)
-@click.argument("output_html_map_file", nargs=1, required=True)
-def distribute_towers(dataset, output_json_file, output_html_map_file):
-    distributor = TowersDistributor(dataset, output_json_file, output_html_map_file)
+@click.argument("output_map_html_file", nargs=1, required=True)
+@click.option("-rr", "--radiation_range", default=1000, help="radiation range of cell site(in metres)")
+@click.option("-mu", "--min_users", default=25, help="minimum users to be considered as a region")
+@click.option("-mg", "--min_gap", default=500, help="minimum distance between towers(in metres) to not be clubbed")
+@click.option("-l/-dl", "--log/--disable_logs", default=True, help="To disable logging the execution")
+def distribute_towers(dataset, output_json_file, output_map_html_file, radiation_range, min_users, min_gap, log):
+    '''
+    Distributes 5G cell sites and base stations using Spectral & K-Means clustering.
+    Further enhanced using custom optimization techniques.
+    '''
+    distributor = TowersDistributor(dataset, enable_logger=log)
 
     distributor.perform_settlement_clustering()
-    distributor.perform_cellsite_clustering()
+    distributor.perform_cellsite_clustering(radiation_range=radiation_range)
 
     distributor.format()
-    distributor.optimize()
+    distributor.optimize(min_users=min_users, min_cell_site_distance=min_gap)
 
-    distributor.serialize_and_save()
-    distributor.display_visuals()
+    distributor.serialize_and_save_data(output_json_file)
+    distributor.make_and_display_map(output_map_html_file)
 
     distributor.evaluate()
 

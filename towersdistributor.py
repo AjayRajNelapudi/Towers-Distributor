@@ -93,17 +93,13 @@ class TowersDistributor:
         }
     }
 
-    def __init__(self, dataset_filepath, output_JSON_file, output_html_map_file, radiation_range=1000, min_users=25, min_cell_site_distance=500):
-        logging.config.dictConfig(self.LOGGING)
-        metres_to_geodistance = lambda metres: metres / (10 ** 5)
+    def __init__(self, dataset_filepath, enable_logger=True):
+        if enable_logger:
+            logging.config.dictConfig(self.LOGGING)
+        self.metres_to_geodistance = lambda metres: metres / (10 ** 5)
         with open(dataset_filepath) as dataset_file:
             dataset_reader = csv.reader(dataset_file)
             self.dataset = np.array([list(map(float, datapoint)) for datapoint in dataset_reader])
-        self.output_JSON_file = output_JSON_file
-        self.output_html_map_file = output_html_map_file
-        self.radiation_range = metres_to_geodistance(radiation_range)
-        self.min_users = min_users
-        self.min_cell_site_distance = metres_to_geodistance(min_cell_site_distance)
         self.logger = logging.getLogger("towersdistributor")
         self.logger.debug("Towers Distributor Initialized")
 
@@ -114,7 +110,8 @@ class TowersDistributor:
         self.base_stations = settlement_clustering.locate_base_stations_proximity()
         self.logger.debug("Level 1 clustering done")
 
-    def perform_cellsite_clustering(self):
+    def perform_cellsite_clustering(self, radiation_range=1000):
+        self.radiation_range = self.metres_to_geodistance(radiation_range)
         self.logger.debug("Performing Level 2 clustering")
         cellsite_clustering = CellSites(radiation_range=self.radiation_range)
         self.cell_sites = cellsite_clustering.distribute_cellsites(self.regions)
@@ -132,20 +129,24 @@ class TowersDistributor:
             }
         self.logger.debug("Regions dictionary formatted")
 
-    def optimize(self):
+    def optimize(self, min_users=25, min_cell_site_distance=500):
+        self.min_users = min_users
+        self.min_cell_site_distance = self.metres_to_geodistance(min_cell_site_distance)
         self.logger.debug("Performing Region optimization")
         region = Optimizer(min_users=self.min_users, min_cell_site_distance=self.min_cell_site_distance)
         self.tower_distribution = region.optimize(self.tower_distribution)
         self.logger.debug("UBC optimization done")
 
-    def serialize_and_save(self):
+    def serialize_and_save_data(self, output_JSON_file):
+        self.output_JSON_file = output_JSON_file
         self.logger.debug("Saving UBC dict to JSON")
         serializer = Serializer(self.tower_distribution)
         serializer.serialize()
         serializer.save(self.output_JSON_file)
         self.logger.debug("UBC dictionary saved to JSON")
 
-    def display_visuals(self):
+    def make_and_display_map(self, output_map_html_file):
+        self.output_html_map_file = output_map_html_file
         self.logger.debug("Creating Visuals")
         visuals = Visuals(self.tower_distribution)
         # visuals.display_distribution()
@@ -163,7 +164,7 @@ class TowersDistributor:
 
 
 if __name__ == "__main__":
-    distributor = TowersDistributor("datasets/dataset.csv", "outputs/td.json", "maps/td.html")
+    distributor = TowersDistributor("datasets/dataset.csv", enable_logger=True)
 
     distributor.perform_settlement_clustering()
     distributor.perform_cellsite_clustering()
@@ -171,7 +172,7 @@ if __name__ == "__main__":
     distributor.format()
     distributor.optimize()
 
-    distributor.serialize_and_save()
-    distributor.display_visuals()
+    distributor.serialize_and_save_data("outputs/td.json")
+    distributor.make_and_display_map("maps/td.html")
 
     distributor.evaluate()

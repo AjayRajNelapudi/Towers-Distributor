@@ -49683,3 +49683,87 @@
 2019-11-30 10:13:49,977 DEBUG cellsites Performing gradient descent
 2019-11-30 10:13:51,031 DEBUG cellsites Optimal K = 21
 2019-11-30 10:13:51,032 DEBUG cellsites Cellsite distribution done
+2019-11-30 10:44:20,046 DEBUG cellsites Distributing cellsites
+2019-11-30 10:44:20,046 DEBUG cellsites Performing gradient descent
+2019-11-30 10:44:22,720 DEBUG cellsites Optimal K = 34
+2019-11-30 10:44:22,721 DEBUG cellsites Performing gradient descent
+2019-11-30 10:44:23,556 DEBUG cellsites Optimal K = 18
+2019-11-30 10:44:23,556 DEBUG cellsites Performing gradient descent
+2019-11-30 10:44:25,237 DEBUG cellsites Optimal K = 27
+2019-11-30 10:44:25,237 DEBUG cellsites Performing gradient descent
+2019-11-30 10:44:26,501 DEBUG cellsites Optimal K = 21
+2019-11-30 10:44:26,501 DEBUG cellsites Performing gradient descent
+2019-11-30 10:44:27,467 DEBUG cellsites Optimal K = 21
+2019-11-30 10:44:27,467 DEBUG cellsites Cellsite distribution done
+2019-11-30 10:47:00,120 DEBUG cellsites Distributing cellsites
+2019-11-30 10:47:00,121 DEBUG cellsites Performing gradient descent
+2019-11-30 10:47:02,885 DEBUG cellsites Optimal K = 33
+2019-11-30 10:47:02,885 DEBUG cellsites Performing gradient descent
+2019-11-30 10:47:03,763 DEBUG cellsites Optimal K = 18
+2019-11-30 10:47:03,763 DEBUG cellsites Performing gradient descent
+2019-11-30 10:47:05,665 DEBUG cellsites Optimal K = 27
+2019-11-30 10:47:05,665 DEBUG cellsites Performing gradient descent
+2019-11-30 10:47:06,967 DEBUG cellsites Optimal K = 21
+2019-11-30 10:47:06,967 DEBUG cellsites Performing gradient descent
+2019-11-30 10:47:07,939 DEBUG cellsites Optimal K = 21
+2019-11-30 10:47:07,940 DEBUG cellsites Cellsite distribution done
+2019-11-30 10:55:21,159 DEBUG cellsites Distributing cellsites
+2019-11-30 10:55:21,159 DEBUG cellsites Performing gradient descent
+2019-11-30 10:55:24,276 DEBUG cellsites Optimal K = 34
+2019-11-30 10:55:24,276 DEBUG cellsites Performing gradient descent
+2019-11-30 10:55:25,173 DEBUG cellsites Optimal K = 18
+2019-11-30 10:55:25,174 DEBUG cellsites Performing gradient descent
+2019-11-30 10:55:27,050 DEBUG cellsites Optimal K = 27
+2019-11-30 10:55:27,050 DEBUG cellsites Performing gradient descent
+2019-11-30 10:56:33,087 DEBUG cellsites Distributing cellsites
+2019-11-30 10:56:33,087 DEBUG cellsites Performing gradient descent
+2019-11-30 10:56:35,480 DEBUG cellsites Optimal K = 33
+2019-11-30 10:56:35,480 DEBUG cellsites Performing gradient descent
+2019-11-30 10:56:36,179 DEBUG cellsites Optimal K = 18
+2019-11-30 10:56:36,179 DEBUG cellsites Performing gradient descent
+2019-11-30 10:56:37,627 DEBUG cellsites Optimal K = 26
+2019-11-30 10:56:37,627 DEBUG cellsites Performing gradient descent
+2019-11-30 10:56:38,635 DEBUG cellsites Optimal K = 21
+2019-11-30 10:56:38,635 DEBUG cellsites Performing gradient descent
+2019-11-30 10:56:39,556 DEBUG cellsites Optimal K = 21
+2019-11-30 10:56:39,557 DEBUG cellsites Cellsite distribution done
+2019-11-30 10:57:17,918 DEBUG cellsites Distributing cellsites
+2019-11-30 10:57:17,918 DEBUG cellsites Performing gradient descent
+2019-11-30 10:57:35,859 DEBUG cellsites Optimal K = 97
+2019-11-30 10:57:35,860 DEBUG cellsites Performing gradient descent
+2019-11-30 10:58:04,919 DEBUG cellsites Distributing cellsites
+2019-11-30 10:58:04,920 DEBUG cellsites Performing gradient descent
+2019-11-30 10:58:08,193 DEBUG cellsites Optimal K = 39
+2019-11-30 10:58:08,193 DEBUG cellsites Performing gradient descent
+2019-11-30 10:58:09,186 DEBUG cellsites Optimal K = 22
+2019-11-30 10:58:09,186 DEBUG cellsites Performing gradient descent
+2019-11-30 10:58:11,213 DEBUG cellsites Optimal K = 32
+2019-11-30 10:58:11,214 DEBUG cellsites Performing gradient descent
+2019-11-30 10:58:12,706 DEBUG cellsites Optimal K = 26
+2019-11-30 10:58:12,706 DEBUG cellsites Performing gradient descent
+2019-11-30 10:58:13,981 DEBUG cellsites Optimal K = 25
+2019-11-30 10:58:13,981 DEBUG cellsites Cellsite distribution done
+2019-11-30 10:58:42,551 DEBUG cellsites Distributing cellsites
+2019-11-30 10:58:42,551 DEBUG cellsites Performing gradient descent
+2019-11-30 10:58:49,040 DEBUG cellsites Optimal K = 57
+2019-11-30 10:58:49,040 DEBUG cellsites Performing gradient descent
+2019-11-30 10:58:50,642 DEBUG cellsites Optimal K = 29
+2019-11-30 10:58:50,642 DEBUG cellsites Performing gradient descent
+2019-11-30 10:58:53,923 DEBUG cellsites Optimal K = 41
+2019-11-30 10:58:53,923 DEBUG cellsites Performing gradient descent
+2019-11-30 10:58:56,838 DEBUG cellsites Optimal K = 37
+2019-11-30 10:58:56,838 DEBUG cellsites Performing gradient descent
+2019-11-30 10:58:59,059 DEBUG cellsites Optimal K = 34
+2019-11-30 10:58:59,059 DEBUG cellsites Cellsite distribution done
+2019-11-30 10:59:13,779 DEBUG cellsites Distributing cellsites
+2019-11-30 10:59:13,780 DEBUG cellsites Performing gradient descent
+2019-11-30 10:59:16,692 DEBUG cellsites Optimal K = 34
+2019-11-30 10:59:16,692 DEBUG cellsites Performing gradient descent
+2019-11-30 10:59:17,554 DEBUG cellsites Optimal K = 18
+2019-11-30 10:59:17,555 DEBUG cellsites Performing gradient descent
+2019-11-30 10:59:19,242 DEBUG cellsites Optimal K = 26
+2019-11-30 10:59:19,242 DEBUG cellsites Performing gradient descent
+2019-11-30 10:59:20,355 DEBUG cellsites Optimal K = 21
+2019-11-30 10:59:20,355 DEBUG cellsites Performing gradient descent
+2019-11-30 10:59:21,387 DEBUG cellsites Optimal K = 21
+2019-11-30 10:59:21,387 DEBUG cellsites Cellsite distribution done

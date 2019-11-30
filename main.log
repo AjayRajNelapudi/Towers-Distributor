@@ -54874,3 +54874,295 @@
 2019-11-30 10:13:53,610 DEBUG evaluator Cell Sites = 121
 2019-11-30 10:13:53,610 DEBUG evaluator Accuracy = 93.36633663366337 %
 2019-11-30 10:13:53,610 DEBUG towersdistributor Model evaluated
+2019-11-30 10:44:18,445 DEBUG towersdistributor Towers Distributor Initialized
+2019-11-30 10:44:18,446 DEBUG towersdistributor Performing Level 1 clustering
+2019-11-30 10:44:18,446 DEBUG regions Clustering settlements
+2019-11-30 10:44:18,446 DEBUG regions Building affinity matrix
+2019-11-30 10:44:18,549 DEBUG regions Affinity matrix built
+2019-11-30 10:44:18,552 DEBUG regions Computing Eigen decompostion
+2019-11-30 10:44:19,831 DEBUG regions Eigen decomposition applied
+2019-11-30 10:44:19,833 DEBUG regions Optimal K for Region Clustering 5
+2019-11-30 10:44:20,038 DEBUG regions Settlement clustering done
+2019-11-30 10:44:20,045 DEBUG towersdistributor Level 1 clustering done
+2019-11-30 10:44:20,045 DEBUG towersdistributor Performing Level 2 clustering
+2019-11-30 10:44:20,046 DEBUG cellsites Distributing cellsites
+2019-11-30 10:44:20,046 DEBUG cellsites Performing gradient descent
+2019-11-30 10:44:22,720 DEBUG cellsites Optimal K = 34
+2019-11-30 10:44:22,721 DEBUG cellsites Performing gradient descent
+2019-11-30 10:44:23,556 DEBUG cellsites Optimal K = 18
+2019-11-30 10:44:23,556 DEBUG cellsites Performing gradient descent
+2019-11-30 10:44:25,237 DEBUG cellsites Optimal K = 27
+2019-11-30 10:44:25,237 DEBUG cellsites Performing gradient descent
+2019-11-30 10:44:26,501 DEBUG cellsites Optimal K = 21
+2019-11-30 10:44:26,501 DEBUG cellsites Performing gradient descent
+2019-11-30 10:44:27,467 DEBUG cellsites Optimal K = 21
+2019-11-30 10:44:27,467 DEBUG cellsites Cellsite distribution done
+2019-11-30 10:44:27,467 DEBUG towersdistributor Level 2 clustering done
+2019-11-30 10:44:27,467 DEBUG towersdistributor Formatting to dictionary
+2019-11-30 10:44:27,468 DEBUG towersdistributor Regions dictionary formatted
+2019-11-30 10:44:27,469 DEBUG towersdistributor Performing Region optimization
+2019-11-30 10:44:27,469 DEBUG optimizer Removing micro clusters
+2019-11-30 10:44:27,471 DEBUG optimizer Micro clusters removed
+2019-11-30 10:44:27,471 DEBUG towersdistributor UBC optimization done
+2019-11-30 10:44:27,472 DEBUG towersdistributor Saving UBC dict to JSON
+2019-11-30 10:44:27,631 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-11-30 10:44:27,631 DEBUG towersdistributor Creating Visuals
+2019-11-30 10:44:27,632 DEBUG visualizer Making map with UBC distribution
+2019-11-30 10:44:27,641 DEBUG visualizer Scattering UBC over map
+2019-11-30 10:44:29,769 DEBUG visualizer Map created with UBC scattered
+2019-11-30 10:44:29,769 DEBUG towersdistributor Visuals created
+2019-11-30 10:44:29,770 DEBUG towersdistributor Calling default browser to open map
+2019-11-30 10:44:29,841 DEBUG towersdistributor Evaluating model
+2019-11-30 10:44:29,859 DEBUG evaluator Users = 1010
+2019-11-30 10:44:29,860 DEBUG evaluator Cell Sites = 121
+2019-11-30 10:44:29,860 DEBUG evaluator Accuracy = 93.66336633663366 %
+2019-11-30 10:44:29,861 DEBUG towersdistributor Model evaluated
+2019-11-30 10:46:58,497 DEBUG towersdistributor Towers Distributor Initialized
+2019-11-30 10:46:58,497 DEBUG towersdistributor Performing Level 1 clustering
+2019-11-30 10:46:58,497 DEBUG regions Clustering settlements
+2019-11-30 10:46:58,497 DEBUG regions Building affinity matrix
+2019-11-30 10:46:58,601 DEBUG regions Affinity matrix built
+2019-11-30 10:46:58,605 DEBUG regions Computing Eigen decompostion
+2019-11-30 10:46:59,899 DEBUG regions Eigen decomposition applied
+2019-11-30 10:46:59,900 DEBUG regions Optimal K for Region Clustering 5
+2019-11-30 10:47:00,113 DEBUG regions Settlement clustering done
+2019-11-30 10:47:00,120 DEBUG towersdistributor Level 1 clustering done
+2019-11-30 10:47:00,120 DEBUG towersdistributor Performing Level 2 clustering
+2019-11-30 10:47:00,120 DEBUG cellsites Distributing cellsites
+2019-11-30 10:47:00,121 DEBUG cellsites Performing gradient descent
+2019-11-30 10:47:02,885 DEBUG cellsites Optimal K = 33
+2019-11-30 10:47:02,885 DEBUG cellsites Performing gradient descent
+2019-11-30 10:47:03,763 DEBUG cellsites Optimal K = 18
+2019-11-30 10:47:03,763 DEBUG cellsites Performing gradient descent
+2019-11-30 10:47:05,665 DEBUG cellsites Optimal K = 27
+2019-11-30 10:47:05,665 DEBUG cellsites Performing gradient descent
+2019-11-30 10:47:06,967 DEBUG cellsites Optimal K = 21
+2019-11-30 10:47:06,967 DEBUG cellsites Performing gradient descent
+2019-11-30 10:47:07,939 DEBUG cellsites Optimal K = 21
+2019-11-30 10:47:07,940 DEBUG cellsites Cellsite distribution done
+2019-11-30 10:47:07,940 DEBUG towersdistributor Level 2 clustering done
+2019-11-30 10:47:07,940 DEBUG towersdistributor Formatting to dictionary
+2019-11-30 10:47:07,942 DEBUG towersdistributor Regions dictionary formatted
+2019-11-30 10:47:07,942 DEBUG towersdistributor Performing Region optimization
+2019-11-30 10:47:07,942 DEBUG optimizer Removing micro clusters
+2019-11-30 10:47:07,946 DEBUG optimizer Micro clusters removed
+2019-11-30 10:47:07,947 DEBUG towersdistributor UBC optimization done
+2019-11-30 10:47:07,947 DEBUG towersdistributor Saving UBC dict to JSON
+2019-11-30 10:47:08,112 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-11-30 10:47:08,113 DEBUG towersdistributor Creating Visuals
+2019-11-30 10:47:08,113 DEBUG visualizer Making map with UBC distribution
+2019-11-30 10:47:08,119 DEBUG visualizer Scattering UBC over map
+2019-11-30 10:47:10,321 DEBUG visualizer Map created with UBC scattered
+2019-11-30 10:47:10,321 DEBUG towersdistributor Visuals created
+2019-11-30 10:47:10,321 DEBUG towersdistributor Calling default browser to open map
+2019-11-30 10:47:10,419 DEBUG towersdistributor Evaluating model
+2019-11-30 10:47:10,442 DEBUG evaluator Users = 1010
+2019-11-30 10:47:10,445 DEBUG evaluator Cell Sites = 120
+2019-11-30 10:47:10,445 DEBUG evaluator Accuracy = 93.06930693069307 %
+2019-11-30 10:47:10,446 DEBUG towersdistributor Model evaluated
+2019-11-30 10:55:19,519 DEBUG towersdistributor Towers Distributor Initialized
+2019-11-30 10:55:19,519 DEBUG towersdistributor Performing Level 1 clustering
+2019-11-30 10:55:19,519 DEBUG regions Clustering settlements
+2019-11-30 10:55:19,520 DEBUG regions Building affinity matrix
+2019-11-30 10:55:19,646 DEBUG regions Affinity matrix built
+2019-11-30 10:55:19,649 DEBUG regions Computing Eigen decompostion
+2019-11-30 10:55:20,931 DEBUG regions Eigen decomposition applied
+2019-11-30 10:55:20,932 DEBUG regions Optimal K for Region Clustering 5
+2019-11-30 10:55:21,153 DEBUG regions Settlement clustering done
+2019-11-30 10:55:21,158 DEBUG towersdistributor Level 1 clustering done
+2019-11-30 10:55:21,159 DEBUG towersdistributor Performing Level 2 clustering
+2019-11-30 10:55:21,159 DEBUG cellsites Distributing cellsites
+2019-11-30 10:55:21,159 DEBUG cellsites Performing gradient descent
+2019-11-30 10:55:24,276 DEBUG cellsites Optimal K = 34
+2019-11-30 10:55:24,276 DEBUG cellsites Performing gradient descent
+2019-11-30 10:55:25,173 DEBUG cellsites Optimal K = 18
+2019-11-30 10:55:25,174 DEBUG cellsites Performing gradient descent
+2019-11-30 10:55:27,050 DEBUG cellsites Optimal K = 27
+2019-11-30 10:55:27,050 DEBUG cellsites Performing gradient descent
+2019-11-30 10:56:31,492 DEBUG towersdistributor Towers Distributor Initialized
+2019-11-30 10:56:31,492 DEBUG towersdistributor Performing Level 1 clustering
+2019-11-30 10:56:31,492 DEBUG regions Clustering settlements
+2019-11-30 10:56:31,492 DEBUG regions Building affinity matrix
+2019-11-30 10:56:31,598 DEBUG regions Affinity matrix built
+2019-11-30 10:56:31,602 DEBUG regions Computing Eigen decompostion
+2019-11-30 10:56:32,872 DEBUG regions Eigen decomposition applied
+2019-11-30 10:56:32,874 DEBUG regions Optimal K for Region Clustering 5
+2019-11-30 10:56:33,080 DEBUG regions Settlement clustering done
+2019-11-30 10:56:33,086 DEBUG towersdistributor Level 1 clustering done
+2019-11-30 10:56:33,086 DEBUG towersdistributor Performing Level 2 clustering
+2019-11-30 10:56:33,087 DEBUG cellsites Distributing cellsites
+2019-11-30 10:56:33,087 DEBUG cellsites Performing gradient descent
+2019-11-30 10:56:35,480 DEBUG cellsites Optimal K = 33
+2019-11-30 10:56:35,480 DEBUG cellsites Performing gradient descent
+2019-11-30 10:56:36,179 DEBUG cellsites Optimal K = 18
+2019-11-30 10:56:36,179 DEBUG cellsites Performing gradient descent
+2019-11-30 10:56:37,627 DEBUG cellsites Optimal K = 26
+2019-11-30 10:56:37,627 DEBUG cellsites Performing gradient descent
+2019-11-30 10:56:38,635 DEBUG cellsites Optimal K = 21
+2019-11-30 10:56:38,635 DEBUG cellsites Performing gradient descent
+2019-11-30 10:56:39,556 DEBUG cellsites Optimal K = 21
+2019-11-30 10:56:39,557 DEBUG cellsites Cellsite distribution done
+2019-11-30 10:56:39,557 DEBUG towersdistributor Level 2 clustering done
+2019-11-30 10:56:39,557 DEBUG towersdistributor Formatting to dictionary
+2019-11-30 10:56:39,558 DEBUG towersdistributor Regions dictionary formatted
+2019-11-30 10:56:39,558 DEBUG towersdistributor Performing Region optimization
+2019-11-30 10:56:39,558 DEBUG optimizer Removing micro clusters
+2019-11-30 10:56:39,561 DEBUG optimizer Micro clusters removed
+2019-11-30 10:56:39,561 DEBUG towersdistributor UBC optimization done
+2019-11-30 10:56:39,561 DEBUG towersdistributor Saving UBC dict to JSON
+2019-11-30 10:56:39,695 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-11-30 10:56:39,695 DEBUG towersdistributor Creating Visuals
+2019-11-30 10:56:39,696 DEBUG visualizer Making map with UBC distribution
+2019-11-30 10:56:39,699 DEBUG visualizer Scattering UBC over map
+2019-11-30 10:56:41,731 DEBUG visualizer Map created with UBC scattered
+2019-11-30 10:56:41,732 DEBUG towersdistributor Visuals created
+2019-11-30 10:56:41,732 DEBUG towersdistributor Calling default browser to open map
+2019-11-30 10:56:41,798 DEBUG towersdistributor Evaluating model
+2019-11-30 10:56:41,815 DEBUG evaluator Users = 1010
+2019-11-30 10:56:41,816 DEBUG evaluator Cell Sites = 119
+2019-11-30 10:56:41,816 DEBUG evaluator Accuracy = 93.86138613861387 %
+2019-11-30 10:56:41,816 DEBUG towersdistributor Model evaluated
+2019-11-30 10:57:16,330 DEBUG towersdistributor Towers Distributor Initialized
+2019-11-30 10:57:16,330 DEBUG towersdistributor Performing Level 1 clustering
+2019-11-30 10:57:16,330 DEBUG regions Clustering settlements
+2019-11-30 10:57:16,330 DEBUG regions Building affinity matrix
+2019-11-30 10:57:16,432 DEBUG regions Affinity matrix built
+2019-11-30 10:57:16,436 DEBUG regions Computing Eigen decompostion
+2019-11-30 10:57:17,704 DEBUG regions Eigen decomposition applied
+2019-11-30 10:57:17,705 DEBUG regions Optimal K for Region Clustering 5
+2019-11-30 10:57:17,913 DEBUG regions Settlement clustering done
+2019-11-30 10:57:17,918 DEBUG towersdistributor Level 1 clustering done
+2019-11-30 10:57:17,918 DEBUG towersdistributor Performing Level 2 clustering
+2019-11-30 10:57:17,918 DEBUG cellsites Distributing cellsites
+2019-11-30 10:57:17,918 DEBUG cellsites Performing gradient descent
+2019-11-30 10:57:35,859 DEBUG cellsites Optimal K = 97
+2019-11-30 10:57:35,860 DEBUG cellsites Performing gradient descent
+2019-11-30 10:58:03,327 DEBUG towersdistributor Towers Distributor Initialized
+2019-11-30 10:58:03,327 DEBUG towersdistributor Performing Level 1 clustering
+2019-11-30 10:58:03,327 DEBUG regions Clustering settlements
+2019-11-30 10:58:03,327 DEBUG regions Building affinity matrix
+2019-11-30 10:58:03,428 DEBUG regions Affinity matrix built
+2019-11-30 10:58:03,431 DEBUG regions Computing Eigen decompostion
+2019-11-30 10:58:04,706 DEBUG regions Eigen decomposition applied
+2019-11-30 10:58:04,708 DEBUG regions Optimal K for Region Clustering 5
+2019-11-30 10:58:04,914 DEBUG regions Settlement clustering done
+2019-11-30 10:58:04,919 DEBUG towersdistributor Level 1 clustering done
+2019-11-30 10:58:04,919 DEBUG towersdistributor Performing Level 2 clustering
+2019-11-30 10:58:04,919 DEBUG cellsites Distributing cellsites
+2019-11-30 10:58:04,920 DEBUG cellsites Performing gradient descent
+2019-11-30 10:58:08,193 DEBUG cellsites Optimal K = 39
+2019-11-30 10:58:08,193 DEBUG cellsites Performing gradient descent
+2019-11-30 10:58:09,186 DEBUG cellsites Optimal K = 22
+2019-11-30 10:58:09,186 DEBUG cellsites Performing gradient descent
+2019-11-30 10:58:11,213 DEBUG cellsites Optimal K = 32
+2019-11-30 10:58:11,214 DEBUG cellsites Performing gradient descent
+2019-11-30 10:58:12,706 DEBUG cellsites Optimal K = 26
+2019-11-30 10:58:12,706 DEBUG cellsites Performing gradient descent
+2019-11-30 10:58:13,981 DEBUG cellsites Optimal K = 25
+2019-11-30 10:58:13,981 DEBUG cellsites Cellsite distribution done
+2019-11-30 10:58:13,981 DEBUG towersdistributor Level 2 clustering done
+2019-11-30 10:58:13,981 DEBUG towersdistributor Formatting to dictionary
+2019-11-30 10:58:13,982 DEBUG towersdistributor Regions dictionary formatted
+2019-11-30 10:58:13,982 DEBUG towersdistributor Performing Region optimization
+2019-11-30 10:58:13,983 DEBUG optimizer Removing micro clusters
+2019-11-30 10:58:13,985 DEBUG optimizer Micro clusters removed
+2019-11-30 10:58:13,985 DEBUG towersdistributor UBC optimization done
+2019-11-30 10:58:13,986 DEBUG towersdistributor Saving UBC dict to JSON
+2019-11-30 10:58:14,128 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-11-30 10:58:14,128 DEBUG towersdistributor Creating Visuals
+2019-11-30 10:58:14,128 DEBUG visualizer Making map with UBC distribution
+2019-11-30 10:58:14,132 DEBUG visualizer Scattering UBC over map
+2019-11-30 10:58:16,230 DEBUG visualizer Map created with UBC scattered
+2019-11-30 10:58:16,230 DEBUG towersdistributor Visuals created
+2019-11-30 10:58:16,230 DEBUG towersdistributor Calling default browser to open map
+2019-11-30 10:58:16,326 DEBUG towersdistributor Evaluating model
+2019-11-30 10:58:16,440 DEBUG evaluator Users = 1010
+2019-11-30 10:58:16,440 DEBUG evaluator Cell Sites = 144
+2019-11-30 10:58:16,449 DEBUG evaluator Accuracy = 88.51485148514851 %
+2019-11-30 10:58:16,450 DEBUG towersdistributor Model evaluated
+2019-11-30 10:58:40,945 DEBUG towersdistributor Towers Distributor Initialized
+2019-11-30 10:58:40,946 DEBUG towersdistributor Performing Level 1 clustering
+2019-11-30 10:58:40,946 DEBUG regions Clustering settlements
+2019-11-30 10:58:40,946 DEBUG regions Building affinity matrix
+2019-11-30 10:58:41,066 DEBUG regions Affinity matrix built
+2019-11-30 10:58:41,069 DEBUG regions Computing Eigen decompostion
+2019-11-30 10:58:42,336 DEBUG regions Eigen decomposition applied
+2019-11-30 10:58:42,337 DEBUG regions Optimal K for Region Clustering 5
+2019-11-30 10:58:42,544 DEBUG regions Settlement clustering done
+2019-11-30 10:58:42,550 DEBUG towersdistributor Level 1 clustering done
+2019-11-30 10:58:42,551 DEBUG towersdistributor Performing Level 2 clustering
+2019-11-30 10:58:42,551 DEBUG cellsites Distributing cellsites
+2019-11-30 10:58:42,551 DEBUG cellsites Performing gradient descent
+2019-11-30 10:58:49,040 DEBUG cellsites Optimal K = 57
+2019-11-30 10:58:49,040 DEBUG cellsites Performing gradient descent
+2019-11-30 10:58:50,642 DEBUG cellsites Optimal K = 29
+2019-11-30 10:58:50,642 DEBUG cellsites Performing gradient descent
+2019-11-30 10:58:53,923 DEBUG cellsites Optimal K = 41
+2019-11-30 10:58:53,923 DEBUG cellsites Performing gradient descent
+2019-11-30 10:58:56,838 DEBUG cellsites Optimal K = 37
+2019-11-30 10:58:56,838 DEBUG cellsites Performing gradient descent
+2019-11-30 10:58:59,059 DEBUG cellsites Optimal K = 34
+2019-11-30 10:58:59,059 DEBUG cellsites Cellsite distribution done
+2019-11-30 10:58:59,059 DEBUG towersdistributor Level 2 clustering done
+2019-11-30 10:58:59,059 DEBUG towersdistributor Formatting to dictionary
+2019-11-30 10:58:59,060 DEBUG towersdistributor Regions dictionary formatted
+2019-11-30 10:58:59,061 DEBUG towersdistributor Performing Region optimization
+2019-11-30 10:58:59,061 DEBUG optimizer Removing micro clusters
+2019-11-30 10:58:59,064 DEBUG optimizer Micro clusters removed
+2019-11-30 10:58:59,064 DEBUG towersdistributor UBC optimization done
+2019-11-30 10:58:59,064 DEBUG towersdistributor Saving UBC dict to JSON
+2019-11-30 10:58:59,217 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-11-30 10:58:59,218 DEBUG towersdistributor Creating Visuals
+2019-11-30 10:58:59,218 DEBUG visualizer Making map with UBC distribution
+2019-11-30 10:58:59,222 DEBUG visualizer Scattering UBC over map
+2019-11-30 10:59:01,589 DEBUG visualizer Map created with UBC scattered
+2019-11-30 10:59:01,589 DEBUG towersdistributor Visuals created
+2019-11-30 10:59:01,589 DEBUG towersdistributor Calling default browser to open map
+2019-11-30 10:59:01,686 DEBUG towersdistributor Evaluating model
+2019-11-30 10:59:01,718 DEBUG evaluator Users = 1010
+2019-11-30 10:59:01,719 DEBUG evaluator Cell Sites = 198
+2019-11-30 10:59:01,722 DEBUG evaluator Accuracy = 72.67326732673267 %
+2019-11-30 10:59:01,722 DEBUG towersdistributor Model evaluated
+2019-11-30 10:59:12,113 DEBUG towersdistributor Towers Distributor Initialized
+2019-11-30 10:59:12,113 DEBUG towersdistributor Performing Level 1 clustering
+2019-11-30 10:59:12,113 DEBUG regions Clustering settlements
+2019-11-30 10:59:12,113 DEBUG regions Building affinity matrix
+2019-11-30 10:59:12,210 DEBUG regions Affinity matrix built
+2019-11-30 10:59:12,213 DEBUG regions Computing Eigen decompostion
+2019-11-30 10:59:13,560 DEBUG regions Eigen decomposition applied
+2019-11-30 10:59:13,561 DEBUG regions Optimal K for Region Clustering 5
+2019-11-30 10:59:13,772 DEBUG regions Settlement clustering done
+2019-11-30 10:59:13,779 DEBUG towersdistributor Level 1 clustering done
+2019-11-30 10:59:13,779 DEBUG towersdistributor Performing Level 2 clustering
+2019-11-30 10:59:13,779 DEBUG cellsites Distributing cellsites
+2019-11-30 10:59:13,780 DEBUG cellsites Performing gradient descent
+2019-11-30 10:59:16,692 DEBUG cellsites Optimal K = 34
+2019-11-30 10:59:16,692 DEBUG cellsites Performing gradient descent
+2019-11-30 10:59:17,554 DEBUG cellsites Optimal K = 18
+2019-11-30 10:59:17,555 DEBUG cellsites Performing gradient descent
+2019-11-30 10:59:19,242 DEBUG cellsites Optimal K = 26
+2019-11-30 10:59:19,242 DEBUG cellsites Performing gradient descent
+2019-11-30 10:59:20,355 DEBUG cellsites Optimal K = 21
+2019-11-30 10:59:20,355 DEBUG cellsites Performing gradient descent
+2019-11-30 10:59:21,387 DEBUG cellsites Optimal K = 21
+2019-11-30 10:59:21,387 DEBUG cellsites Cellsite distribution done
+2019-11-30 10:59:21,387 DEBUG towersdistributor Level 2 clustering done
+2019-11-30 10:59:21,387 DEBUG towersdistributor Formatting to dictionary
+2019-11-30 10:59:21,388 DEBUG towersdistributor Regions dictionary formatted
+2019-11-30 10:59:21,388 DEBUG towersdistributor Performing Region optimization
+2019-11-30 10:59:21,388 DEBUG optimizer Removing micro clusters
+2019-11-30 10:59:21,391 DEBUG optimizer Micro clusters removed
+2019-11-30 10:59:21,391 DEBUG towersdistributor UBC optimization done
+2019-11-30 10:59:21,391 DEBUG towersdistributor Saving UBC dict to JSON
+2019-11-30 10:59:21,568 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-11-30 10:59:21,568 DEBUG towersdistributor Creating Visuals
+2019-11-30 10:59:21,568 DEBUG visualizer Making map with UBC distribution
+2019-11-30 10:59:21,572 DEBUG visualizer Scattering UBC over map
+2019-11-30 10:59:23,759 DEBUG visualizer Map created with UBC scattered
+2019-11-30 10:59:23,759 DEBUG towersdistributor Visuals created
+2019-11-30 10:59:23,759 DEBUG towersdistributor Calling default browser to open map
+2019-11-30 10:59:23,829 DEBUG towersdistributor Evaluating model
+2019-11-30 10:59:23,851 DEBUG evaluator Users = 1010
+2019-11-30 10:59:23,852 DEBUG evaluator Cell Sites = 120
+2019-11-30 10:59:23,852 DEBUG evaluator Accuracy = 93.06930693069307 %
+2019-11-30 10:59:23,852 DEBUG towersdistributor Model evaluated
