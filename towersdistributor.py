@@ -93,13 +93,17 @@ class TowersDistributor:
         }
     }
 
-    def __init__(self, dataset_filepath, output_JSON_file, output_html_map_file):
+    def __init__(self, dataset_filepath, output_JSON_file, output_html_map_file, radiation_range=1000, min_users=25, min_cell_site_distance=500):
         logging.config.dictConfig(self.LOGGING)
+        metres_to_geodistance = lambda metres: metres / (10 ** 5)
         with open(dataset_filepath) as dataset_file:
             dataset_reader = csv.reader(dataset_file)
             self.dataset = np.array([list(map(float, datapoint)) for datapoint in dataset_reader])
         self.output_JSON_file = output_JSON_file
         self.output_html_map_file = output_html_map_file
+        self.radiation_range = metres_to_geodistance(radiation_range)
+        self.min_users = min_users
+        self.min_cell_site_distance = metres_to_geodistance(min_cell_site_distance)
         self.logger = logging.getLogger("towersdistributor")
         self.logger.debug("Towers Distributor Initialized")
 
@@ -112,7 +116,7 @@ class TowersDistributor:
 
     def perform_cellsite_clustering(self):
         self.logger.debug("Performing Level 2 clustering")
-        cellsite_clustering = CellSites()
+        cellsite_clustering = CellSites(radiation_range=self.radiation_range)
         self.cell_sites = cellsite_clustering.distribute_cellsites(self.regions)
         # raise SystemExit("60 % execution done") # My college measures code written as % of unknown total code
         self.logger.debug("Level 2 clustering done")
@@ -130,8 +134,8 @@ class TowersDistributor:
 
     def optimize(self):
         self.logger.debug("Performing Region optimization")
-        region = Optimizer(self.tower_distribution.copy())
-        self.tower_distribution = region.optimize()
+        region = Optimizer(min_users=self.min_users, min_cell_site_distance=self.min_cell_site_distance)
+        self.tower_distribution = region.optimize(self.tower_distribution)
         self.logger.debug("UBC optimization done")
 
     def serialize_and_save(self):
@@ -153,9 +157,8 @@ class TowersDistributor:
 
     def evaluate(self):
         self.logger.debug("Evaluating model")
-        accuracy_evaluator = Evaluator(self.tower_distribution) # self.output_JSON_file
-        # accuracy_evaluator.tower_distribution = self.tower_distribution
-        users, cell_site_count, accuracy = accuracy_evaluator.evaluate()
+        accuracy_evaluator = Evaluator(radiation_range=self.radiation_range)
+        users, cell_site_count, accuracy = accuracy_evaluator.evaluate(tower_distribution=self.tower_distribution)
         self.logger.debug("Model evaluated")
 
 

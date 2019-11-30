@@ -3,10 +3,11 @@ import numpy as np
 from scipy.spatial.distance import cdist
 
 class Evaluator:
-    cell_site_range = 0.01
-
-    def __init__(self, tower_distribution):
-        self.tower_distribution = tower_distribution
+    '''
+    Evaluates the number of users that fall within the range of one cell site atleast
+    '''
+    def __init__(self, radiation_range):
+        self.radiation_range = radiation_range
         self.logger = logging.getLogger("evaluator")
 
     def get_users_and_cell_sites(self):
@@ -20,9 +21,15 @@ class Evaluator:
         return users, cell_sites
 
 
-    def evaluate(self):
+    def evaluate(self, tower_distribution):
+        '''
+        Exposed function for evaluation
+        :param tower_distribution: the UBC data structure
+        :return:
+        '''
+        self.tower_distribution = tower_distribution
         users, cell_sites = self.get_users_and_cell_sites()
-        is_within_range = lambda distance: distance <= self.cell_site_range
+        is_within_range = lambda distance: distance <= self.radiation_range
         closest_cell_site_distances = np.min(cdist(users, cell_sites, 'euclidean'), axis=1)
         users_within_range = sum(map(is_within_range, closest_cell_site_distances))
 

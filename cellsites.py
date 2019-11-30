@@ -1,3 +1,4 @@
+import math
 import logging
 import numpy as np
 from scipy.spatial.distance import cdist
@@ -11,7 +12,8 @@ class CellSites:
     '''
     settlements = np.array([])
 
-    def __init__(self):
+    def __init__(self, radiation_range):
+        self.permissible_distortion = radiation_range - 0.2 * radiation_range
         self.logger = logging.getLogger("cellsites")
 
     def optimise_and_cluster(self, users):
@@ -22,19 +24,14 @@ class CellSites:
         '''
         self.logger.debug("Performing gradient descent")
 
-        K = int(len(users) ** (1. / 3.))
+        K = int(len(users) ** (1. / 3.)) - 1
         distortion = 1
-        permissible_distortion = 0.0064 # Change permissible_distortion to vary no of towers
 
-        while distortion > permissible_distortion:
-            self.logger.debug("Applying K-Means Clustering")
+        while distortion > self.permissible_distortion:
+            K += 1
             cell_sites = KMeans(n_clusters=K)
-            self.logger.debug("K-Means clustering applied")
             cell_sites.fit(users)
             distortion = cell_sites.inertia_
-            self.logger.debug("K = " + str(K))
-            self.logger.debug("Distortion = " + str(distortion))
-            K += 1
 
         self.logger.debug("Optimal K = " + str(K))
         return cell_sites.cluster_centers_

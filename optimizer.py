@@ -5,16 +5,18 @@ class Optimizer:
     '''
     This class optimizes the no of towers by merging stations with less than 25 towers
     '''
-    def __init__(self, tower_distribution):
-        self.tower_distribution = tower_distribution
+    def __init__(self, min_users=25, min_cell_site_distance=0.005):
+        self.min_users = min_users
+        self.min_cell_site_distance = min_cell_site_distance
         self.logger = logging.getLogger("optimizer")
 
-    def optimize(self):
+    def optimize(self, tower_distribution):
         '''
         This is the exposed API for optimization
         :return: optimized tower_distribution
         '''
         self.logger.debug("Removing micro clusters")
+        self.tower_distribution = tower_distribution
         micro_clusters_present = lambda min_users: min([len(base_station['users'])
                                                        for base_station in self.tower_distribution.values()
                                                        ]) < min_users
@@ -41,15 +43,14 @@ class Optimizer:
 
         return nearest_base_station[0] # key is at 0th index
 
-    def has_cell_sites_within_range(self, current_cell_site, exisiting_cell_sites, close_range):
+    def has_cell_sites_within_range(self, current_cell_site, exisiting_cell_sites):
         '''
         checks if the current cell site is within range of other cell sites
         :param current_cell_site: the cellsite for the current iteration
         :param exisiting_cell_sites: all the exisiting cell sites
-        :param close_range: the distance between current cell site to all cell sites
         :return: True if cell sites found else false
         '''
-        is_within_range = lambda exisiting_cell_site: np.linalg.norm(exisiting_cell_site - current_cell_site) < close_range
+        is_within_range = lambda exisiting_cell_site: np.linalg.norm(exisiting_cell_site - current_cell_site) < self.min_cell_site_distance
         return max(exisiting_cell_sites, key=is_within_range)
 
     def club_base_stations(self):
@@ -63,7 +64,7 @@ class Optimizer:
             if key not in self.tower_distribution:
                 continue
 
-            if len(self.tower_distribution[key]['users']) >= 25:
+            if len(self.tower_distribution[key]['users']) >= self.min_users:
                 continue
 
             current_base_station = self.tower_distribution[key]
@@ -81,7 +82,7 @@ class Optimizer:
             )
 
             for cell_site in current_base_station['cell_sites']:
-                if self.has_cell_sites_within_range(cell_site, nearest_base_station['cell_sites'], 0.005):
+                if self.has_cell_sites_within_range(cell_site, nearest_base_station['cell_sites']):
                     continue
 
                 nearest_base_station['cell_sites'] = np.concatenate(
