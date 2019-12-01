@@ -85,25 +85,25 @@ class Regions:
         self.logger.debug("Eigen decomposition applied")
         return nb_clusters, eigenvalues, eigenvectors
 
-    def detect_regions(self, geo_coordinates):
+    def detect_regions(self, users):
         '''
         Performs Spectral clustering on geo_coordinates
-        :param geo_coordinates: geo-coordinates of all customers' locations.
+        :param users: geo-coordinates of all customers' locations.
         :return: dict of clusters: datapoints
         '''
         self.logger.debug("Clustering settlements")
 
-        affinity_matrix = self.get_affinity_matrix(geo_coordinates, k=100)
+        affinity_matrix = self.get_affinity_matrix(users, k=100)
 
         nb_clusters, eigenvalues, eigenvectors = self.eigen_decomposition(affinity_matrix, topK=50)
         K = nb_clusters * 1 # Adjustment factor
         self.logger.debug("Optimal K for Region Clustering " + str(K))
 
-        settlements = SpectralClustering(n_clusters=K, assign_labels='discretize', random_state=0)
-        settlements.fit(geo_coordinates)
+        region_clustering = SpectralClustering(n_clusters=K, random_state=0, affinity='precomputed')
+        region_clustering.fit(affinity_matrix)
 
         regions = dict()
-        for region, datapoint in zip(settlements.labels_, geo_coordinates):
+        for region, datapoint in zip(region_clustering.labels_, users):
             if region in regions:
                 regions[region] = np.concatenate((regions[region], [datapoint]), axis=0)
             else:

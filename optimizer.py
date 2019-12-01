@@ -51,7 +51,8 @@ class Optimizer:
         :return: True if cell sites found else false
         '''
         is_within_range = lambda exisiting_cell_site: np.linalg.norm(exisiting_cell_site - current_cell_site) < self.min_cell_site_distance
-        return max(exisiting_cell_sites, key=is_within_range)
+        any_site_within_range = max(map(is_within_range, exisiting_cell_sites))
+        return any_site_within_range
 
     def club_base_stations(self):
         '''

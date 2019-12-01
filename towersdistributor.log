@@ -1735,3 +1735,395 @@
 2019-11-30 10:59:23,759 DEBUG towersdistributor Calling default browser to open map
 2019-11-30 10:59:23,829 DEBUG towersdistributor Evaluating model
 2019-11-30 10:59:23,852 DEBUG towersdistributor Model evaluated
+2019-11-30 13:28:00,008 DEBUG towersdistributor Towers Distributor Initialized
+2019-11-30 13:28:00,009 DEBUG towersdistributor Performing Level 1 clustering
+2019-11-30 13:28:01,628 DEBUG towersdistributor Level 1 clustering done
+2019-11-30 13:28:01,629 DEBUG towersdistributor Performing Level 2 clustering
+2019-11-30 13:28:09,922 DEBUG towersdistributor Level 2 clustering done
+2019-11-30 13:28:09,923 DEBUG towersdistributor Formatting to dictionary
+2019-11-30 13:28:09,923 DEBUG towersdistributor Regions dictionary formatted
+2019-11-30 13:28:09,924 DEBUG towersdistributor Performing Region optimization
+2019-11-30 13:28:09,926 DEBUG towersdistributor UBC optimization done
+2019-11-30 13:28:09,927 DEBUG towersdistributor Saving UBC dict to JSON
+2019-11-30 13:28:10,102 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-11-30 13:28:10,103 DEBUG towersdistributor Creating Visuals
+2019-11-30 13:28:12,284 DEBUG towersdistributor Visuals created
+2019-11-30 13:28:12,284 DEBUG towersdistributor Calling default browser to open map
+2019-11-30 13:28:12,400 DEBUG towersdistributor Evaluating model
+2019-11-30 13:28:12,416 DEBUG towersdistributor Model evaluated
+2019-11-30 13:31:31,819 DEBUG towersdistributor Towers Distributor Initialized
+2019-11-30 13:31:31,820 DEBUG towersdistributor Performing Level 1 clustering
+2019-11-30 13:31:33,599 DEBUG towersdistributor Level 1 clustering done
+2019-11-30 13:31:33,599 DEBUG towersdistributor Performing Level 2 clustering
+2019-11-30 13:31:41,691 DEBUG towersdistributor Level 2 clustering done
+2019-11-30 13:31:41,691 DEBUG towersdistributor Formatting to dictionary
+2019-11-30 13:31:41,692 DEBUG towersdistributor Regions dictionary formatted
+2019-11-30 13:31:41,692 DEBUG towersdistributor Performing Region optimization
+2019-11-30 13:31:41,696 DEBUG towersdistributor UBC optimization done
+2019-11-30 13:31:41,696 DEBUG towersdistributor Saving UBC dict to JSON
+2019-11-30 13:31:41,856 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-11-30 13:31:41,856 DEBUG towersdistributor Creating Visuals
+2019-11-30 13:31:44,181 DEBUG towersdistributor Visuals created
+2019-11-30 13:31:44,181 DEBUG towersdistributor Calling default browser to open map
+2019-11-30 13:31:44,257 DEBUG towersdistributor Evaluating model
+2019-11-30 13:31:44,275 DEBUG towersdistributor Model evaluated
+2019-11-30 13:32:24,457 DEBUG towersdistributor Towers Distributor Initialized
+2019-11-30 13:32:24,457 DEBUG towersdistributor Performing Level 1 clustering
+2019-11-30 13:32:26,222 DEBUG towersdistributor Level 1 clustering done
+2019-11-30 13:32:26,222 DEBUG towersdistributor Performing Level 2 clustering
+2019-11-30 13:32:34,247 DEBUG towersdistributor Level 2 clustering done
+2019-11-30 13:32:34,247 DEBUG towersdistributor Formatting to dictionary
+2019-11-30 13:32:34,248 DEBUG towersdistributor Regions dictionary formatted
+2019-11-30 13:32:34,248 DEBUG towersdistributor Performing Region optimization
+2019-11-30 13:32:34,254 DEBUG towersdistributor UBC optimization done
+2019-11-30 13:32:34,254 DEBUG towersdistributor Saving UBC dict to JSON
+2019-11-30 13:32:34,431 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-11-30 13:32:34,431 DEBUG towersdistributor Creating Visuals
+2019-11-30 13:32:36,849 DEBUG towersdistributor Visuals created
+2019-11-30 13:32:36,849 DEBUG towersdistributor Calling default browser to open map
+2019-11-30 13:32:36,914 DEBUG towersdistributor Evaluating model
+2019-11-30 13:32:36,934 DEBUG towersdistributor Model evaluated
+2019-11-30 13:33:35,425 DEBUG towersdistributor Towers Distributor Initialized
+2019-11-30 13:33:35,426 DEBUG towersdistributor Performing Level 1 clustering
+2019-11-30 13:33:37,201 DEBUG towersdistributor Level 1 clustering done
+2019-11-30 13:33:37,202 DEBUG towersdistributor Performing Level 2 clustering
+2019-11-30 13:33:45,656 DEBUG towersdistributor Level 2 clustering done
+2019-11-30 13:33:45,656 DEBUG towersdistributor Formatting to dictionary
+2019-11-30 13:33:45,657 DEBUG towersdistributor Regions dictionary formatted
+2019-11-30 13:33:45,657 DEBUG towersdistributor Performing Region optimization
+2019-11-30 13:33:45,660 DEBUG towersdistributor UBC optimization done
+2019-11-30 13:33:45,660 DEBUG towersdistributor Saving UBC dict to JSON
+2019-11-30 13:33:45,837 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-11-30 13:33:45,837 DEBUG towersdistributor Creating Visuals
+2019-11-30 13:33:48,082 DEBUG towersdistributor Visuals created
+2019-11-30 13:33:48,082 DEBUG towersdistributor Calling default browser to open map
+2019-11-30 13:33:48,148 DEBUG towersdistributor Evaluating model
+2019-11-30 13:33:48,177 DEBUG towersdistributor Model evaluated
+2019-11-30 13:35:41,453 DEBUG towersdistributor Towers Distributor Initialized
+2019-11-30 13:35:41,453 DEBUG towersdistributor Performing Level 1 clustering
+2019-11-30 13:35:43,083 DEBUG towersdistributor Level 1 clustering done
+2019-11-30 13:35:43,083 DEBUG towersdistributor Performing Level 2 clustering
+2019-11-30 13:35:51,108 DEBUG towersdistributor Level 2 clustering done
+2019-11-30 13:35:51,109 DEBUG towersdistributor Formatting to dictionary
+2019-11-30 13:35:51,111 DEBUG towersdistributor Regions dictionary formatted
+2019-11-30 13:35:51,111 DEBUG towersdistributor Performing Region optimization
+2019-11-30 13:35:51,115 DEBUG towersdistributor UBC optimization done
+2019-11-30 13:35:51,115 DEBUG towersdistributor Saving UBC dict to JSON
+2019-11-30 13:35:51,266 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-11-30 13:35:51,266 DEBUG towersdistributor Creating Visuals
+2019-11-30 13:35:53,611 DEBUG towersdistributor Visuals created
+2019-11-30 13:35:53,611 DEBUG towersdistributor Calling default browser to open map
+2019-11-30 13:35:53,701 DEBUG towersdistributor Evaluating model
+2019-11-30 13:35:53,726 DEBUG towersdistributor Model evaluated
+2019-11-30 13:36:16,572 DEBUG towersdistributor Towers Distributor Initialized
+2019-11-30 13:36:16,572 DEBUG towersdistributor Performing Level 1 clustering
+2019-11-30 13:36:18,217 DEBUG towersdistributor Level 1 clustering done
+2019-11-30 13:36:18,217 DEBUG towersdistributor Performing Level 2 clustering
+2019-11-30 13:36:26,738 DEBUG towersdistributor Level 2 clustering done
+2019-11-30 13:36:26,738 DEBUG towersdistributor Formatting to dictionary
+2019-11-30 13:36:26,739 DEBUG towersdistributor Regions dictionary formatted
+2019-11-30 13:36:26,739 DEBUG towersdistributor Performing Region optimization
+2019-11-30 13:36:26,744 DEBUG towersdistributor UBC optimization done
+2019-11-30 13:36:26,744 DEBUG towersdistributor Saving UBC dict to JSON
+2019-11-30 13:36:26,912 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-11-30 13:36:26,912 DEBUG towersdistributor Creating Visuals
+2019-11-30 13:36:29,102 DEBUG towersdistributor Visuals created
+2019-11-30 13:36:29,102 DEBUG towersdistributor Calling default browser to open map
+2019-11-30 13:36:29,170 DEBUG towersdistributor Evaluating model
+2019-11-30 13:36:29,193 DEBUG towersdistributor Model evaluated
+2019-11-30 13:36:53,926 DEBUG towersdistributor Towers Distributor Initialized
+2019-11-30 13:36:53,927 DEBUG towersdistributor Performing Level 1 clustering
+2019-11-30 13:36:55,555 DEBUG towersdistributor Level 1 clustering done
+2019-11-30 13:36:55,555 DEBUG towersdistributor Performing Level 2 clustering
+2019-11-30 13:37:03,461 DEBUG towersdistributor Level 2 clustering done
+2019-11-30 13:37:03,461 DEBUG towersdistributor Formatting to dictionary
+2019-11-30 13:37:03,462 DEBUG towersdistributor Regions dictionary formatted
+2019-11-30 13:37:03,462 DEBUG towersdistributor Performing Region optimization
+2019-11-30 13:37:03,468 DEBUG towersdistributor UBC optimization done
+2019-11-30 13:37:03,468 DEBUG towersdistributor Saving UBC dict to JSON
+2019-11-30 13:37:03,648 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-11-30 13:37:03,649 DEBUG towersdistributor Creating Visuals
+2019-11-30 13:37:05,848 DEBUG towersdistributor Visuals created
+2019-11-30 13:37:05,848 DEBUG towersdistributor Calling default browser to open map
+2019-11-30 13:37:05,932 DEBUG towersdistributor Evaluating model
+2019-11-30 13:37:05,947 DEBUG towersdistributor Model evaluated
+2019-11-30 13:38:09,587 DEBUG towersdistributor Towers Distributor Initialized
+2019-11-30 13:38:09,587 DEBUG towersdistributor Performing Level 1 clustering
+2019-11-30 13:38:11,200 DEBUG towersdistributor Level 1 clustering done
+2019-11-30 13:38:11,201 DEBUG towersdistributor Performing Level 2 clustering
+2019-11-30 13:38:18,875 DEBUG towersdistributor Level 2 clustering done
+2019-11-30 13:38:18,875 DEBUG towersdistributor Formatting to dictionary
+2019-11-30 13:38:18,876 DEBUG towersdistributor Regions dictionary formatted
+2019-11-30 13:38:18,877 DEBUG towersdistributor Performing Region optimization
+2019-11-30 13:38:18,882 DEBUG towersdistributor UBC optimization done
+2019-11-30 13:38:18,882 DEBUG towersdistributor Saving UBC dict to JSON
+2019-11-30 13:38:19,071 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-11-30 13:38:19,071 DEBUG towersdistributor Creating Visuals
+2019-11-30 13:38:21,249 DEBUG towersdistributor Visuals created
+2019-11-30 13:38:21,250 DEBUG towersdistributor Calling default browser to open map
+2019-11-30 13:38:21,327 DEBUG towersdistributor Evaluating model
+2019-11-30 13:38:21,346 DEBUG towersdistributor Model evaluated
+2019-11-30 13:40:27,190 DEBUG towersdistributor Towers Distributor Initialized
+2019-11-30 13:40:27,190 DEBUG towersdistributor Performing Level 1 clustering
+2019-11-30 13:40:28,843 DEBUG towersdistributor Level 1 clustering done
+2019-11-30 13:40:28,843 DEBUG towersdistributor Performing Level 2 clustering
+2019-11-30 13:40:36,793 DEBUG towersdistributor Level 2 clustering done
+2019-11-30 13:40:36,794 DEBUG towersdistributor Formatting to dictionary
+2019-11-30 13:40:36,795 DEBUG towersdistributor Regions dictionary formatted
+2019-11-30 13:40:36,795 DEBUG towersdistributor Performing Region optimization
+2019-11-30 13:40:36,799 DEBUG towersdistributor UBC optimization done
+2019-11-30 13:40:36,800 DEBUG towersdistributor Saving UBC dict to JSON
+2019-11-30 13:40:36,962 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-11-30 13:40:36,963 DEBUG towersdistributor Creating Visuals
+2019-11-30 13:40:39,227 DEBUG towersdistributor Visuals created
+2019-11-30 13:40:39,227 DEBUG towersdistributor Calling default browser to open map
+2019-11-30 13:40:39,309 DEBUG towersdistributor Evaluating model
+2019-11-30 13:40:39,431 DEBUG towersdistributor Model evaluated
+2019-11-30 13:41:08,230 DEBUG towersdistributor Towers Distributor Initialized
+2019-11-30 13:41:08,230 DEBUG towersdistributor Performing Level 1 clustering
+2019-11-30 13:41:09,895 DEBUG towersdistributor Level 1 clustering done
+2019-11-30 13:41:09,896 DEBUG towersdistributor Performing Level 2 clustering
+2019-11-30 13:41:17,562 DEBUG towersdistributor Level 2 clustering done
+2019-11-30 13:41:17,562 DEBUG towersdistributor Formatting to dictionary
+2019-11-30 13:41:17,563 DEBUG towersdistributor Regions dictionary formatted
+2019-11-30 13:41:17,563 DEBUG towersdistributor Performing Region optimization
+2019-11-30 13:41:17,568 DEBUG towersdistributor UBC optimization done
+2019-11-30 13:41:17,568 DEBUG towersdistributor Saving UBC dict to JSON
+2019-11-30 13:41:17,728 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-11-30 13:41:17,728 DEBUG towersdistributor Creating Visuals
+2019-11-30 13:41:20,077 DEBUG towersdistributor Visuals created
+2019-11-30 13:41:20,078 DEBUG towersdistributor Calling default browser to open map
+2019-11-30 13:41:20,148 DEBUG towersdistributor Evaluating model
+2019-11-30 13:41:20,169 DEBUG towersdistributor Model evaluated
+2019-11-30 13:50:45,506 DEBUG towersdistributor Towers Distributor Initialized
+2019-11-30 13:50:45,507 DEBUG towersdistributor Performing Level 1 clustering
+2019-11-30 13:50:47,699 DEBUG towersdistributor Level 1 clustering done
+2019-11-30 13:50:47,700 DEBUG towersdistributor Performing Level 2 clustering
+2019-11-30 13:50:55,683 DEBUG towersdistributor Level 2 clustering done
+2019-11-30 13:50:55,683 DEBUG towersdistributor Formatting to dictionary
+2019-11-30 13:50:55,688 DEBUG towersdistributor Regions dictionary formatted
+2019-11-30 13:50:55,688 DEBUG towersdistributor Performing Region optimization
+2019-11-30 13:50:55,693 DEBUG towersdistributor UBC optimization done
+2019-11-30 13:50:55,693 DEBUG towersdistributor Saving UBC dict to JSON
+2019-11-30 13:50:55,861 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-11-30 13:50:55,861 DEBUG towersdistributor Creating Visuals
+2019-11-30 13:50:58,036 DEBUG towersdistributor Visuals created
+2019-11-30 13:50:58,036 DEBUG towersdistributor Calling default browser to open map
+2019-11-30 13:50:58,113 DEBUG towersdistributor Evaluating model
+2019-11-30 13:50:58,142 DEBUG towersdistributor Model evaluated
+2019-12-01 09:31:51,713 DEBUG towersdistributor Towers Distributor Initialized
+2019-12-01 09:31:51,715 DEBUG towersdistributor Performing Level 1 clustering
+2019-12-01 09:31:53,337 DEBUG towersdistributor Level 1 clustering done
+2019-12-01 09:31:53,338 DEBUG towersdistributor Performing Level 2 clustering
+2019-12-01 09:32:01,024 DEBUG towersdistributor Level 2 clustering done
+2019-12-01 09:32:01,024 DEBUG towersdistributor Formatting to dictionary
+2019-12-01 09:32:01,025 DEBUG towersdistributor Regions dictionary formatted
+2019-12-01 09:32:01,025 DEBUG towersdistributor Performing Region optimization
+2019-12-01 09:32:01,032 DEBUG towersdistributor UBC optimization done
+2019-12-01 09:32:01,032 DEBUG towersdistributor Saving UBC dict to JSON
+2019-12-01 09:32:01,176 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-12-01 09:32:01,176 DEBUG towersdistributor Creating Visuals
+2019-12-01 09:32:03,365 DEBUG towersdistributor Visuals created
+2019-12-01 09:32:03,365 DEBUG towersdistributor Calling default browser to open map
+2019-12-01 09:32:03,431 DEBUG towersdistributor Evaluating model
+2019-12-01 09:32:03,464 DEBUG towersdistributor Model evaluated
+2019-12-01 09:33:37,251 DEBUG towersdistributor Towers Distributor Initialized
+2019-12-01 09:33:37,251 DEBUG towersdistributor Performing Level 1 clustering
+2019-12-01 09:33:38,875 DEBUG towersdistributor Level 1 clustering done
+2019-12-01 09:33:38,875 DEBUG towersdistributor Performing Level 2 clustering
+2019-12-01 09:33:46,444 DEBUG towersdistributor Level 2 clustering done
+2019-12-01 09:33:46,444 DEBUG towersdistributor Formatting to dictionary
+2019-12-01 09:33:46,445 DEBUG towersdistributor Regions dictionary formatted
+2019-12-01 09:33:46,445 DEBUG towersdistributor Performing Region optimization
+2019-12-01 09:33:46,452 DEBUG towersdistributor UBC optimization done
+2019-12-01 09:33:46,452 DEBUG towersdistributor Saving UBC dict to JSON
+2019-12-01 09:33:46,630 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-12-01 09:33:46,631 DEBUG towersdistributor Creating Visuals
+2019-12-01 09:33:48,809 DEBUG towersdistributor Visuals created
+2019-12-01 09:33:48,809 DEBUG towersdistributor Calling default browser to open map
+2019-12-01 09:33:48,895 DEBUG towersdistributor Evaluating model
+2019-12-01 09:33:48,914 DEBUG towersdistributor Model evaluated
+2019-12-01 09:34:25,861 DEBUG towersdistributor Towers Distributor Initialized
+2019-12-01 09:34:25,862 DEBUG towersdistributor Performing Level 1 clustering
+2019-12-01 09:34:27,451 DEBUG towersdistributor Level 1 clustering done
+2019-12-01 09:34:27,451 DEBUG towersdistributor Performing Level 2 clustering
+2019-12-01 09:34:34,794 DEBUG towersdistributor Level 2 clustering done
+2019-12-01 09:34:34,794 DEBUG towersdistributor Formatting to dictionary
+2019-12-01 09:34:34,795 DEBUG towersdistributor Regions dictionary formatted
+2019-12-01 09:34:34,795 DEBUG towersdistributor Performing Region optimization
+2019-12-01 09:34:34,798 DEBUG towersdistributor UBC optimization done
+2019-12-01 09:34:34,798 DEBUG towersdistributor Saving UBC dict to JSON
+2019-12-01 09:34:34,928 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-12-01 09:34:34,929 DEBUG towersdistributor Creating Visuals
+2019-12-01 09:34:37,139 DEBUG towersdistributor Visuals created
+2019-12-01 09:34:37,139 DEBUG towersdistributor Calling default browser to open map
+2019-12-01 09:34:37,206 DEBUG towersdistributor Evaluating model
+2019-12-01 09:34:37,221 DEBUG towersdistributor Model evaluated
+2019-12-01 09:35:21,657 DEBUG towersdistributor Towers Distributor Initialized
+2019-12-01 09:35:21,657 DEBUG towersdistributor Performing Level 1 clustering
+2019-12-01 09:35:23,273 DEBUG towersdistributor Level 1 clustering done
+2019-12-01 09:35:23,273 DEBUG towersdistributor Performing Level 2 clustering
+2019-12-01 09:35:30,571 DEBUG towersdistributor Level 2 clustering done
+2019-12-01 09:35:30,571 DEBUG towersdistributor Formatting to dictionary
+2019-12-01 09:35:30,573 DEBUG towersdistributor Regions dictionary formatted
+2019-12-01 09:35:30,574 DEBUG towersdistributor Performing Region optimization
+2019-12-01 09:35:30,579 DEBUG towersdistributor UBC optimization done
+2019-12-01 09:35:30,579 DEBUG towersdistributor Saving UBC dict to JSON
+2019-12-01 09:35:30,758 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-12-01 09:35:30,758 DEBUG towersdistributor Creating Visuals
+2019-12-01 09:35:32,957 DEBUG towersdistributor Visuals created
+2019-12-01 09:35:32,957 DEBUG towersdistributor Calling default browser to open map
+2019-12-01 09:35:33,035 DEBUG towersdistributor Evaluating model
+2019-12-01 09:35:33,053 DEBUG towersdistributor Model evaluated
+2019-12-01 09:36:12,655 DEBUG towersdistributor Towers Distributor Initialized
+2019-12-01 09:36:12,655 DEBUG towersdistributor Performing Level 1 clustering
+2019-12-01 09:36:14,255 DEBUG towersdistributor Level 1 clustering done
+2019-12-01 09:36:14,255 DEBUG towersdistributor Performing Level 2 clustering
+2019-12-01 09:36:21,428 DEBUG towersdistributor Level 2 clustering done
+2019-12-01 09:36:21,428 DEBUG towersdistributor Formatting to dictionary
+2019-12-01 09:36:21,429 DEBUG towersdistributor Regions dictionary formatted
+2019-12-01 09:36:21,429 DEBUG towersdistributor Performing Region optimization
+2019-12-01 09:36:21,432 DEBUG towersdistributor UBC optimization done
+2019-12-01 09:36:21,432 DEBUG towersdistributor Saving UBC dict to JSON
+2019-12-01 09:36:21,597 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-12-01 09:36:21,598 DEBUG towersdistributor Creating Visuals
+2019-12-01 09:36:23,794 DEBUG towersdistributor Visuals created
+2019-12-01 09:36:23,794 DEBUG towersdistributor Calling default browser to open map
+2019-12-01 09:36:23,884 DEBUG towersdistributor Evaluating model
+2019-12-01 09:36:23,922 DEBUG towersdistributor Model evaluated
+2019-12-01 09:36:49,260 DEBUG towersdistributor Towers Distributor Initialized
+2019-12-01 09:36:49,260 DEBUG towersdistributor Performing Level 1 clustering
+2019-12-01 09:36:50,867 DEBUG towersdistributor Level 1 clustering done
+2019-12-01 09:36:50,868 DEBUG towersdistributor Performing Level 2 clustering
+2019-12-01 09:36:58,178 DEBUG towersdistributor Level 2 clustering done
+2019-12-01 09:36:58,178 DEBUG towersdistributor Formatting to dictionary
+2019-12-01 09:36:58,179 DEBUG towersdistributor Regions dictionary formatted
+2019-12-01 09:36:58,179 DEBUG towersdistributor Performing Region optimization
+2019-12-01 09:36:58,182 DEBUG towersdistributor UBC optimization done
+2019-12-01 09:36:58,182 DEBUG towersdistributor Saving UBC dict to JSON
+2019-12-01 09:36:58,320 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-12-01 09:36:58,321 DEBUG towersdistributor Creating Visuals
+2019-12-01 09:37:00,694 DEBUG towersdistributor Visuals created
+2019-12-01 09:37:00,695 DEBUG towersdistributor Calling default browser to open map
+2019-12-01 09:37:00,769 DEBUG towersdistributor Evaluating model
+2019-12-01 09:37:00,789 DEBUG towersdistributor Model evaluated
+2019-12-01 09:38:24,018 DEBUG towersdistributor Towers Distributor Initialized
+2019-12-01 09:38:24,018 DEBUG towersdistributor Performing Level 1 clustering
+2019-12-01 09:38:26,094 DEBUG towersdistributor Level 1 clustering done
+2019-12-01 09:38:26,094 DEBUG towersdistributor Performing Level 2 clustering
+2019-12-01 09:38:33,998 DEBUG towersdistributor Level 2 clustering done
+2019-12-01 09:38:33,998 DEBUG towersdistributor Formatting to dictionary
+2019-12-01 09:38:33,999 DEBUG towersdistributor Regions dictionary formatted
+2019-12-01 09:38:33,999 DEBUG towersdistributor Performing Region optimization
+2019-12-01 09:38:34,003 DEBUG towersdistributor UBC optimization done
+2019-12-01 09:38:34,003 DEBUG towersdistributor Saving UBC dict to JSON
+2019-12-01 09:38:34,168 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-12-01 09:38:34,169 DEBUG towersdistributor Creating Visuals
+2019-12-01 09:38:36,333 DEBUG towersdistributor Visuals created
+2019-12-01 09:38:36,333 DEBUG towersdistributor Calling default browser to open map
+2019-12-01 09:38:36,402 DEBUG towersdistributor Evaluating model
+2019-12-01 09:38:36,421 DEBUG towersdistributor Model evaluated
+2019-12-01 09:39:33,252 DEBUG towersdistributor Towers Distributor Initialized
+2019-12-01 09:39:33,252 DEBUG towersdistributor Performing Level 1 clustering
+2019-12-01 09:39:35,050 DEBUG towersdistributor Level 1 clustering done
+2019-12-01 09:39:35,051 DEBUG towersdistributor Performing Level 2 clustering
+2019-12-01 09:39:42,913 DEBUG towersdistributor Level 2 clustering done
+2019-12-01 09:39:42,913 DEBUG towersdistributor Formatting to dictionary
+2019-12-01 09:39:42,914 DEBUG towersdistributor Regions dictionary formatted
+2019-12-01 09:39:42,914 DEBUG towersdistributor Performing Region optimization
+2019-12-01 09:39:42,917 DEBUG towersdistributor UBC optimization done
+2019-12-01 09:39:42,917 DEBUG towersdistributor Saving UBC dict to JSON
+2019-12-01 09:39:43,052 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-12-01 09:39:43,052 DEBUG towersdistributor Creating Visuals
+2019-12-01 09:39:45,317 DEBUG towersdistributor Visuals created
+2019-12-01 09:39:45,317 DEBUG towersdistributor Calling default browser to open map
+2019-12-01 09:39:45,386 DEBUG towersdistributor Evaluating model
+2019-12-01 09:39:45,412 DEBUG towersdistributor Model evaluated
+2019-12-01 09:43:59,433 DEBUG towersdistributor Towers Distributor Initialized
+2019-12-01 09:43:59,433 DEBUG towersdistributor Performing Level 1 clustering
+2019-12-01 09:44:01,041 DEBUG towersdistributor Level 1 clustering done
+2019-12-01 09:44:01,041 DEBUG towersdistributor Performing Level 2 clustering
+2019-12-01 09:44:08,333 DEBUG towersdistributor Level 2 clustering done
+2019-12-01 09:44:08,333 DEBUG towersdistributor Formatting to dictionary
+2019-12-01 09:44:08,334 DEBUG towersdistributor Regions dictionary formatted
+2019-12-01 09:44:08,334 DEBUG towersdistributor Performing Region optimization
+2019-12-01 09:44:08,337 DEBUG towersdistributor UBC optimization done
+2019-12-01 09:44:08,337 DEBUG towersdistributor Saving UBC dict to JSON
+2019-12-01 09:44:08,470 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-12-01 09:44:08,470 DEBUG towersdistributor Creating Visuals
+2019-12-01 09:44:10,821 DEBUG towersdistributor Visuals created
+2019-12-01 09:44:10,822 DEBUG towersdistributor Calling default browser to open map
+2019-12-01 09:44:10,895 DEBUG towersdistributor Evaluating model
+2019-12-01 09:44:10,921 DEBUG towersdistributor Model evaluated
+2019-12-01 09:45:12,805 DEBUG towersdistributor Towers Distributor Initialized
+2019-12-01 09:45:12,806 DEBUG towersdistributor Performing Level 1 clustering
+2019-12-01 09:47:38,922 DEBUG towersdistributor Level 1 clustering done
+2019-12-01 09:47:38,922 DEBUG towersdistributor Performing Level 2 clustering
+2019-12-01 09:47:43,146 DEBUG towersdistributor Level 2 clustering done
+2019-12-01 09:47:43,146 DEBUG towersdistributor Formatting to dictionary
+2019-12-01 09:47:43,195 DEBUG towersdistributor Regions dictionary formatted
+2019-12-01 09:47:43,195 DEBUG towersdistributor Performing Region optimization
+2019-12-01 09:49:16,020 DEBUG towersdistributor Towers Distributor Initialized
+2019-12-01 09:49:16,021 DEBUG towersdistributor Performing Level 1 clustering
+2019-12-01 09:51:42,189 DEBUG towersdistributor Level 1 clustering done
+2019-12-01 09:51:42,189 DEBUG towersdistributor Performing Level 2 clustering
+2019-12-01 09:51:48,076 DEBUG towersdistributor Level 2 clustering done
+2019-12-01 09:51:48,076 DEBUG towersdistributor Formatting to dictionary
+2019-12-01 09:51:48,127 DEBUG towersdistributor Regions dictionary formatted
+2019-12-01 09:51:48,127 DEBUG towersdistributor Performing Region optimization
+2019-12-01 09:53:58,879 DEBUG towersdistributor Towers Distributor Initialized
+2019-12-01 09:53:58,880 DEBUG towersdistributor Performing Level 1 clustering
+2019-12-01 09:56:25,584 DEBUG towersdistributor Level 1 clustering done
+2019-12-01 09:56:25,584 DEBUG towersdistributor Performing Level 2 clustering
+2019-12-01 09:56:31,720 DEBUG towersdistributor Level 2 clustering done
+2019-12-01 09:56:31,721 DEBUG towersdistributor Formatting to dictionary
+2019-12-01 09:56:31,771 DEBUG towersdistributor Regions dictionary formatted
+2019-12-01 09:56:31,771 DEBUG towersdistributor Performing Region optimization
+2019-12-01 09:58:38,526 DEBUG towersdistributor Towers Distributor Initialized
+2019-12-01 09:58:38,526 DEBUG towersdistributor Performing Level 1 clustering
+2019-12-01 10:01:08,902 DEBUG towersdistributor Level 1 clustering done
+2019-12-01 10:01:08,902 DEBUG towersdistributor Performing Level 2 clustering
+2019-12-01 10:01:13,513 DEBUG towersdistributor Level 2 clustering done
+2019-12-01 10:01:13,513 DEBUG towersdistributor Formatting to dictionary
+2019-12-01 10:01:13,543 DEBUG towersdistributor Regions dictionary formatted
+2019-12-01 10:01:13,544 DEBUG towersdistributor Performing Region optimization
+2019-12-01 10:01:13,811 DEBUG towersdistributor UBC optimization done
+2019-12-01 10:01:13,811 DEBUG towersdistributor Saving UBC dict to JSON
+2019-12-01 10:01:14,585 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-12-01 10:01:14,585 DEBUG towersdistributor Creating Visuals
+2019-12-01 10:01:26,803 DEBUG towersdistributor Visuals created
+2019-12-01 10:01:26,804 DEBUG towersdistributor Calling default browser to open map
+2019-12-01 10:01:26,873 DEBUG towersdistributor Evaluating model
+2019-12-01 10:01:27,078 DEBUG towersdistributor Model evaluated
+2019-12-01 10:03:20,295 DEBUG towersdistributor Towers Distributor Initialized
+2019-12-01 10:03:20,295 DEBUG towersdistributor Performing Level 1 clustering
+2019-12-01 10:03:21,932 DEBUG towersdistributor Level 1 clustering done
+2019-12-01 10:03:21,932 DEBUG towersdistributor Performing Level 2 clustering
+2019-12-01 10:03:30,540 DEBUG towersdistributor Level 2 clustering done
+2019-12-01 10:03:30,541 DEBUG towersdistributor Formatting to dictionary
+2019-12-01 10:03:30,542 DEBUG towersdistributor Regions dictionary formatted
+2019-12-01 10:03:30,542 DEBUG towersdistributor Performing Region optimization
+2019-12-01 10:03:30,545 DEBUG towersdistributor UBC optimization done
+2019-12-01 10:03:30,545 DEBUG towersdistributor Saving UBC dict to JSON
+2019-12-01 10:03:30,734 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-12-01 10:03:30,734 DEBUG towersdistributor Creating Visuals
+2019-12-01 10:03:33,387 DEBUG towersdistributor Visuals created
+2019-12-01 10:03:33,387 DEBUG towersdistributor Calling default browser to open map
+2019-12-01 10:03:33,462 DEBUG towersdistributor Evaluating model
+2019-12-01 10:03:33,572 DEBUG towersdistributor Model evaluated
+2019-12-01 19:15:22,262 DEBUG towersdistributor Towers Distributor Initialized
+2019-12-01 19:15:22,264 DEBUG towersdistributor Performing Level 1 clustering
+2019-12-01 19:15:23,920 DEBUG towersdistributor Level 1 clustering done
+2019-12-01 19:15:23,920 DEBUG towersdistributor Performing Level 2 clustering
+2019-12-01 19:15:31,278 DEBUG towersdistributor Level 2 clustering done
+2019-12-01 19:15:31,278 DEBUG towersdistributor Formatting to dictionary
+2019-12-01 19:15:31,279 DEBUG towersdistributor Regions dictionary formatted
+2019-12-01 19:15:31,279 DEBUG towersdistributor Performing Region optimization
+2019-12-01 19:15:31,284 DEBUG towersdistributor UBC optimization done
+2019-12-01 19:15:31,284 DEBUG towersdistributor Saving UBC dict to JSON
+2019-12-01 19:15:31,425 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-12-01 19:15:31,425 DEBUG towersdistributor Creating Visuals
+2019-12-01 19:15:33,658 DEBUG towersdistributor Visuals created
+2019-12-01 19:15:33,658 DEBUG towersdistributor Calling default browser to open map
+2019-12-01 19:15:34,422 DEBUG towersdistributor Evaluating model
+2019-12-01 19:15:34,442 DEBUG towersdistributor Model evaluated

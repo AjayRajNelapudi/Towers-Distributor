@@ -164,7 +164,7 @@ class TowersDistributor:
 
 
 if __name__ == "__main__":
-    distributor = TowersDistributor("datasets/dataset.csv", enable_logger=True)
+    distributor = TowersDistributor("datasets/custom-dataset.csv", enable_logger=True)
 
     distributor.perform_settlement_clustering()
     distributor.perform_cellsite_clustering()
@@ -172,7 +172,7 @@ if __name__ == "__main__":
     distributor.format()
     distributor.optimize()
 
-    distributor.serialize_and_save_data("outputs/td.json")
-    distributor.make_and_display_map("maps/td.html")
+    distributor.serialize_and_save_data("outputs/custom-td.json")
+    distributor.make_and_display_map("maps/custom-td.html")
 
     distributor.evaluate()

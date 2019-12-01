@@ -55166,3 +55166,2833 @@
 2019-11-30 10:59:23,852 DEBUG evaluator Cell Sites = 120
 2019-11-30 10:59:23,852 DEBUG evaluator Accuracy = 93.06930693069307 %
 2019-11-30 10:59:23,852 DEBUG towersdistributor Model evaluated
+2019-11-30 13:28:00,008 DEBUG towersdistributor Towers Distributor Initialized
+2019-11-30 13:28:00,009 DEBUG towersdistributor Performing Level 1 clustering
+2019-11-30 13:28:00,009 DEBUG regions Clustering settlements
+2019-11-30 13:28:00,009 DEBUG regions Building affinity matrix
+2019-11-30 13:28:00,113 DEBUG regions Affinity matrix built
+2019-11-30 13:28:00,117 DEBUG regions Computing Eigen decompostion
+2019-11-30 13:28:01,404 DEBUG regions Eigen decomposition applied
+2019-11-30 13:28:01,405 DEBUG regions Optimal K for Region Clustering 5
+2019-11-30 13:28:01,619 DEBUG regions Settlement clustering done
+2019-11-30 13:28:01,628 DEBUG towersdistributor Level 1 clustering done
+2019-11-30 13:28:01,629 DEBUG towersdistributor Performing Level 2 clustering
+2019-11-30 13:28:01,629 DEBUG cellsites Distributing cellsites
+2019-11-30 13:28:01,629 DEBUG cellsites Performing gradient descent
+2019-11-30 13:28:04,826 DEBUG cellsites Optimal K = 33
+2019-11-30 13:28:04,826 DEBUG cellsites Performing gradient descent
+2019-11-30 13:28:05,689 DEBUG cellsites Optimal K = 18
+2019-11-30 13:28:05,689 DEBUG cellsites Performing gradient descent
+2019-11-30 13:28:07,485 DEBUG cellsites Optimal K = 27
+2019-11-30 13:28:07,485 DEBUG cellsites Performing gradient descent
+2019-11-30 13:28:08,804 DEBUG cellsites Optimal K = 21
+2019-11-30 13:28:08,804 DEBUG cellsites Performing gradient descent
+2019-11-30 13:28:09,922 DEBUG cellsites Optimal K = 22
+2019-11-30 13:28:09,922 DEBUG cellsites Cellsite distribution done
+2019-11-30 13:28:09,922 DEBUG towersdistributor Level 2 clustering done
+2019-11-30 13:28:09,923 DEBUG towersdistributor Formatting to dictionary
+2019-11-30 13:28:09,923 DEBUG towersdistributor Regions dictionary formatted
+2019-11-30 13:28:09,924 DEBUG towersdistributor Performing Region optimization
+2019-11-30 13:28:09,924 DEBUG optimizer Removing micro clusters
+2019-11-30 13:28:09,926 DEBUG optimizer Micro clusters removed
+2019-11-30 13:28:09,926 DEBUG towersdistributor UBC optimization done
+2019-11-30 13:28:09,927 DEBUG towersdistributor Saving UBC dict to JSON
+2019-11-30 13:28:10,102 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-11-30 13:28:10,103 DEBUG towersdistributor Creating Visuals
+2019-11-30 13:28:10,103 DEBUG visualizer Making map with UBC distribution
+2019-11-30 13:28:10,107 DEBUG visualizer Scattering UBC over map
+2019-11-30 13:28:12,284 DEBUG visualizer Map created with UBC scattered
+2019-11-30 13:28:12,284 DEBUG towersdistributor Visuals created
+2019-11-30 13:28:12,284 DEBUG towersdistributor Calling default browser to open map
+2019-11-30 13:28:12,400 DEBUG towersdistributor Evaluating model
+2019-11-30 13:28:12,415 DEBUG evaluator Users = 1010
+2019-11-30 13:28:12,416 DEBUG evaluator Cell Sites = 121
+2019-11-30 13:28:12,416 DEBUG evaluator Accuracy = 93.66336633663366 %
+2019-11-30 13:28:12,416 DEBUG towersdistributor Model evaluated
+2019-11-30 13:31:31,819 DEBUG towersdistributor Towers Distributor Initialized
+2019-11-30 13:31:31,820 DEBUG towersdistributor Performing Level 1 clustering
+2019-11-30 13:31:31,820 DEBUG regions Clustering settlements
+2019-11-30 13:31:31,820 DEBUG regions Building affinity matrix
+2019-11-30 13:31:31,922 DEBUG regions Affinity matrix built
+2019-11-30 13:31:31,925 DEBUG regions Computing Eigen decompostion
+2019-11-30 13:31:33,373 DEBUG regions Eigen decomposition applied
+2019-11-30 13:31:33,375 DEBUG regions Optimal K for Region Clustering 5
+2019-11-30 13:31:33,591 DEBUG regions Settlement clustering done
+2019-11-30 13:31:33,599 DEBUG towersdistributor Level 1 clustering done
+2019-11-30 13:31:33,599 DEBUG towersdistributor Performing Level 2 clustering
+2019-11-30 13:31:33,599 DEBUG cellsites Distributing cellsites
+2019-11-30 13:31:33,599 DEBUG cellsites Performing gradient descent
+2019-11-30 13:31:36,384 DEBUG cellsites Optimal K = 34
+2019-11-30 13:31:36,385 DEBUG cellsites Performing gradient descent
+2019-11-30 13:31:37,352 DEBUG cellsites Optimal K = 18
+2019-11-30 13:31:37,353 DEBUG cellsites Performing gradient descent
+2019-11-30 13:31:39,081 DEBUG cellsites Optimal K = 26
+2019-11-30 13:31:39,081 DEBUG cellsites Performing gradient descent
+2019-11-30 13:31:40,579 DEBUG cellsites Optimal K = 22
+2019-11-30 13:31:40,580 DEBUG cellsites Performing gradient descent
+2019-11-30 13:31:41,690 DEBUG cellsites Optimal K = 21
+2019-11-30 13:31:41,691 DEBUG cellsites Cellsite distribution done
+2019-11-30 13:31:41,691 DEBUG towersdistributor Level 2 clustering done
+2019-11-30 13:31:41,691 DEBUG towersdistributor Formatting to dictionary
+2019-11-30 13:31:41,692 DEBUG towersdistributor Regions dictionary formatted
+2019-11-30 13:31:41,692 DEBUG towersdistributor Performing Region optimization
+2019-11-30 13:31:41,692 DEBUG optimizer Removing micro clusters
+2019-11-30 13:31:41,696 DEBUG optimizer Micro clusters removed
+2019-11-30 13:31:41,696 DEBUG towersdistributor UBC optimization done
+2019-11-30 13:31:41,696 DEBUG towersdistributor Saving UBC dict to JSON
+2019-11-30 13:31:41,856 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-11-30 13:31:41,856 DEBUG towersdistributor Creating Visuals
+2019-11-30 13:31:41,856 DEBUG visualizer Making map with UBC distribution
+2019-11-30 13:31:41,860 DEBUG visualizer Scattering UBC over map
+2019-11-30 13:31:44,181 DEBUG visualizer Map created with UBC scattered
+2019-11-30 13:31:44,181 DEBUG towersdistributor Visuals created
+2019-11-30 13:31:44,181 DEBUG towersdistributor Calling default browser to open map
+2019-11-30 13:31:44,257 DEBUG towersdistributor Evaluating model
+2019-11-30 13:31:44,273 DEBUG evaluator Users = 1010
+2019-11-30 13:31:44,274 DEBUG evaluator Cell Sites = 121
+2019-11-30 13:31:44,274 DEBUG evaluator Accuracy = 93.06930693069307 %
+2019-11-30 13:31:44,275 DEBUG towersdistributor Model evaluated
+2019-11-30 13:32:24,457 DEBUG towersdistributor Towers Distributor Initialized
+2019-11-30 13:32:24,457 DEBUG towersdistributor Performing Level 1 clustering
+2019-11-30 13:32:24,457 DEBUG regions Clustering settlements
+2019-11-30 13:32:24,457 DEBUG regions Building affinity matrix
+2019-11-30 13:32:24,566 DEBUG regions Affinity matrix built
+2019-11-30 13:32:24,569 DEBUG regions Computing Eigen decompostion
+2019-11-30 13:32:25,989 DEBUG regions Eigen decomposition applied
+2019-11-30 13:32:25,990 DEBUG regions Optimal K for Region Clustering 5
+2019-11-30 13:32:26,216 DEBUG regions Settlement clustering done
+2019-11-30 13:32:26,222 DEBUG towersdistributor Level 1 clustering done
+2019-11-30 13:32:26,222 DEBUG towersdistributor Performing Level 2 clustering
+2019-11-30 13:32:26,222 DEBUG cellsites Distributing cellsites
+2019-11-30 13:32:26,222 DEBUG cellsites Performing gradient descent
+2019-11-30 13:32:29,265 DEBUG cellsites Optimal K = 34
+2019-11-30 13:32:29,265 DEBUG cellsites Performing gradient descent
+2019-11-30 13:32:30,152 DEBUG cellsites Optimal K = 18
+2019-11-30 13:32:30,152 DEBUG cellsites Performing gradient descent
+2019-11-30 13:32:31,766 DEBUG cellsites Optimal K = 26
+2019-11-30 13:32:31,766 DEBUG cellsites Performing gradient descent
+2019-11-30 13:32:33,076 DEBUG cellsites Optimal K = 21
+2019-11-30 13:32:33,076 DEBUG cellsites Performing gradient descent
+2019-11-30 13:32:34,247 DEBUG cellsites Optimal K = 22
+2019-11-30 13:32:34,247 DEBUG cellsites Cellsite distribution done
+2019-11-30 13:32:34,247 DEBUG towersdistributor Level 2 clustering done
+2019-11-30 13:32:34,247 DEBUG towersdistributor Formatting to dictionary
+2019-11-30 13:32:34,248 DEBUG towersdistributor Regions dictionary formatted
+2019-11-30 13:32:34,248 DEBUG towersdistributor Performing Region optimization
+2019-11-30 13:32:34,249 DEBUG optimizer Removing micro clusters
+2019-11-30 13:32:34,253 DEBUG optimizer Micro clusters removed
+2019-11-30 13:32:34,254 DEBUG towersdistributor UBC optimization done
+2019-11-30 13:32:34,254 DEBUG towersdistributor Saving UBC dict to JSON
+2019-11-30 13:32:34,431 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-11-30 13:32:34,431 DEBUG towersdistributor Creating Visuals
+2019-11-30 13:32:34,431 DEBUG visualizer Making map with UBC distribution
+2019-11-30 13:32:34,439 DEBUG visualizer Scattering UBC over map
+2019-11-30 13:32:36,849 DEBUG visualizer Map created with UBC scattered
+2019-11-30 13:32:36,849 DEBUG towersdistributor Visuals created
+2019-11-30 13:32:36,849 DEBUG towersdistributor Calling default browser to open map
+2019-11-30 13:32:36,914 DEBUG towersdistributor Evaluating model
+2019-11-30 13:32:36,931 DEBUG evaluator Users = 1010
+2019-11-30 13:32:36,932 DEBUG evaluator Cell Sites = 121
+2019-11-30 13:32:36,933 DEBUG evaluator Accuracy = 93.86138613861387 %
+2019-11-30 13:32:36,934 DEBUG towersdistributor Model evaluated
+2019-11-30 13:33:35,425 DEBUG towersdistributor Towers Distributor Initialized
+2019-11-30 13:33:35,426 DEBUG towersdistributor Performing Level 1 clustering
+2019-11-30 13:33:35,426 DEBUG regions Clustering settlements
+2019-11-30 13:33:35,426 DEBUG regions Building affinity matrix
+2019-11-30 13:33:35,568 DEBUG regions Affinity matrix built
+2019-11-30 13:33:35,573 DEBUG regions Computing Eigen decompostion
+2019-11-30 13:33:36,975 DEBUG regions Eigen decomposition applied
+2019-11-30 13:33:36,977 DEBUG regions Optimal K for Region Clustering 5
+2019-11-30 13:33:37,196 DEBUG regions Settlement clustering done
+2019-11-30 13:33:37,201 DEBUG towersdistributor Level 1 clustering done
+2019-11-30 13:33:37,202 DEBUG towersdistributor Performing Level 2 clustering
+2019-11-30 13:33:37,202 DEBUG cellsites Distributing cellsites
+2019-11-30 13:33:37,202 DEBUG cellsites Performing gradient descent
+2019-11-30 13:33:40,092 DEBUG cellsites Optimal K = 33
+2019-11-30 13:33:40,093 DEBUG cellsites Performing gradient descent
+2019-11-30 13:33:40,945 DEBUG cellsites Optimal K = 19
+2019-11-30 13:33:40,945 DEBUG cellsites Performing gradient descent
+2019-11-30 13:33:42,765 DEBUG cellsites Optimal K = 27
+2019-11-30 13:33:42,765 DEBUG cellsites Performing gradient descent
+2019-11-30 13:33:44,155 DEBUG cellsites Optimal K = 22
+2019-11-30 13:33:44,155 DEBUG cellsites Performing gradient descent
+2019-11-30 13:33:45,655 DEBUG cellsites Optimal K = 21
+2019-11-30 13:33:45,655 DEBUG cellsites Cellsite distribution done
+2019-11-30 13:33:45,656 DEBUG towersdistributor Level 2 clustering done
+2019-11-30 13:33:45,656 DEBUG towersdistributor Formatting to dictionary
+2019-11-30 13:33:45,657 DEBUG towersdistributor Regions dictionary formatted
+2019-11-30 13:33:45,657 DEBUG towersdistributor Performing Region optimization
+2019-11-30 13:33:45,657 DEBUG optimizer Removing micro clusters
+2019-11-30 13:33:45,660 DEBUG optimizer Micro clusters removed
+2019-11-30 13:33:45,660 DEBUG towersdistributor UBC optimization done
+2019-11-30 13:33:45,660 DEBUG towersdistributor Saving UBC dict to JSON
+2019-11-30 13:33:45,837 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-11-30 13:33:45,837 DEBUG towersdistributor Creating Visuals
+2019-11-30 13:33:45,837 DEBUG visualizer Making map with UBC distribution
+2019-11-30 13:33:45,842 DEBUG visualizer Scattering UBC over map
+2019-11-30 13:33:48,081 DEBUG visualizer Map created with UBC scattered
+2019-11-30 13:33:48,082 DEBUG towersdistributor Visuals created
+2019-11-30 13:33:48,082 DEBUG towersdistributor Calling default browser to open map
+2019-11-30 13:33:48,148 DEBUG towersdistributor Evaluating model
+2019-11-30 13:33:48,176 DEBUG evaluator Users = 1010
+2019-11-30 13:33:48,176 DEBUG evaluator Cell Sites = 122
+2019-11-30 13:33:48,177 DEBUG evaluator Accuracy = 92.97029702970298 %
+2019-11-30 13:33:48,177 DEBUG towersdistributor Model evaluated
+2019-11-30 13:35:41,453 DEBUG towersdistributor Towers Distributor Initialized
+2019-11-30 13:35:41,453 DEBUG towersdistributor Performing Level 1 clustering
+2019-11-30 13:35:41,454 DEBUG regions Clustering settlements
+2019-11-30 13:35:41,454 DEBUG regions Building affinity matrix
+2019-11-30 13:35:41,554 DEBUG regions Affinity matrix built
+2019-11-30 13:35:41,558 DEBUG regions Computing Eigen decompostion
+2019-11-30 13:35:42,859 DEBUG regions Eigen decomposition applied
+2019-11-30 13:35:42,860 DEBUG regions Optimal K for Region Clustering 5
+2019-11-30 13:35:43,077 DEBUG regions Settlement clustering done
+2019-11-30 13:35:43,083 DEBUG towersdistributor Level 1 clustering done
+2019-11-30 13:35:43,083 DEBUG towersdistributor Performing Level 2 clustering
+2019-11-30 13:35:43,083 DEBUG cellsites Distributing cellsites
+2019-11-30 13:35:43,083 DEBUG cellsites Performing gradient descent
+2019-11-30 13:35:46,006 DEBUG cellsites Optimal K = 34
+2019-11-30 13:35:46,006 DEBUG cellsites Performing gradient descent
+2019-11-30 13:35:46,817 DEBUG cellsites Optimal K = 18
+2019-11-30 13:35:46,817 DEBUG cellsites Performing gradient descent
+2019-11-30 13:35:48,713 DEBUG cellsites Optimal K = 27
+2019-11-30 13:35:48,714 DEBUG cellsites Performing gradient descent
+2019-11-30 13:35:49,907 DEBUG cellsites Optimal K = 21
+2019-11-30 13:35:49,908 DEBUG cellsites Performing gradient descent
+2019-11-30 13:35:51,108 DEBUG cellsites Optimal K = 21
+2019-11-30 13:35:51,108 DEBUG cellsites Cellsite distribution done
+2019-11-30 13:35:51,108 DEBUG towersdistributor Level 2 clustering done
+2019-11-30 13:35:51,109 DEBUG towersdistributor Formatting to dictionary
+2019-11-30 13:35:51,111 DEBUG towersdistributor Regions dictionary formatted
+2019-11-30 13:35:51,111 DEBUG towersdistributor Performing Region optimization
+2019-11-30 13:35:51,112 DEBUG optimizer Removing micro clusters
+2019-11-30 13:35:51,114 DEBUG optimizer Micro clusters removed
+2019-11-30 13:35:51,115 DEBUG towersdistributor UBC optimization done
+2019-11-30 13:35:51,115 DEBUG towersdistributor Saving UBC dict to JSON
+2019-11-30 13:35:51,266 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-11-30 13:35:51,266 DEBUG towersdistributor Creating Visuals
+2019-11-30 13:35:51,266 DEBUG visualizer Making map with UBC distribution
+2019-11-30 13:35:51,271 DEBUG visualizer Scattering UBC over map
+2019-11-30 13:35:53,611 DEBUG visualizer Map created with UBC scattered
+2019-11-30 13:35:53,611 DEBUG towersdistributor Visuals created
+2019-11-30 13:35:53,611 DEBUG towersdistributor Calling default browser to open map
+2019-11-30 13:35:53,701 DEBUG towersdistributor Evaluating model
+2019-11-30 13:35:53,725 DEBUG evaluator Users = 1010
+2019-11-30 13:35:53,726 DEBUG evaluator Cell Sites = 121
+2019-11-30 13:35:53,726 DEBUG evaluator Accuracy = 93.46534653465346 %
+2019-11-30 13:35:53,726 DEBUG towersdistributor Model evaluated
+2019-11-30 13:36:16,572 DEBUG towersdistributor Towers Distributor Initialized
+2019-11-30 13:36:16,572 DEBUG towersdistributor Performing Level 1 clustering
+2019-11-30 13:36:16,572 DEBUG regions Clustering settlements
+2019-11-30 13:36:16,572 DEBUG regions Building affinity matrix
+2019-11-30 13:36:16,688 DEBUG regions Affinity matrix built
+2019-11-30 13:36:16,691 DEBUG regions Computing Eigen decompostion
+2019-11-30 13:36:17,993 DEBUG regions Eigen decomposition applied
+2019-11-30 13:36:17,994 DEBUG regions Optimal K for Region Clustering 5
+2019-11-30 13:36:18,210 DEBUG regions Settlement clustering done
+2019-11-30 13:36:18,217 DEBUG towersdistributor Level 1 clustering done
+2019-11-30 13:36:18,217 DEBUG towersdistributor Performing Level 2 clustering
+2019-11-30 13:36:18,217 DEBUG cellsites Distributing cellsites
+2019-11-30 13:36:18,217 DEBUG cellsites Performing gradient descent
+2019-11-30 13:36:21,397 DEBUG cellsites Optimal K = 34
+2019-11-30 13:36:21,398 DEBUG cellsites Performing gradient descent
+2019-11-30 13:36:22,430 DEBUG cellsites Optimal K = 18
+2019-11-30 13:36:22,430 DEBUG cellsites Performing gradient descent
+2019-11-30 13:36:24,319 DEBUG cellsites Optimal K = 27
+2019-11-30 13:36:24,319 DEBUG cellsites Performing gradient descent
+2019-11-30 13:36:25,714 DEBUG cellsites Optimal K = 21
+2019-11-30 13:36:25,714 DEBUG cellsites Performing gradient descent
+2019-11-30 13:36:26,738 DEBUG cellsites Optimal K = 21
+2019-11-30 13:36:26,738 DEBUG cellsites Cellsite distribution done
+2019-11-30 13:36:26,738 DEBUG towersdistributor Level 2 clustering done
+2019-11-30 13:36:26,738 DEBUG towersdistributor Formatting to dictionary
+2019-11-30 13:36:26,739 DEBUG towersdistributor Regions dictionary formatted
+2019-11-30 13:36:26,739 DEBUG towersdistributor Performing Region optimization
+2019-11-30 13:36:26,740 DEBUG optimizer Removing micro clusters
+2019-11-30 13:36:26,744 DEBUG optimizer Micro clusters removed
+2019-11-30 13:36:26,744 DEBUG towersdistributor UBC optimization done
+2019-11-30 13:36:26,744 DEBUG towersdistributor Saving UBC dict to JSON
+2019-11-30 13:36:26,912 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-11-30 13:36:26,912 DEBUG towersdistributor Creating Visuals
+2019-11-30 13:36:26,912 DEBUG visualizer Making map with UBC distribution
+2019-11-30 13:36:26,916 DEBUG visualizer Scattering UBC over map
+2019-11-30 13:36:29,102 DEBUG visualizer Map created with UBC scattered
+2019-11-30 13:36:29,102 DEBUG towersdistributor Visuals created
+2019-11-30 13:36:29,102 DEBUG towersdistributor Calling default browser to open map
+2019-11-30 13:36:29,170 DEBUG towersdistributor Evaluating model
+2019-11-30 13:36:29,192 DEBUG evaluator Users = 1010
+2019-11-30 13:36:29,192 DEBUG evaluator Cell Sites = 121
+2019-11-30 13:36:29,193 DEBUG evaluator Accuracy = 93.96039603960396 %
+2019-11-30 13:36:29,193 DEBUG towersdistributor Model evaluated
+2019-11-30 13:36:53,926 DEBUG towersdistributor Towers Distributor Initialized
+2019-11-30 13:36:53,927 DEBUG towersdistributor Performing Level 1 clustering
+2019-11-30 13:36:53,927 DEBUG regions Clustering settlements
+2019-11-30 13:36:53,927 DEBUG regions Building affinity matrix
+2019-11-30 13:36:54,031 DEBUG regions Affinity matrix built
+2019-11-30 13:36:54,034 DEBUG regions Computing Eigen decompostion
+2019-11-30 13:36:55,332 DEBUG regions Eigen decomposition applied
+2019-11-30 13:36:55,333 DEBUG regions Optimal K for Region Clustering 5
+2019-11-30 13:36:55,550 DEBUG regions Settlement clustering done
+2019-11-30 13:36:55,555 DEBUG towersdistributor Level 1 clustering done
+2019-11-30 13:36:55,555 DEBUG towersdistributor Performing Level 2 clustering
+2019-11-30 13:36:55,556 DEBUG cellsites Distributing cellsites
+2019-11-30 13:36:55,556 DEBUG cellsites Performing gradient descent
+2019-11-30 13:36:58,457 DEBUG cellsites Optimal K = 34
+2019-11-30 13:36:58,458 DEBUG cellsites Performing gradient descent
+2019-11-30 13:36:59,370 DEBUG cellsites Optimal K = 18
+2019-11-30 13:36:59,371 DEBUG cellsites Performing gradient descent
+2019-11-30 13:37:01,151 DEBUG cellsites Optimal K = 27
+2019-11-30 13:37:01,152 DEBUG cellsites Performing gradient descent
+2019-11-30 13:37:02,290 DEBUG cellsites Optimal K = 21
+2019-11-30 13:37:02,290 DEBUG cellsites Performing gradient descent
+2019-11-30 13:37:03,460 DEBUG cellsites Optimal K = 21
+2019-11-30 13:37:03,460 DEBUG cellsites Cellsite distribution done
+2019-11-30 13:37:03,461 DEBUG towersdistributor Level 2 clustering done
+2019-11-30 13:37:03,461 DEBUG towersdistributor Formatting to dictionary
+2019-11-30 13:37:03,462 DEBUG towersdistributor Regions dictionary formatted
+2019-11-30 13:37:03,462 DEBUG towersdistributor Performing Region optimization
+2019-11-30 13:37:03,462 DEBUG optimizer Removing micro clusters
+2019-11-30 13:37:03,467 DEBUG optimizer Micro clusters removed
+2019-11-30 13:37:03,468 DEBUG towersdistributor UBC optimization done
+2019-11-30 13:37:03,468 DEBUG towersdistributor Saving UBC dict to JSON
+2019-11-30 13:37:03,648 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-11-30 13:37:03,649 DEBUG towersdistributor Creating Visuals
+2019-11-30 13:37:03,649 DEBUG visualizer Making map with UBC distribution
+2019-11-30 13:37:03,652 DEBUG visualizer Scattering UBC over map
+2019-11-30 13:37:05,848 DEBUG visualizer Map created with UBC scattered
+2019-11-30 13:37:05,848 DEBUG towersdistributor Visuals created
+2019-11-30 13:37:05,848 DEBUG towersdistributor Calling default browser to open map
+2019-11-30 13:37:05,932 DEBUG towersdistributor Evaluating model
+2019-11-30 13:37:05,946 DEBUG evaluator Users = 1010
+2019-11-30 13:37:05,946 DEBUG evaluator Cell Sites = 121
+2019-11-30 13:37:05,946 DEBUG evaluator Accuracy = 93.06930693069307 %
+2019-11-30 13:37:05,947 DEBUG towersdistributor Model evaluated
+2019-11-30 13:38:09,587 DEBUG towersdistributor Towers Distributor Initialized
+2019-11-30 13:38:09,587 DEBUG towersdistributor Performing Level 1 clustering
+2019-11-30 13:38:09,587 DEBUG regions Clustering settlements
+2019-11-30 13:38:09,588 DEBUG regions Building affinity matrix
+2019-11-30 13:38:09,686 DEBUG regions Affinity matrix built
+2019-11-30 13:38:09,690 DEBUG regions Computing Eigen decompostion
+2019-11-30 13:38:10,986 DEBUG regions Eigen decomposition applied
+2019-11-30 13:38:10,987 DEBUG regions Optimal K for Region Clustering 5
+2019-11-30 13:38:11,194 DEBUG regions Settlement clustering done
+2019-11-30 13:38:11,200 DEBUG towersdistributor Level 1 clustering done
+2019-11-30 13:38:11,201 DEBUG towersdistributor Performing Level 2 clustering
+2019-11-30 13:38:11,201 DEBUG cellsites Distributing cellsites
+2019-11-30 13:38:11,202 DEBUG cellsites Performing gradient descent
+2019-11-30 13:38:13,943 DEBUG cellsites Optimal K = 34
+2019-11-30 13:38:13,944 DEBUG cellsites Performing gradient descent
+2019-11-30 13:38:14,913 DEBUG cellsites Optimal K = 19
+2019-11-30 13:38:14,913 DEBUG cellsites Performing gradient descent
+2019-11-30 13:38:16,670 DEBUG cellsites Optimal K = 27
+2019-11-30 13:38:16,670 DEBUG cellsites Performing gradient descent
+2019-11-30 13:38:17,860 DEBUG cellsites Optimal K = 21
+2019-11-30 13:38:17,860 DEBUG cellsites Performing gradient descent
+2019-11-30 13:38:18,875 DEBUG cellsites Optimal K = 21
+2019-11-30 13:38:18,875 DEBUG cellsites Cellsite distribution done
+2019-11-30 13:38:18,875 DEBUG towersdistributor Level 2 clustering done
+2019-11-30 13:38:18,875 DEBUG towersdistributor Formatting to dictionary
+2019-11-30 13:38:18,876 DEBUG towersdistributor Regions dictionary formatted
+2019-11-30 13:38:18,877 DEBUG towersdistributor Performing Region optimization
+2019-11-30 13:38:18,877 DEBUG optimizer Removing micro clusters
+2019-11-30 13:38:18,882 DEBUG optimizer Micro clusters removed
+2019-11-30 13:38:18,882 DEBUG towersdistributor UBC optimization done
+2019-11-30 13:38:18,882 DEBUG towersdistributor Saving UBC dict to JSON
+2019-11-30 13:38:19,071 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-11-30 13:38:19,071 DEBUG towersdistributor Creating Visuals
+2019-11-30 13:38:19,071 DEBUG visualizer Making map with UBC distribution
+2019-11-30 13:38:19,075 DEBUG visualizer Scattering UBC over map
+2019-11-30 13:38:21,249 DEBUG visualizer Map created with UBC scattered
+2019-11-30 13:38:21,249 DEBUG towersdistributor Visuals created
+2019-11-30 13:38:21,250 DEBUG towersdistributor Calling default browser to open map
+2019-11-30 13:38:21,327 DEBUG towersdistributor Evaluating model
+2019-11-30 13:38:21,345 DEBUG evaluator Users = 1010
+2019-11-30 13:38:21,345 DEBUG evaluator Cell Sites = 122
+2019-11-30 13:38:21,346 DEBUG evaluator Accuracy = 93.36633663366337 %
+2019-11-30 13:38:21,346 DEBUG towersdistributor Model evaluated
+2019-11-30 13:40:27,190 DEBUG towersdistributor Towers Distributor Initialized
+2019-11-30 13:40:27,190 DEBUG towersdistributor Performing Level 1 clustering
+2019-11-30 13:40:27,190 DEBUG regions Clustering settlements
+2019-11-30 13:40:27,190 DEBUG regions Building affinity matrix
+2019-11-30 13:40:27,301 DEBUG regions Affinity matrix built
+2019-11-30 13:40:27,304 DEBUG regions Computing Eigen decompostion
+2019-11-30 13:40:28,611 DEBUG regions Eigen decomposition applied
+2019-11-30 13:40:28,612 DEBUG regions Optimal K for Region Clustering 5
+2019-11-30 13:40:28,837 DEBUG regions Settlement clustering done
+2019-11-30 13:40:28,843 DEBUG towersdistributor Level 1 clustering done
+2019-11-30 13:40:28,843 DEBUG towersdistributor Performing Level 2 clustering
+2019-11-30 13:40:28,843 DEBUG cellsites Distributing cellsites
+2019-11-30 13:40:28,843 DEBUG cellsites Performing gradient descent
+2019-11-30 13:40:31,753 DEBUG cellsites Optimal K = 34
+2019-11-30 13:40:31,753 DEBUG cellsites Performing gradient descent
+2019-11-30 13:40:32,504 DEBUG cellsites Optimal K = 18
+2019-11-30 13:40:32,504 DEBUG cellsites Performing gradient descent
+2019-11-30 13:40:34,177 DEBUG cellsites Optimal K = 27
+2019-11-30 13:40:34,178 DEBUG cellsites Performing gradient descent
+2019-11-30 13:40:35,481 DEBUG cellsites Optimal K = 21
+2019-11-30 13:40:35,481 DEBUG cellsites Performing gradient descent
+2019-11-30 13:40:36,793 DEBUG cellsites Optimal K = 22
+2019-11-30 13:40:36,793 DEBUG cellsites Cellsite distribution done
+2019-11-30 13:40:36,793 DEBUG towersdistributor Level 2 clustering done
+2019-11-30 13:40:36,794 DEBUG towersdistributor Formatting to dictionary
+2019-11-30 13:40:36,795 DEBUG towersdistributor Regions dictionary formatted
+2019-11-30 13:40:36,795 DEBUG towersdistributor Performing Region optimization
+2019-11-30 13:40:36,795 DEBUG optimizer Removing micro clusters
+2019-11-30 13:40:36,799 DEBUG optimizer Micro clusters removed
+2019-11-30 13:40:36,799 DEBUG towersdistributor UBC optimization done
+2019-11-30 13:40:36,800 DEBUG towersdistributor Saving UBC dict to JSON
+2019-11-30 13:40:36,962 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-11-30 13:40:36,963 DEBUG towersdistributor Creating Visuals
+2019-11-30 13:40:36,963 DEBUG visualizer Making map with UBC distribution
+2019-11-30 13:40:36,967 DEBUG visualizer Scattering UBC over map
+2019-11-30 13:40:39,226 DEBUG visualizer Map created with UBC scattered
+2019-11-30 13:40:39,227 DEBUG towersdistributor Visuals created
+2019-11-30 13:40:39,227 DEBUG towersdistributor Calling default browser to open map
+2019-11-30 13:40:39,309 DEBUG towersdistributor Evaluating model
+2019-11-30 13:40:39,426 DEBUG evaluator Users = 1010
+2019-11-30 13:40:39,429 DEBUG evaluator Cell Sites = 122
+2019-11-30 13:40:39,430 DEBUG evaluator Accuracy = 92.57425742574257 %
+2019-11-30 13:40:39,431 DEBUG towersdistributor Model evaluated
+2019-11-30 13:41:08,230 DEBUG towersdistributor Towers Distributor Initialized
+2019-11-30 13:41:08,230 DEBUG towersdistributor Performing Level 1 clustering
+2019-11-30 13:41:08,230 DEBUG regions Clustering settlements
+2019-11-30 13:41:08,230 DEBUG regions Building affinity matrix
+2019-11-30 13:41:08,338 DEBUG regions Affinity matrix built
+2019-11-30 13:41:08,342 DEBUG regions Computing Eigen decompostion
+2019-11-30 13:41:09,675 DEBUG regions Eigen decomposition applied
+2019-11-30 13:41:09,676 DEBUG regions Optimal K for Region Clustering 5
+2019-11-30 13:41:09,890 DEBUG regions Settlement clustering done
+2019-11-30 13:41:09,895 DEBUG towersdistributor Level 1 clustering done
+2019-11-30 13:41:09,896 DEBUG towersdistributor Performing Level 2 clustering
+2019-11-30 13:41:09,896 DEBUG cellsites Distributing cellsites
+2019-11-30 13:41:09,896 DEBUG cellsites Performing gradient descent
+2019-11-30 13:41:12,549 DEBUG cellsites Optimal K = 33
+2019-11-30 13:41:12,550 DEBUG cellsites Performing gradient descent
+2019-11-30 13:41:13,270 DEBUG cellsites Optimal K = 18
+2019-11-30 13:41:13,270 DEBUG cellsites Performing gradient descent
+2019-11-30 13:41:15,166 DEBUG cellsites Optimal K = 27
+2019-11-30 13:41:15,166 DEBUG cellsites Performing gradient descent
+2019-11-30 13:41:16,450 DEBUG cellsites Optimal K = 22
+2019-11-30 13:41:16,450 DEBUG cellsites Performing gradient descent
+2019-11-30 13:41:17,561 DEBUG cellsites Optimal K = 22
+2019-11-30 13:41:17,562 DEBUG cellsites Cellsite distribution done
+2019-11-30 13:41:17,562 DEBUG towersdistributor Level 2 clustering done
+2019-11-30 13:41:17,562 DEBUG towersdistributor Formatting to dictionary
+2019-11-30 13:41:17,563 DEBUG towersdistributor Regions dictionary formatted
+2019-11-30 13:41:17,563 DEBUG towersdistributor Performing Region optimization
+2019-11-30 13:41:17,563 DEBUG optimizer Removing micro clusters
+2019-11-30 13:41:17,567 DEBUG optimizer Micro clusters removed
+2019-11-30 13:41:17,568 DEBUG towersdistributor UBC optimization done
+2019-11-30 13:41:17,568 DEBUG towersdistributor Saving UBC dict to JSON
+2019-11-30 13:41:17,728 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-11-30 13:41:17,728 DEBUG towersdistributor Creating Visuals
+2019-11-30 13:41:17,728 DEBUG visualizer Making map with UBC distribution
+2019-11-30 13:41:17,732 DEBUG visualizer Scattering UBC over map
+2019-11-30 13:41:20,077 DEBUG visualizer Map created with UBC scattered
+2019-11-30 13:41:20,077 DEBUG towersdistributor Visuals created
+2019-11-30 13:41:20,078 DEBUG towersdistributor Calling default browser to open map
+2019-11-30 13:41:20,148 DEBUG towersdistributor Evaluating model
+2019-11-30 13:41:20,167 DEBUG evaluator Users = 1010
+2019-11-30 13:41:20,168 DEBUG evaluator Cell Sites = 122
+2019-11-30 13:41:20,169 DEBUG evaluator Accuracy = 93.06930693069307 %
+2019-11-30 13:41:20,169 DEBUG towersdistributor Model evaluated
+2019-11-30 13:50:45,506 DEBUG towersdistributor Towers Distributor Initialized
+2019-11-30 13:50:45,507 DEBUG towersdistributor Performing Level 1 clustering
+2019-11-30 13:50:45,508 DEBUG regions Clustering settlements
+2019-11-30 13:50:45,508 DEBUG regions Building affinity matrix
+2019-11-30 13:50:45,620 DEBUG regions Affinity matrix built
+2019-11-30 13:50:45,623 DEBUG regions Computing Eigen decompostion
+2019-11-30 13:50:47,478 DEBUG regions Eigen decomposition applied
+2019-11-30 13:50:47,479 DEBUG regions Optimal K for Region Clustering 5
+2019-11-30 13:50:47,694 DEBUG regions Settlement clustering done
+2019-11-30 13:50:47,699 DEBUG towersdistributor Level 1 clustering done
+2019-11-30 13:50:47,700 DEBUG towersdistributor Performing Level 2 clustering
+2019-11-30 13:50:47,700 DEBUG cellsites Distributing cellsites
+2019-11-30 13:50:47,701 DEBUG cellsites Performing gradient descent
+2019-11-30 13:50:50,913 DEBUG cellsites Optimal K = 34
+2019-11-30 13:50:50,914 DEBUG cellsites Performing gradient descent
+2019-11-30 13:50:51,702 DEBUG cellsites Optimal K = 18
+2019-11-30 13:50:51,702 DEBUG cellsites Performing gradient descent
+2019-11-30 13:50:53,530 DEBUG cellsites Optimal K = 27
+2019-11-30 13:50:53,530 DEBUG cellsites Performing gradient descent
+2019-11-30 13:50:54,677 DEBUG cellsites Optimal K = 21
+2019-11-30 13:50:54,677 DEBUG cellsites Performing gradient descent
+2019-11-30 13:50:55,683 DEBUG cellsites Optimal K = 21
+2019-11-30 13:50:55,683 DEBUG cellsites Cellsite distribution done
+2019-11-30 13:50:55,683 DEBUG towersdistributor Level 2 clustering done
+2019-11-30 13:50:55,683 DEBUG towersdistributor Formatting to dictionary
+2019-11-30 13:50:55,688 DEBUG towersdistributor Regions dictionary formatted
+2019-11-30 13:50:55,688 DEBUG towersdistributor Performing Region optimization
+2019-11-30 13:50:55,689 DEBUG optimizer Removing micro clusters
+2019-11-30 13:50:55,693 DEBUG optimizer Micro clusters removed
+2019-11-30 13:50:55,693 DEBUG towersdistributor UBC optimization done
+2019-11-30 13:50:55,693 DEBUG towersdistributor Saving UBC dict to JSON
+2019-11-30 13:50:55,861 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-11-30 13:50:55,861 DEBUG towersdistributor Creating Visuals
+2019-11-30 13:50:55,861 DEBUG visualizer Making map with UBC distribution
+2019-11-30 13:50:55,865 DEBUG visualizer Scattering UBC over map
+2019-11-30 13:50:58,035 DEBUG visualizer Map created with UBC scattered
+2019-11-30 13:50:58,036 DEBUG towersdistributor Visuals created
+2019-11-30 13:50:58,036 DEBUG towersdistributor Calling default browser to open map
+2019-11-30 13:50:58,113 DEBUG towersdistributor Evaluating model
+2019-11-30 13:50:58,140 DEBUG evaluator Users = 1010
+2019-11-30 13:50:58,141 DEBUG evaluator Cell Sites = 121
+2019-11-30 13:50:58,142 DEBUG evaluator Accuracy = 93.66336633663366 %
+2019-11-30 13:50:58,142 DEBUG towersdistributor Model evaluated
+2019-12-01 09:31:51,713 DEBUG towersdistributor Towers Distributor Initialized
+2019-12-01 09:31:51,715 DEBUG towersdistributor Performing Level 1 clustering
+2019-12-01 09:31:51,716 DEBUG regions Clustering settlements
+2019-12-01 09:31:51,717 DEBUG regions Building affinity matrix
+2019-12-01 09:31:51,829 DEBUG regions Affinity matrix built
+2019-12-01 09:31:51,832 DEBUG regions Computing Eigen decompostion
+2019-12-01 09:31:53,154 DEBUG regions Eigen decomposition applied
+2019-12-01 09:31:53,155 DEBUG regions Optimal K for Region Clustering 5
+2019-12-01 09:31:53,334 DEBUG regions Settlement clustering done
+2019-12-01 09:31:53,337 DEBUG towersdistributor Level 1 clustering done
+2019-12-01 09:31:53,338 DEBUG towersdistributor Performing Level 2 clustering
+2019-12-01 09:31:53,338 DEBUG cellsites Distributing cellsites
+2019-12-01 09:31:53,339 DEBUG cellsites Performing gradient descent
+2019-12-01 09:31:54,036 DEBUG cellsites Optimal K = 16
+2019-12-01 09:31:54,036 DEBUG cellsites Performing gradient descent
+2019-12-01 09:31:55,558 DEBUG cellsites Optimal K = 25
+2019-12-01 09:31:55,558 DEBUG cellsites Performing gradient descent
+2019-12-01 09:31:58,163 DEBUG cellsites Optimal K = 34
+2019-12-01 09:31:58,163 DEBUG cellsites Performing gradient descent
+2019-12-01 09:31:58,858 DEBUG cellsites Optimal K = 15
+2019-12-01 09:31:58,858 DEBUG cellsites Performing gradient descent
+2019-12-01 09:32:01,024 DEBUG cellsites Optimal K = 30
+2019-12-01 09:32:01,024 DEBUG cellsites Cellsite distribution done
+2019-12-01 09:32:01,024 DEBUG towersdistributor Level 2 clustering done
+2019-12-01 09:32:01,024 DEBUG towersdistributor Formatting to dictionary
+2019-12-01 09:32:01,025 DEBUG towersdistributor Regions dictionary formatted
+2019-12-01 09:32:01,025 DEBUG towersdistributor Performing Region optimization
+2019-12-01 09:32:01,025 DEBUG optimizer Removing micro clusters
+2019-12-01 09:32:01,031 DEBUG optimizer Micro clusters removed
+2019-12-01 09:32:01,032 DEBUG towersdistributor UBC optimization done
+2019-12-01 09:32:01,032 DEBUG towersdistributor Saving UBC dict to JSON
+2019-12-01 09:32:01,176 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-12-01 09:32:01,176 DEBUG towersdistributor Creating Visuals
+2019-12-01 09:32:01,176 DEBUG visualizer Making map with UBC distribution
+2019-12-01 09:32:01,187 DEBUG visualizer Scattering UBC over map
+2019-12-01 09:32:03,364 DEBUG visualizer Map created with UBC scattered
+2019-12-01 09:32:03,365 DEBUG towersdistributor Visuals created
+2019-12-01 09:32:03,365 DEBUG towersdistributor Calling default browser to open map
+2019-12-01 09:32:03,431 DEBUG towersdistributor Evaluating model
+2019-12-01 09:32:03,455 DEBUG evaluator Users = 1010
+2019-12-01 09:32:03,457 DEBUG evaluator Cell Sites = 120
+2019-12-01 09:32:03,463 DEBUG evaluator Accuracy = 94.15841584158416 %
+2019-12-01 09:32:03,464 DEBUG towersdistributor Model evaluated
+2019-12-01 09:33:37,251 DEBUG towersdistributor Towers Distributor Initialized
+2019-12-01 09:33:37,251 DEBUG towersdistributor Performing Level 1 clustering
+2019-12-01 09:33:37,251 DEBUG regions Clustering settlements
+2019-12-01 09:33:37,251 DEBUG regions Building affinity matrix
+2019-12-01 09:33:37,351 DEBUG regions Affinity matrix built
+2019-12-01 09:33:37,354 DEBUG regions Computing Eigen decompostion
+2019-12-01 09:33:38,659 DEBUG regions Eigen decomposition applied
+2019-12-01 09:33:38,660 DEBUG regions Optimal K for Region Clustering 5
+2019-12-01 09:33:38,870 DEBUG regions Settlement clustering done
+2019-12-01 09:33:38,875 DEBUG towersdistributor Level 1 clustering done
+2019-12-01 09:33:38,875 DEBUG towersdistributor Performing Level 2 clustering
+2019-12-01 09:33:38,876 DEBUG cellsites Distributing cellsites
+2019-12-01 09:33:38,876 DEBUG cellsites Performing gradient descent
+2019-12-01 09:33:41,768 DEBUG cellsites Optimal K = 34
+2019-12-01 09:33:41,768 DEBUG cellsites Performing gradient descent
+2019-12-01 09:33:42,496 DEBUG cellsites Optimal K = 18
+2019-12-01 09:33:42,496 DEBUG cellsites Performing gradient descent
+2019-12-01 09:33:44,244 DEBUG cellsites Optimal K = 27
+2019-12-01 09:33:44,245 DEBUG cellsites Performing gradient descent
+2019-12-01 09:33:45,395 DEBUG cellsites Optimal K = 21
+2019-12-01 09:33:45,395 DEBUG cellsites Performing gradient descent
+2019-12-01 09:33:46,444 DEBUG cellsites Optimal K = 21
+2019-12-01 09:33:46,444 DEBUG cellsites Cellsite distribution done
+2019-12-01 09:33:46,444 DEBUG towersdistributor Level 2 clustering done
+2019-12-01 09:33:46,444 DEBUG towersdistributor Formatting to dictionary
+2019-12-01 09:33:46,445 DEBUG towersdistributor Regions dictionary formatted
+2019-12-01 09:33:46,445 DEBUG towersdistributor Performing Region optimization
+2019-12-01 09:33:46,445 DEBUG optimizer Removing micro clusters
+2019-12-01 09:33:46,451 DEBUG optimizer Micro clusters removed
+2019-12-01 09:33:46,452 DEBUG towersdistributor UBC optimization done
+2019-12-01 09:33:46,452 DEBUG towersdistributor Saving UBC dict to JSON
+2019-12-01 09:33:46,630 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-12-01 09:33:46,631 DEBUG towersdistributor Creating Visuals
+2019-12-01 09:33:46,631 DEBUG visualizer Making map with UBC distribution
+2019-12-01 09:33:46,636 DEBUG visualizer Scattering UBC over map
+2019-12-01 09:33:48,808 DEBUG visualizer Map created with UBC scattered
+2019-12-01 09:33:48,809 DEBUG towersdistributor Visuals created
+2019-12-01 09:33:48,809 DEBUG towersdistributor Calling default browser to open map
+2019-12-01 09:33:48,895 DEBUG towersdistributor Evaluating model
+2019-12-01 09:33:48,912 DEBUG evaluator Users = 1010
+2019-12-01 09:33:48,913 DEBUG evaluator Cell Sites = 121
+2019-12-01 09:33:48,913 DEBUG evaluator Accuracy = 93.96039603960396 %
+2019-12-01 09:33:48,914 DEBUG towersdistributor Model evaluated
+2019-12-01 09:34:25,861 DEBUG towersdistributor Towers Distributor Initialized
+2019-12-01 09:34:25,862 DEBUG towersdistributor Performing Level 1 clustering
+2019-12-01 09:34:25,862 DEBUG regions Clustering settlements
+2019-12-01 09:34:25,862 DEBUG regions Building affinity matrix
+2019-12-01 09:34:25,967 DEBUG regions Affinity matrix built
+2019-12-01 09:34:25,970 DEBUG regions Computing Eigen decompostion
+2019-12-01 09:34:27,247 DEBUG regions Eigen decomposition applied
+2019-12-01 09:34:27,248 DEBUG regions Optimal K for Region Clustering 5
+2019-12-01 09:34:27,447 DEBUG regions Settlement clustering done
+2019-12-01 09:34:27,451 DEBUG towersdistributor Level 1 clustering done
+2019-12-01 09:34:27,451 DEBUG towersdistributor Performing Level 2 clustering
+2019-12-01 09:34:27,451 DEBUG cellsites Distributing cellsites
+2019-12-01 09:34:27,452 DEBUG cellsites Performing gradient descent
+2019-12-01 09:34:28,235 DEBUG cellsites Optimal K = 17
+2019-12-01 09:34:28,235 DEBUG cellsites Performing gradient descent
+2019-12-01 09:34:29,597 DEBUG cellsites Optimal K = 24
+2019-12-01 09:34:29,597 DEBUG cellsites Performing gradient descent
+2019-12-01 09:34:32,092 DEBUG cellsites Optimal K = 34
+2019-12-01 09:34:32,092 DEBUG cellsites Performing gradient descent
+2019-12-01 09:34:32,779 DEBUG cellsites Optimal K = 16
+2019-12-01 09:34:32,779 DEBUG cellsites Performing gradient descent
+2019-12-01 09:34:34,794 DEBUG cellsites Optimal K = 30
+2019-12-01 09:34:34,794 DEBUG cellsites Cellsite distribution done
+2019-12-01 09:34:34,794 DEBUG towersdistributor Level 2 clustering done
+2019-12-01 09:34:34,794 DEBUG towersdistributor Formatting to dictionary
+2019-12-01 09:34:34,795 DEBUG towersdistributor Regions dictionary formatted
+2019-12-01 09:34:34,795 DEBUG towersdistributor Performing Region optimization
+2019-12-01 09:34:34,795 DEBUG optimizer Removing micro clusters
+2019-12-01 09:34:34,798 DEBUG optimizer Micro clusters removed
+2019-12-01 09:34:34,798 DEBUG towersdistributor UBC optimization done
+2019-12-01 09:34:34,798 DEBUG towersdistributor Saving UBC dict to JSON
+2019-12-01 09:34:34,928 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-12-01 09:34:34,929 DEBUG towersdistributor Creating Visuals
+2019-12-01 09:34:34,929 DEBUG visualizer Making map with UBC distribution
+2019-12-01 09:34:34,932 DEBUG visualizer Scattering UBC over map
+2019-12-01 09:34:37,139 DEBUG visualizer Map created with UBC scattered
+2019-12-01 09:34:37,139 DEBUG towersdistributor Visuals created
+2019-12-01 09:34:37,139 DEBUG towersdistributor Calling default browser to open map
+2019-12-01 09:34:37,206 DEBUG towersdistributor Evaluating model
+2019-12-01 09:34:37,220 DEBUG evaluator Users = 1010
+2019-12-01 09:34:37,221 DEBUG evaluator Cell Sites = 121
+2019-12-01 09:34:37,221 DEBUG evaluator Accuracy = 93.46534653465346 %
+2019-12-01 09:34:37,221 DEBUG towersdistributor Model evaluated
+2019-12-01 09:35:21,657 DEBUG towersdistributor Towers Distributor Initialized
+2019-12-01 09:35:21,657 DEBUG towersdistributor Performing Level 1 clustering
+2019-12-01 09:35:21,657 DEBUG regions Clustering settlements
+2019-12-01 09:35:21,658 DEBUG regions Building affinity matrix
+2019-12-01 09:35:21,764 DEBUG regions Affinity matrix built
+2019-12-01 09:35:21,767 DEBUG regions Computing Eigen decompostion
+2019-12-01 09:35:23,051 DEBUG regions Eigen decomposition applied
+2019-12-01 09:35:23,052 DEBUG regions Optimal K for Region Clustering 5
+2019-12-01 09:35:23,266 DEBUG regions Settlement clustering done
+2019-12-01 09:35:23,273 DEBUG towersdistributor Level 1 clustering done
+2019-12-01 09:35:23,273 DEBUG towersdistributor Performing Level 2 clustering
+2019-12-01 09:35:23,273 DEBUG cellsites Distributing cellsites
+2019-12-01 09:35:23,273 DEBUG cellsites Performing gradient descent
+2019-12-01 09:35:25,938 DEBUG cellsites Optimal K = 33
+2019-12-01 09:35:25,938 DEBUG cellsites Performing gradient descent
+2019-12-01 09:35:26,659 DEBUG cellsites Optimal K = 18
+2019-12-01 09:35:26,659 DEBUG cellsites Performing gradient descent
+2019-12-01 09:35:28,341 DEBUG cellsites Optimal K = 27
+2019-12-01 09:35:28,341 DEBUG cellsites Performing gradient descent
+2019-12-01 09:35:29,570 DEBUG cellsites Optimal K = 22
+2019-12-01 09:35:29,570 DEBUG cellsites Performing gradient descent
+2019-12-01 09:35:30,570 DEBUG cellsites Optimal K = 21
+2019-12-01 09:35:30,571 DEBUG cellsites Cellsite distribution done
+2019-12-01 09:35:30,571 DEBUG towersdistributor Level 2 clustering done
+2019-12-01 09:35:30,571 DEBUG towersdistributor Formatting to dictionary
+2019-12-01 09:35:30,573 DEBUG towersdistributor Regions dictionary formatted
+2019-12-01 09:35:30,574 DEBUG towersdistributor Performing Region optimization
+2019-12-01 09:35:30,574 DEBUG optimizer Removing micro clusters
+2019-12-01 09:35:30,579 DEBUG optimizer Micro clusters removed
+2019-12-01 09:35:30,579 DEBUG towersdistributor UBC optimization done
+2019-12-01 09:35:30,579 DEBUG towersdistributor Saving UBC dict to JSON
+2019-12-01 09:35:30,758 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-12-01 09:35:30,758 DEBUG towersdistributor Creating Visuals
+2019-12-01 09:35:30,758 DEBUG visualizer Making map with UBC distribution
+2019-12-01 09:35:30,763 DEBUG visualizer Scattering UBC over map
+2019-12-01 09:35:32,957 DEBUG visualizer Map created with UBC scattered
+2019-12-01 09:35:32,957 DEBUG towersdistributor Visuals created
+2019-12-01 09:35:32,957 DEBUG towersdistributor Calling default browser to open map
+2019-12-01 09:35:33,035 DEBUG towersdistributor Evaluating model
+2019-12-01 09:35:33,052 DEBUG evaluator Users = 1010
+2019-12-01 09:35:33,053 DEBUG evaluator Cell Sites = 121
+2019-12-01 09:35:33,053 DEBUG evaluator Accuracy = 93.66336633663366 %
+2019-12-01 09:35:33,053 DEBUG towersdistributor Model evaluated
+2019-12-01 09:36:12,655 DEBUG towersdistributor Towers Distributor Initialized
+2019-12-01 09:36:12,655 DEBUG towersdistributor Performing Level 1 clustering
+2019-12-01 09:36:12,655 DEBUG regions Clustering settlements
+2019-12-01 09:36:12,655 DEBUG regions Building affinity matrix
+2019-12-01 09:36:12,757 DEBUG regions Affinity matrix built
+2019-12-01 09:36:12,760 DEBUG regions Computing Eigen decompostion
+2019-12-01 09:36:14,044 DEBUG regions Eigen decomposition applied
+2019-12-01 09:36:14,045 DEBUG regions Optimal K for Region Clustering 5
+2019-12-01 09:36:14,251 DEBUG regions Settlement clustering done
+2019-12-01 09:36:14,255 DEBUG towersdistributor Level 1 clustering done
+2019-12-01 09:36:14,255 DEBUG towersdistributor Performing Level 2 clustering
+2019-12-01 09:36:14,255 DEBUG cellsites Distributing cellsites
+2019-12-01 09:36:14,255 DEBUG cellsites Performing gradient descent
+2019-12-01 09:36:14,983 DEBUG cellsites Optimal K = 17
+2019-12-01 09:36:14,984 DEBUG cellsites Performing gradient descent
+2019-12-01 09:36:16,250 DEBUG cellsites Optimal K = 23
+2019-12-01 09:36:16,250 DEBUG cellsites Performing gradient descent
+2019-12-01 09:36:18,725 DEBUG cellsites Optimal K = 34
+2019-12-01 09:36:18,725 DEBUG cellsites Performing gradient descent
+2019-12-01 09:36:19,354 DEBUG cellsites Optimal K = 16
+2019-12-01 09:36:19,354 DEBUG cellsites Performing gradient descent
+2019-12-01 09:36:21,427 DEBUG cellsites Optimal K = 30
+2019-12-01 09:36:21,427 DEBUG cellsites Cellsite distribution done
+2019-12-01 09:36:21,428 DEBUG towersdistributor Level 2 clustering done
+2019-12-01 09:36:21,428 DEBUG towersdistributor Formatting to dictionary
+2019-12-01 09:36:21,429 DEBUG towersdistributor Regions dictionary formatted
+2019-12-01 09:36:21,429 DEBUG towersdistributor Performing Region optimization
+2019-12-01 09:36:21,429 DEBUG optimizer Removing micro clusters
+2019-12-01 09:36:21,432 DEBUG optimizer Micro clusters removed
+2019-12-01 09:36:21,432 DEBUG towersdistributor UBC optimization done
+2019-12-01 09:36:21,432 DEBUG towersdistributor Saving UBC dict to JSON
+2019-12-01 09:36:21,597 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-12-01 09:36:21,598 DEBUG towersdistributor Creating Visuals
+2019-12-01 09:36:21,598 DEBUG visualizer Making map with UBC distribution
+2019-12-01 09:36:21,601 DEBUG visualizer Scattering UBC over map
+2019-12-01 09:36:23,794 DEBUG visualizer Map created with UBC scattered
+2019-12-01 09:36:23,794 DEBUG towersdistributor Visuals created
+2019-12-01 09:36:23,794 DEBUG towersdistributor Calling default browser to open map
+2019-12-01 09:36:23,884 DEBUG towersdistributor Evaluating model
+2019-12-01 09:36:23,906 DEBUG evaluator Users = 1010
+2019-12-01 09:36:23,907 DEBUG evaluator Cell Sites = 120
+2019-12-01 09:36:23,908 DEBUG evaluator Accuracy = 94.85148514851485 %
+2019-12-01 09:36:23,922 DEBUG towersdistributor Model evaluated
+2019-12-01 09:36:49,260 DEBUG towersdistributor Towers Distributor Initialized
+2019-12-01 09:36:49,260 DEBUG towersdistributor Performing Level 1 clustering
+2019-12-01 09:36:49,260 DEBUG regions Clustering settlements
+2019-12-01 09:36:49,260 DEBUG regions Building affinity matrix
+2019-12-01 09:36:49,367 DEBUG regions Affinity matrix built
+2019-12-01 09:36:49,371 DEBUG regions Computing Eigen decompostion
+2019-12-01 09:36:50,656 DEBUG regions Eigen decomposition applied
+2019-12-01 09:36:50,657 DEBUG regions Optimal K for Region Clustering 5
+2019-12-01 09:36:50,856 DEBUG regions Settlement clustering done
+2019-12-01 09:36:50,867 DEBUG towersdistributor Level 1 clustering done
+2019-12-01 09:36:50,868 DEBUG towersdistributor Performing Level 2 clustering
+2019-12-01 09:36:50,868 DEBUG cellsites Distributing cellsites
+2019-12-01 09:36:50,869 DEBUG cellsites Performing gradient descent
+2019-12-01 09:36:51,639 DEBUG cellsites Optimal K = 17
+2019-12-01 09:36:51,639 DEBUG cellsites Performing gradient descent
+2019-12-01 09:36:52,901 DEBUG cellsites Optimal K = 23
+2019-12-01 09:36:52,902 DEBUG cellsites Performing gradient descent
+2019-12-01 09:36:55,520 DEBUG cellsites Optimal K = 35
+2019-12-01 09:36:55,521 DEBUG cellsites Performing gradient descent
+2019-12-01 09:36:56,229 DEBUG cellsites Optimal K = 16
+2019-12-01 09:36:56,230 DEBUG cellsites Performing gradient descent
+2019-12-01 09:36:58,177 DEBUG cellsites Optimal K = 30
+2019-12-01 09:36:58,178 DEBUG cellsites Cellsite distribution done
+2019-12-01 09:36:58,178 DEBUG towersdistributor Level 2 clustering done
+2019-12-01 09:36:58,178 DEBUG towersdistributor Formatting to dictionary
+2019-12-01 09:36:58,179 DEBUG towersdistributor Regions dictionary formatted
+2019-12-01 09:36:58,179 DEBUG towersdistributor Performing Region optimization
+2019-12-01 09:36:58,179 DEBUG optimizer Removing micro clusters
+2019-12-01 09:36:58,182 DEBUG optimizer Micro clusters removed
+2019-12-01 09:36:58,182 DEBUG towersdistributor UBC optimization done
+2019-12-01 09:36:58,182 DEBUG towersdistributor Saving UBC dict to JSON
+2019-12-01 09:36:58,320 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-12-01 09:36:58,321 DEBUG towersdistributor Creating Visuals
+2019-12-01 09:36:58,321 DEBUG visualizer Making map with UBC distribution
+2019-12-01 09:36:58,325 DEBUG visualizer Scattering UBC over map
+2019-12-01 09:37:00,694 DEBUG visualizer Map created with UBC scattered
+2019-12-01 09:37:00,694 DEBUG towersdistributor Visuals created
+2019-12-01 09:37:00,695 DEBUG towersdistributor Calling default browser to open map
+2019-12-01 09:37:00,769 DEBUG towersdistributor Evaluating model
+2019-12-01 09:37:00,788 DEBUG evaluator Users = 1010
+2019-12-01 09:37:00,789 DEBUG evaluator Cell Sites = 121
+2019-12-01 09:37:00,789 DEBUG evaluator Accuracy = 94.05940594059406 %
+2019-12-01 09:37:00,789 DEBUG towersdistributor Model evaluated
+2019-12-01 09:38:24,018 DEBUG towersdistributor Towers Distributor Initialized
+2019-12-01 09:38:24,018 DEBUG towersdistributor Performing Level 1 clustering
+2019-12-01 09:38:24,018 DEBUG regions Clustering settlements
+2019-12-01 09:38:24,019 DEBUG regions Building affinity matrix
+2019-12-01 09:38:24,127 DEBUG regions Affinity matrix built
+2019-12-01 09:38:24,131 DEBUG regions Computing Eigen decompostion
+2019-12-01 09:38:25,772 DEBUG regions Eigen decomposition applied
+2019-12-01 09:38:25,773 DEBUG regions Optimal K for Region Clustering 5
+2019-12-01 09:38:26,083 DEBUG regions Settlement clustering done
+2019-12-01 09:38:26,094 DEBUG towersdistributor Level 1 clustering done
+2019-12-01 09:38:26,094 DEBUG towersdistributor Performing Level 2 clustering
+2019-12-01 09:38:26,094 DEBUG cellsites Distributing cellsites
+2019-12-01 09:38:26,094 DEBUG cellsites Performing gradient descent
+2019-12-01 09:38:28,804 DEBUG cellsites Optimal K = 33
+2019-12-01 09:38:28,805 DEBUG cellsites Performing gradient descent
+2019-12-01 09:38:29,516 DEBUG cellsites Optimal K = 18
+2019-12-01 09:38:29,517 DEBUG cellsites Performing gradient descent
+2019-12-01 09:38:31,321 DEBUG cellsites Optimal K = 27
+2019-12-01 09:38:31,321 DEBUG cellsites Performing gradient descent
+2019-12-01 09:38:32,971 DEBUG cellsites Optimal K = 21
+2019-12-01 09:38:32,972 DEBUG cellsites Performing gradient descent
+2019-12-01 09:38:33,998 DEBUG cellsites Optimal K = 21
+2019-12-01 09:38:33,998 DEBUG cellsites Cellsite distribution done
+2019-12-01 09:38:33,998 DEBUG towersdistributor Level 2 clustering done
+2019-12-01 09:38:33,998 DEBUG towersdistributor Formatting to dictionary
+2019-12-01 09:38:33,999 DEBUG towersdistributor Regions dictionary formatted
+2019-12-01 09:38:33,999 DEBUG towersdistributor Performing Region optimization
+2019-12-01 09:38:33,999 DEBUG optimizer Removing micro clusters
+2019-12-01 09:38:34,002 DEBUG optimizer Micro clusters removed
+2019-12-01 09:38:34,003 DEBUG towersdistributor UBC optimization done
+2019-12-01 09:38:34,003 DEBUG towersdistributor Saving UBC dict to JSON
+2019-12-01 09:38:34,168 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-12-01 09:38:34,169 DEBUG towersdistributor Creating Visuals
+2019-12-01 09:38:34,169 DEBUG visualizer Making map with UBC distribution
+2019-12-01 09:38:34,174 DEBUG visualizer Scattering UBC over map
+2019-12-01 09:38:36,332 DEBUG visualizer Map created with UBC scattered
+2019-12-01 09:38:36,333 DEBUG towersdistributor Visuals created
+2019-12-01 09:38:36,333 DEBUG towersdistributor Calling default browser to open map
+2019-12-01 09:38:36,402 DEBUG towersdistributor Evaluating model
+2019-12-01 09:38:36,420 DEBUG evaluator Users = 1010
+2019-12-01 09:38:36,420 DEBUG evaluator Cell Sites = 120
+2019-12-01 09:38:36,420 DEBUG evaluator Accuracy = 92.97029702970298 %
+2019-12-01 09:38:36,421 DEBUG towersdistributor Model evaluated
+2019-12-01 09:39:33,252 DEBUG towersdistributor Towers Distributor Initialized
+2019-12-01 09:39:33,252 DEBUG towersdistributor Performing Level 1 clustering
+2019-12-01 09:39:33,252 DEBUG regions Clustering settlements
+2019-12-01 09:39:33,253 DEBUG regions Building affinity matrix
+2019-12-01 09:39:33,365 DEBUG regions Affinity matrix built
+2019-12-01 09:39:33,368 DEBUG regions Computing Eigen decompostion
+2019-12-01 09:39:34,810 DEBUG regions Eigen decomposition applied
+2019-12-01 09:39:34,811 DEBUG regions Optimal K for Region Clustering 5
+2019-12-01 09:39:35,046 DEBUG regions Settlement clustering done
+2019-12-01 09:39:35,050 DEBUG towersdistributor Level 1 clustering done
+2019-12-01 09:39:35,051 DEBUG towersdistributor Performing Level 2 clustering
+2019-12-01 09:39:35,051 DEBUG cellsites Distributing cellsites
+2019-12-01 09:39:35,051 DEBUG cellsites Performing gradient descent
+2019-12-01 09:39:35,888 DEBUG cellsites Optimal K = 17
+2019-12-01 09:39:35,888 DEBUG cellsites Performing gradient descent
+2019-12-01 09:39:37,403 DEBUG cellsites Optimal K = 23
+2019-12-01 09:39:37,403 DEBUG cellsites Performing gradient descent
+2019-12-01 09:39:40,065 DEBUG cellsites Optimal K = 35
+2019-12-01 09:39:40,065 DEBUG cellsites Performing gradient descent
+2019-12-01 09:39:40,703 DEBUG cellsites Optimal K = 16
+2019-12-01 09:39:40,703 DEBUG cellsites Performing gradient descent
+2019-12-01 09:39:42,912 DEBUG cellsites Optimal K = 31
+2019-12-01 09:39:42,913 DEBUG cellsites Cellsite distribution done
+2019-12-01 09:39:42,913 DEBUG towersdistributor Level 2 clustering done
+2019-12-01 09:39:42,913 DEBUG towersdistributor Formatting to dictionary
+2019-12-01 09:39:42,914 DEBUG towersdistributor Regions dictionary formatted
+2019-12-01 09:39:42,914 DEBUG towersdistributor Performing Region optimization
+2019-12-01 09:39:42,914 DEBUG optimizer Removing micro clusters
+2019-12-01 09:39:42,917 DEBUG optimizer Micro clusters removed
+2019-12-01 09:39:42,917 DEBUG towersdistributor UBC optimization done
+2019-12-01 09:39:42,917 DEBUG towersdistributor Saving UBC dict to JSON
+2019-12-01 09:39:43,052 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-12-01 09:39:43,052 DEBUG towersdistributor Creating Visuals
+2019-12-01 09:39:43,053 DEBUG visualizer Making map with UBC distribution
+2019-12-01 09:39:43,056 DEBUG visualizer Scattering UBC over map
+2019-12-01 09:39:45,317 DEBUG visualizer Map created with UBC scattered
+2019-12-01 09:39:45,317 DEBUG towersdistributor Visuals created
+2019-12-01 09:39:45,317 DEBUG towersdistributor Calling default browser to open map
+2019-12-01 09:39:45,386 DEBUG towersdistributor Evaluating model
+2019-12-01 09:39:45,411 DEBUG evaluator Users = 1010
+2019-12-01 09:39:45,412 DEBUG evaluator Cell Sites = 122
+2019-12-01 09:39:45,412 DEBUG evaluator Accuracy = 94.75247524752476 %
+2019-12-01 09:39:45,412 DEBUG towersdistributor Model evaluated
+2019-12-01 09:43:59,433 DEBUG towersdistributor Towers Distributor Initialized
+2019-12-01 09:43:59,433 DEBUG towersdistributor Performing Level 1 clustering
+2019-12-01 09:43:59,433 DEBUG regions Clustering settlements
+2019-12-01 09:43:59,434 DEBUG regions Building affinity matrix
+2019-12-01 09:43:59,538 DEBUG regions Affinity matrix built
+2019-12-01 09:43:59,541 DEBUG regions Computing Eigen decompostion
+2019-12-01 09:44:00,836 DEBUG regions Eigen decomposition applied
+2019-12-01 09:44:00,837 DEBUG regions Optimal K for Region Clustering 5
+2019-12-01 09:44:01,037 DEBUG regions Settlement clustering done
+2019-12-01 09:44:01,041 DEBUG towersdistributor Level 1 clustering done
+2019-12-01 09:44:01,041 DEBUG towersdistributor Performing Level 2 clustering
+2019-12-01 09:44:01,041 DEBUG cellsites Distributing cellsites
+2019-12-01 09:44:01,041 DEBUG cellsites Performing gradient descent
+2019-12-01 09:44:01,892 DEBUG cellsites Optimal K = 17
+2019-12-01 09:44:01,892 DEBUG cellsites Performing gradient descent
+2019-12-01 09:44:03,166 DEBUG cellsites Optimal K = 23
+2019-12-01 09:44:03,167 DEBUG cellsites Performing gradient descent
+2019-12-01 09:44:05,589 DEBUG cellsites Optimal K = 34
+2019-12-01 09:44:05,589 DEBUG cellsites Performing gradient descent
+2019-12-01 09:44:06,252 DEBUG cellsites Optimal K = 16
+2019-12-01 09:44:06,252 DEBUG cellsites Performing gradient descent
+2019-12-01 09:44:08,333 DEBUG cellsites Optimal K = 31
+2019-12-01 09:44:08,333 DEBUG cellsites Cellsite distribution done
+2019-12-01 09:44:08,333 DEBUG towersdistributor Level 2 clustering done
+2019-12-01 09:44:08,333 DEBUG towersdistributor Formatting to dictionary
+2019-12-01 09:44:08,334 DEBUG towersdistributor Regions dictionary formatted
+2019-12-01 09:44:08,334 DEBUG towersdistributor Performing Region optimization
+2019-12-01 09:44:08,334 DEBUG optimizer Removing micro clusters
+2019-12-01 09:44:08,337 DEBUG optimizer Micro clusters removed
+2019-12-01 09:44:08,337 DEBUG towersdistributor UBC optimization done
+2019-12-01 09:44:08,337 DEBUG towersdistributor Saving UBC dict to JSON
+2019-12-01 09:44:08,470 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-12-01 09:44:08,470 DEBUG towersdistributor Creating Visuals
+2019-12-01 09:44:08,470 DEBUG visualizer Making map with UBC distribution
+2019-12-01 09:44:08,474 DEBUG visualizer Scattering UBC over map
+2019-12-01 09:44:10,821 DEBUG visualizer Map created with UBC scattered
+2019-12-01 09:44:10,821 DEBUG towersdistributor Visuals created
+2019-12-01 09:44:10,822 DEBUG towersdistributor Calling default browser to open map
+2019-12-01 09:44:10,895 DEBUG towersdistributor Evaluating model
+2019-12-01 09:44:10,920 DEBUG evaluator Users = 1010
+2019-12-01 09:44:10,920 DEBUG evaluator Cell Sites = 121
+2019-12-01 09:44:10,920 DEBUG evaluator Accuracy = 94.15841584158416 %
+2019-12-01 09:44:10,921 DEBUG towersdistributor Model evaluated
+2019-12-01 09:45:12,805 DEBUG towersdistributor Towers Distributor Initialized
+2019-12-01 09:45:12,806 DEBUG towersdistributor Performing Level 1 clustering
+2019-12-01 09:45:12,806 DEBUG regions Clustering settlements
+2019-12-01 09:45:12,806 DEBUG regions Building affinity matrix
+2019-12-01 09:45:16,388 DEBUG regions Affinity matrix built
+2019-12-01 09:45:16,430 DEBUG regions Computing Eigen decompostion
+2019-12-01 09:47:02,907 DEBUG regions Eigen decomposition applied
+2019-12-01 09:47:02,921 DEBUG regions Optimal K for Region Clustering 213
+2019-12-01 09:47:38,867 DEBUG regions Settlement clustering done
+2019-12-01 09:47:38,922 DEBUG towersdistributor Level 1 clustering done
+2019-12-01 09:47:38,922 DEBUG towersdistributor Performing Level 2 clustering
+2019-12-01 09:47:38,922 DEBUG cellsites Distributing cellsites
+2019-12-01 09:47:38,923 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:38,941 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:38,942 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:38,955 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:38,955 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:38,969 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:38,969 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:38,982 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:38,982 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:38,999 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:38,999 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,016 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:39,017 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,028 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:39,028 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,047 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:39,048 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,063 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:39,063 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,078 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:39,079 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,105 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:39,106 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,141 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:39,142 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,171 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:39,171 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,190 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:39,190 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,204 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:39,204 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,222 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:39,222 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,239 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:39,239 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,256 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:39,256 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,269 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:39,269 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,291 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:39,291 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,312 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:39,312 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,335 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:39,335 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,363 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:39,363 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,387 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:39,387 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,406 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:39,406 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,419 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:39,419 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,444 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:39,445 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,462 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:39,463 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,478 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:39,479 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,492 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:39,493 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,508 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:39,508 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,534 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:39,535 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,559 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:39,559 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,591 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:39,591 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,614 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:39,614 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,637 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:39,637 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,655 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:39,656 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,673 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:39,673 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,693 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:39,693 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,705 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:39,706 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,721 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:39,721 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,744 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:39,744 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,768 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:39,769 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,798 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:39,798 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,822 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:39,822 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,840 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:39,841 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,858 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:39,858 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,882 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:39,882 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,899 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:39,900 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,912 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:39,912 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,926 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:39,927 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,954 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:39,955 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:39,977 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:39,978 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,005 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:40,006 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,029 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:40,029 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,054 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:40,054 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,065 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:40,065 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,082 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:40,082 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,094 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:40,094 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,107 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:40,108 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,123 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:40,124 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,139 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:40,140 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,170 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:40,170 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,196 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:40,197 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,223 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:40,224 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,251 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:40,251 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,275 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:40,275 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,293 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:40,293 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,311 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:40,311 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,326 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:40,326 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,339 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:40,339 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,352 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:40,352 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,370 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:40,370 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,389 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:40,389 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,422 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:40,422 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,447 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:40,447 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,469 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:40,470 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,490 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:40,491 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,506 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:40,507 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,522 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:40,522 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,536 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:40,536 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,548 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:40,548 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,566 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:40,566 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,581 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:40,581 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,601 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:40,601 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,627 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:40,628 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,650 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:40,650 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,684 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:40,684 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,700 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:40,700 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,715 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:40,715 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,727 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:40,727 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,739 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:40,739 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,752 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:40,752 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,768 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:40,769 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,783 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:40,783 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,810 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:40,811 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,839 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:40,839 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,864 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:40,864 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,885 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:40,885 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,908 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:40,909 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,921 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:40,921 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,938 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:40,939 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,951 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:40,951 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,970 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:40,970 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:40,983 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:40,983 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,003 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:41,003 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,023 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:41,023 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,050 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:41,051 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,080 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:41,081 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,106 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:41,106 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,132 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:41,133 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,146 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:41,146 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,168 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:41,168 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,181 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:41,181 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,196 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:41,196 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,210 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:41,210 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,230 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:41,230 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,252 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:41,253 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,279 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:41,279 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,300 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:41,300 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,325 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:41,326 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,341 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:41,341 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,359 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:41,359 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,371 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:41,371 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,387 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:41,387 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,401 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:41,401 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,415 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:41,415 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,445 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:41,445 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,466 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:41,467 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,497 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:41,497 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,518 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:41,518 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,541 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:41,541 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,556 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:41,556 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,569 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:41,569 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,582 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:41,582 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,602 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:41,602 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,618 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:41,618 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,637 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:41,637 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,650 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:41,650 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,683 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:41,683 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,715 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:41,715 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,745 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:41,745 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,773 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:41,773 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,788 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:41,788 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,801 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:41,801 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,825 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:41,825 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,837 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:41,838 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,851 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:41,851 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,868 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:41,868 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,891 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:41,891 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,918 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:41,918 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,937 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:41,937 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,959 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:41,960 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:41,983 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:41,984 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,003 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:42,003 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,022 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:42,022 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,037 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:42,037 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,051 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:42,051 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,065 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:42,065 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,082 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:42,082 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,104 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:42,104 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,123 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:42,124 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,156 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:42,157 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,181 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:42,181 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,204 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:42,204 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,219 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:42,219 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,237 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:42,237 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,254 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:42,254 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,274 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:42,274 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,295 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:42,295 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,327 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:42,327 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,355 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:42,356 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,374 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:42,375 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,393 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:42,393 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,416 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:42,416 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,430 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:42,430 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,443 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:42,443 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,456 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:42,456 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,475 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:42,475 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,489 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:42,489 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,510 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:42,511 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,540 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:42,540 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,570 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:42,570 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,591 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:42,592 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,610 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:42,611 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,627 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:42,627 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,642 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:42,642 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,659 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:42,659 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,678 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:42,678 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,693 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:42,693 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,710 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:42,710 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,728 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:42,729 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,758 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:42,758 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,784 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:42,784 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,814 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:42,815 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,835 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:42,836 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,853 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:42,853 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,872 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:42,872 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,885 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:42,885 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,902 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:42,903 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,916 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:42,916 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,939 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:42,940 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,967 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:42,967 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:42,983 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:42,984 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:43,003 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:43,003 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:43,027 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:43,028 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:43,041 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:43,042 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:43,062 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:43,062 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:43,077 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:43,077 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:43,090 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:43,090 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:43,104 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:43,104 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:43,115 DEBUG cellsites Optimal K = 2
+2019-12-01 09:47:43,116 DEBUG cellsites Performing gradient descent
+2019-12-01 09:47:43,146 DEBUG cellsites Optimal K = 3
+2019-12-01 09:47:43,146 DEBUG cellsites Cellsite distribution done
+2019-12-01 09:47:43,146 DEBUG towersdistributor Level 2 clustering done
+2019-12-01 09:47:43,146 DEBUG towersdistributor Formatting to dictionary
+2019-12-01 09:47:43,195 DEBUG towersdistributor Regions dictionary formatted
+2019-12-01 09:47:43,195 DEBUG towersdistributor Performing Region optimization
+2019-12-01 09:47:43,196 DEBUG optimizer Removing micro clusters
+2019-12-01 09:47:43,196 DEBUG optimizer Applying custom optimization
+2019-12-01 09:49:16,020 DEBUG towersdistributor Towers Distributor Initialized
+2019-12-01 09:49:16,021 DEBUG towersdistributor Performing Level 1 clustering
+2019-12-01 09:49:16,021 DEBUG regions Clustering settlements
+2019-12-01 09:49:16,021 DEBUG regions Building affinity matrix
+2019-12-01 09:49:19,576 DEBUG regions Affinity matrix built
+2019-12-01 09:49:19,617 DEBUG regions Computing Eigen decompostion
+2019-12-01 09:51:05,509 DEBUG regions Eigen decomposition applied
+2019-12-01 09:51:05,524 DEBUG regions Optimal K for Region Clustering 213
+2019-12-01 09:51:42,115 DEBUG regions Settlement clustering done
+2019-12-01 09:51:42,189 DEBUG towersdistributor Level 1 clustering done
+2019-12-01 09:51:42,189 DEBUG towersdistributor Performing Level 2 clustering
+2019-12-01 09:51:42,190 DEBUG cellsites Distributing cellsites
+2019-12-01 09:51:42,190 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:42,218 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:42,218 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:42,245 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:42,246 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:42,274 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:42,274 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:42,296 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:42,296 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:42,321 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:42,322 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:42,370 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:42,370 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:42,390 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:42,390 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:42,419 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:42,420 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:42,445 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:42,445 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:42,471 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:42,471 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:42,495 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:42,495 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:42,519 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:42,519 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:42,559 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:42,559 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:42,579 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:42,579 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:42,600 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:42,601 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:42,637 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:42,637 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:42,670 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:42,670 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:42,693 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:42,693 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:42,713 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:42,714 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:42,746 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:42,747 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:42,785 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:42,787 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:42,822 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:42,822 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:42,847 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:42,847 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:42,870 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:42,870 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:42,888 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:42,888 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:42,909 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:42,910 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:42,942 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:42,942 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:42,964 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:42,964 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:42,995 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:42,995 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:43,033 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:43,034 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:43,054 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:43,054 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:43,077 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:43,078 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:43,097 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:43,098 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:43,131 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:43,132 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:43,155 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:43,155 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:43,182 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:43,182 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:43,205 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:43,206 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:43,256 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:43,256 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:43,293 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:43,293 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:43,328 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:43,329 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:43,352 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:43,352 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:43,376 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:43,377 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:43,399 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:43,399 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:43,446 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:43,446 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:43,476 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:43,476 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:43,499 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:43,499 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:43,529 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:43,530 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:43,557 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:43,558 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:43,587 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:43,588 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:43,609 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:43,609 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:43,640 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:43,641 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:43,694 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:43,694 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:43,719 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:43,719 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:43,746 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:43,746 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:43,768 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:43,768 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:43,796 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:43,796 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:43,820 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:43,820 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:43,845 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:43,845 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:43,863 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:43,863 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:43,884 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:43,884 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:43,908 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:43,909 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:43,953 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:43,954 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:43,981 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:43,982 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:44,011 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:44,011 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:44,037 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:44,038 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:44,065 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:44,065 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:44,086 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:44,087 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:44,108 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:44,108 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:44,155 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:44,155 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:44,177 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:44,177 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:44,198 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:44,198 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:44,223 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:44,224 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:44,250 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:44,251 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:44,272 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:44,272 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:44,294 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:44,295 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:44,317 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:44,317 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:44,338 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:44,338 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:44,357 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:44,358 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:44,394 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:44,394 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:44,430 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:44,431 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:44,462 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:44,462 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:44,488 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:44,488 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:44,515 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:44,516 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:44,533 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:44,533 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:44,551 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:44,551 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:44,577 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:44,577 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:44,609 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:44,609 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:44,642 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:44,642 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:44,666 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:44,666 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:44,693 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:44,694 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:44,711 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:44,712 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:44,734 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:44,734 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:44,755 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:44,755 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:44,777 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:44,777 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:44,818 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:44,818 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:44,845 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:44,845 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:44,875 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:44,875 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:44,897 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:44,898 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:44,919 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:44,920 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:44,951 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:44,951 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:44,976 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:44,976 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:45,003 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:45,003 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:45,023 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:45,024 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:45,072 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:45,073 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:45,093 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:45,093 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:45,115 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:45,115 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:45,136 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:45,137 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:45,170 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:45,171 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:45,197 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:45,197 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:45,229 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:45,229 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:45,262 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:45,262 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:45,284 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:45,285 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:45,328 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:45,329 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:45,349 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:45,350 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:45,373 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:45,373 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:45,394 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:45,394 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:45,413 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:45,413 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:45,434 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:45,434 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:45,458 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:45,458 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:45,477 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:45,478 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:45,512 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:45,513 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:45,538 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:45,538 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:45,556 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:45,556 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:45,576 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:45,577 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:45,601 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:45,601 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:45,622 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:45,622 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:45,649 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:45,649 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:45,678 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:45,679 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:45,700 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:45,700 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:45,737 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:45,739 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:45,771 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:45,772 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:45,799 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:45,799 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:45,820 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:45,820 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:45,842 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:45,842 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:45,865 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:45,865 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:45,896 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:45,896 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:45,919 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:45,920 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:45,944 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:45,944 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:45,980 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:45,981 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:46,007 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:46,007 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:46,031 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:46,032 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:46,056 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:46,056 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:46,084 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:46,084 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:46,107 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:46,107 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:46,133 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:46,134 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:46,171 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:46,171 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:46,212 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:46,212 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:46,235 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:46,235 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:46,254 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:46,255 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:46,276 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:46,276 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:46,304 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:46,304 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:46,325 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:46,325 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:46,345 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:46,345 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:46,376 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:46,377 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:46,423 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:46,424 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:46,466 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:46,466 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:46,489 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:46,489 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:46,511 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:46,511 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:46,533 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:46,533 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:46,557 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:46,557 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:46,575 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:46,576 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:46,607 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:46,607 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:46,663 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:46,663 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:46,687 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:46,687 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:46,715 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:46,715 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:46,735 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:46,735 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:46,757 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:46,757 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:46,782 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:46,783 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:46,807 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:46,807 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:46,842 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:46,842 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:46,895 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:46,896 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:46,921 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:46,922 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:46,942 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:46,943 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:46,962 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:46,963 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:46,991 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:46,992 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:47,012 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:47,012 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:47,033 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:47,034 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:47,061 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:47,062 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:47,121 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:47,122 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:47,147 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:47,148 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:47,184 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:47,184 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:47,214 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:47,215 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:47,243 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:47,244 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:47,264 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:47,264 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:47,289 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:47,290 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:47,320 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:47,321 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:47,359 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:47,359 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:47,392 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:47,393 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:47,412 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:47,412 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:47,434 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:47,434 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:47,464 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:47,464 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:47,493 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:47,493 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:47,535 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:47,535 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:47,571 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:47,571 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:47,601 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:47,602 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:47,622 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:47,623 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:47,649 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:47,649 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:47,687 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:47,687 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:47,711 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:47,711 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:47,741 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:47,742 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:47,776 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:47,777 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:47,802 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:47,802 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:47,828 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:47,828 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:47,847 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:47,847 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:47,868 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:47,868 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:47,893 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:47,894 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:47,916 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:47,917 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:47,940 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:47,941 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:47,980 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:47,980 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:48,002 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:48,002 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:48,030 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:48,030 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:48,048 DEBUG cellsites Optimal K = 2
+2019-12-01 09:51:48,048 DEBUG cellsites Performing gradient descent
+2019-12-01 09:51:48,076 DEBUG cellsites Optimal K = 3
+2019-12-01 09:51:48,076 DEBUG cellsites Cellsite distribution done
+2019-12-01 09:51:48,076 DEBUG towersdistributor Level 2 clustering done
+2019-12-01 09:51:48,076 DEBUG towersdistributor Formatting to dictionary
+2019-12-01 09:51:48,127 DEBUG towersdistributor Regions dictionary formatted
+2019-12-01 09:51:48,127 DEBUG towersdistributor Performing Region optimization
+2019-12-01 09:51:48,127 DEBUG optimizer Removing micro clusters
+2019-12-01 09:51:48,128 DEBUG optimizer Applying custom optimization
+2019-12-01 09:53:58,879 DEBUG towersdistributor Towers Distributor Initialized
+2019-12-01 09:53:58,880 DEBUG towersdistributor Performing Level 1 clustering
+2019-12-01 09:53:58,880 DEBUG regions Clustering settlements
+2019-12-01 09:53:58,880 DEBUG regions Building affinity matrix
+2019-12-01 09:54:02,863 DEBUG regions Affinity matrix built
+2019-12-01 09:54:02,931 DEBUG regions Computing Eigen decompostion
+2019-12-01 09:55:49,186 DEBUG regions Eigen decomposition applied
+2019-12-01 09:55:49,202 DEBUG regions Optimal K for Region Clustering 213
+2019-12-01 09:56:25,511 DEBUG regions Settlement clustering done
+2019-12-01 09:56:25,584 DEBUG towersdistributor Level 1 clustering done
+2019-12-01 09:56:25,584 DEBUG towersdistributor Performing Level 2 clustering
+2019-12-01 09:56:25,584 DEBUG cellsites Distributing cellsites
+2019-12-01 09:56:25,584 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:25,611 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:25,612 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:25,633 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:25,633 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:25,654 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:25,655 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:25,676 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:25,677 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:25,702 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:25,702 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:25,748 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:25,748 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:25,767 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:25,767 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:25,796 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:25,797 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:25,817 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:25,818 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:25,839 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:25,840 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:25,867 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:25,867 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:25,894 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:25,894 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:25,918 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:25,918 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:25,942 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:25,943 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:25,985 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:25,985 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:26,018 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:26,018 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:26,044 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:26,045 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:26,081 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:26,081 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:26,103 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:26,104 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:26,135 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:26,135 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:26,162 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:26,162 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:26,191 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:26,191 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:26,239 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:26,240 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:26,267 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:26,267 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:26,286 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:26,286 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:26,307 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:26,307 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:26,339 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:26,339 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:26,364 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:26,364 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:26,388 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:26,388 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:26,427 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:26,427 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:26,449 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:26,450 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:26,478 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:26,479 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:26,499 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:26,500 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:26,528 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:26,528 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:26,551 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:26,551 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:26,583 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:26,583 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:26,603 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:26,603 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:26,621 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:26,622 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:26,662 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:26,662 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:26,693 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:26,693 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:26,713 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:26,713 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:26,736 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:26,736 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:26,756 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:26,756 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:26,784 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:26,784 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:26,814 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:26,814 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:26,837 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:26,838 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:26,865 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:26,865 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:26,910 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:26,911 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:26,945 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:26,945 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:26,969 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:26,969 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:26,991 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:26,991 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,017 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:27,018 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,041 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:27,041 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,076 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:27,076 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,105 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:27,105 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,152 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:27,153 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,173 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:27,173 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,197 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:27,197 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,217 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:27,217 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,240 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:27,240 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,261 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:27,261 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,282 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:27,282 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,303 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:27,303 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,324 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:27,324 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,345 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:27,345 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,383 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:27,385 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,411 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:27,411 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,438 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:27,439 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,466 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:27,466 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,486 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:27,487 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,511 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:27,512 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,532 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:27,532 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,558 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:27,559 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,585 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:27,586 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,623 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:27,623 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,651 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:27,652 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,672 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:27,672 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,693 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:27,693 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,715 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:27,715 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,742 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:27,742 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,764 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:27,764 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,788 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:27,788 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,816 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:27,816 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,840 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:27,840 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,876 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:27,876 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,903 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:27,903 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,923 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:27,923 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,951 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:27,951 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,972 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:27,972 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:27,993 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:27,993 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:28,011 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:28,011 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:28,028 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:28,028 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:28,048 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:28,049 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:28,095 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:28,095 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:28,116 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:28,116 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:28,143 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:28,143 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:28,173 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:28,173 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:28,194 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:28,194 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:28,216 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:28,217 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:28,243 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:28,244 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:28,269 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:28,269 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:28,305 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:28,306 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:28,325 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:28,325 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:28,354 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:28,354 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:28,374 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:28,375 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:28,396 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:28,396 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:28,416 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:28,416 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:28,442 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:28,442 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:28,471 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:28,471 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:28,518 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:28,518 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:28,549 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:28,549 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:28,569 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:28,570 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:28,603 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:28,604 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:28,623 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:28,623 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:28,644 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:28,645 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:28,666 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:28,666 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:28,694 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:28,694 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:28,728 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:28,729 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:28,760 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:28,760 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:28,781 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:28,781 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:28,805 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:28,806 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:28,828 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:28,828 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:28,847 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:28,847 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:28,866 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:28,866 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:28,892 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:28,892 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:28,920 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:28,920 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:28,961 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:28,961 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:28,990 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:28,990 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:29,011 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:29,012 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:29,038 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:29,039 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:29,058 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:29,059 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:29,093 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:29,093 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:29,119 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:29,119 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:29,144 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:29,144 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:29,195 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:29,196 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:29,231 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:29,232 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:29,256 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:29,257 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:29,281 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:29,282 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:29,303 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:29,303 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:29,328 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:29,329 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:29,353 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:29,354 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:29,396 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:29,396 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:29,454 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:29,455 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:29,476 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:29,476 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:29,498 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:29,498 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:29,525 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:29,525 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:29,544 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:29,544 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:29,569 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:29,569 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:29,605 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:29,605 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:29,650 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:29,651 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:29,689 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:29,690 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:29,713 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:29,714 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:29,737 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:29,737 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:29,765 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:29,766 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:29,798 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:29,799 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:29,840 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:29,841 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:29,888 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:29,889 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:29,920 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:29,921 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:29,950 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:29,950 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:29,971 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:29,972 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:29,991 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:29,991 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:30,014 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:30,015 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:30,058 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:30,059 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:30,100 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:30,100 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:30,138 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:30,139 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:30,162 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:30,163 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:30,182 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:30,183 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:30,208 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:30,208 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:30,236 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:30,236 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:30,281 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:30,282 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:30,338 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:30,338 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:30,371 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:30,372 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:30,393 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:30,393 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:30,415 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:30,415 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:30,441 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:30,442 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:30,471 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:30,472 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:30,507 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:30,508 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:30,540 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:30,540 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:30,591 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:30,591 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:30,619 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:30,619 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:30,650 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:30,651 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:30,683 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:30,683 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:30,732 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:30,732 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:30,777 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:30,778 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:30,803 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:30,803 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:30,822 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:30,822 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:30,843 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:30,844 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:30,871 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:30,871 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:30,889 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:30,890 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:30,923 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:30,923 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:30,968 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:30,969 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:31,014 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:31,014 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:31,046 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:31,047 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:31,074 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:31,075 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:31,128 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:31,129 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:31,164 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:31,165 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:31,205 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:31,206 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:31,243 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:31,243 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:31,264 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:31,264 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:31,291 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:31,291 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:31,316 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:31,316 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:31,349 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:31,350 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:31,400 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:31,400 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:31,432 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:31,433 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:31,466 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:31,467 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:31,498 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:31,498 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:31,528 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:31,529 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:31,554 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:31,554 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:31,591 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:31,593 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:31,630 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:31,631 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:31,668 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:31,668 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:31,695 DEBUG cellsites Optimal K = 2
+2019-12-01 09:56:31,695 DEBUG cellsites Performing gradient descent
+2019-12-01 09:56:31,720 DEBUG cellsites Optimal K = 3
+2019-12-01 09:56:31,720 DEBUG cellsites Cellsite distribution done
+2019-12-01 09:56:31,720 DEBUG towersdistributor Level 2 clustering done
+2019-12-01 09:56:31,721 DEBUG towersdistributor Formatting to dictionary
+2019-12-01 09:56:31,771 DEBUG towersdistributor Regions dictionary formatted
+2019-12-01 09:56:31,771 DEBUG towersdistributor Performing Region optimization
+2019-12-01 09:56:31,771 DEBUG optimizer Removing micro clusters
+2019-12-01 09:56:31,772 DEBUG optimizer Applying custom optimization
+2019-12-01 09:58:38,526 DEBUG towersdistributor Towers Distributor Initialized
+2019-12-01 09:58:38,526 DEBUG towersdistributor Performing Level 1 clustering
+2019-12-01 09:58:38,526 DEBUG regions Clustering settlements
+2019-12-01 09:58:38,526 DEBUG regions Building affinity matrix
+2019-12-01 09:58:42,630 DEBUG regions Affinity matrix built
+2019-12-01 09:58:42,682 DEBUG regions Computing Eigen decompostion
+2019-12-01 10:00:30,079 DEBUG regions Eigen decomposition applied
+2019-12-01 10:00:30,097 DEBUG regions Optimal K for Region Clustering 213
+2019-12-01 10:01:08,838 DEBUG regions Settlement clustering done
+2019-12-01 10:01:08,902 DEBUG towersdistributor Level 1 clustering done
+2019-12-01 10:01:08,902 DEBUG towersdistributor Performing Level 2 clustering
+2019-12-01 10:01:08,902 DEBUG cellsites Distributing cellsites
+2019-12-01 10:01:08,903 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:08,923 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:08,923 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:08,939 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:08,939 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:08,953 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:08,953 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:08,967 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:08,967 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:08,983 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:08,984 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,001 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:09,001 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,013 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:09,013 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,031 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:09,032 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,045 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:09,045 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,064 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:09,064 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,091 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:09,092 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,122 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:09,122 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,151 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:09,151 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,167 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:09,168 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,180 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:09,180 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,199 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:09,200 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,218 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:09,218 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,237 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:09,237 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,254 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:09,254 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,282 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:09,282 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,308 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:09,308 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,337 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:09,337 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,360 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:09,360 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,378 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:09,378 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,391 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:09,391 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,403 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:09,403 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,420 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:09,420 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,436 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:09,436 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,452 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:09,452 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,467 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:09,468 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,488 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:09,488 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,515 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:09,515 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,536 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:09,536 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,562 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:09,562 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,583 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:09,583 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,606 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:09,607 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,625 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:09,625 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,642 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:09,643 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,659 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:09,660 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,676 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:09,676 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,695 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:09,695 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,722 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:09,722 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,746 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:09,747 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,776 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:09,776 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,801 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:09,801 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,817 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:09,817 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,834 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:09,834 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,851 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:09,851 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,868 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:09,868 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,881 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:09,881 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,904 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:09,904 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,931 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:09,931 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,951 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:09,952 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,979 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:09,979 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:09,997 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:09,998 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,024 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:10,024 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,038 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:10,039 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,064 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:10,064 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,077 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:10,077 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,092 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:10,093 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,120 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:10,121 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,153 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:10,153 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,178 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:10,178 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,201 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:10,201 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,221 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:10,221 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,243 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:10,243 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,260 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:10,260 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,280 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:10,280 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,300 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:10,300 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,323 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:10,323 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,344 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:10,344 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,367 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:10,367 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,395 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:10,395 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,420 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:10,420 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,437 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:10,437 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,460 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:10,460 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,474 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:10,474 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,497 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:10,497 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,530 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:10,530 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,558 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:10,558 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,580 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:10,580 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,601 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:10,602 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,624 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:10,624 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,638 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:10,639 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,655 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:10,655 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,674 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:10,674 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,691 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:10,691 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,710 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:10,710 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,725 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:10,725 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,745 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:10,745 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,775 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:10,775 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,794 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:10,795 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,816 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:10,817 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,847 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:10,847 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,868 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:10,869 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,889 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:10,889 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,916 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:10,916 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,930 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:10,930 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,949 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:10,950 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:10,976 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:10,976 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,001 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:11,001 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,026 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:11,026 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,048 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:11,048 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,079 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:11,079 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,093 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:11,093 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,108 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:11,108 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,121 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:11,121 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,147 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:11,147 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,164 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:11,164 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,194 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:11,194 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,225 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:11,225 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,254 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:11,254 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,288 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:11,288 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,306 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:11,306 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,325 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:11,325 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,343 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:11,343 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,357 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:11,357 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,370 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:11,370 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,392 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:11,393 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,410 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:11,410 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,436 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:11,436 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,464 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:11,464 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,482 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:11,483 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,508 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:11,508 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,529 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:11,529 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,548 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:11,549 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,564 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:11,565 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,580 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:11,581 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,596 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:11,596 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,617 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:11,618 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,640 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:11,640 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,680 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:11,680 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,703 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:11,703 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,726 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:11,726 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,747 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:11,748 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,768 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:11,768 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,783 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:11,783 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,797 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:11,797 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,818 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:11,819 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,836 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:11,836 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,867 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:11,867 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,898 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:11,899 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,929 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:11,929 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,947 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:11,947 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,963 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:11,964 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,984 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:11,984 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:11,999 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:11,999 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,019 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:12,019 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,033 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:12,033 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,067 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:12,067 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,097 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:12,097 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,121 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:12,122 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,147 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:12,148 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,168 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:12,168 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,191 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:12,191 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,205 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:12,205 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,219 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:12,219 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,236 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:12,236 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,262 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:12,262 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,277 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:12,277 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,301 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:12,301 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,323 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:12,323 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,358 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:12,358 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,382 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:12,382 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,409 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:12,409 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,430 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:12,430 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,449 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:12,449 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,466 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:12,466 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,495 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:12,495 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,527 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:12,527 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,556 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:12,557 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,586 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:12,587 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,608 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:12,608 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,624 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:12,624 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,658 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:12,658 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,675 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:12,676 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,698 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:12,698 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,718 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:12,719 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,751 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:12,751 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,780 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:12,781 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,809 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:12,810 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,831 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:12,831 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,858 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:12,859 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,883 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:12,883 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,901 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:12,901 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,915 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:12,915 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,939 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:12,939 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,970 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:12,970 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:12,994 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:12,994 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:13,017 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:13,017 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:13,046 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:13,047 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:13,063 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:13,063 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:13,082 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:13,082 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:13,103 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:13,103 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:13,120 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:13,120 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:13,134 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:13,135 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:13,175 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:13,175 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:13,209 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:13,209 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:13,228 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:13,229 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:13,267 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:13,267 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:13,282 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:13,282 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:13,299 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:13,299 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:13,321 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:13,321 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:13,338 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:13,338 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:13,353 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:13,353 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:13,368 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:13,368 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:13,381 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:13,381 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:13,401 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:13,402 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:13,426 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:13,427 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:13,447 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:13,447 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:13,471 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:13,471 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:13,489 DEBUG cellsites Optimal K = 2
+2019-12-01 10:01:13,489 DEBUG cellsites Performing gradient descent
+2019-12-01 10:01:13,512 DEBUG cellsites Optimal K = 3
+2019-12-01 10:01:13,512 DEBUG cellsites Cellsite distribution done
+2019-12-01 10:01:13,513 DEBUG towersdistributor Level 2 clustering done
+2019-12-01 10:01:13,513 DEBUG towersdistributor Formatting to dictionary
+2019-12-01 10:01:13,543 DEBUG towersdistributor Regions dictionary formatted
+2019-12-01 10:01:13,544 DEBUG towersdistributor Performing Region optimization
+2019-12-01 10:01:13,544 DEBUG optimizer Removing micro clusters
+2019-12-01 10:01:13,544 DEBUG optimizer Applying custom optimization
+2019-12-01 10:01:13,547 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,549 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,551 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,553 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,556 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,558 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,560 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,562 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,564 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,566 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,568 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,570 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,572 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,574 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,576 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,578 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,581 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,583 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,585 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,587 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,589 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,591 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,593 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,595 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,597 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,599 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,601 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,602 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,604 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,606 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,610 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,613 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,617 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,620 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,624 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,626 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,628 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,633 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,635 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,638 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,644 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,647 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,650 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,655 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,659 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,662 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,665 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,669 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,672 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,674 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,678 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,681 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,683 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,685 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,687 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,691 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,696 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,699 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,702 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,706 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,710 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,712 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,715 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,717 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,723 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,727 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,729 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,731 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,732 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,734 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,736 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,738 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,740 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,741 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,744 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,745 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,747 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,749 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,752 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,755 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,756 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,758 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,760 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,762 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,764 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,765 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,767 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,768 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,770 DEBUG optimizer Custom optimization applied
+2019-12-01 10:01:13,811 DEBUG optimizer Micro clusters removed
+2019-12-01 10:01:13,811 DEBUG towersdistributor UBC optimization done
+2019-12-01 10:01:13,811 DEBUG towersdistributor Saving UBC dict to JSON
+2019-12-01 10:01:14,585 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-12-01 10:01:14,585 DEBUG towersdistributor Creating Visuals
+2019-12-01 10:01:14,585 DEBUG visualizer Making map with UBC distribution
+2019-12-01 10:01:14,589 DEBUG visualizer Scattering UBC over map
+2019-12-01 10:01:26,803 DEBUG visualizer Map created with UBC scattered
+2019-12-01 10:01:26,803 DEBUG towersdistributor Visuals created
+2019-12-01 10:01:26,804 DEBUG towersdistributor Calling default browser to open map
+2019-12-01 10:01:26,873 DEBUG towersdistributor Evaluating model
+2019-12-01 10:01:27,077 DEBUG evaluator Users = 5184
+2019-12-01 10:01:27,077 DEBUG evaluator Cell Sites = 470
+2019-12-01 10:01:27,078 DEBUG evaluator Accuracy = 98.12885802469135 %
+2019-12-01 10:01:27,078 DEBUG towersdistributor Model evaluated
+2019-12-01 10:03:20,295 DEBUG towersdistributor Towers Distributor Initialized
+2019-12-01 10:03:20,295 DEBUG towersdistributor Performing Level 1 clustering
+2019-12-01 10:03:20,295 DEBUG regions Clustering settlements
+2019-12-01 10:03:20,295 DEBUG regions Building affinity matrix
+2019-12-01 10:03:20,416 DEBUG regions Affinity matrix built
+2019-12-01 10:03:20,419 DEBUG regions Computing Eigen decompostion
+2019-12-01 10:03:21,715 DEBUG regions Eigen decomposition applied
+2019-12-01 10:03:21,716 DEBUG regions Optimal K for Region Clustering 5
+2019-12-01 10:03:21,925 DEBUG regions Settlement clustering done
+2019-12-01 10:03:21,932 DEBUG towersdistributor Level 1 clustering done
+2019-12-01 10:03:21,932 DEBUG towersdistributor Performing Level 2 clustering
+2019-12-01 10:03:21,932 DEBUG cellsites Distributing cellsites
+2019-12-01 10:03:21,933 DEBUG cellsites Performing gradient descent
+2019-12-01 10:03:22,769 DEBUG cellsites Optimal K = 17
+2019-12-01 10:03:22,769 DEBUG cellsites Performing gradient descent
+2019-12-01 10:03:24,364 DEBUG cellsites Optimal K = 23
+2019-12-01 10:03:24,364 DEBUG cellsites Performing gradient descent
+2019-12-01 10:03:27,295 DEBUG cellsites Optimal K = 34
+2019-12-01 10:03:27,295 DEBUG cellsites Performing gradient descent
+2019-12-01 10:03:28,072 DEBUG cellsites Optimal K = 16
+2019-12-01 10:03:28,072 DEBUG cellsites Performing gradient descent
+2019-12-01 10:03:30,540 DEBUG cellsites Optimal K = 30
+2019-12-01 10:03:30,540 DEBUG cellsites Cellsite distribution done
+2019-12-01 10:03:30,540 DEBUG towersdistributor Level 2 clustering done
+2019-12-01 10:03:30,541 DEBUG towersdistributor Formatting to dictionary
+2019-12-01 10:03:30,542 DEBUG towersdistributor Regions dictionary formatted
+2019-12-01 10:03:30,542 DEBUG towersdistributor Performing Region optimization
+2019-12-01 10:03:30,542 DEBUG optimizer Removing micro clusters
+2019-12-01 10:03:30,545 DEBUG optimizer Micro clusters removed
+2019-12-01 10:03:30,545 DEBUG towersdistributor UBC optimization done
+2019-12-01 10:03:30,545 DEBUG towersdistributor Saving UBC dict to JSON
+2019-12-01 10:03:30,734 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-12-01 10:03:30,734 DEBUG towersdistributor Creating Visuals
+2019-12-01 10:03:30,734 DEBUG visualizer Making map with UBC distribution
+2019-12-01 10:03:30,740 DEBUG visualizer Scattering UBC over map
+2019-12-01 10:03:33,386 DEBUG visualizer Map created with UBC scattered
+2019-12-01 10:03:33,387 DEBUG towersdistributor Visuals created
+2019-12-01 10:03:33,387 DEBUG towersdistributor Calling default browser to open map
+2019-12-01 10:03:33,462 DEBUG towersdistributor Evaluating model
+2019-12-01 10:03:33,571 DEBUG evaluator Users = 1010
+2019-12-01 10:03:33,572 DEBUG evaluator Cell Sites = 120
+2019-12-01 10:03:33,572 DEBUG evaluator Accuracy = 94.95049504950495 %
+2019-12-01 10:03:33,572 DEBUG towersdistributor Model evaluated
+2019-12-01 19:15:22,262 DEBUG towersdistributor Towers Distributor Initialized
+2019-12-01 19:15:22,264 DEBUG towersdistributor Performing Level 1 clustering
+2019-12-01 19:15:22,264 DEBUG regions Clustering settlements
+2019-12-01 19:15:22,265 DEBUG regions Building affinity matrix
+2019-12-01 19:15:22,369 DEBUG regions Affinity matrix built
+2019-12-01 19:15:22,371 DEBUG regions Computing Eigen decompostion
+2019-12-01 19:15:23,667 DEBUG regions Eigen decomposition applied
+2019-12-01 19:15:23,668 DEBUG regions Optimal K for Region Clustering 5
+2019-12-01 19:15:23,916 DEBUG regions Settlement clustering done
+2019-12-01 19:15:23,920 DEBUG towersdistributor Level 1 clustering done
+2019-12-01 19:15:23,920 DEBUG towersdistributor Performing Level 2 clustering
+2019-12-01 19:15:23,920 DEBUG cellsites Distributing cellsites
+2019-12-01 19:15:23,922 DEBUG cellsites Performing gradient descent
+2019-12-01 19:15:24,656 DEBUG cellsites Optimal K = 17
+2019-12-01 19:15:24,657 DEBUG cellsites Performing gradient descent
+2019-12-01 19:15:25,947 DEBUG cellsites Optimal K = 23
+2019-12-01 19:15:25,947 DEBUG cellsites Performing gradient descent
+2019-12-01 19:15:28,484 DEBUG cellsites Optimal K = 34
+2019-12-01 19:15:28,484 DEBUG cellsites Performing gradient descent
+2019-12-01 19:15:29,156 DEBUG cellsites Optimal K = 16
+2019-12-01 19:15:29,157 DEBUG cellsites Performing gradient descent
+2019-12-01 19:15:31,277 DEBUG cellsites Optimal K = 31
+2019-12-01 19:15:31,278 DEBUG cellsites Cellsite distribution done
+2019-12-01 19:15:31,278 DEBUG towersdistributor Level 2 clustering done
+2019-12-01 19:15:31,278 DEBUG towersdistributor Formatting to dictionary
+2019-12-01 19:15:31,279 DEBUG towersdistributor Regions dictionary formatted
+2019-12-01 19:15:31,279 DEBUG towersdistributor Performing Region optimization
+2019-12-01 19:15:31,279 DEBUG optimizer Removing micro clusters
+2019-12-01 19:15:31,284 DEBUG optimizer Micro clusters removed
+2019-12-01 19:15:31,284 DEBUG towersdistributor UBC optimization done
+2019-12-01 19:15:31,284 DEBUG towersdistributor Saving UBC dict to JSON
+2019-12-01 19:15:31,425 DEBUG towersdistributor UBC dictionary saved to JSON
+2019-12-01 19:15:31,425 DEBUG towersdistributor Creating Visuals
+2019-12-01 19:15:31,425 DEBUG visualizer Making map with UBC distribution
+2019-12-01 19:15:31,435 DEBUG visualizer Scattering UBC over map
+2019-12-01 19:15:33,657 DEBUG visualizer Map created with UBC scattered
+2019-12-01 19:15:33,658 DEBUG towersdistributor Visuals created
+2019-12-01 19:15:33,658 DEBUG towersdistributor Calling default browser to open map
+2019-12-01 19:15:34,422 DEBUG towersdistributor Evaluating model
+2019-12-01 19:15:34,440 DEBUG evaluator Users = 1010
+2019-12-01 19:15:34,442 DEBUG evaluator Cell Sites = 121
+2019-12-01 19:15:34,442 DEBUG evaluator Accuracy = 93.76237623762377 %
+2019-12-01 19:15:34,442 DEBUG towersdistributor Model evaluated

@@ -79,7 +79,7 @@ class Visuals:
         map = folium.Map(
             location=[17.777612, 83.250768],
             titles="OpenStreetMap",
-            zoom_start=11
+            zoom_start=12
         )
 
         self.logger.debug("Scattering UBC over map")
@@ -103,7 +103,7 @@ class Visuals:
             for cell_site in cell_sites:
                 cell_site_marker = folium.Marker(
                     location=cell_site,
-                    icon=folium.Icon(icon="tower", color="cadetblue")
+                    icon=folium.Icon(icon="tower", color="darkblue")
                 )
                 map.add_child(cell_site_marker)
 
@@ -125,19 +125,9 @@ class Visuals:
                 )
                 map.add_child(backhaul_line)
 
-            # base_station_circle = folium.Circle(
-            #     location=base_station,
-            #     radius=100,
-            #     color='black',
-            #     fill=True,
-            #     fill_color="black",
-            #     tooltip="Base Station"
-            # )
-            # map.add_child(base_station_circle)
-
             base_station_marker = folium.Marker(
                 location=base_station,
-                icon=folium.Icon(icon="home", color="black")
+                icon=folium.Icon(icon="home", color="orange")
             )
             map.add_child(base_station_marker)
 
@@ -149,7 +139,7 @@ if __name__ == "__main__":
     from datahandler import *
 
     deserializer = Deserializer()
-    deserializer.restore("tower-distribution.json")
+    deserializer.restore("outputs/td.json")
     tower_distribution = deserializer.deserialize()
 
     visuals = Visuals(tower_distribution)

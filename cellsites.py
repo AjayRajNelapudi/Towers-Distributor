@@ -1,9 +1,7 @@
-import math
+import threading
 import logging
 import numpy as np
-from scipy.spatial.distance import cdist
 from sklearn.cluster import KMeans
-from sklearn.metrics import mean_squared_error
 
 class CellSites:
     '''
@@ -29,12 +27,16 @@ class CellSites:
 
         while distortion > self.permissible_distortion:
             K += 1
-            cell_sites = KMeans(n_clusters=K)
-            cell_sites.fit(users)
-            distortion = cell_sites.inertia_
+            cell_site_clustering = KMeans(n_clusters=K)
+            cell_site_clustering.fit(users)
+            distortion = cell_site_clustering.inertia_
 
         self.logger.debug("Optimal K = " + str(K))
-        return cell_sites.cluster_centers_
+        return cell_site_clustering.cluster_centers_
+
+    def cell_site_clustering_thread(self, label, region):
+        cellsites_for_cluster = self.optimise_and_cluster(region)
+        self.cell_sites[label] = np.array(cellsites_for_cluster)
 
     def distribute_cellsites(self, regions):
         '''
@@ -42,10 +44,14 @@ class CellSites:
         :return: dict of label: cellsites
         '''
         self.logger.debug("Distributing cellsites")
-        self.cellsite_locations = dict()
+        self.cell_sites = dict()
+        clustering_threads = dict()
         for label, region in regions.items():
-            cellsites_for_cluster = self.optimise_and_cluster(region)
-            self.cellsite_locations[label] = np.array(cellsites_for_cluster)
+            clustering_thread = threading.Thread(target=self.cell_site_clustering_thread, args=(label, region))
+            clustering_thread.start()
+            clustering_thread.join()
+
+            clustering_threads[label] = clustering_thread
         self.logger.debug("Cellsite distribution done")
 
-        return self.cellsite_locations
+        return self.cell_sites
