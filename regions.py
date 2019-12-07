@@ -85,6 +85,16 @@ class Regions:
         self.logger.debug("Eigen decomposition applied")
         return nb_clusters, eigenvalues, eigenvectors
 
+    def format_regions(self, labels, users):
+        regions = dict()
+        for region, datapoint in zip(labels, users):
+            if region in regions:
+                regions[region] = np.concatenate((regions[region], [datapoint]), axis=0)
+            else:
+                regions[region] = np.array([datapoint])
+
+        return regions
+
     def detect_regions(self, users):
         '''
         Performs Spectral clustering on geo_coordinates
@@ -102,17 +112,10 @@ class Regions:
         region_clustering = SpectralClustering(n_clusters=K, random_state=0, affinity='precomputed')
         region_clustering.fit(affinity_matrix)
 
-        regions = dict()
-        for region, datapoint in zip(region_clustering.labels_, users):
-            if region in regions:
-                regions[region] = np.concatenate((regions[region], [datapoint]), axis=0)
-            else:
-                regions[region] = np.array([datapoint])
-
-        self.regions = regions
+        self.regions = self.format_regions(region_clustering.labels_, users)
         self.logger.debug("Settlement clustering done")
 
-        return regions
+        return self.regions
 
     def locate_base_stations_proximity(self):
         self.base_stations = dict()

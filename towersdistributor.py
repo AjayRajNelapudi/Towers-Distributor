@@ -27,37 +27,37 @@ class TowersDistributor:
             "main": {
                 "class": "logging.FileHandler",
                 "formatter": "default",
-                "filename": "main.log"
+                "filename": "logs/main.log"
             },
             "towersdistributor": {
                 "class": "logging.FileHandler",
                 "formatter": "default",
-                "filename": "towersdistributor.log"
+                "filename": "logs/towersdistributor.log"
             },
             "regions": {
                 "class": "logging.FileHandler",
                 "formatter": "default",
-                "filename": "regions.log"
+                "filename": "logs/regions.log"
             },
             "cellsites": {
                 "class": "logging.FileHandler",
                 "formatter": "default",
-                "filename": "cellsites.log"
+                "filename": "logs/cellsites.log"
             },
             "optimizer": {
                 "class": "logging.FileHandler",
                 "formatter": "default",
-                "filename": "optimizer.log"
+                "filename": "logs/optimizer.log"
             },
             "visualizer": {
                 "class": "logging.FileHandler",
                 "formatter": "default",
-                "filename": "visualizer.log"
+                "filename": "logs/visualizer.log"
             },
             "evaluator": {
                 "class": "logging.FileHandler",
                 "formatter": "default",
-                "filename": "evaluator.log"
+                "filename": "logs/evaluator.log"
             },
             "console": {
                 "class": "logging.StreamHandler",
@@ -95,6 +95,8 @@ class TowersDistributor:
 
     def __init__(self, dataset_filepath, enable_logger=True):
         if enable_logger:
+            if "logs" not in os.listdir(os.getcwd()):
+                os.mkdir("logs")
             logging.config.dictConfig(self.LOGGING)
         self.metres_to_geodistance = lambda metres: metres / (10 ** 5)
         with open(dataset_filepath) as dataset_file:
@@ -115,7 +117,6 @@ class TowersDistributor:
         self.logger.debug("Performing Level 2 clustering")
         cellsite_clustering = CellSites(radiation_range=self.radiation_range)
         self.cell_sites = cellsite_clustering.distribute_cellsites(self.regions)
-        # raise SystemExit("60 % execution done") # My college measures code written as % of unknown total code
         self.logger.debug("Level 2 clustering done")
 
     def format(self):
@@ -129,11 +130,11 @@ class TowersDistributor:
             }
         self.logger.debug("Regions dictionary formatted")
 
-    def optimize(self, min_users=25, min_cell_site_distance=500):
-        self.min_users = min_users
+    def optimize(self, min_towers=5, min_cell_site_distance=500):
+        self.min_towers = min_towers
         self.min_cell_site_distance = self.metres_to_geodistance(min_cell_site_distance)
         self.logger.debug("Performing Region optimization")
-        region = Optimizer(min_users=self.min_users, min_cell_site_distance=self.min_cell_site_distance)
+        region = Optimizer(min_towers=self.min_towers, min_cell_site_distance=self.min_cell_site_distance)
         self.tower_distribution = region.optimize(self.tower_distribution)
         self.logger.debug("UBC optimization done")
 
@@ -176,3 +177,14 @@ if __name__ == "__main__":
     distributor.make_and_display_map("maps/custom-td.html")
 
     distributor.evaluate()
+
+# 1010, 15
+# 1500, 25
+# 2000, 50
+# 4000, 85
+# 4500, 128
+# 5184, 173
+
+# 10000, 318
+# 100000, 3404
+# 1000000, 34720

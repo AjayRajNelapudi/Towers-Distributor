@@ -25,14 +25,17 @@ class CellSites:
         K = int(len(users) ** (1. / 3.)) - 1
         distortion = 1
 
+        cluster_centers = np.array([])
         while distortion > self.permissible_distortion:
             K += 1
             cell_site_clustering = KMeans(n_clusters=K)
             cell_site_clustering.fit(users)
             distortion = cell_site_clustering.inertia_
+            cluster_centers = cell_site_clustering.cluster_centers_
+            del cell_site_clustering
 
         self.logger.debug("Optimal K = " + str(K))
-        return cell_site_clustering.cluster_centers_
+        return cluster_centers
 
     def cell_site_clustering_thread(self, label, region):
         cellsites_for_cluster = self.optimise_and_cluster(region)

@@ -5,8 +5,8 @@ class Optimizer:
     '''
     This class optimizes the no of towers by merging stations with less than 25 towers
     '''
-    def __init__(self, min_users=25, min_cell_site_distance=0.005):
-        self.min_users = min_users
+    def __init__(self, min_towers=5, min_cell_site_distance=0.005):
+        self.min_towers = min_towers
         self.min_cell_site_distance = min_cell_site_distance
         self.logger = logging.getLogger("optimizer")
 
@@ -17,11 +17,8 @@ class Optimizer:
         '''
         self.logger.debug("Removing micro clusters")
         self.tower_distribution = tower_distribution
-        micro_clusters_present = lambda min_users: min([len(base_station['users'])
-                                                       for base_station in self.tower_distribution.values()
-                                                       ]) < min_users
-        while micro_clusters_present(25):
-            self.club_base_stations()
+        while self.club_base_stations():
+            pass
 
         self.relocate_base_stations()
 
@@ -60,12 +57,13 @@ class Optimizer:
         :return: None
         '''
         self.logger.debug("Applying custom optimization")
+        distribution_updated = False
         keys = list(self.tower_distribution.keys())
         for key in keys:
             if key not in self.tower_distribution:
                 continue
 
-            if len(self.tower_distribution[key]['users']) >= self.min_users:
+            if len(self.tower_distribution[key]['cell_sites']) >= self.min_towers:
                 continue
 
             current_base_station = self.tower_distribution[key]
@@ -91,9 +89,11 @@ class Optimizer:
                     axis=0
                 )
 
+            distribution_updated = True
             # self.tower_distribution[nearest_key] = nearest_base_station
 
             self.logger.debug("Custom optimization applied")
+            return distribution_updated
 
     def relocate_base_stations(self):
         regions = list(self.tower_distribution.values())

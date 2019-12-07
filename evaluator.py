@@ -37,7 +37,7 @@ class Evaluator:
 
         self.logger.debug("Users = " + str(len(users)))
         self.logger.debug("Cell Sites = " + str(len(cell_sites)))
-        self.logger.debug("Accuracy = " + str(acccuracy) + " %")
+        self.logger.debug("Coverage = " + str(acccuracy) + " %")
 
         return len(users), len(cell_sites), acccuracy
 
