@@ -98,44 +98,55 @@ class TowersDistributor:
             if "logs" not in os.listdir(os.getcwd()):
                 os.mkdir("logs")
             logging.config.dictConfig(self.LOGGING)
+
         self.metres_to_geodistance = lambda metres: metres / (10 ** 5)
+
         with open(dataset_filepath) as dataset_file:
             dataset_reader = csv.reader(dataset_file)
             self.dataset = np.array([list(map(float, datapoint)) for datapoint in dataset_reader])
+
         self.logger = logging.getLogger("towersdistributor")
         self.logger.debug("Towers Distributor Initialized")
 
     def perform_settlement_clustering(self):
         self.logger.debug("Performing Level 1 clustering")
+
         settlement_clustering = Regions()
         self.regions = settlement_clustering.detect_regions(self.dataset)
         self.base_stations = settlement_clustering.locate_base_stations_proximity()
+
         self.logger.debug("Level 1 clustering done")
 
     def perform_cellsite_clustering(self, radiation_range=1000):
         self.radiation_range = self.metres_to_geodistance(radiation_range)
         self.logger.debug("Performing Level 2 clustering")
+
         cellsite_clustering = CellSites(radiation_range=self.radiation_range)
         self.cell_sites = cellsite_clustering.distribute_cellsites(self.regions)
+
         self.logger.debug("Level 2 clustering done")
 
     def format(self):
         self.logger.debug("Formatting to dictionary")
-        self.tower_distribution = dict()
+
+        self.tower_distribution = {}
         for key in self.regions.keys():
             self.tower_distribution[str(self.base_stations[key])] = {
                 'cell_sites': self.cell_sites[key],
                 'base_station': self.base_stations[key],
                 'users': self.regions[key]
             }
+
         self.logger.debug("Regions dictionary formatted")
 
     def optimize(self, min_towers=5, min_cell_site_distance=500):
         self.min_towers = min_towers
         self.min_cell_site_distance = self.metres_to_geodistance(min_cell_site_distance)
         self.logger.debug("Performing Region optimization")
+
         region = Optimizer(min_towers=self.min_towers, min_cell_site_distance=self.min_cell_site_distance)
         self.tower_distribution = region.optimize(self.tower_distribution)
+
         self.logger.debug("UBC optimization done")
 
     def serialize_and_save_data(self, output_JSON_file):
@@ -159,8 +170,10 @@ class TowersDistributor:
 
     def evaluate(self):
         self.logger.debug("Evaluating model")
+
         accuracy_evaluator = Evaluator(radiation_range=self.radiation_range)
         users, cell_site_count, accuracy = accuracy_evaluator.evaluate(tower_distribution=self.tower_distribution)
+
         self.logger.debug("Model evaluated")
 
 
