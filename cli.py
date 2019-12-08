@@ -14,6 +14,13 @@ def distribute_towers(dataset, output_json_file, output_map_html_file, radiation
     Distributes 5G cell sites and base stations using Spectral & K-Means clustering.
     Further enhanced using custom optimization techniques.
     '''
+    if radiation_range < 0:
+        raise ValueError("radiation range cannot be negative")
+    if min_towers < 0:
+        raise ValueError("min no of towers per cluster cannot be negative")
+    if min_gap < 0:
+        raise ValueError("min gap between cell sites cannot be negative")
+
     distributor = TowersDistributor(dataset, enable_logger=log)
 
     distributor.perform_settlement_clustering()

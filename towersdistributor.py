@@ -99,14 +99,18 @@ class TowersDistributor:
                 os.mkdir("logs")
             logging.config.dictConfig(self.LOGGING)
 
-        self.metres_to_geodistance = lambda metres: metres / (10 ** 5)
-
         with open(dataset_filepath) as dataset_file:
             dataset_reader = csv.reader(dataset_file)
             self.dataset = np.array([list(map(float, datapoint)) for datapoint in dataset_reader])
 
         self.logger = logging.getLogger("towersdistributor")
         self.logger.debug("Towers Distributor Initialized")
+
+    def metres_to_geodistance(self, metres):
+        if metres < 0:
+            raise ValueError("distance cannot be negative")
+        geo_distance = metres / (10 ** 5)
+        return geo_distance
 
     def perform_settlement_clustering(self):
         self.logger.debug("Performing Level 1 clustering")
@@ -118,6 +122,9 @@ class TowersDistributor:
         self.logger.debug("Level 1 clustering done")
 
     def perform_cellsite_clustering(self, radiation_range=1000):
+        if radiation_range < 0:
+            raise ValueError("radiation range cannot be negative")
+
         self.radiation_range = self.metres_to_geodistance(radiation_range)
         self.logger.debug("Performing Level 2 clustering")
 
@@ -140,6 +147,11 @@ class TowersDistributor:
         self.logger.debug("Regions dictionary formatted")
 
     def optimize(self, min_towers=5, min_cell_site_distance=500):
+        if min_towers < 0:
+            raise ValueError("min no of towers per cluster cannot be negative")
+        if min_cell_site_distance < 0:
+            raise ValueError("min gap between cell sites cannot be negative")
+
         self.min_towers = min_towers
         self.min_cell_site_distance = self.metres_to_geodistance(min_cell_site_distance)
         self.logger.debug("Performing Region optimization")
