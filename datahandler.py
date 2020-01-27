@@ -14,7 +14,7 @@ class Serializer:
             self.stringified_structure[key] = {
                 'base_station': str(region['base_station']),
                 'users': "[" + ",".join([str(user) for user in region['users']]) + "]",
-                'cell_sites': "[" + ",".join([str(cell_site) for cell_site in region['cell_sites']]) + "]",
+                # 'cell_sites': "[" + ",".join([str(cell_site) for cell_site in region['cell_sites']]) + "]",
             }
         return self.stringified_structure
 

@@ -43,8 +43,6 @@ class Regions:
         # apply exponential
         affinity_matrix = np.exp(affinity_matrix)
         np.fill_diagonal(affinity_matrix, 0)
-
-        self.logger.debug("Affinity matrix built")
         return affinity_matrix
 
     def eigen_decomposition(self, A, topK=5):
@@ -113,7 +111,6 @@ class Regions:
         region_clustering.fit(affinity_matrix)
 
         self.regions = self.format_regions(region_clustering.labels_, users)
-        self.logger.debug("Settlement clustering done")
 
         return self.regions
 

@@ -7,7 +7,7 @@ from towersdistributor import TowersDistributor
 @click.argument("output_map_html_file", nargs=1, required=True)
 @click.option("-rr", "--radiation_range", default=1000, help="radiation range of cell site(in metres)")
 @click.option("-mt", "--min_towers", default=5, help="minimum towers to be considered as a region")
-@click.option("-mg", "--min_gap", default=500, help="minimum distance between towers(in metres) to not be clubbed")
+@click.option("-mg", "--min_gap", default=400, help="minimum distance between towers(in metres) to not be clubbed")
 @click.option("-l/-dl", "--log/--disable_logs", default=True, help="To disable logging the execution")
 def distribute_towers(dataset, output_json_file, output_map_html_file, radiation_range, min_towers, min_gap, log):
     '''
@@ -32,7 +32,7 @@ def distribute_towers(dataset, output_json_file, output_map_html_file, radiation
     distributor.serialize_and_save_data(output_json_file)
     distributor.make_and_display_map(output_map_html_file)
 
-    distributor.evaluate()
+    # distributor.evaluate()
 
 if __name__ == "__main__":
     distribute_towers()

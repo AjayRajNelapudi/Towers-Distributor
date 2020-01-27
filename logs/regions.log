@@ -5,3 +5,193 @@
 2019-12-07 11:53:18,775 DEBUG regions Eigen decomposition applied
 2019-12-07 11:53:18,777 DEBUG regions Optimal K for Region Clustering 5
 2019-12-07 11:53:18,997 DEBUG regions Settlement clustering done
+2019-12-08 11:09:10,993 DEBUG regions Clustering settlements
+2019-12-08 11:09:10,995 DEBUG regions Building affinity matrix
+2019-12-08 11:09:11,124 DEBUG regions Affinity matrix built
+2019-12-08 11:09:11,126 DEBUG regions Computing Eigen decompostion
+2019-12-08 11:09:12,414 DEBUG regions Eigen decomposition applied
+2019-12-08 11:09:12,415 DEBUG regions Optimal K for Region Clustering 5
+2019-12-08 11:09:12,662 DEBUG regions Settlement clustering done
+2019-12-08 11:11:37,529 DEBUG regions Clustering settlements
+2019-12-08 11:11:37,529 DEBUG regions Building affinity matrix
+2019-12-08 11:11:41,628 DEBUG regions Affinity matrix built
+2019-12-08 11:11:41,654 DEBUG regions Computing Eigen decompostion
+2019-12-08 11:13:27,040 DEBUG regions Clustering settlements
+2019-12-08 11:13:27,040 DEBUG regions Building affinity matrix
+2019-12-08 11:13:27,147 DEBUG regions Affinity matrix built
+2019-12-08 11:13:27,149 DEBUG regions Computing Eigen decompostion
+2019-12-08 11:13:28,429 DEBUG regions Eigen decomposition applied
+2019-12-08 11:13:28,430 DEBUG regions Optimal K for Region Clustering 5
+2019-12-08 11:13:28,648 DEBUG regions Settlement clustering done
+2019-12-13 08:37:49,792 DEBUG regions Clustering settlements
+2019-12-13 08:37:49,792 DEBUG regions Building affinity matrix
+2019-12-13 08:37:49,907 DEBUG regions Affinity matrix built
+2019-12-13 08:37:49,910 DEBUG regions Computing Eigen decompostion
+2019-12-13 08:37:51,258 DEBUG regions Eigen decomposition applied
+2019-12-13 08:37:51,259 DEBUG regions Optimal K for Region Clustering 5
+2019-12-13 08:37:51,505 DEBUG regions Settlement clustering done
+2019-12-13 08:39:20,862 DEBUG regions Clustering settlements
+2019-12-13 08:39:20,862 DEBUG regions Building affinity matrix
+2019-12-13 08:39:20,978 DEBUG regions Affinity matrix built
+2019-12-13 08:39:20,981 DEBUG regions Computing Eigen decompostion
+2019-12-13 08:39:23,182 DEBUG regions Eigen decomposition applied
+2019-12-13 08:39:23,183 DEBUG regions Optimal K for Region Clustering 5
+2019-12-13 08:39:23,412 DEBUG regions Settlement clustering done
+2019-12-13 08:40:15,386 DEBUG regions Clustering settlements
+2019-12-13 08:40:15,386 DEBUG regions Building affinity matrix
+2019-12-13 08:40:15,491 DEBUG regions Affinity matrix built
+2019-12-13 08:40:15,494 DEBUG regions Computing Eigen decompostion
+2019-12-13 08:40:17,153 DEBUG regions Eigen decomposition applied
+2019-12-13 08:40:17,154 DEBUG regions Optimal K for Region Clustering 5
+2019-12-13 08:40:17,385 DEBUG regions Settlement clustering done
+2019-12-13 08:41:14,623 DEBUG regions Clustering settlements
+2019-12-13 08:41:14,623 DEBUG regions Building affinity matrix
+2019-12-13 08:41:14,727 DEBUG regions Affinity matrix built
+2019-12-13 08:41:14,730 DEBUG regions Computing Eigen decompostion
+2019-12-13 08:41:16,033 DEBUG regions Eigen decomposition applied
+2019-12-13 08:41:16,034 DEBUG regions Optimal K for Region Clustering 5
+2019-12-13 08:41:16,242 DEBUG regions Settlement clustering done
+2019-12-13 08:41:39,235 DEBUG regions Clustering settlements
+2019-12-13 08:41:39,235 DEBUG regions Building affinity matrix
+2019-12-13 08:41:39,337 DEBUG regions Affinity matrix built
+2019-12-13 08:41:39,339 DEBUG regions Computing Eigen decompostion
+2019-12-13 08:41:40,666 DEBUG regions Eigen decomposition applied
+2019-12-13 08:41:40,667 DEBUG regions Optimal K for Region Clustering 5
+2019-12-13 08:41:40,881 DEBUG regions Settlement clustering done
+2019-12-13 08:42:26,468 DEBUG regions Clustering settlements
+2019-12-13 08:42:26,468 DEBUG regions Building affinity matrix
+2019-12-13 08:42:26,565 DEBUG regions Affinity matrix built
+2019-12-13 08:42:26,568 DEBUG regions Computing Eigen decompostion
+2019-12-13 08:42:27,872 DEBUG regions Eigen decomposition applied
+2019-12-13 08:42:27,873 DEBUG regions Optimal K for Region Clustering 5
+2019-12-13 08:42:28,086 DEBUG regions Settlement clustering done
+2019-12-13 08:44:05,597 DEBUG regions Clustering settlements
+2019-12-13 08:44:05,597 DEBUG regions Building affinity matrix
+2019-12-13 08:44:05,698 DEBUG regions Affinity matrix built
+2019-12-13 08:44:05,700 DEBUG regions Computing Eigen decompostion
+2019-12-13 08:44:06,977 DEBUG regions Eigen decomposition applied
+2019-12-13 08:44:06,977 DEBUG regions Optimal K for Region Clustering 5
+2019-12-13 08:44:07,179 DEBUG regions Settlement clustering done
+2019-12-13 08:44:57,614 DEBUG regions Clustering settlements
+2019-12-13 08:44:57,614 DEBUG regions Building affinity matrix
+2019-12-13 08:44:57,714 DEBUG regions Affinity matrix built
+2019-12-13 08:44:57,716 DEBUG regions Computing Eigen decompostion
+2019-12-13 08:44:58,986 DEBUG regions Eigen decomposition applied
+2019-12-13 08:44:58,987 DEBUG regions Optimal K for Region Clustering 5
+2019-12-13 08:44:59,193 DEBUG regions Settlement clustering done
+2020-01-27 08:46:10,983 DEBUG regions Clustering settlements
+2020-01-27 08:46:10,984 DEBUG regions Building affinity matrix
+2020-01-27 08:46:11,086 DEBUG regions Affinity matrix built
+2020-01-27 08:46:11,088 DEBUG regions Computing Eigen decompostion
+2020-01-27 08:46:12,422 DEBUG regions Eigen decomposition applied
+2020-01-27 08:46:12,423 DEBUG regions Optimal K for Region Clustering 5
+2020-01-27 08:46:12,657 DEBUG regions Settlement clustering done
+2020-01-27 08:47:08,718 DEBUG regions Clustering settlements
+2020-01-27 08:47:08,718 DEBUG regions Building affinity matrix
+2020-01-27 08:47:08,826 DEBUG regions Affinity matrix built
+2020-01-27 08:47:08,829 DEBUG regions Computing Eigen decompostion
+2020-01-27 08:47:10,264 DEBUG regions Eigen decomposition applied
+2020-01-27 08:47:10,265 DEBUG regions Optimal K for Region Clustering 5
+2020-01-27 08:47:10,472 DEBUG regions Settlement clustering done
+2020-01-27 08:48:37,354 DEBUG regions Clustering settlements
+2020-01-27 08:48:37,354 DEBUG regions Building affinity matrix
+2020-01-27 08:48:37,463 DEBUG regions Affinity matrix built
+2020-01-27 08:48:37,466 DEBUG regions Computing Eigen decompostion
+2020-01-27 08:48:38,757 DEBUG regions Eigen decomposition applied
+2020-01-27 08:48:38,758 DEBUG regions Optimal K for Region Clustering 5
+2020-01-27 08:48:38,976 DEBUG regions Settlement clustering done
+2020-01-27 08:49:09,001 DEBUG regions Clustering settlements
+2020-01-27 08:49:09,001 DEBUG regions Building affinity matrix
+2020-01-27 08:49:09,103 DEBUG regions Affinity matrix built
+2020-01-27 08:49:09,106 DEBUG regions Computing Eigen decompostion
+2020-01-27 08:49:10,396 DEBUG regions Eigen decomposition applied
+2020-01-27 08:49:10,398 DEBUG regions Optimal K for Region Clustering 5
+2020-01-27 08:49:10,605 DEBUG regions Settlement clustering done
+2020-01-27 08:51:42,441 DEBUG regions Clustering settlements
+2020-01-27 08:51:42,442 DEBUG regions Building affinity matrix
+2020-01-27 08:51:42,546 DEBUG regions Affinity matrix built
+2020-01-27 08:51:42,549 DEBUG regions Computing Eigen decompostion
+2020-01-27 08:51:43,852 DEBUG regions Eigen decomposition applied
+2020-01-27 08:51:43,853 DEBUG regions Optimal K for Region Clustering 5
+2020-01-27 08:51:44,118 DEBUG regions Settlement clustering done
+2020-01-27 08:52:30,433 DEBUG regions Clustering settlements
+2020-01-27 08:52:30,433 DEBUG regions Building affinity matrix
+2020-01-27 08:52:30,533 DEBUG regions Affinity matrix built
+2020-01-27 08:52:30,536 DEBUG regions Computing Eigen decompostion
+2020-01-27 08:52:31,857 DEBUG regions Eigen decomposition applied
+2020-01-27 08:52:31,858 DEBUG regions Optimal K for Region Clustering 5
+2020-01-27 08:52:32,099 DEBUG regions Settlement clustering done
+2020-01-27 08:54:42,380 DEBUG regions Clustering settlements
+2020-01-27 08:54:42,380 DEBUG regions Building affinity matrix
+2020-01-27 08:54:42,486 DEBUG regions Affinity matrix built
+2020-01-27 08:54:42,489 DEBUG regions Computing Eigen decompostion
+2020-01-27 08:54:43,786 DEBUG regions Eigen decomposition applied
+2020-01-27 08:54:43,787 DEBUG regions Optimal K for Region Clustering 5
+2020-01-27 08:54:44,010 DEBUG regions Settlement clustering done
+2020-01-27 08:55:37,330 DEBUG regions Clustering settlements
+2020-01-27 08:55:37,330 DEBUG regions Building affinity matrix
+2020-01-27 08:55:37,440 DEBUG regions Affinity matrix built
+2020-01-27 08:55:37,444 DEBUG regions Computing Eigen decompostion
+2020-01-27 08:55:38,823 DEBUG regions Eigen decomposition applied
+2020-01-27 08:55:38,824 DEBUG regions Optimal K for Region Clustering 5
+2020-01-27 08:55:39,032 DEBUG regions Settlement clustering done
+2020-01-27 08:56:15,971 DEBUG regions Clustering settlements
+2020-01-27 08:56:15,971 DEBUG regions Building affinity matrix
+2020-01-27 08:56:16,074 DEBUG regions Computing Eigen decompostion
+2020-01-27 08:56:17,488 DEBUG regions Eigen decomposition applied
+2020-01-27 08:56:17,489 DEBUG regions Optimal K for Region Clustering 5
+2020-01-27 08:56:42,575 DEBUG regions Clustering settlements ...
+2020-01-27 08:56:42,576 DEBUG regions Building affinity matrix ...
+2020-01-27 08:56:42,678 DEBUG regions Computing Eigen decompostion ...
+2020-01-27 08:56:44,077 DEBUG regions Eigen decomposition applied ...
+2020-01-27 08:56:44,078 DEBUG regions Optimal K for Region Clustering 5 ...
+2020-01-27 08:56:55,783 DEBUG regions Clustering settlements...
+2020-01-27 08:56:55,783 DEBUG regions Building affinity matrix...
+2020-01-27 08:56:55,897 DEBUG regions Computing Eigen decompostion...
+2020-01-27 08:56:57,190 DEBUG regions Eigen decomposition applied...
+2020-01-27 08:56:57,191 DEBUG regions Optimal K for Region Clustering 5...
+2020-01-27 08:58:45,508 DEBUG regions Clustering settlements...
+2020-01-27 08:58:45,509 DEBUG regions Building affinity matrix...
+2020-01-27 08:58:45,623 DEBUG regions Computing Eigen decompostion...
+2020-01-27 08:58:46,898 DEBUG regions Eigen decomposition applied...
+2020-01-27 08:58:46,899 DEBUG regions Optimal K for Region Clustering 5...
+2020-01-27 09:00:49,177 DEBUG regions Clustering settlements...
+2020-01-27 09:00:49,177 DEBUG regions Building affinity matrix...
+2020-01-27 09:00:49,285 DEBUG regions Computing Eigen decompostion...
+2020-01-27 09:00:50,570 DEBUG regions Eigen decomposition applied...
+2020-01-27 09:00:50,571 DEBUG regions Optimal K for Region Clustering 5...
+2020-01-27 09:01:04,650 DEBUG regions Clustering settlements...
+2020-01-27 09:01:04,650 DEBUG regions Building affinity matrix...
+2020-01-27 09:01:04,768 DEBUG regions Computing Eigen decompostion...
+2020-01-27 09:01:06,193 DEBUG regions Eigen decomposition applied...
+2020-01-27 09:01:06,194 DEBUG regions Optimal K for Region Clustering 5...
+2020-01-27 09:01:40,376 DEBUG regions Clustering settlements...
+2020-01-27 09:01:40,376 DEBUG regions Building affinity matrix...
+2020-01-27 09:01:40,490 DEBUG regions Computing Eigen decompostion...
+2020-01-27 09:01:41,935 DEBUG regions Eigen decomposition applied...
+2020-01-27 09:01:41,936 DEBUG regions Optimal K for Region Clustering 5...
+2020-01-27 09:02:23,585 DEBUG regions Clustering settlements...
+2020-01-27 09:02:23,585 DEBUG regions Building affinity matrix...
+2020-01-27 09:02:23,703 DEBUG regions Computing Eigen decompostion...
+2020-01-27 09:02:25,049 DEBUG regions Eigen decomposition applied...
+2020-01-27 09:02:25,050 DEBUG regions Optimal K for Region Clustering 5...
+2020-01-27 09:03:39,921 DEBUG regions Clustering settlements...
+2020-01-27 09:03:39,921 DEBUG regions Building affinity matrix...
+2020-01-27 09:03:40,034 DEBUG regions Computing Eigen decompostion...
+2020-01-27 09:03:41,374 DEBUG regions Eigen decomposition applied...
+2020-01-27 09:03:41,375 DEBUG regions Optimal K for Region Clustering 5...
+2020-01-27 09:04:44,766 DEBUG regions Clustering settlements...
+2020-01-27 09:04:44,766 DEBUG regions Building affinity matrix...
+2020-01-27 09:04:44,869 DEBUG regions Computing Eigen decompostion...
+2020-01-27 09:04:46,200 DEBUG regions Eigen decomposition applied...
+2020-01-27 09:04:46,201 DEBUG regions Optimal K for Region Clustering 5...
+2020-01-27 09:05:05,597 DEBUG regions Clustering settlements...
+2020-01-27 09:05:05,597 DEBUG regions Building affinity matrix...
+2020-01-27 09:05:05,700 DEBUG regions Computing Eigen decompostion...
+2020-01-27 09:05:07,008 DEBUG regions Eigen decomposition applied...
+2020-01-27 09:05:07,009 DEBUG regions Optimal K for Region Clustering 5...
+2020-01-27 09:05:50,997 DEBUG regions Clustering settlements...
+2020-01-27 09:05:50,997 DEBUG regions Building affinity matrix...
+2020-01-27 09:05:51,101 DEBUG regions Computing Eigen decompostion...
+2020-01-27 09:05:52,414 DEBUG regions Eigen decomposition applied...
+2020-01-27 09:05:52,416 DEBUG regions Optimal K for Region Clustering 5...

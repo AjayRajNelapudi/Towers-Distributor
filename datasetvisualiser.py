@@ -3,7 +3,7 @@ import csv
 import folium
 import numpy as np
 
-dataset_filepath = "/users/ajayraj/documents/towers-distributor/new-dataset.csv"
+dataset_filepath = "/users/ajayraj/documents/towersdistributor/datasets/dataset.csv"
 with open(dataset_filepath) as dataset_file:
     dataset_reader = csv.reader(dataset_file)
     dataset = np.array([list(map(float, datapoint)) for datapoint in dataset_reader])

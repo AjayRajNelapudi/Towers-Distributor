@@ -15,12 +15,16 @@ class TowersDistributor:
     '''
     Towers Distributor acts as the controller for all the functions of the project
     '''
+    cell_sites = np.array([])
+    base_stations = np.array([])
+    regions = np.array([])
+
     LOGGING = {
         "version": 1,
         "disable_existing_loggers": False,
         "formatters": {
             "default": {
-                "format": "%(asctime)s %(levelname)s %(name)s %(message)s"
+                "format": "%(asctime)s %(levelname)s %(name)s %(message)s..."
             },
         },
         "handlers": {
@@ -98,13 +102,13 @@ class TowersDistributor:
             if "logs" not in os.listdir(os.getcwd()):
                 os.mkdir("logs")
             logging.config.dictConfig(self.LOGGING)
+        self.logger = logging.getLogger("towersdistributor")
 
+        self.logger.debug("Reading dataset")
         with open(dataset_filepath) as dataset_file:
             dataset_reader = csv.reader(dataset_file)
             self.dataset = np.array([list(map(float, datapoint)) for datapoint in dataset_reader])
 
-        self.logger = logging.getLogger("towersdistributor")
-        self.logger.debug("Towers Distributor Initialized")
 
     def metres_to_geodistance(self, metres):
         if metres < 0:
@@ -119,8 +123,6 @@ class TowersDistributor:
         self.regions = settlement_clustering.detect_regions(self.dataset)
         self.base_stations = settlement_clustering.locate_base_stations_proximity()
 
-        self.logger.debug("Level 1 clustering done")
-
     def perform_cellsite_clustering(self, radiation_range=1000):
         if radiation_range < 0:
             raise ValueError("radiation range cannot be negative")
@@ -130,8 +132,6 @@ class TowersDistributor:
 
         cellsite_clustering = CellSites(radiation_range=self.radiation_range)
         self.cell_sites = cellsite_clustering.distribute_cellsites(self.regions)
-
-        self.logger.debug("Level 2 clustering done")
 
     def format(self):
         self.logger.debug("Formatting to dictionary")
@@ -143,8 +143,6 @@ class TowersDistributor:
                 'base_station': self.base_stations[key],
                 'users': self.regions[key]
             }
-
-        self.logger.debug("Regions dictionary formatted")
 
     def optimize(self, min_towers=5, min_cell_site_distance=500):
         if min_towers < 0:
@@ -159,15 +157,12 @@ class TowersDistributor:
         region = Optimizer(min_towers=self.min_towers, min_cell_site_distance=self.min_cell_site_distance)
         self.tower_distribution = region.optimize(self.tower_distribution)
 
-        self.logger.debug("UBC optimization done")
-
     def serialize_and_save_data(self, output_JSON_file):
         self.output_JSON_file = output_JSON_file
         self.logger.debug("Saving UBC dict to JSON")
         serializer = Serializer(self.tower_distribution)
         serializer.serialize()
         serializer.save(self.output_JSON_file)
-        self.logger.debug("UBC dictionary saved to JSON")
 
     def make_and_display_map(self, output_map_html_file):
         self.output_html_map_file = output_map_html_file
@@ -175,7 +170,6 @@ class TowersDistributor:
         visuals = Visuals(self.tower_distribution)
         # visuals.display_distribution()
         visuals.make_map(self.output_html_map_file)
-        self.logger.debug("Visuals created")
 
         self.logger.debug("Calling default browser to open map")
         os.system("open " + self.output_html_map_file)
@@ -186,11 +180,9 @@ class TowersDistributor:
         accuracy_evaluator = Evaluator(radiation_range=self.radiation_range)
         users, cell_site_count, accuracy = accuracy_evaluator.evaluate(tower_distribution=self.tower_distribution)
 
-        self.logger.debug("Model evaluated")
-
 
 if __name__ == "__main__":
-    distributor = TowersDistributor("datasets/custom-dataset.csv", enable_logger=True)
+    distributor = TowersDistributor("datasets/dataset.csv", enable_logger=True)
 
     distributor.perform_settlement_clustering()
     distributor.perform_cellsite_clustering()
@@ -198,8 +190,8 @@ if __name__ == "__main__":
     distributor.format()
     distributor.optimize()
 
-    distributor.serialize_and_save_data("outputs/custom-td.json")
-    distributor.make_and_display_map("maps/custom-td.html")
+    distributor.serialize_and_save_data("outputs/td.json")
+    distributor.make_and_display_map("maps/td.html")
 
     distributor.evaluate()
 

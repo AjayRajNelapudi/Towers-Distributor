@@ -20,7 +20,7 @@ class CellSites:
         :param users: datapoints of each settlement cluster
         :return: cluster centroids for cell sites
         '''
-        self.logger.debug("Performing gradient descent")
+        self.logger.debug("Distributing cell sites")
 
         K = int(len(users) ** (1. / 3.)) - 1
         distortion = 1
@@ -46,7 +46,7 @@ class CellSites:
         Optimises and distributes the cell sites
         :return: dict of label: cellsites
         '''
-        self.logger.debug("Distributing cellsites")
+        self.logger.debug("Creating threads...")
         self.cell_sites = dict()
         clustering_threads = dict()
         for label, region in regions.items():
@@ -55,6 +55,5 @@ class CellSites:
             clustering_thread.join()
 
             clustering_threads[label] = clustering_thread
-        self.logger.debug("Cellsite distribution done")
 
         return self.cell_sites
