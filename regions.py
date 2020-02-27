@@ -104,11 +104,15 @@ class Regions:
         affinity_matrix = self.get_affinity_matrix(users, k=100)
 
         nb_clusters, eigenvalues, eigenvectors = self.eigen_decomposition(affinity_matrix, topK=50)
+
         K = nb_clusters * 1 # Adjustment factor
         self.logger.debug("Optimal K for Region Clustering " + str(K))
 
         region_clustering = SpectralClustering(n_clusters=K, random_state=0, affinity='precomputed')
         region_clustering.fit(affinity_matrix)
+
+        # Explicitly deleting the affinity matrix due to mem leak issues
+        del affinity_matrix
 
         self.regions = self.format_regions(region_clustering.labels_, users)
 

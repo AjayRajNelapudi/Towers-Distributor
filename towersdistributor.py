@@ -182,7 +182,7 @@ class TowersDistributor:
 
 
 if __name__ == "__main__":
-    distributor = TowersDistributor("datasets/dataset.csv", enable_logger=True)
+    distributor = TowersDistributor("datasets/dataset5000.csv", enable_logger=True)
 
     distributor.perform_settlement_clustering()
     distributor.perform_cellsite_clustering()
