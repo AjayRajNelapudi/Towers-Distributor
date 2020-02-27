@@ -1,5 +1,5 @@
 import csv
-import itertools
+import sys
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -36,11 +36,11 @@ def visualise_dataset(dataset):
     plt.show()
 
 if __name__ == "__main__":
-    metadata = [
-        1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000, 5500
-    ]
-    for size in metadata:
-        hotspots = read_hotspots("hotspots.csv")
+    if len(sys.argv) < 2:
+        print('USAGE: python3 datagen.py SIZE')
+    else:
+        size = int(sys.argv[1])
+        hotspots = read_hotspots("datasets/hotspots.csv")
         dataset = generate_dataset(hotspots, required_size=size)
         write_dataset(dataset, "datasets/dataset%s.csv" % size)
         # visualise_dataset(dataset)
