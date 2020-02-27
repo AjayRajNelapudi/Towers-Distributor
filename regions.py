@@ -17,7 +17,7 @@ class Regions:
 
     def get_affinity_matrix(self, coordinates, k=7):
         """
-        Calculate affinity matrix based on input coordinates matrix and the numeber
+        Calculate affinity matrix based on input coordinates matrix and the number
         of nearest neighbours.
 
         Apply local scaling based on the k nearest neighbour
@@ -73,7 +73,7 @@ class Regions:
         # LM parameter : Eigenvalues with largest magnitude (eigs, eigsh), that is, largest eigenvalues in
         # the euclidean norm of complex numbers.
         #     eigenvalues, eigenvectors = eigsh(L, k=n_components, which="LM", sigma=1.0, maxiter=5000)
-        eigenvalues, eigenvectors = LA.eig(L)
+        eigenvalues = LA.eigvals(L)
 
         # Identify the optimal number of clusters as the index corresponding
         # to the larger gap between eigen values
@@ -81,7 +81,7 @@ class Regions:
         nb_clusters = index_largest_gap + 1
 
         self.logger.debug("Eigen decomposition applied")
-        return nb_clusters, eigenvalues, eigenvectors
+        return nb_clusters, eigenvalues
 
     def format_regions(self, labels, users):
         regions = dict()
@@ -103,12 +103,16 @@ class Regions:
 
         affinity_matrix = self.get_affinity_matrix(users, k=100)
 
-        nb_clusters, eigenvalues, eigenvectors = self.eigen_decomposition(affinity_matrix, topK=50)
+        nb_clusters, eigenvalues = self.eigen_decomposition(affinity_matrix, topK=50)
+
         K = nb_clusters * 1 # Adjustment factor
         self.logger.debug("Optimal K for Region Clustering " + str(K))
 
         region_clustering = SpectralClustering(n_clusters=K, random_state=0, affinity='precomputed')
         region_clustering.fit(affinity_matrix)
+
+        # Explicitly deleting the affinity matrix due to mem leak issues
+        del affinity_matrix
 
         self.regions = self.format_regions(region_clustering.labels_, users)
 
