@@ -32,7 +32,7 @@ def distribute_towers(dataset, output_json_file, output_map_html_file, radiation
     distributor.serialize_and_save_data(output_json_file)
     distributor.make_and_display_map(output_map_html_file)
 
-    # distributor.evaluate()
+    distributor.evaluate()
 
 if __name__ == "__main__":
     distribute_towers()
