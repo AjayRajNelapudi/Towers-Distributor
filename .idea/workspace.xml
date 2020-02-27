@@ -195,9 +195,9 @@
     <list>
       <item itemvalue="Python.cli" />
       <item itemvalue="Python.controller" />
-      <item itemvalue="Python.evaluator" />
       <item itemvalue="Python.datagen" />
       <item itemvalue="Python.datahandler" />
+      <item itemvalue="Python.evaluator" />
       <item itemvalue="Python.visualizer" />
     </list>
     <recent_temporary>
