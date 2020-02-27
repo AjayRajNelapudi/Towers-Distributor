@@ -13,6 +13,7 @@
       <change beforePath="$PROJECT_DIR$/maps/td.html" beforeDir="false" afterPath="$PROJECT_DIR$/maps/td.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/outputs/td.json" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/td.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/regions.py" beforeDir="false" afterPath="$PROJECT_DIR$/regions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/towersdistributor.py" beforeDir="false" afterPath="$PROJECT_DIR$/towersdistributor.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,9 +196,9 @@
     <list>
       <item itemvalue="Python.cli" />
       <item itemvalue="Python.controller" />
+      <item itemvalue="Python.evaluator" />
       <item itemvalue="Python.datagen" />
       <item itemvalue="Python.datahandler" />
-      <item itemvalue="Python.evaluator" />
       <item itemvalue="Python.visualizer" />
     </list>
     <recent_temporary>
@@ -230,26 +231,26 @@
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state x="1864" y="203" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582794977882" />
-    <state width="1899" height="303" key="GridCell.Tab.0.bottom" timestamp="1582795132348">
+    <state width="1899" height="303" key="GridCell.Tab.0.bottom" timestamp="1582797668173">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
-    <state width="1899" height="303" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582795132348" />
-    <state width="1899" height="303" key="GridCell.Tab.0.center" timestamp="1582795132347">
+    <state width="1899" height="303" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582797668173" />
+    <state width="1899" height="303" key="GridCell.Tab.0.center" timestamp="1582797668171">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
-    <state width="1899" height="303" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582795132347" />
-    <state width="1899" height="303" key="GridCell.Tab.0.left" timestamp="1582795132346">
+    <state width="1899" height="303" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582797668171" />
+    <state width="1899" height="303" key="GridCell.Tab.0.left" timestamp="1582797668170">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
-    <state width="1899" height="303" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582795132346" />
-    <state width="1899" height="303" key="GridCell.Tab.0.right" timestamp="1582795132348">
+    <state width="1899" height="303" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582797668170" />
+    <state width="1899" height="303" key="GridCell.Tab.0.right" timestamp="1582797668172">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
-    <state width="1899" height="303" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582795132348" />
-    <state x="1909" y="179" key="SettingsEditor" timestamp="1582773811057">
+    <state width="1899" height="303" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582797668172" />
+    <state x="1707" y="219" key="SettingsEditor" timestamp="1582796965845">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
-    <state x="1909" y="179" key="SettingsEditor/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582773811057" />
+    <state x="1707" y="219" key="SettingsEditor/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582796965845" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
