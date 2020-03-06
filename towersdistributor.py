@@ -144,7 +144,7 @@ class TowersDistributor:
                 'users': self.regions[key]
             }
 
-    def optimize(self, min_towers=5, min_cell_site_distance=500):
+    def optimize(self, min_towers=10, min_cell_site_distance=800):
         if min_towers < 0:
             raise ValueError("min no of towers per cluster cannot be negative")
         if min_cell_site_distance < 0:
